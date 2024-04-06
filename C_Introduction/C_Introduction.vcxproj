@@ -21,10 +21,13 @@
   <ItemGroup>
     <None Include="..\Readme.md" />
     <None Include="Exercises\Exercises.md" />
+    <None Include="Exercises\TeufelFolge\Exercises_TeufelFolge.md" />
+    <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
     <None Include="Markdown\Agenda.md" />
     <None Include="Markdown\Excercises.md" />
     <None Include="Markdown\FirstOfAll.md" />
     <None Include="Markdown\HelloWorld.md" />
+    <None Include="Markdown\History.md" />
     <None Include="Markdown\InstallationGuide.md" />
     <None Include="Markdown\Literature.md" />
     <None Include="Markdown\Roadmap.md" />

@@ -6,7 +6,7 @@
 
 ## Erläuterungen
 
-C++ ist eine Programmiersprache, die den vom Entwickler geschriebenen Quelltext des Programms (*Editor*)
+C ist eine Programmiersprache, die den vom Entwickler geschriebenen Quelltext des Programms (*Editor*)
 zunächst mittels eines *Übersetzers* (*Compilers*)
 in ein ausführbares Programm (*Maschinencode*) umgewandelt.
 

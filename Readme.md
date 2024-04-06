@@ -1,7 +1,7 @@
 # Einführung in die Programmiersprache C
 
 <p align="center">
-<img src="./C_Introduction/Markdown/C.png" width="200" height="200"/>
+<img src="./C_Introduction/Markdown/C_Logo.png" width="180" height="200"/>
 </p>
 
 ## [Vorab](./Cpp_Introduction/Markdown/FirstOfAll.md)

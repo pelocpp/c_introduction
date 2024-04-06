@@ -1,52 +1,5 @@
 # Agenda
 
----
-
-[Zurück](../../Readme.md)
-
----
-
-## Werkzeuge und Grundlegendes
-  * Editor, Quelltext
-  * Übersetzer (Compiler)
-  * Abbildung von C-Quelltext auf Maschinencode
-  * Lexikon, Syntax (Grammatik), Semantik
-
-
-## Unser erstes Programm: &ldquo;Hello World&rdquo;
-  * `printf`
-  * `main`
-  * `#include`
-  * Kommentare
-
-
-## Operatoren, Operanden, arithmetische Ausdrücke und Wertzuweisung
-  * Operatoren und Operanden
-  * Klammern
-  * Operatoren-Vorrang
-  * Wertzuweisung
-
-## Kontrollstrukturen
-  * `if`-Anweisung
-  * `while`-Anweisung
-  * `do-while`-Anweisung
-  * `for`-Anweisung
-
-
-## Blockschachtelung
-  * Schachtelung von Kontrollstrukturen
-  * Schachtelung von Variablen-Definitionen
-  * Verdeckung von Variablen
-
-
-## [Unterprogramme](./Unterprogramme.md) 
-  * Schachtelung von Kontrollstrukturen
-  * Schachtelung von Variablen-Definitionen
-  * Verdeckung von Variablen
-
-
----
-
 [Zurück](../../Readme.md)
 
 ---
@@ -59,6 +12,7 @@
   * Präprozessor
   * Übersetzer (Compiler)
   * Linker
+  * Debugger
   * "Hello World" &ndash; das erste Programm
   * Fehlermeldungen des Übersetzers
 
@@ -72,6 +26,7 @@
   * Initialisierung und Zuweisung
 
 ### Operatoren und Ausdrücke
+  * Wertzuweisung
   * Arithmetische Operatoren
   * Logische Operatoren
   * Arithmetische Ausdrücke
@@ -87,13 +42,18 @@
   * Sprünge in Schleifen (`break` und `continue`)
   * Endlosschleifen
 
+### Blockschachtelung
+  * Schachtelung von Kontrollstrukturen
+  * Schachtelung von Variablen-Definitionen
+  * Verdeckung von Variablen
+   
 ### Felder (Arrays)
   * Deklaration und Initialisierung
   * Auf Feldelemente zugreifen
   * Felder in Schleifen durchlaufen
   * Mehrdimensionale Felder
 
-### Funktionen
+### Funktionen / Unterprogramme
   * Funktionsdeklaration und Aufruf
   * Rückgabewert und Parameter
   * Lokale und globale Variablen
@@ -118,4 +78,10 @@
 ### Die C-Standardbibliothek CRT (C-Runtime-Library)
   * Ein- und Ausgabe auf die Konsole: `printf`
   * Speicher reservieren und freigeben: `malloc` und `free`
-  * Dynamische Speicherverwaltung und der *Heap_* (*Halde*)
+  * Dynamische Speicherverwaltung und der *Heap* (*Halde*)
+
+---
+
+[Zurück](../../Readme.md)
+
+---

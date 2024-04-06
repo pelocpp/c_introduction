@@ -19,6 +19,12 @@
     <Filter Include="Exercises">
       <UniqueIdentifier>{8b3a9fb8-e7a0-4e6b-b81b-68a6dad48743}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\TeufelFolge">
+      <UniqueIdentifier>{bb359192-345f-44f8-aa77-ad4420d98c30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Zinsberechnung">
+      <UniqueIdentifier>{72cba7c0-f8e1-4e6c-8989-a73c831ddb12}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -46,6 +52,15 @@
       <Filter>Exercises</Filter>
     </None>
     <None Include="..\Readme.md" />
+    <None Include="Markdown\History.md">
+      <Filter>Markdown</Filter>
+    </None>
+    <None Include="Exercises\TeufelFolge\Exercises_TeufelFolge.md">
+      <Filter>Exercises\TeufelFolge</Filter>
+    </None>
+    <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md">
+      <Filter>Exercises\Zinsberechnung</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
