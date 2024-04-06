@@ -4,7 +4,7 @@
 
 ---
 
-## Einführung
+## Übersicht
 
 In der Mathematik und Physik spielen Skalare und Vektoren eine große Rolle.
 Während man unter einem Skalar eine Größe versteht, deren Wert sich eindeutig durch die Angabe einer

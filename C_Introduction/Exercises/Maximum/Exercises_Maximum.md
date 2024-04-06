@@ -4,7 +4,7 @@
 
 ---
 
-## Einführung
+## Übersicht
 
 Schreiben Sie eine Funktion, die zu drei vorgegebenen Zahlen die größte Zahl ermittelt und auf der Konsole ausgibt.
 

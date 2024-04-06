@@ -2,8 +2,10 @@
 
 [Zurück](../../Readme.md)
 
----
 
+<img src="Embedded_Cpp.jpg" width="500">
+
+---
 
 ## Agenda zu C
 
@@ -21,7 +23,7 @@
   * Variablen und Schlüsselwörter
   * Datentypen
   * C-Standarddatentypen (`int`, `long`, `short`, `float`, `double`)
-  * Zeichen und Zeichenketten (Datentyp `char`)
+  * Zeichen (Datentyp `char`)
   * Typumwandlungen
   * Initialisierung und Zuweisung
 
@@ -59,6 +61,18 @@
   * Lokale und globale Variablen
   * Funktion und der *Stack* (*Stapel*)
 
+### Zeichen und Zeichenketten
+  * Definition von Zeichen (Datentyp `char`) und Zeichenketten (Datentyp `const char*`)
+  * Übergabe von Zeichenketten an Unterprogramme
+
+### Zeiger (*Pointer*)
+  * Definition
+  * Zeiger (Pointer) initialisieren (Referenzierung), Nullzeiger
+  * Dereferenzierung
+  * Zeigerarithmetik
+  * Anwendung: Parameterübergabemechanismus *Call-by-Value* und *Call-by-Address*
+  * Zeiger auf Zeiger
+
 ### Strukturen
   * Definition und Anwendung
   * Schlüsselwort `struct`
@@ -67,18 +81,17 @@
   * Felder von Strukturen
   * Schlüsselwort `typedef`
 
-### Zeiger
-  * Definition
-  * Zeiger (Pointer) initialisieren (Referenzierung), Nullzeiger
-  * Dereferenzierung
-  * Zeigerarithmetik
-  * Anwendung: Parameterübergabemechanismus *Call-by-Value* und *Call-by-Address*
-  * Zeiger auf Zeiger
-
+### Dynamische Speicherverwaltung
+  * Speicherbereiche eines C–Programms
+  * Lebensdauer von Variablen in einem C&ndash;Programm
+  * Stack und Heap (Stapel und Halde)
+  * Speicher reservieren und freigeben: `malloc` und `free`
+  * Typkonvertierungen: `atof`, `atoi`, `atol`, `strtod`, `strtol`, `strtoul`
+  
 ### Die C-Standardbibliothek CRT (C-Runtime-Library)
   * Ein- und Ausgabe auf die Konsole: `printf`
-  * Speicher reservieren und freigeben: `malloc` und `free`
-  * Dynamische Speicherverwaltung und der *Heap* (*Halde*)
+  * Zeichenkettenverarbeitung mit `strlen`, `strcpy` etc.
+  * Zufallszahlen: `rand`, `srand`
 
 ---
 

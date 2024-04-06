@@ -11,12 +11,26 @@ um diverse Features von C zu demonstrieren.
 
 ### Inhaltsverzeichnis
 
+#### Einstieg
+
 ##### [Teuflische Folge](#link1)
 ##### [Zinsberechnung](#link2)
 ##### [Maximum von drei Zahlen](#link3)
 ##### [Berechnung der Fakultät](#link4)
-##### [Unterprogramme](#link5)
+
+#### Funktionen und Unterprogramme
+
+##### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](#link5)
+
+#### Arrays
+
 ##### [Ein mathematischer Vektor](#link6)
+
+#### Zeichenkettenverarbeitung
+
+##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link6)
+
+
 
 ---
 
@@ -55,13 +69,12 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Unterprogramme](./Unterprogramme/Exercises_Unterprogramme.md) <a name="link5"></a>
+#### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](./Unterprogramme/Exercises_Unterprogramme.md) <a name="link5"></a>
 
 Folgende Aspekte werden betrachtet:
   * Unterprogramme
   * Übergabe von Parametern an Unterprogramme
-  * Rückgabe von Ergebnisses aus einem Unterprogramm
-
+  * Rückgabe von Ergebnissen aus einem Unterprogramm
 
 ---
 

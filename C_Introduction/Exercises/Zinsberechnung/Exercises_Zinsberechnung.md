@@ -4,7 +4,7 @@
 
 ---
 
-## Einführung
+## Übersicht
 
 Schreiben Sie ein Programm, das die jährliche Entwicklung eines Grundkapitals über eine vorgegebene Laufzeit berechnet. Die Zinsen sollen nicht ausgeschüttet, sondern mit dem Kapital wieder angelegt werden.
 

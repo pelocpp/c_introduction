@@ -4,7 +4,7 @@
 
 ---
 
-## Einführung
+## Übersicht
 
 Die Fakultät *n*! einer natürlichen Zahl *n* ist definiert als
 

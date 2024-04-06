@@ -9,6 +9,7 @@ extern void exercise_maximum();
 extern void exercise_fakultaet();
 extern void exercise_unterprogramme();
 extern void exercise_vector();
+extern void exercise_zeichenkettenverarbeitung();
 
 void exercises()
 {
@@ -16,8 +17,9 @@ void exercises()
     //exercise_zinsberechnung();
     //exercise_maximum();
     //exercise_fakultaet();
-    exercise_unterprogramme();
+    //exercise_unterprogramme();
     //exercise_vector();
+    exercise_zeichenkettenverarbeitung();
 }
 
 // ===========================================================================

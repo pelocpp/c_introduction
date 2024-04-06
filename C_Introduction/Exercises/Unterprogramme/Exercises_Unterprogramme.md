@@ -1,10 +1,10 @@
-# Aufgaben zu Unterprogrammen
+# Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr
 
 [Zurück](./../Exercises.md)
 
 ---
 
-## Einführung
+## Übersicht
 
 ### Fläche eines Kreises
 
@@ -25,22 +25,22 @@ nach wie vielen Jahren das eingesetzte Kapital sich verdoppelt hat.
 
 Entwickeln Sie ein Unterprogramm `IsLeapYear`, welches von einem gegebenen Jahr ermittelt, ob dieses ein Schaltjahr ist oder nicht.
 
-Eingabe:
+*Eingabe*:
 Beliebiges Jahr *N* ab 1800.
 
-Ausgabe:
-*N* ist Schaltjahr oder N ist kein Schaltjahr.
+*Ausgabe*:
+*N* ist Schaltjahr oder *N* ist kein Schaltjahr.
 
 
 *Hilfestellung*:
 
 Es gibt drei Regeln, die Sie zur Berechnung eines Schaltjahres benötigen:
 
-  * Regel 1: Schaltjahre sind durch vier teilbar.
+  * Regel 1: Schaltjahre sind durch 4 teilbar.
   * Regel 2: Ist das Jahr durch 100 teilbar, dann ist es kein Schaltjahr.
   * Regel 3: Ist das Jahr durch 400 teilbar, dann ist es trotzdem ein Schaltjahr.
 
-Auch hier kann bei bei der Realisierung wieder die Betrachtung eines Struktogramms hilfreich sein:
+Auch hier kann bei bei der Realisierung die Betrachtung eines Struktogramms hilfreich sein:
 
 
 <img src="Struktogramm_Schaltjahr.png" width="500">

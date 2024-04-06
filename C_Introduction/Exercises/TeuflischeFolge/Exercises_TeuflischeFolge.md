@@ -4,7 +4,7 @@
 
 ---
 
-## Einführung
+## Übersicht
 
 Die teuflische Folge oder auch als das &bdquo;Collatz-Problem&rdquo; oder auch als &bdquo;3*n* + 1&rdquo;&ndash;Vermutung bezeichnet,
 ist ein ungelöstes mathematisches Problem und wird dem Mathematiker *Lothar Collatz* zugeschrieben.
