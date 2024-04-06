@@ -1,6 +1,5 @@
 # Aufgaben
 
-
 [Zurück](../../Readme.md)
 
 ---
@@ -10,7 +9,7 @@ um diverse Features von C zu demonstrieren.
 
 ---
 
-## Inhaltsverzeichnis:
+### Inhaltsverzeichnis:
 
 
 ---

@@ -1,6 +1,6 @@
 # Aufgabe zur Zinsberechnung
 
-[Zurück](./Exercises.md)
+[Zurück](./../Exercises.md)
 
 ---
 
@@ -39,6 +39,6 @@ Aus 1000.00 Grundkapital wurden in 10 Jahren 1628.89 Euro.
 
 ---
 
-[Zurück](./Exercises.md)
+[Zurück](./../Exercises.md)
 
 ---

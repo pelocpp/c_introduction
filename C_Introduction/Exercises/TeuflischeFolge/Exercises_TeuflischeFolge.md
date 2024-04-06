@@ -1,6 +1,6 @@
 # Aufgabe zur teuflischen Folge
 
-[Zurück](./Exercises.md)
+[Zurück](./../Exercises.md)
 
 ---
 
@@ -62,6 +62,6 @@ Start: 7
 
 ---
 
-[Zurück](./Exercises.md)
+[Zurück](./../Exercises.md)
 
 ---
