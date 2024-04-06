@@ -25,6 +25,15 @@
     <Filter Include="Exercises\TeuflischeFolge">
       <UniqueIdentifier>{bb359192-345f-44f8-aa77-ad4420d98c30}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Fakultaet">
+      <UniqueIdentifier>{6b6f0e26-df82-4a13-9ec2-d4be1985de7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Vector">
+      <UniqueIdentifier>{0d25d4f7-0927-440d-a75c-4673171ae807}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\Maximum">
+      <UniqueIdentifier>{6728f156-e6c9-4682-a85f-f423135f7aad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -58,6 +67,15 @@
     <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md">
       <Filter>Exercises\TeuflischeFolge</Filter>
     </None>
+    <None Include="Exercises\Fakultaet\Exercises_Fakultaet.md">
+      <Filter>Exercises\Fakultaet</Filter>
+    </None>
+    <None Include="Exercises\Vector\Exercises_Vector.md">
+      <Filter>Exercises\Vector</Filter>
+    </None>
+    <None Include="Exercises\Maximum\Exercises_Maximum.md">
+      <Filter>Exercises\Maximum</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -72,6 +90,18 @@
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c">
       <Filter>Exercises\Zinsberechnung</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\Fakultaet\Fakultaet.c">
+      <Filter>Exercises\Fakultaet</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Vector\Vector.c">
+      <Filter>Exercises\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Vector\Main_Vector.c">
+      <Filter>Exercises\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Maximum\Maximum.c">
+      <Filter>Exercises\Maximum</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -80,5 +110,13 @@
     <Image Include="Markdown\HelloWorld.png">
       <Filter>Markdown</Filter>
     </Image>
+    <Image Include="Exercises\Maximum\Struktogramm_Maximum.png">
+      <Filter>Exercises\Maximum</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Exercises\Vector\Vector.h">
+      <Filter>Exercises\Vector</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

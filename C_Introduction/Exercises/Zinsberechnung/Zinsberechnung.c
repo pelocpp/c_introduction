@@ -25,7 +25,7 @@ void exercise_zinsberechnung()
         // auf addieren        
         capitalStock = capitalStock + interest;
 
-        // es gibt eine k�rzere Schreibweise fuer Zeile 21
+        // es gibt eine kuerzere Schreibweise fuer die letzte Zeile:
         // capitalStock += interest;
 
         printf("Jahr: %2d    Kapital: %.2f\n", (year+1), capitalStock);
