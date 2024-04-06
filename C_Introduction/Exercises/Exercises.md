@@ -16,16 +16,17 @@ um diverse Features von C zu demonstrieren.
 ---
 
 
-#### [Teuflische Folge](./Exercises/TeufelFolge/Exercises_TeuflischeFolge.md)
+#### [Teuflische Folge](./TeuflischeFolge/Exercises_TeuflischeFolge.md)
 
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`
+  * Division und Modulo-Operation ganzer Zahlen
   * Elementare Datentypen
 
 ---
 
 
-#### [Teuflische Folge](./Exercises/Zinsberechnung/Exercises_Zinsberechnung.md)
+#### [Zinsberechnung](./Zinsberechnung/Exercises_Zinsberechnung.md)
 
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`
