@@ -34,6 +34,9 @@
     <Filter Include="Exercises\Maximum">
       <UniqueIdentifier>{6728f156-e6c9-4682-a85f-f423135f7aad}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Unterprogramme">
+      <UniqueIdentifier>{0bc48506-2dda-40f2-bcfa-1952cc23b1ee}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -76,6 +79,9 @@
     <None Include="Exercises\Maximum\Exercises_Maximum.md">
       <Filter>Exercises\Maximum</Filter>
     </None>
+    <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md">
+      <Filter>Exercises\Unterprogramme</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -102,6 +108,9 @@
     <ClCompile Include="Exercises\Maximum\Maximum.c">
       <Filter>Exercises\Maximum</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\Unterprogramme\Unterprogramme.c">
+      <Filter>Exercises\Unterprogramme</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -112,6 +121,9 @@
     </Image>
     <Image Include="Exercises\Maximum\Struktogramm_Maximum.png">
       <Filter>Exercises\Maximum</Filter>
+    </Image>
+    <Image Include="Exercises\Unterprogramme\Struktogramm_Schaltjahr.png">
+      <Filter>Exercises\Unterprogramme</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

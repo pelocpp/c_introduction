@@ -6,13 +6,13 @@
 
 ## Einführung
 
-Schreibe eine Funktion, die zu drei Zahlen die größte Zahl ermittelt und auf der Konsole ausgibt.
+Schreiben Sie eine Funktion, die zu drei vorgegebenen Zahlen die größte Zahl ermittelt und auf der Konsole ausgibt.
 
 Natürlich kommen hier `if`-Anweisungen ins Spiel,
 es gibt aber durchaus mehrere Möglichkeiten, das Ziel zu erreichen.
 
 Wenn es für Sie einfacher ist:
-Pseudogramme, oder auch Struktogramme, sind eine grafische Option,
+*Pseudogramme*, oder auch *Struktogramme*, sind eine grafische Option,
 um von der Konzeption zu einer Umsetzung in C-Quellcode zu gelangen:
 
 

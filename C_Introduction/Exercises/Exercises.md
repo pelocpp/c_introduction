@@ -15,7 +15,8 @@ um diverse Features von C zu demonstrieren.
 ##### [Zinsberechnung](#link2)
 ##### [Maximum von drei Zahlen](#link3)
 ##### [Berechnung der Fakultät](#link4)
-##### [Ein mathematischer Vektor](#link5)
+##### [Unterprogramme](#link5)
+##### [Ein mathematischer Vektor](#link6)
 
 ---
 
@@ -37,12 +38,11 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Maximum von drei Zahlen](./Fakultaet/Exercises_Fakultaet.md) <a name="link3"></a>
+#### [Maximum von drei Zahlen](./Maximum/Exercises_Maximum.md) <a name="link3"></a>
 
 Folgende Aspekte werden betrachtet:
-  * Kontrollstrukturen
-  * Thematik des Überlaufs
-
+  * `if`-Kontrollstruktur 
+  * Verknüpfung von mehreren Bedingungen
 
 ---
 
@@ -55,7 +55,17 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link5"></a>
+#### [Unterprogramme](./Unterprogramme/Exercises_Unterprogramme.md) <a name="link5"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Unterprogramme
+  * Übergabe von Parametern an Unterprogramme
+  * Rückgabe von Ergebnisses aus einem Unterprogramm
+
+
+---
+
+#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link6"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays
