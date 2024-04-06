@@ -4,25 +4,16 @@
 <img src="./C_Introduction/Markdown/C_Logo.png" width="180" height="200"/>
 </p>
 
-## [Vorab](./Cpp_Introduction/Markdown/FirstOfAll.md)
+## [Vorab](./C_Introduction/Markdown/FirstOfAll.md)
 
-## [Historisches zu C++](./Cpp_Introduction/Markdown/History.md)
+## [Historisches zu C++](./C_Introduction/Markdown/History.md)
 
-## [Agenda](./Cpp_Introduction/Markdown/Agenda.md)
+## [Agenda](./C_Introduction/Markdown/Agenda.md)
 
-## [Fahrplan](./Cpp_Introduction/Markdown/Roadmap.md)
+## [Fahrplan](./C_Introduction/Markdown/Roadmap.md)
 
-## [Aufgaben](./Cpp_Introduction/Exercises/Exercises.md)
+## [Aufgaben](./C_Introduction/Exercises/Exercises.md)
 
-## [Literatur](./Cpp_Introduction/Markdown/Literature.md)
+## [Literatur](./C_Introduction/Markdown/Literature.md)
 
-## [Technische Hinweise](./Cpp_Introduction/Markdown/InstallationGuide.md)
-
-
-<!--
-## [To be Done](./Cpp_Introduction/Markdown/ToBeDone.md)
--->
-
-
-
-
+## [Technische Hinweise](./C_Introduction/Markdown/InstallationGuide.md)

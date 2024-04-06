@@ -10,8 +10,6 @@
 
   * Entstehungsjahr: 1972
   * Entwickler: *Dennis Ritchie*
-  * Motivation: 
-  * Auswirkungen: 
 
 ### Motivation
 

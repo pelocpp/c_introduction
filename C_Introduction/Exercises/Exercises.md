@@ -16,7 +16,7 @@ um diverse Features von C zu demonstrieren.
 ---
 
 
-#### [Teuflische Folge](./Exercises/TeufelFolge/Exercises_TeufelFolge.md)
+#### [Teuflische Folge](./Exercises/TeufelFolge/Exercises_TeuflischeFolge.md)
 
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`

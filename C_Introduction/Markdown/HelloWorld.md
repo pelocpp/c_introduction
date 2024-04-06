@@ -17,7 +17,7 @@ vorhanden bwz. integriert.
 
 Den Quelltext für ein &ldquo;Hello World&rdquo; Programm sieht so aus:
 
-#### Datei [*Main.cpp*](../HelloWorld/Main.cpp):
+#### Datei [*Main.c*](../HelloWorld/Main.cpp):
 
 ```cpp
 #include <iostream>

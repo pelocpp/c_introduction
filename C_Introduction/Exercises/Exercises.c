@@ -3,11 +3,13 @@
 // ===========================================================================
 
 // function prototypes
-extern void exerciseRectangle();
+extern void exercise_teuflische_folge();
+extern void exercise_zinsberechnung();
 
-void testExercises()
+void exercises()
 {
-    // exerciseRectangle();
+    exercise_teuflische_folge();
+    exercise_zinsberechnung();
 }
 
 // ===========================================================================

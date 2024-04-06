@@ -21,10 +21,9 @@
   <ItemGroup>
     <None Include="..\Readme.md" />
     <None Include="Exercises\Exercises.md" />
-    <None Include="Exercises\TeufelFolge\Exercises_TeufelFolge.md" />
+    <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md" />
     <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
     <None Include="Markdown\Agenda.md" />
-    <None Include="Markdown\Excercises.md" />
     <None Include="Markdown\FirstOfAll.md" />
     <None Include="Markdown\HelloWorld.md" />
     <None Include="Markdown\History.md" />
@@ -34,7 +33,13 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercises\Exercises.c" />
+    <ClCompile Include="Exercises\TeuflischeFolge\TeuflischeFolge.c" />
+    <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
     <ClCompile Include="Program.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Markdown\HelloWorld.png" />
+    <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

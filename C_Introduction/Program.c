@@ -14,38 +14,20 @@
 // function prototypes
 //extern void testHelloWorld();
 //extern void testClassesObjects();
-//extern void testProceduralVsOOProgramming();
-//extern void testClassesObjectsImproved();
-//extern void testConstructors();
-//extern void testStatic();
-//extern void testReferences();
-//extern void testParameterPassing();
-//extern void testClassTimeParameterPassing();
-//extern void testOperatorsOverloading();
-//extern void testDynamicMemoryManagement();
-//extern void testRuleOfThree();
-//extern void testNamespaces();
-//extern void testTemplates();
-//extern void testStrings();
-//extern void testExceptions();
-//extern void testStreams();
-//extern void testInheritance();
-//extern void testMoreInheritance();
-//extern void testSTL();
 
-extern void testExercises();
+extern void exercises();
 
 // entry point
 int main()
 {
-    printf("[Collection of introductionary C Code Examples - Copyright (C) 2019-2024 Peter Loos]");
+    printf("[Collection of introductionary C Code Examples - Copyright (C) 2024 Peter Loos]\n");
 
     // main entry points code examples
     //testHelloWorld();
 
-    //testExercises();
+    exercises();
 
-    printf("[Done]");
+    printf("[Done]\n");
     return 0;
 }
 
