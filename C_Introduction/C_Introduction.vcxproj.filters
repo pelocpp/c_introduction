@@ -40,6 +40,18 @@
     <Filter Include="Exercises\Zeichenkettenverarbeitung">
       <UniqueIdentifier>{7990d17c-67c1-4b7f-837f-6c696ad7f03b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Lotto">
+      <UniqueIdentifier>{380d3297-1f68-413f-adc2-83ea87238cc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\ArraySumMinMax">
+      <UniqueIdentifier>{983ac964-0d15-420a-a2e3-ced9e49c7cc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\VariablenDatentypenOperatoren">
+      <UniqueIdentifier>{1a5ec2d6-5b3d-4abf-b862-1aa61f03e7dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\ErsteSchritte">
+      <UniqueIdentifier>{2cf369a3-70c8-49d6-b524-3b1495086b6a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -88,6 +100,18 @@
     <None Include="Exercises\Zeichenkettenverarbeitung\Exercises_Zeichenkettenverarbeitung.md">
       <Filter>Exercises\Zeichenkettenverarbeitung</Filter>
     </None>
+    <None Include="Exercises\Lotto\Exercises_Lotto.md">
+      <Filter>Exercises\Lotto</Filter>
+    </None>
+    <None Include="Exercises\ArraySumMinMax\Exercises_ArraySumMinMax.md">
+      <Filter>Exercises\ArraySumMinMax</Filter>
+    </None>
+    <None Include="Exercises\ErsteSchritte\Exercises_ErsteSchritte.md">
+      <Filter>Exercises\ErsteSchritte</Filter>
+    </None>
+    <None Include="Exercises\VariablenDatentypenOperatoren\Exercises_VariablenDatentypenOperatoren.md">
+      <Filter>Exercises\VariablenDatentypenOperatoren</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -122,6 +146,18 @@
     </ClCompile>
     <ClCompile Include="HelloWorld.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Lotto\Lotto.c">
+      <Filter>Exercises\Lotto</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c">
+      <Filter>Exercises\ArraySumMinMax</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\ErsteSchritte\ErsteSchritte.c">
+      <Filter>Exercises\ErsteSchritte</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\VariablenDatentypenOperatoren\VariablenDatentypenOperatoren.c">
+      <Filter>Exercises\VariablenDatentypenOperatoren</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

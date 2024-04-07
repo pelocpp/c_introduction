@@ -21,8 +21,8 @@ int main()
     printf("[Collection of introductionary C Code Examples - Copyright (C) 2024 Peter Loos]\n");
 
     // main entry points code examples
-    testHelloWorld();
-    // exercises();
+    // testHelloWorld();
+    exercises();
 
     printf("[Done]\n");
     return 0;

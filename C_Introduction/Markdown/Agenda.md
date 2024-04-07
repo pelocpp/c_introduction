@@ -9,7 +9,8 @@
 
 ## Agenda zu C
 
-### Einführung in die Arbeitsweise der Werkzeuge
+
+### [Einführung in die Arbeitsweise der Werkzeuge](HelloWorld.md) 
   * Editor
   * Präprozessor
   * Übersetzer (Compiler)
@@ -88,7 +89,7 @@
   * Speicher reservieren und freigeben: `malloc` und `free`
   * Typkonvertierungen: `atof`, `atoi`, `atol`, `strtod`, `strtol`, `strtoul`
   
-### Die C-Standardbibliothek CRT (C-Runtime-Library)
+### Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)
   * Ein- und Ausgabe auf die Konsole: `printf`
   * Zeichenkettenverarbeitung mit `strlen`, `strcpy` etc.
   * Zufallszahlen: `rand`, `srand`

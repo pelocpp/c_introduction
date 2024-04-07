@@ -20,11 +20,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Readme.md" />
+    <None Include="Exercises\ArraySumMinMax\Exercises_ArraySumMinMax.md" />
+    <None Include="Exercises\ErsteSchritte\Exercises_ErsteSchritte.md" />
     <None Include="Exercises\Exercises.md" />
     <None Include="Exercises\Fakultaet\Exercises_Fakultaet.md" />
+    <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
     <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md" />
     <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md" />
+    <None Include="Exercises\VariablenDatentypenOperatoren\Exercises_VariablenDatentypenOperatoren.md" />
     <None Include="Exercises\Vector\Exercises_Vector.md" />
     <None Include="Exercises\Zeichenkettenverarbeitung\Exercises_Zeichenkettenverarbeitung.md" />
     <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
@@ -37,11 +41,15 @@
     <None Include="Markdown\Roadmap.md" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c" />
+    <ClCompile Include="Exercises\ErsteSchritte\ErsteSchritte.c" />
     <ClCompile Include="Exercises\Exercises.c" />
     <ClCompile Include="Exercises\Fakultaet\Fakultaet.c" />
+    <ClCompile Include="Exercises\Lotto\Lotto.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
     <ClCompile Include="Exercises\TeuflischeFolge\TeuflischeFolge.c" />
     <ClCompile Include="Exercises\Unterprogramme\Unterprogramme.c" />
+    <ClCompile Include="Exercises\VariablenDatentypenOperatoren\VariablenDatentypenOperatoren.c" />
     <ClCompile Include="Exercises\Vector\Main_Vector.c" />
     <ClCompile Include="Exercises\Vector\Vector.c" />
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
