@@ -52,7 +52,7 @@ Was fällt auf?
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*ErsteSchritte.c*](./ErsteSchritte.c)<br />
 

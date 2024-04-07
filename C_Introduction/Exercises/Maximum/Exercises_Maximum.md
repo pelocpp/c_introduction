@@ -23,7 +23,7 @@ um von der Konzeption zu einer Umsetzung in C-Quellcode zu gelangen:
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Maximum.c*](./Maximum.c)<br />
 

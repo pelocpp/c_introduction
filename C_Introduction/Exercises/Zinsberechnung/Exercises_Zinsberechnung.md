@@ -33,7 +33,7 @@ Aus 1000.00 Grundkapital wurden in 10 Jahren 1628.89 Euro.
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Zinsberechnung.c*](./Zinsberechnung.c)<br />
 

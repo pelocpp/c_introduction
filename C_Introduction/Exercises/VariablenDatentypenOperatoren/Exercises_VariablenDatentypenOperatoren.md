@@ -30,7 +30,7 @@ Bitte Sekunden eingeben: <b>978656</b>
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*VariablenDatentypenOperatoren.c*](./VariablenDatentypenOperatoren.c)<br />
 

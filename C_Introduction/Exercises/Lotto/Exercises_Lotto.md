@@ -31,7 +31,7 @@ Ziehung der Lottozahlen:
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Lotto.c*](./Lotto.c)<br />
 

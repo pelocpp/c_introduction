@@ -85,7 +85,7 @@ Maximum: 88
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*ArraySumMinMax.c*](./ArraySumMinMax.c)<br />
 

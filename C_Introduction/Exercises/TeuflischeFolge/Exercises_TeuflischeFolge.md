@@ -56,7 +56,7 @@ Start: 7
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*TeuflischeFolge.c*](./TeuflischeFolge.c)
 

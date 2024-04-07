@@ -23,7 +23,7 @@ Die drei Funktion sollten folgende Schnittstelle haben:
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Zeichenkettenverarbeitung.c*](./Zeichenkettenverarbeitung.c)
 

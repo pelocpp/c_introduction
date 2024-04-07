@@ -19,7 +19,7 @@ Welche Beobachtung machen Sie?
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Fakultaet.c*](./Fakultaet.c)
 

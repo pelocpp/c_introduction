@@ -34,13 +34,17 @@ um diverse Features von C zu demonstrieren.
 
 ##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link11)
 
+#### Zeiger (*Pointer*)
+
+##### [XXX](#link12)
+
 #### Strukturen
 
-##### [Division mit Rest](#link12)
+##### [Division mit Rest](#link13)
 
 #### Verschiedenes
 
-##### [Ziehung der Lottozahlen](#link12)
+##### [Ziehung der Lottozahlen](#link14)
 
 
 ---
@@ -105,7 +109,6 @@ Folgende Aspekte werden betrachtet:
   * Prozentrechnung
   * Ein- und Ausgabe
 
-
 ---
 
 #### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](./Unterprogramme/Exercises_Unterprogramme.md) <a name="link8"></a>
@@ -145,7 +148,16 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link12"></a>
+#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Zeiger/Exercises_Zeiger.md) <a name="link12"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Datentyp Zeiger
+  * Referenzieren und Derefenzieren eines Zeigers
+
+
+---
+
+#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link13"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen
@@ -154,13 +166,12 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link13"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link14"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
   * Zufallszahlen
   * Strukturierung eines Programms
-
 
 ---
 

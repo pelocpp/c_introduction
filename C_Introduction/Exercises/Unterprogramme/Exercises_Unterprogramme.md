@@ -49,7 +49,7 @@ Auch hier kann bei bei der Realisierung die Betrachtung eines Struktogramms hilf
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Unterprogramme.c*](./Unterprogramme.c)<br />
 

@@ -59,7 +59,7 @@ void   vectorPrint(double vector[], int len);
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Vector.h*](./Vector.h)<br />
 [*Vector.c*](./Vector.c)<br />

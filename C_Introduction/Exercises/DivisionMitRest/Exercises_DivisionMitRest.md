@@ -33,7 +33,7 @@ Rest:     5
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*DivisionMitRest.c*](./DivisionMitRest.c)
 

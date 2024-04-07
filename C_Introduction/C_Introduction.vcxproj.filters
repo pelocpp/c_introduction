@@ -58,6 +58,9 @@
     <Filter Include="Exercises\Wahl">
       <UniqueIdentifier>{7e57cc87-ca05-4e4f-8e77-fd05eb5206cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Zeiger">
+      <UniqueIdentifier>{4dbc735c-4f6f-4bda-aa15-e5d1f0c835e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -124,6 +127,12 @@
     <None Include="Exercises\Wahl\Exercises_Wahl.md">
       <Filter>Exercises\Wahl</Filter>
     </None>
+    <None Include="Exercises\Zeiger\Exercises_Zeiger.md">
+      <Filter>Exercises\Zeiger</Filter>
+    </None>
+    <None Include="Exercises\Zeiger\c_pointer_tabelle_stack.svg">
+      <Filter>Exercises\Zeiger</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -176,6 +185,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\Wahl\Wahl.c">
       <Filter>Exercises\Wahl</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Zeiger\Zeiger.c">
+      <Filter>Exercises\Zeiger</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

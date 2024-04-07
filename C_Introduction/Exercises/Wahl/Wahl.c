@@ -6,7 +6,7 @@
 
 void exercise_wahl()
 {
-    int stimmZettel = -1;
+    int stimmzettel = -1;
 
     int stimmenCDU = 0;
     int stimmenFDP = 0;
@@ -29,39 +29,39 @@ void exercise_wahl()
     printf("4 = Linke\n");
     printf("5 = SPD\n");
 
-    while (stimmZettel != 0) {
+    while (stimmzettel != 0) {
 
         printf("Bitte Stimme abgeben: ");   // 1, 2, 3, 4, 5
-        scanf_s("%d", &stimmZettel);
+        scanf_s("%d", &stimmzettel);
 
-        if (stimmZettel == 1) {
+        if (stimmzettel == 1) {
             stimmenCDU++;
         }
-        else if (stimmZettel == 2) {
+        else if (stimmzettel == 2) {
             stimmenFDP++;
         }
-        else if (stimmZettel == 3) {
+        else if (stimmzettel == 3) {
             stimmenGruene++;
         }
-        else if (stimmZettel == 4) {
+        else if (stimmzettel == 4) {
             stimmenLinke++;
         }
-        else if (stimmZettel == 5) {
+        else if (stimmzettel == 5) {
             stimmenSPD++;
         }
-        else if (stimmZettel != 0) {
-            printf("Ungültiger Stimmzettel abgegeben: ");
+        else if (stimmzettel != 0) {
+            printf("Ungültiger stimmzettel abgegeben: ");
             continue;
         }
 
         // Berechne aktuelles Ergebnis:
-        int stimmZettelTotal = stimmenCDU + stimmenFDP + stimmenGruene + stimmenLinke + stimmenSPD;
+        int stimmzettelTotal = stimmenCDU + stimmenFDP + stimmenGruene + stimmenLinke + stimmenSPD;
 
-        prozentCDU = stimmenCDU / (float)stimmZettelTotal * 100;
-        prozentFDP = (float)stimmenFDP / stimmZettelTotal * 100.0f;
-        prozentGruene = (float)stimmenGruene / stimmZettelTotal * 100.0f;
-        prozentLinke = (float)stimmenLinke / stimmZettelTotal * 100.0f;
-        prozentSPD = (float)stimmenSPD / stimmZettelTotal * 100.0f;
+        prozentCDU = stimmenCDU / (float)stimmzettelTotal * 100;
+        prozentFDP = (float)stimmenFDP / stimmzettelTotal * 100.0f;
+        prozentGruene = (float)stimmenGruene / stimmzettelTotal * 100.0f;
+        prozentLinke = (float)stimmenLinke / stimmzettelTotal * 100.0f;
+        prozentSPD = (float)stimmenSPD / stimmzettelTotal * 100.0f;
 
         printf("Aktuelle Hochrechnung:\n");
         printf("CDU/CSU:  %6.2f%%\n", prozentCDU);

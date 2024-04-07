@@ -9,7 +9,7 @@
 Wir simulieren wie folgt eine Wahl:
 
 Der Einfachheit halber ordnen wir &ndash; auf deutsche Verhältnisse bezogen &ndash; einer
-Partei eine ganze Zahl zu (alphabetische Reihenfolge ;)) ):
+Partei in alphabetischer Reihenfolge eine ganze Zahl zu:
 
 ```
 1 = CDU/CSU
@@ -45,7 +45,7 @@ Bei Eingabe des Werts 0 wird das Programm beendet.
 
 ---
 
-## Quellcode der Lösung:
+## Quellcode der Lösung
 
 [*Wahl.c*](./Wahl.c)
 
