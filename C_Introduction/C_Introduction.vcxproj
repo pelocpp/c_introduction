@@ -21,6 +21,7 @@
   <ItemGroup>
     <None Include="..\Readme.md" />
     <None Include="Exercises\ArraySumMinMax\Exercises_ArraySumMinMax.md" />
+    <None Include="Exercises\DivisionMitRest\Exercises_DivisionMitRest.md" />
     <None Include="Exercises\ErsteSchritte\Exercises_ErsteSchritte.md" />
     <None Include="Exercises\Exercises.md" />
     <None Include="Exercises\Fakultaet\Exercises_Fakultaet.md" />
@@ -42,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c" />
+    <ClCompile Include="Exercises\DivisionMitRest\DivisionMitRest.c" />
     <ClCompile Include="Exercises\ErsteSchritte\ErsteSchritte.c" />
     <ClCompile Include="Exercises\Exercises.c" />
     <ClCompile Include="Exercises\Fakultaet\Fakultaet.c" />

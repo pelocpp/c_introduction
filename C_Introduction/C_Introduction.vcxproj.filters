@@ -52,6 +52,9 @@
     <Filter Include="Exercises\ErsteSchritte">
       <UniqueIdentifier>{2cf369a3-70c8-49d6-b524-3b1495086b6a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\DivisionMitRest">
+      <UniqueIdentifier>{8d0c1efb-9fee-4883-a7ae-f5c6b36433f9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -112,6 +115,9 @@
     <None Include="Exercises\VariablenDatentypenOperatoren\Exercises_VariablenDatentypenOperatoren.md">
       <Filter>Exercises\VariablenDatentypenOperatoren</Filter>
     </None>
+    <None Include="Exercises\DivisionMitRest\Exercises_DivisionMitRest.md">
+      <Filter>Exercises\DivisionMitRest</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -158,6 +164,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\VariablenDatentypenOperatoren\VariablenDatentypenOperatoren.c">
       <Filter>Exercises\VariablenDatentypenOperatoren</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\DivisionMitRest\DivisionMitRest.c">
+      <Filter>Exercises\DivisionMitRest</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

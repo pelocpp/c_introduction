@@ -14,11 +14,12 @@ extern void exercise_array_minimum_maximum();
 extern void exercise_vector();
 extern void exercise_zeichenkettenverarbeitung();
 extern void exercise_lotto();
+extern void exercise_division_mit_rest();
 
 void exercises()
 {
-    exercise_erste_schritte();
-    exercise_variablen_datentypen_operatoren();
+    //exercise_erste_schritte();
+    //exercise_variablen_datentypen_operatoren();
     //exercise_teuflische_folge();
     //exercise_zinsberechnung();
     //exercise_maximum();
@@ -28,6 +29,7 @@ void exercises()
     //exercise_vector();
     //exercise_zeichenkettenverarbeitung();
     //exercise_lotto();
+    exercise_division_mit_rest();
 }
 
 // ===========================================================================

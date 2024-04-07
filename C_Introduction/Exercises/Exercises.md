@@ -33,9 +33,13 @@ um diverse Features von C zu demonstrieren.
 
 ##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link10)
 
+#### Strukturen
+
+##### [Division mit Rest](#link11)
+
 #### Verschiedenes
 
-##### [Ziehung der Lottozahlen](#link11)
+##### [Ziehung der Lottozahlen](#link12)
 
 
 ---
@@ -130,7 +134,16 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link11"></a>
+#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link11"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Funktionen
+  * Rückgabetyp Struktur
+
+
+---
+
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link12"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
