@@ -9,6 +9,7 @@ extern void exercise_teuflische_folge();
 extern void exercise_zinsberechnung();
 extern void exercise_maximum();
 extern void exercise_fakultaet();
+extern void exercise_wahl();
 extern void exercise_unterprogramme();
 extern void exercise_array_minimum_maximum();
 extern void exercise_vector();
@@ -24,12 +25,13 @@ void exercises()
     //exercise_zinsberechnung();
     //exercise_maximum();
     //exercise_fakultaet();
+    exercise_wahl();
     //exercise_unterprogramme();
     //exercise_array_minimum_maximum();
     //exercise_vector();
     //exercise_zeichenkettenverarbeitung();
     //exercise_lotto();
-    exercise_division_mit_rest();
+    // exercise_division_mit_rest();
 }
 
 // ===========================================================================

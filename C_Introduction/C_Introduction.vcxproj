@@ -31,6 +31,7 @@
     <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md" />
     <None Include="Exercises\VariablenDatentypenOperatoren\Exercises_VariablenDatentypenOperatoren.md" />
     <None Include="Exercises\Vector\Exercises_Vector.md" />
+    <None Include="Exercises\Wahl\Exercises_Wahl.md" />
     <None Include="Exercises\Zeichenkettenverarbeitung\Exercises_Zeichenkettenverarbeitung.md" />
     <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
     <None Include="Markdown\Agenda.md" />
@@ -54,6 +55,7 @@
     <ClCompile Include="Exercises\VariablenDatentypenOperatoren\VariablenDatentypenOperatoren.c" />
     <ClCompile Include="Exercises\Vector\Main_Vector.c" />
     <ClCompile Include="Exercises\Vector\Vector.c" />
+    <ClCompile Include="Exercises\Wahl\Wahl.c" />
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
     <ClCompile Include="HelloWorld.c" />

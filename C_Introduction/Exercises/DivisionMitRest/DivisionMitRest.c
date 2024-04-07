@@ -23,7 +23,7 @@ struct Result divisioMitRest(int zaehler, int nenner)
 void exercise_division_mit_rest()
 {
     printf("Division mit Rest\n");
-    printf("=================\n");
+    printf("=================\n\n");
 
     printf("17 / 8:\n");
 

@@ -1,0 +1,78 @@
+// =====================================================================================
+// Wahl.c
+// =====================================================================================
+
+#include <stdio.h>
+
+void exercise_wahl()
+{
+    int stimmZettel = -1;
+
+    int stimmenCDU = 0;
+    int stimmenFDP = 0;
+    int stimmenGruene = 0;
+    int stimmenLinke = 0;
+    int stimmenSPD = 0;
+
+    float prozentCDU = 0.0;
+    float prozentFDP = 0.0;
+    float prozentGruene = 0.0;
+    float prozentLinke = 0.0;
+    float prozentSPD = 0.0;
+
+    printf("Simulation Wahl\n");
+    printf("===============\n");
+
+    printf("1 = CDU/CSU\n");
+    printf("2 = FDP\n");
+    printf("3 = Gruene\n");
+    printf("4 = Linke\n");
+    printf("5 = SPD\n");
+
+    while (stimmZettel != 0) {
+
+        printf("Bitte Stimme abgeben: ");   // 1, 2, 3, 4, 5
+        scanf_s("%d", &stimmZettel);
+
+        if (stimmZettel == 1) {
+            stimmenCDU++;
+        }
+        else if (stimmZettel == 2) {
+            stimmenFDP++;
+        }
+        else if (stimmZettel == 3) {
+            stimmenGruene++;
+        }
+        else if (stimmZettel == 4) {
+            stimmenLinke++;
+        }
+        else if (stimmZettel == 5) {
+            stimmenSPD++;
+        }
+        else if (stimmZettel != 0) {
+            printf("Ungültiger Stimmzettel abgegeben: ");
+            continue;
+        }
+
+        // Berechne aktuelles Ergebnis:
+        int stimmZettelTotal = stimmenCDU + stimmenFDP + stimmenGruene + stimmenLinke + stimmenSPD;
+
+        prozentCDU = stimmenCDU / (float)stimmZettelTotal * 100;
+        prozentFDP = (float)stimmenFDP / stimmZettelTotal * 100.0f;
+        prozentGruene = (float)stimmenGruene / stimmZettelTotal * 100.0f;
+        prozentLinke = (float)stimmenLinke / stimmZettelTotal * 100.0f;
+        prozentSPD = (float)stimmenSPD / stimmZettelTotal * 100.0f;
+
+        printf("Aktuelle Hochrechnung:\n");
+        printf("CDU/CSU:  %6.2f%%\n", prozentCDU);
+        printf("FDP:      %6.2f%%\n", prozentFDP);
+        printf("Gruene:   %6.2f%%\n", prozentGruene);
+        printf("Linke:    %6.2f%%\n", prozentLinke);
+        printf("SPD:      %6.2f%%\n", prozentSPD);
+        printf("\n");
+    }
+}
+
+// =====================================================================================
+// End-of-File
+// =====================================================================================

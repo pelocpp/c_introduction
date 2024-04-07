@@ -55,6 +55,9 @@
     <Filter Include="Exercises\DivisionMitRest">
       <UniqueIdentifier>{8d0c1efb-9fee-4883-a7ae-f5c6b36433f9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Wahl">
+      <UniqueIdentifier>{7e57cc87-ca05-4e4f-8e77-fd05eb5206cd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -118,6 +121,9 @@
     <None Include="Exercises\DivisionMitRest\Exercises_DivisionMitRest.md">
       <Filter>Exercises\DivisionMitRest</Filter>
     </None>
+    <None Include="Exercises\Wahl\Exercises_Wahl.md">
+      <Filter>Exercises\Wahl</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -167,6 +173,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\DivisionMitRest\DivisionMitRest.c">
       <Filter>Exercises\DivisionMitRest</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Wahl\Wahl.c">
+      <Filter>Exercises\Wahl</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

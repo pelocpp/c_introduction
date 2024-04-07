@@ -19,23 +19,24 @@ um diverse Features von C zu demonstrieren.
 ##### [Zinsberechnung](#link4)
 ##### [Maximum von drei Zahlen](#link5)
 ##### [Berechnung der Fakultät](#link6)
+##### [Auswertung einer Wahl](#link7)
 
 #### Funktionen und Unterprogramme
 
-##### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](#link7)
+##### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](#link8)
 
 #### Arrays
 
-##### [Arrays auswerten: Summe, Minimum und Maximum](#link8)
-##### [Ein mathematischer Vektor](#link9)
+##### [Arrays auswerten: Summe, Minimum und Maximum](#link9)
+##### [Ein mathematischer Vektor](#link10)
 
 #### Zeichenkettenverarbeitung
 
-##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link10)
+##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link11)
 
 #### Strukturen
 
-##### [Division mit Rest](#link11)
+##### [Division mit Rest](#link12)
 
 #### Verschiedenes
 
@@ -94,10 +95,20 @@ Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen
   * Thematik des Überlaufs
 
+---
+
+#### [Auswertung einer Wahl](./Wahl/Exercises_Wahl.md) <a name="link7"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Datentypen
+  * Kontrollstrukturen
+  * Prozentrechnung
+  * Ein- und Ausgabe
+
 
 ---
 
-#### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](./Unterprogramme/Exercises_Unterprogramme.md) <a name="link7"></a>
+#### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](./Unterprogramme/Exercises_Unterprogramme.md) <a name="link8"></a>
 
 Folgende Aspekte werden betrachtet:
   * Unterprogramme
@@ -106,7 +117,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Arrays auswerten: Summe, Minimum und Maximum](./ArraySumMinMax/Exercises_ArraySumMinMax.md) <a name="link8"></a>
+#### [Arrays auswerten: Summe, Minimum und Maximum](./ArraySumMinMax/Exercises_ArraySumMinMax.md) <a name="link9"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays
@@ -116,7 +127,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link9"></a>
+#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link10"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays
@@ -125,7 +136,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md) <a name="link10"></a>
+#### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md) <a name="link11"></a>
 
 Folgende Aspekte werden betrachtet:
   * Zeichen und Zeichenketten
@@ -134,7 +145,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link11"></a>
+#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link12"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen
@@ -143,7 +154,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link12"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link13"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
