@@ -1,4 +1,4 @@
-# &ldquo;Hello World&rdquo;
+# &bdquo;Hello World&rdquo;
 
 [Zurück](Agenda.md)
 
@@ -7,24 +7,24 @@
 ## Erläuterungen
 
 C ist eine Programmiersprache, die den vom Entwickler geschriebenen Quelltext des Programms (*Editor*)
-zunächst mittels eines *Übersetzers* (*Compilers*)
+zunächst mittels eines *Übersetzers* (*Compiler*)
 in ein ausführbares Programm (*Maschinencode*) umgewandelt.
 
 Erst dann kann das Programm ausgeführt werden.
 
-In der *Visual Studio* Entwicklungsumgebung sind alle notwendigen Werkzeuge (Editor, Übersetzer)
+In der *Visual Studio* Entwicklungsumgebung sind alle notwendigen Werkzeuge (Editor, Übersetzer, Debugger)
 vorhanden bwz. integriert.
 
-Den Quelltext für ein &ldquo;Hello World&rdquo; Programm sieht so aus:
+Der Quelltext für ein &bdquo;Hello World&rdquo; Programm sieht so aus:
 
-#### Datei [*Main.c*](../HelloWorld/Main.cpp):
+#### Datei [*HelloWorld.c*](../HelloWorld.c):
 
 ```cpp
-#include <iostream>
+#include <stdio.h>
 
 int main()
 {
-    std::cout << "Hello World" << std::endl;
+    printf("HelloWorld\n");
 
     return 0;
 }
@@ -35,11 +35,16 @@ und bringen Sie das Programm zum Laufen. Sie sollten dann folgende Ausgabe erhal
 
 <img src="HelloWorld.png" width="600">
 
+*Bemerkung*:<br />
+Ja, Sie haben richtig gelesen: Ein **C++**&ndash;Projekt.
+Die Dateiendungen &ndash; also in unserem Fall &bdquo;*.c*&rdquo;  &ndash; entscheiden darüber,
+welcher Compiler gestartet wird!
+
 ---
 
 ## Quellcode des Beispiels:
 
-[*Main.cpp*](../HelloWorld/Main.cpp)
+[*HelloWorld.c*](../HelloWorld.c)
 
 ---
 

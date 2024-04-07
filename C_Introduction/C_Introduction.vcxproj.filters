@@ -120,6 +120,9 @@
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c">
       <Filter>Exercises\Zeichenkettenverarbeitung</Filter>
     </ClCompile>
+    <ClCompile Include="HelloWorld.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">

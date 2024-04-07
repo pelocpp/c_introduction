@@ -7,7 +7,7 @@
 // function prototypes
 int length(char* quelle);
 void replace(char* quelle, int pos, char ch);
-void insert(char* quelle, int pos, char ch, char* ziel)
+void insert(char* quelle, int pos, char ch, char* ziel);
 
 int length(char* quelle)
 {
