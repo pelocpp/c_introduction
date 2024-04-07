@@ -140,6 +140,15 @@
     <Image Include="Markdown\I_must_learn_C.png">
       <Filter>Markdown</Filter>
     </Image>
+    <Image Include="Markdown\Buch_C_Dummies_Dan_Gokin.png">
+      <Filter>Markdown</Filter>
+    </Image>
+    <Image Include="Markdown\Buch_Dirk_Louis.png">
+      <Filter>Markdown</Filter>
+    </Image>
+    <Image Include="Markdown\Buch_Einstieg_in_C_Thomas_Theis.png">
+      <Filter>Markdown</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">
