@@ -13,7 +13,7 @@ um diverse Features von C zu demonstrieren.
 
 #### Einstieg
 
-##### [Eine Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen](#link1)
+##### [Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen](#link1)
 ##### [Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen](#link2)
 ##### [Teuflische Folge](#link3)
 ##### [Zinsberechnung](#link4)
@@ -24,32 +24,34 @@ um diverse Features von C zu demonstrieren.
 #### Funktionen und Unterprogramme
 
 ##### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](#link8)
+##### [Harmonische Reihe](#link9)
+
 
 #### Arrays
 
-##### [Arrays auswerten: Summe, Minimum und Maximum](#link9)
-##### [Ein mathematischer Vektor](#link10)
+##### [Arrays auswerten: Summe, Minimum und Maximum](#link10)
+##### [Ein mathematischer Vektor](#link11)
 
 #### Zeichenkettenverarbeitung
 
-##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link11)
+##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link12)
 
 #### Zeiger (*Pointer*)
 
-##### [XXX](#link12)
+##### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](#link13)
 
 #### Strukturen
 
-##### [Division mit Rest](#link13)
+##### [Division mit Rest](#link14)
 
 #### Verschiedenes
 
-##### [Ziehung der Lottozahlen](#link14)
+##### [Ziehung der Lottozahlen](#link15)
 
 
 ---
 
-#### [Eine Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen](./ErsteSchritte/Exercises_ErsteSchritte.md) <a name="link1"></a>
+#### [Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen](./ErsteSchritte/Exercises_ErsteSchritte.md) <a name="link1"></a>
 
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`
@@ -120,7 +122,16 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Arrays auswerten: Summe, Minimum und Maximum](./ArraySumMinMax/Exercises_ArraySumMinMax.md) <a name="link9"></a>
+#### [Harmonische Reihe](./HarmonischeReihe/Exercises_HarmonischeReihe.md) <a name="link9"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Unterprogramme
+  * Übergabe von Parametern an Unterprogramme
+  * Rückgabe von Ergebnissen aus einem Unterprogramm
+
+---
+
+#### [Arrays auswerten: Summe, Minimum und Maximum](./ArraySumMinMax/Exercises_ArraySumMinMax.md) <a name="link10"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays
@@ -130,7 +141,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link10"></a>
+#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link11"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays
@@ -139,7 +150,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md) <a name="link11"></a>
+#### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md) <a name="link12"></a>
 
 Folgende Aspekte werden betrachtet:
   * Zeichen und Zeichenketten
@@ -148,7 +159,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Zeiger/Exercises_Zeiger.md) <a name="link12"></a>
+#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Zeiger/Exercises_Zeiger.md) <a name="link13"></a>
 
 Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger
@@ -157,7 +168,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link13"></a>
+#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link14"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen
@@ -166,7 +177,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link14"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link15"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme

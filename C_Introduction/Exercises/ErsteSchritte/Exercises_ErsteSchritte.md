@@ -1,4 +1,4 @@
-# Eine Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen
+# Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen
 
 [Zurück](./../Exercises.md)
 
