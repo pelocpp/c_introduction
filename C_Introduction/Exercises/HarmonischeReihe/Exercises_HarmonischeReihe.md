@@ -21,7 +21,7 @@ Testen Sie Ihre Realisierung mit unterschiedlichen Werten für *N*:
 *Abbildung* 1: Reihenentwicklung der harmonischen Reihe.
 
 Die Berechnung der harmonischen Reihe ist in einer Funktion vorzunehmen.
-Das Ergebnis der Berechnung ist durch einen geeigneten Rücgabetyp zurückzuliefern.
+Das Ergebnis der Berechnung ist mit einem geeigneten Rückgabetyp zurückzuliefern.
 
 Untersuchen Sie, was für große Werte von *N* geschieht.
 
@@ -35,7 +35,7 @@ Untersuchen Sie, was für große Werte von *N* geschieht.
 
 ## Quellcode der Lösung
 
-[*Wahl.c*](./HarmonischeReihe.c)
+[*HarmonischeReihe.c*](./HarmonischeReihe.c)
 
 ---
 

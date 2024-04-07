@@ -10,9 +10,7 @@ extern void exercise_zinsberechnung();
 extern void exercise_maximum();
 extern void exercise_fakultaet();
 extern void exercise_wahl();
-
 extern void exercise_harmonische_reihe();
-
 extern void exercise_unterprogramme();
 extern void exercise_array_minimum_maximum();
 extern void exercise_vector();
@@ -30,9 +28,7 @@ void exercises()
     //exercise_maximum();
     //exercise_fakultaet();
     //exercise_wahl();
-    // 
     exercise_harmonische_reihe();
-    // 
     //exercise_unterprogramme();
     //exercise_array_minimum_maximum();
     //exercise_vector();
