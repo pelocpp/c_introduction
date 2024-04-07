@@ -38,7 +38,7 @@ und notieren Sie dabei die aktuellen Werte der Variablen in dieser Tabelle,
 um auf diese Weise die jeweiligen `printf`-Anweisungen nachvollziehen zu können.
 
 
-<img src="c_pointer_tabelle_stack.svg" width="300">
+<img src="c_pointer_tabelle_stack.svg" width="450">
 
 *Abbildung* 1: &bdquo;*Variablentabelle*&rdquo; zum Verifizieren der Programmausführung.
 
