@@ -60,7 +60,7 @@
   * Funktionsdeklaration und Aufruf
   * Rückgabewert und Parameter
   * Lokale und globale Variablen
-  * Funktion und der *Stack* (*Stapel*)
+  * Funktionen und der *Stack* (*Stapel*)
 
 ### Zeichen und Zeichenketten
   * Definition von Zeichen (Datentyp `char`) und Zeichenketten (Datentyp `const char*`)
