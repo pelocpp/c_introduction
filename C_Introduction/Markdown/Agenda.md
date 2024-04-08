@@ -87,12 +87,12 @@
   * Lebensdauer von Variablen in einem C&ndash;Programm
   * Stack und Heap (Stapel und Halde)
   * Speicher reservieren und freigeben: `malloc` und `free`
-  * Typkonvertierungen: `atof`, `atoi`, `atol`, `strtod`, `strtol`, `strtoul`
   
 ### Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)
   * Ein- und Ausgabe auf die Konsole: `printf`
   * Zeichenkettenverarbeitung mit `strlen`, `strcpy` etc.
   * Zufallszahlen: `rand`, `srand`
+  * Typkonvertierungen: `atof`, `atoi`, `atol`, `strtod`, `strtol`, `strtoul`
 
 ---
 
