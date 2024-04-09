@@ -33,6 +33,8 @@
     <None Include="Exercises\VariablenDatentypenOperatoren\Exercises_VariablenDatentypenOperatoren.md" />
     <None Include="Exercises\Vector\Exercises_Vector.md" />
     <None Include="Exercises\Wahl\Exercises_Wahl.md" />
+    <None Include="Exercises\Zeichenkettenverarbeitung\c_string_append.svg" />
+    <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\Exercises_Zeichenkettenverarbeitung.md" />
     <None Include="Exercises\Zeiger\c_pointer_tabelle_stack.svg" />
     <None Include="Exercises\Zeiger\Exercises_Zeiger.md" />

@@ -7,7 +7,8 @@
 // function prototypes
 int length(char* quelle);
 void replace(char* quelle, int pos, char ch);
-void insert(char* quelle, int pos, char ch, char* ziel);
+void insertChar(char* quelle, int pos, char ch, char* ziel);
+void append(char* quelle, int pos, char ch, char* ziel);
 
 int length(char* quelle)
 {
@@ -54,7 +55,7 @@ void exercise_zeichenkettenverarbeitung_01()
 
 // =====================================================
 
-void insert(char* quelle, int pos, char ch, char* ziel) {
+void insertChar(char* quelle, int pos, char ch, char* ziel) {
 
 	int lenQuelle = length(quelle);
 	if (pos > lenQuelle) {
@@ -91,9 +92,54 @@ void exercise_zeichenkettenverarbeitung_02()
 	printf("Ziel:   %s\n", ziel);
 }
 
+// =====================================================
+
+void append(char* ergebnis, int len, char* ziel, char* quelle)
+{
+	int lenZiel = strLength(ziel);
+
+	int lenQuelle = strLength(quelle);
+
+	if (len < lenZiel + lenQuelle + 1) {
+		printf("Puffer zu klein!\n");
+	}
+
+	// Ziel an den Anfang von Ergebnis kopieren
+	for (int i = 0; i < lenZiel; i++) {
+
+		ergebnis[i] = ziel[i];
+	}
+
+	// dahinter Quelle kopieren
+	for (int k = 0; k < lenQuelle; k++) {
+		ergebnis[lenZiel + k] = quelle[k];
+	}
+
+	ergebnis[lenZiel + lenQuelle] = '\0';
+}
+
+void exercise_zeichenkettenverarbeitung_03()
+{
+	char* kette1 = "ZIEL";
+
+	char* kette2 = "QUELLE";
+
+	char ergebnis[100];
+	// Optione: dynamischer Speicher 
+
+	strAppend(ergebnis, 100, kette1, kette2);   // "ZIELKETTE" 
+
+	printf("Ergebnis: %s\n", ergebnis);  // <=== "ZIELKETTE"  !!!
+}
+
+
+// =====================================================
+
+
 void exercise_zeichenkettenverarbeitung()
 {
 	exercise_zeichenkettenverarbeitung_01();
+	exercise_zeichenkettenverarbeitung_02();
 	exercise_zeichenkettenverarbeitung_02();
 }
 

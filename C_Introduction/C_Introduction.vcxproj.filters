@@ -139,6 +139,12 @@
     <None Include="Exercises\HarmonischeReihe\Exercises_HarmonischeReihe.md">
       <Filter>Exercises\HarmonischeReihe</Filter>
     </None>
+    <None Include="Exercises\Zeichenkettenverarbeitung\c_string_append.svg">
+      <Filter>Exercises\Zeichenkettenverarbeitung</Filter>
+    </None>
+    <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg">
+      <Filter>Exercises\Zeichenkettenverarbeitung</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
