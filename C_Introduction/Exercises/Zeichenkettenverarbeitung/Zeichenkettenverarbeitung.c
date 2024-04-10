@@ -145,7 +145,7 @@ void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
 
 	int lenToInsert = strLength(toInsert);
 
-	if (lenQuelle + lenToInsert > lenZiel) { 
+	if (lenQuelle + lenToInsert + 1 >= lenZiel) { 
 		printf("Error");
 		return;
 	}
@@ -174,13 +174,15 @@ void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
 
 void exercise_zeichenkettenverarbeitung_insert()
 {
-	char* kette1 = "12345";
+	char* kette1 = "ABCDE";
 
-	char* kette2 = "ABC";
+	char* kette2 = "123";
 
-	char ergebnis[100];
+	// Beispiel: "ABCDE" = 5, "123" = 3 , Null = 1 ==> 
 
-	strInsert(kette1, 2, kette2, ergebnis, 100);
+	char ergebnis[9];  // das ist ein Feld von Zeichen ==> Zeichenkette
+
+	strInsert(kette1, 2, kette2, ergebnis, 9);
 
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
 }
@@ -191,7 +193,7 @@ void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel)
 {
 	int lenQuelle = strLength(quelle);
 
-	if (lenQuelle - pos > lenZiel) {
+	if (lenQuelle - count > lenZiel) {
 		printf("Error");
 		return;
 	}
@@ -236,8 +238,8 @@ void exercise_zeichenkettenverarbeitung()
 	//exercise_zeichenkettenverarbeitung_02();
 	//exercise_zeichenkettenverarbeitung_02();
 
-//	exercise_zeichenkettenverarbeitung_insert();
-	exercise_zeichenkettenverarbeitung_remove();
+	exercise_zeichenkettenverarbeitung_insert();
+	// exercise_zeichenkettenverarbeitung_remove();
 }
 
 // =====================================================================================
