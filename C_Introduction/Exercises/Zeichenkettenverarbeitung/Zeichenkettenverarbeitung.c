@@ -5,12 +5,18 @@
 #include <stdio.h>
 
 // function prototypes
-int length(char* quelle);
-void replace(char* quelle, int pos, char ch);
-void insertChar(char* quelle, int pos, char ch, char* ziel);
-void append(char* quelle, int pos, char ch, char* ziel);
+int  strLength(char* quelle);
 
-int length(char* quelle)
+void chrReplace(char* quelle, int pos, char ch);
+void chrRemove(char* quelle, int pos, char ch, char* ziel);
+
+void strAppend(char* ergebnis, int len, char* ziel, char* quelle);
+void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel);
+void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel);
+
+// =====================================================================================
+
+int strLength(char* quelle)
 {
 	int result = 0;
 	int pos = 0;
@@ -25,9 +31,9 @@ int length(char* quelle)
 
 // =====================================================================================
 
-void replace(char* quelle, int pos, char ch) {
+void chrReplace(char* quelle, int pos, char ch) {
 
-	int lenQuelle = length(quelle);
+	int lenQuelle = strLength(quelle);
 
 	if (pos >= lenQuelle) {
 		return;
@@ -49,15 +55,15 @@ void exercise_zeichenkettenverarbeitung_01()
 
 	printf("Quelle: Vorher:  %s\n", quelle);
 
-	replace(quelle, 2, '!');
+	chrReplace(quelle, 2, '!');
 	printf("Quelle: Nachher: %s\n", quelle);
 }
 
 // =====================================================
 
-void insertChar(char* quelle, int pos, char ch, char* ziel) {
+void chrRemove(char* quelle, int pos, char ch, char* ziel) {
 
-	int lenQuelle = length(quelle);
+	int lenQuelle = strLength(quelle);
 	if (pos > lenQuelle) {
 		return;
 	}
@@ -88,13 +94,13 @@ void exercise_zeichenkettenverarbeitung_02()
 	printf("Quelle: %s\n", quelle);
 
 	char ziel[100];
-	insert(quelle, 2, '!', ziel);
+	chrRemove(quelle, 2, '!', ziel);
 	printf("Ziel:   %s\n", ziel);
 }
 
 // =====================================================
 
-void append(char* ergebnis, int len, char* ziel, char* quelle)
+void strAppend(char* ergebnis, int len, char* ziel, char* quelle)
 {
 	int lenZiel = strLength(ziel);
 
@@ -118,29 +124,120 @@ void append(char* ergebnis, int len, char* ziel, char* quelle)
 	ergebnis[lenZiel + lenQuelle] = '\0';
 }
 
-void exercise_zeichenkettenverarbeitung_03()
+void exercise_zeichenkettenverarbeitung_append()
 {
 	char* kette1 = "ZIEL";
 
 	char* kette2 = "QUELLE";
 
 	char ergebnis[100];
-	// Optione: dynamischer Speicher 
 
 	strAppend(ergebnis, 100, kette1, kette2);   // "ZIELKETTE" 
 
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "ZIELKETTE"  !!!
 }
 
+// ====================================================================
+
+void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
+{
+	int lenQuelle = strLength(quelle);
+
+	int lenToInsert = strLength(toInsert);
+
+	if (lenQuelle + lenToInsert > lenZiel) { 
+		printf("Error");
+		return;
+	}
+
+	// copy first part into ziel
+	for (int i = 0; i < pos; i++) {
+
+		ziel[i] = quelle[i];
+	}
+
+	// copy string to insert into ziel
+	for (int i = 0; i < lenToInsert; i++) {
+
+		ziel[pos + i] = toInsert[i];
+	}
+
+	// copy remainder of quelle into ziel
+	for (int i = pos; i < lenQuelle; i++) {
+
+		ziel[lenToInsert + i] = quelle[i];
+	}
+
+	// terminate ziel
+	ziel[lenQuelle + lenToInsert] = '\0';
+}
+
+void exercise_zeichenkettenverarbeitung_insert()
+{
+	char* kette1 = "12345";
+
+	char* kette2 = "ABC";
+
+	char ergebnis[100];
+
+	strInsert(kette1, 2, kette2, ergebnis, 100);
+
+	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
+}
+
+// =====================================================
+
+void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel)
+{
+	int lenQuelle = strLength(quelle);
+
+	if (lenQuelle - pos > lenZiel) {
+		printf("Error");
+		return;
+	}
+
+	// copy first part into ziel
+	for (int i = 0; i < pos; i++) {
+
+		ziel[i] = quelle[i];
+	}
+
+	// copy second part into ziel
+	for (int i = pos + count; i < lenQuelle; i++) {
+
+		ziel[i - count] = quelle[i];
+	}
+
+	// terminate ziel
+	ziel[lenQuelle - pos + 1] = '\0';
+}
+
+void exercise_zeichenkettenverarbeitung_remove()
+{
+	char* kette = "ABCD123EFGHIJK";
+
+	char ergebnis[100];
+	
+	strRemove(kette, 4, 3, ergebnis, 100);
+
+	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
+}
+
+
 
 // =====================================================
 
 
+
+
 void exercise_zeichenkettenverarbeitung()
 {
-	exercise_zeichenkettenverarbeitung_01();
-	exercise_zeichenkettenverarbeitung_02();
-	exercise_zeichenkettenverarbeitung_02();
+	//exercise_zeichenkettenverarbeitung_01();
+	//exercise_zeichenkettenverarbeitung_02();
+	//exercise_zeichenkettenverarbeitung_02();
+
+//	exercise_zeichenkettenverarbeitung_insert();
+	exercise_zeichenkettenverarbeitung_remove();
 }
 
 // =====================================================================================

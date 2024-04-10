@@ -9,7 +9,7 @@
 Entwerfen Sie ein Programm zur Berechnung der Summe sowie der kleinsten und größten Zahl
 in einem ganzzahligen Feld.
 
-Das Feld &ndash; mit einer überschaubaren Länge von beispielsweise 10  &ndash;
+Das Feld &ndash; mit einer überschaubaren Länge von beispielsweise 10 Elementen &ndash;
 ist dabei zunächst mit Zufallszahlen im Bereich von 1 bis 100 (einschließlich) vorzubelegen.
 
 Zufallszahlen können Sie in C so erzeugen:
