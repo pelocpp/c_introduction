@@ -43,7 +43,7 @@ Das Einfügen eines neuen Elements sieht so aus:
 
 ## Quellcode der Lösung
 
-[*LinkedList.c*](./LinkedList.c)
+[*VerketteteListe.c*](./VerketteteListe.c)
 
 ---
 
