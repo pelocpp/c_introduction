@@ -9,66 +9,53 @@ um diverse Features von C zu demonstrieren.
 
 ---
 
-#### Einstieg
-
-[**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](#link1)
-[**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](#link2)
-[**Teuflische Folge**](#link3)
-[**Zinsberechnung**](#link4)
-[**Maximum von drei Zahlen**](#link5)
-[**Berechnung der Fakultät**](#link6)
-[**Auswertung einer Wahl**](#link7)
-
----
-
 ### Inhaltsverzeichnis
 
 #### Einstieg
 
-##### [Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen](#link1)
-##### [Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen](#link2)
-##### [Teuflische Folge](#link3)
-##### [Zinsberechnung](#link4)
-##### [Maximum von drei Zahlen](#link5)
-##### [Berechnung der Fakultät](#link6)
-##### [Auswertung einer Wahl](#link7)
+[**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](#link1)<br />
+[**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](#link2)<br />
+[**Teuflische Folge**](#link3)<br />
+[**Zinsberechnung**](#link4)<br />
+[**Maximum von drei Zahlen**](#link5)<br />
+[**Berechnung der Fakultät**](#link6)<br />
+[**Auswertung einer Wahl**](#link7)
 
 #### Funktionen und Unterprogramme
 
-##### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](#link8)
-##### [Harmonische Reihe](#link9)
-
+[**Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr**](#link8)<br />
+[**Harmonische Reihe**](#link9)
 
 #### Arrays
 
-##### [Arrays auswerten: Summe, Minimum und Maximum](#link10)
-##### [Ein mathematischer Vektor](#link11)
+[**Arrays auswerten: Summe, Minimum und Maximum**](#link10)<br />
+[**Ein mathematischer Vektor**](#link11)
 
 #### Zeichenkettenverarbeitung
 
-##### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](#link12)
+[**Elementare Zeichenketteroperationen: `length`, `replace` und `insert`**](#link12)
 
 #### Zeiger (*Pointer*)
 
-##### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](#link13)
+[**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](#link13)
 
 #### Strukturen
 
-##### [Division mit Rest](#link14)
+[**Division mit Rest**](#link14)
 
 #### Dynamische Speicherverwaltung
 
-##### [Verkettete Liste (*Linked List*)](#link15)
+[**Verkettete Liste (*Linked List*)**](#link15)
 
 
 #### CRT - *C-Runtime-Library*
 
-##### [Zeichenstatistik zu einem Text](#link16)
+[**Zeichenstatistik zu einem Text**](#link16)
 
 
 #### Verschiedenes
 
-##### [Ziehung der Lottozahlen](#link17)
+[**Ziehung der Lottozahlen**](#link17)
 
 
 ---
