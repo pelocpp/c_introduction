@@ -9,6 +9,18 @@ um diverse Features von C zu demonstrieren.
 
 ---
 
+#### Einstieg
+
+[**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](#link1)
+[**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](#link2)
+[**Teuflische Folge**](#link3)
+[**Zinsberechnung**](#link4)
+[**Maximum von drei Zahlen**](#link5)
+[**Berechnung der Fakultät**](#link6)
+[**Auswertung einer Wahl**](#link7)
+
+---
+
 ### Inhaltsverzeichnis
 
 #### Einstieg
