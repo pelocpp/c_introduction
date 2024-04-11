@@ -198,8 +198,8 @@ Folgende Aspekte werden betrachtet:
 #### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link16"></a>
 
 Folgende Aspekte werden betrachtet:
-  * `fopen`, `fclose`
-  * To be done ...
+  * `fopen`, `fclose`, `fgets`
+  * `islower`, `isupper`, `isdigit`
 
 ---
 
