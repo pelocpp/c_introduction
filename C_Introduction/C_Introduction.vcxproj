@@ -37,7 +37,7 @@
     <None Include="Exercises\VerketteteListe\c_linked_list_03.svg" />
     <None Include="Exercises\VerketteteListe\c_linked_list_04.svg" />
     <None Include="Exercises\VerketteteListe\c_linked_list_10.svg" />
-    <None Include="Exercises\VerketteteListe\Exercises_LinkedList.md" />
+    <None Include="Exercises\VerketteteListe\Exercises_VerketteteListe.md" />
     <None Include="Exercises\Wahl\Exercises_Wahl.md" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_append.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg" />
@@ -67,7 +67,7 @@
     <ClCompile Include="Exercises\VariablenDatentypenOperatoren\VariablenDatentypenOperatoren.c" />
     <ClCompile Include="Exercises\Vector\Main_Vector.c" />
     <ClCompile Include="Exercises\Vector\Vector.c" />
-    <ClCompile Include="Exercises\VerketteteListe\LinkedList.c" />
+    <ClCompile Include="Exercises\VerketteteListe\VerketteteListe.c" />
     <ClCompile Include="Exercises\Wahl\Wahl.c" />
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
     <ClCompile Include="Exercises\Zeiger\Zeiger.c" />
@@ -81,6 +81,7 @@
     <Image Include="Exercises\Maximum\Struktogramm_Maximum.png" />
     <Image Include="Exercises\Unterprogramme\Struktogramm_Schaltjahr.png" />
     <Image Include="Markdown\Buch_C_Dummies_Dan_Gokin.png" />
+    <Image Include="Markdown\Buch_C_von_A_bis_Z_Juergen_Wolf.png" />
     <Image Include="Markdown\Buch_Dirk_Louis.png" />
     <Image Include="Markdown\Buch_Einstieg_in_C_Thomas_Theis.png" />
     <Image Include="Markdown\Embedded_Cpp.jpg" />

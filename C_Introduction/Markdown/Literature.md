@@ -26,7 +26,18 @@
     Hanser Fachbuch (9. April 2018), 490 Seiten. Sprache: Deutsch. ISBN-13: 978-3446445970, ISBN-10: 3446445978.
    
 
-    <img src="Buch_Dirk_Louis.png" width="150">
+    <img src="Buch_Einstieg_in_C_Thomas_Theis.png" width="150">
+
+---
+
+## C Online Tutorial
+
+  * [Rheinwerk <openbook> &ndash; C von A bis Z](https://openbook.rheinwerk-verlag.de/c_von_a_bis_z/index.htm)
+
+  * Jürgen Wolf, &bdquo;*C von A bis Z &ndash; Das umfassende Handbuch*&rdquo;.</br>
+    Rheinwerk Computing (3. Auflage, 25. September 2009), 1190 Seiten. Sprache: Deutsch. ISBN-13: 978-3836214117, ISBN-10: 3836214113.
+   
+    <img src="Buch_C_von_A_bis_Z_Juergen_Wolf.png" width="150"><br />
 
 ---
 

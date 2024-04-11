@@ -148,7 +148,7 @@
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg">
       <Filter>Exercises\Zeichenkettenverarbeitung</Filter>
     </None>
-    <None Include="Exercises\VerketteteListe\Exercises_LinkedList.md">
+    <None Include="Exercises\VerketteteListe\Exercises_VerketteteListe.md">
       <Filter>Exercises\VerketteteListe</Filter>
     </None>
     <None Include="Exercises\VerketteteListe\c_linked_list_01.svg">
@@ -225,7 +225,7 @@
     <ClCompile Include="Exercises\HarmonischeReihe\HarmonischeReihe.c">
       <Filter>Exercises\HarmonischeReihe</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\VerketteteListe\LinkedList.c">
+    <ClCompile Include="Exercises\VerketteteListe\VerketteteListe.c">
       <Filter>Exercises\VerketteteListe</Filter>
     </ClCompile>
   </ItemGroup>
@@ -262,6 +262,9 @@
     </Image>
     <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_02.png">
       <Filter>Exercises\HarmonischeReihe</Filter>
+    </Image>
+    <Image Include="Markdown\Buch_C_von_A_bis_Z_Juergen_Wolf.png">
+      <Filter>Markdown</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
