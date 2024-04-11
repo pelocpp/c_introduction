@@ -18,6 +18,7 @@ extern void exercise_zeichenkettenverarbeitung();
 extern void exercise_pointer();
 extern void exercise_lotto();
 extern void exercise_division_mit_rest();
+extern void exercise_linked_list();
 
 void exercises()
 {
@@ -32,10 +33,11 @@ void exercises()
     //exercise_unterprogramme();
     //exercise_array_minimum_maximum();
     //exercise_vector();
-    exercise_zeichenkettenverarbeitung();
+    //exercise_zeichenkettenverarbeitung();
     //exercise_pointer();
     //exercise_lotto();
     //exercise_division_mit_rest();
+    exercise_linked_list();
 }
 
 // ===========================================================================

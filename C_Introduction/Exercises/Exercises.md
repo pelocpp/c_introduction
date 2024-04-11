@@ -44,9 +44,13 @@ um diverse Features von C zu demonstrieren.
 
 ##### [Division mit Rest](#link14)
 
+#### Dynamische Speicherverwaltung
+
+##### [Verkettete Liste (*Linked List*)](#link15)
+
 #### Verschiedenes
 
-##### [Ziehung der Lottozahlen](#link15)
+##### [Ziehung der Lottozahlen](#link16)
 
 
 ---
@@ -174,10 +178,19 @@ Folgende Aspekte werden betrachtet:
   * Funktionen
   * Rückgabetyp Struktur
 
+---
+
+
+#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link15"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Rekursive Strukturen
+  * `malloc`, `calloc` und `free`
+
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link15"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link16"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme

@@ -32,6 +32,12 @@
     <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md" />
     <None Include="Exercises\VariablenDatentypenOperatoren\Exercises_VariablenDatentypenOperatoren.md" />
     <None Include="Exercises\Vector\Exercises_Vector.md" />
+    <None Include="Exercises\VerketteteListe\c_linked_list_01.svg" />
+    <None Include="Exercises\VerketteteListe\c_linked_list_02.svg" />
+    <None Include="Exercises\VerketteteListe\c_linked_list_03.svg" />
+    <None Include="Exercises\VerketteteListe\c_linked_list_04.svg" />
+    <None Include="Exercises\VerketteteListe\c_linked_list_10.svg" />
+    <None Include="Exercises\VerketteteListe\Exercises_LinkedList.md" />
     <None Include="Exercises\Wahl\Exercises_Wahl.md" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_append.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg" />
@@ -61,6 +67,7 @@
     <ClCompile Include="Exercises\VariablenDatentypenOperatoren\VariablenDatentypenOperatoren.c" />
     <ClCompile Include="Exercises\Vector\Main_Vector.c" />
     <ClCompile Include="Exercises\Vector\Vector.c" />
+    <ClCompile Include="Exercises\VerketteteListe\LinkedList.c" />
     <ClCompile Include="Exercises\Wahl\Wahl.c" />
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
     <ClCompile Include="Exercises\Zeiger\Zeiger.c" />

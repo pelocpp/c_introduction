@@ -64,6 +64,9 @@
     <Filter Include="Exercises\HarmonischeReihe">
       <UniqueIdentifier>{e2ef7e7f-6e82-4c60-894f-7d90d3d68c66}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\VerketteteListe">
+      <UniqueIdentifier>{e339ef86-d3ef-43d5-b697-a21621602d5c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -145,6 +148,24 @@
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg">
       <Filter>Exercises\Zeichenkettenverarbeitung</Filter>
     </None>
+    <None Include="Exercises\VerketteteListe\Exercises_LinkedList.md">
+      <Filter>Exercises\VerketteteListe</Filter>
+    </None>
+    <None Include="Exercises\VerketteteListe\c_linked_list_01.svg">
+      <Filter>Exercises\VerketteteListe</Filter>
+    </None>
+    <None Include="Exercises\VerketteteListe\c_linked_list_02.svg">
+      <Filter>Exercises\VerketteteListe</Filter>
+    </None>
+    <None Include="Exercises\VerketteteListe\c_linked_list_03.svg">
+      <Filter>Exercises\VerketteteListe</Filter>
+    </None>
+    <None Include="Exercises\VerketteteListe\c_linked_list_04.svg">
+      <Filter>Exercises\VerketteteListe</Filter>
+    </None>
+    <None Include="Exercises\VerketteteListe\c_linked_list_10.svg">
+      <Filter>Exercises\VerketteteListe</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -203,6 +224,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\HarmonischeReihe\HarmonischeReihe.c">
       <Filter>Exercises\HarmonischeReihe</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\VerketteteListe\LinkedList.c">
+      <Filter>Exercises\VerketteteListe</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
