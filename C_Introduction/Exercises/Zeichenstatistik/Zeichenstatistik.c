@@ -6,14 +6,15 @@
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #define   BUF_SIZE       512
 #define   NUM_LETTERS    26
 #define   NUM_DIGITS     10
 
-#define   FILE_NAME      "P:\\GC\\Exercises_SourceCode\\"\
-                         "ZeichenStatistik\\ZeichenStatistik"\
-                         "\\ZeichenStatistik.c"
+#define   FILE_NAME      "C:\\Development\\GitRepositoryCPlusPlus\\"\
+                         "C_Introduction\\C_Introduction\\Exercises\\"\
+                         "Zeichenstatistik\\Zeichenstatistik.c"
 
 // function prototypes
 void initLineStatistics(
@@ -24,7 +25,7 @@ void initLineStatistics(
 
 void computeLineStatistics(
     char line[],   // line buffer
-    int len,       // length of line buffer
+    size_t len,    // length of line buffer
     int lowers[],  // array of lower capital letters
     int uppers[],  // array of upper capital letters
     int digits[]   // array of digits
@@ -42,11 +43,11 @@ void closeFile(FILE* fp);
 // implementation of functions
 void
 computeLineStatistics(
-    char line[],
-    int len,
-    int lowers[],
-    int uppers[],
-    int digits[])
+    char   line[],
+    size_t len,
+    int    lowers[],
+    int    uppers[],
+    int    digits[])
 {
     int i;
 
@@ -136,7 +137,6 @@ void closeFile(FILE* fp)
     fclose(fp);
 }
 
-
 void exercise_zeichenstatistik()
 {
     // open file
@@ -159,10 +159,8 @@ void exercise_zeichenstatistik()
     lineCount = 0;
     while (fgets(buf, BUF_SIZE, fp))
     {
-        int len;
-
         // need length of line
-        len = strlen(buf);
+        size_t len = strlen(buf);
 
         computeLineStatistics(
             buf,
