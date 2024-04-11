@@ -67,6 +67,9 @@
     <Filter Include="Exercises\VerketteteListe">
       <UniqueIdentifier>{e339ef86-d3ef-43d5-b697-a21621602d5c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Zeichenstatistik">
+      <UniqueIdentifier>{73d57293-8394-41a6-b3f6-7a6808cfa770}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -166,6 +169,9 @@
     <None Include="Exercises\VerketteteListe\c_linked_list_10.svg">
       <Filter>Exercises\VerketteteListe</Filter>
     </None>
+    <None Include="Exercises\Zeichenstatistik\Exercises_Zeichenstatistik.md">
+      <Filter>Exercises\Zeichenstatistik</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -227,6 +233,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\VerketteteListe\VerketteteListe.c">
       <Filter>Exercises\VerketteteListe</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Zeichenstatistik\Zeichenstatistik.c">
+      <Filter>Exercises\Zeichenstatistik</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

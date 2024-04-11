@@ -42,6 +42,7 @@
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_append.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\Exercises_Zeichenkettenverarbeitung.md" />
+    <None Include="Exercises\Zeichenstatistik\Exercises_Zeichenstatistik.md" />
     <None Include="Exercises\Zeiger\c_pointer_tabelle_stack.svg" />
     <None Include="Exercises\Zeiger\Exercises_Zeiger.md" />
     <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
@@ -70,6 +71,7 @@
     <ClCompile Include="Exercises\VerketteteListe\VerketteteListe.c" />
     <ClCompile Include="Exercises\Wahl\Wahl.c" />
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
+    <ClCompile Include="Exercises\Zeichenstatistik\Zeichenstatistik.c" />
     <ClCompile Include="Exercises\Zeiger\Zeiger.c" />
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
     <ClCompile Include="HelloWorld.c" />

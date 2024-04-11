@@ -48,9 +48,15 @@ um diverse Features von C zu demonstrieren.
 
 ##### [Verkettete Liste (*Linked List*)](#link15)
 
+
+#### CRT - *C-Runtime-Library*
+
+##### [Zeichenstatistik zu einem Text](#link16)
+
+
 #### Verschiedenes
 
-##### [Ziehung der Lottozahlen](#link16)
+##### [Ziehung der Lottozahlen](#link17)
 
 
 ---
@@ -190,7 +196,15 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link16"></a>
+#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link16"></a>
+
+Folgende Aspekte werden betrachtet:
+  * `fopen`, `fclose`
+  * To be done ...
+
+---
+
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link17"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
