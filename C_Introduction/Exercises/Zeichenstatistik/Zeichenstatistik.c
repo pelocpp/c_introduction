@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <errno.h>
 
 #define   BUF_SIZE       512
 #define   NUM_LETTERS    26
@@ -49,25 +51,23 @@ computeLineStatistics(
     int    uppers[],
     int    digits[])
 {
-    int i;
-
-    for (i = 0; i < len; i++)
+    for (int i = 0; i < len; i++)
     {
-        char ch;
-
-        ch = line[i];
-
-        if (ch >= 'a' && ch <= 'z')
+        char ch = line[i];
+        if (islower(ch))
         {
-            lowers[ch - 'a']++;
+            int index = ch - 'a';
+            lowers[index]++;
         }
-        else if (ch >= 'A' && ch <= 'Z')
+        else if (isupper(ch))
         {
-            uppers[ch - 'A']++;
+            int index = ch - 'A';
+            uppers[index]++;
         }
-        else if (ch >= '0' && ch <= '9')
+        else if (isdigit(ch))
         {
-            digits[ch - '0']++;
+            int index = ch - '0';
+            digits[index]++;
         }
     }
 }
@@ -118,6 +118,8 @@ printLineStatistics(
     printf("\n");
 }
 
+#if defined( _CRT_SECURE_NO_WARNINGS)
+
 FILE* openFile(char name[])
 {
     FILE* fp;
@@ -131,6 +133,25 @@ FILE* openFile(char name[])
 
     return fp;
 }
+
+#else
+
+FILE* openFile(char name[])
+{
+    FILE* fp;
+    errno_t err;
+
+    err = fopen_s(&fp, name, "r");
+    if (fp == NULL)
+    {
+        printf("Error: File \"%s\" not found!", name);
+        exit(-1);
+    }
+
+    return fp;
+}
+
+#endif
 
 void closeFile(FILE* fp)
 {
