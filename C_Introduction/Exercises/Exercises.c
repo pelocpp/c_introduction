@@ -18,6 +18,7 @@ extern void exercise_zeichenkettenverarbeitung();
 extern void exercise_pointer();
 extern void exercise_lotto();
 extern void exercise_division_mit_rest();
+extern void exercise_wallet();
 extern void exercise_linked_list();
 extern void exercise_zeichenstatistik();
 
@@ -38,7 +39,8 @@ void exercises()
     //exercise_pointer();
     //exercise_lotto();
     //exercise_division_mit_rest();
-    exercise_linked_list();
+    exercise_wallet();
+    //exercise_linked_list();
     //exercise_zeichenstatistik();
 }
 

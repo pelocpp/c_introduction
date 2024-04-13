@@ -41,21 +41,23 @@ um diverse Features von C zu demonstrieren.
 
 #### Strukturen
 
-[**Division mit Rest**](#link14)
+[**Division mit Rest: Struktur mit Quotient und Rest**](#link14)
+[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](#link15)
+
 
 #### Dynamische Speicherverwaltung
 
-[**Verkettete Liste (*Linked List*)**](#link15)
+[**Verkettete Liste (*Linked List*)**](#link16)
 
 
 #### CRT - *C-Runtime-Library*
 
-[**Zeichenstatistik zu einem Text**](#link16)
+[**Zeichenstatistik zu einem Text**](#link17)
 
 
 #### Verschiedenes
 
-[**Ziehung der Lottozahlen**](#link17)
+[**Ziehung der Lottozahlen**](#link18)
 
 
 ---
@@ -185,8 +187,35 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
+#### [Aufgabe zu einem Geldbeutel: Struktur `Wallet`](./Wallet/Exercises_Wallet.md) <a name="link15"></a>
 
-#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link15"></a>
+Folgende Aspekte werden betrachtet:
+  * Funktionen
+  * Rückgabetyp Struktur
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+
+#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link16"></a>
 
 Folgende Aspekte werden betrachtet:
   * Rekursive Strukturen
@@ -195,7 +224,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link16"></a>
+#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link17"></a>
 
 Folgende Aspekte werden betrachtet:
   * `fopen`, `fclose`, `fgets`
@@ -203,7 +232,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link17"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link18"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme

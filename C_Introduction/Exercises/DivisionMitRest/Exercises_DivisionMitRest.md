@@ -1,4 +1,4 @@
-# Aufgabe zur Division mit Rest
+# Aufgabe zur Division mit Rest: Struktur mit Quotient und Rest
 
 [Zurück](./../Exercises.md)
 

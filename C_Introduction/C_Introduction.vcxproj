@@ -22,6 +22,7 @@
     <None Include="..\Readme.md" />
     <None Include="Exercises\ArraySumMinMax\Exercises_ArraySumMinMax.md" />
     <None Include="Exercises\DivisionMitRest\Exercises_DivisionMitRest.md" />
+    <None Include="Exercises\DynamicIntArray\Exercises_DynamicIntArray.md" />
     <None Include="Exercises\ErsteSchritte\Exercises_ErsteSchritte.md" />
     <None Include="Exercises\Exercises.md" />
     <None Include="Exercises\Fakultaet\Exercises_Fakultaet.md" />
@@ -39,6 +40,7 @@
     <None Include="Exercises\VerketteteListe\c_linked_list_10.svg" />
     <None Include="Exercises\VerketteteListe\Exercises_VerketteteListe.md" />
     <None Include="Exercises\Wahl\Exercises_Wahl.md" />
+    <None Include="Exercises\Wallet\Exercises_Wallet.md" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_append.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\Exercises_Zeichenkettenverarbeitung.md" />
@@ -58,6 +60,7 @@
   <ItemGroup>
     <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c" />
     <ClCompile Include="Exercises\DivisionMitRest\DivisionMitRest.c" />
+    <ClCompile Include="Exercises\DynamicIntArray\DynamicIntArray.c" />
     <ClCompile Include="Exercises\ErsteSchritte\ErsteSchritte.c" />
     <ClCompile Include="Exercises\Exercises.c" />
     <ClCompile Include="Exercises\Fakultaet\Fakultaet.c" />
@@ -71,6 +74,7 @@
     <ClCompile Include="Exercises\Vector\Vector.c" />
     <ClCompile Include="Exercises\VerketteteListe\VerketteteListe.c" />
     <ClCompile Include="Exercises\Wahl\Wahl.c" />
+    <ClCompile Include="Exercises\Wallet\Wallet.c" />
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
     <ClCompile Include="Exercises\Zeichenstatistik\Zeichenstatistik.c" />
     <ClCompile Include="Exercises\Zeiger\Zeiger.c" />
@@ -96,6 +100,7 @@
     <Image Include="Markdown\TreatWarningsAsErrors.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

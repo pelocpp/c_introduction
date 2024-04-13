@@ -70,6 +70,12 @@
     <Filter Include="Exercises\Zeichenstatistik">
       <UniqueIdentifier>{73d57293-8394-41a6-b3f6-7a6808cfa770}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Wallet">
+      <UniqueIdentifier>{225d28df-84b3-4f85-b224-7c891ee26322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\DynamicIntArray">
+      <UniqueIdentifier>{80115955-fead-4acd-a183-4e1d4dd6a162}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -175,6 +181,12 @@
     <None Include="Markdown\MemoryLeaksDetection.md">
       <Filter>Markdown</Filter>
     </None>
+    <None Include="Exercises\Wallet\Exercises_Wallet.md">
+      <Filter>Exercises\Wallet</Filter>
+    </None>
+    <None Include="Exercises\DynamicIntArray\Exercises_DynamicIntArray.md">
+      <Filter>Exercises\DynamicIntArray</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -240,6 +252,12 @@
     <ClCompile Include="Exercises\Zeichenstatistik\Zeichenstatistik.c">
       <Filter>Exercises\Zeichenstatistik</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\Wallet\Wallet.c">
+      <Filter>Exercises\Wallet</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\DynamicIntArray\DynamicIntArray.c">
+      <Filter>Exercises\DynamicIntArray</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -291,6 +309,9 @@
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">
       <Filter>Exercises\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h">
+      <Filter>Exercises\DynamicIntArray</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
