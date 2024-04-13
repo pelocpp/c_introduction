@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-void calculate (int* a, int b)
+static void calculate (int* a, int b)
 {
     *a = 4;
     b = b + *a;

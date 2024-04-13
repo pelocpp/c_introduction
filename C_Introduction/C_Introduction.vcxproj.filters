@@ -172,6 +172,9 @@
     <None Include="Exercises\Zeichenstatistik\Exercises_Zeichenstatistik.md">
       <Filter>Exercises\Zeichenstatistik</Filter>
     </None>
+    <None Include="Markdown\MemoryLeaksDetection.md">
+      <Filter>Markdown</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -273,6 +276,15 @@
       <Filter>Exercises\HarmonischeReihe</Filter>
     </Image>
     <Image Include="Markdown\Buch_C_von_A_bis_Z_Juergen_Wolf.png">
+      <Filter>Markdown</Filter>
+    </Image>
+    <Image Include="Markdown\TreatWarningsAsErrors.png">
+      <Filter>Markdown</Filter>
+    </Image>
+    <Image Include="Markdown\Github_Mobile_iPad.png">
+      <Filter>Markdown</Filter>
+    </Image>
+    <Image Include="Markdown\Github_Mobile_iPhone.png">
       <Filter>Markdown</Filter>
     </Image>
   </ItemGroup>

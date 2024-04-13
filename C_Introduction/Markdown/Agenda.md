@@ -85,8 +85,9 @@
 ### Dynamische Speicherverwaltung
   * Speicherbereiche eines C–Programms
   * Lebensdauer von Variablen in einem C&ndash;Programm
-  * Stack und Heap (Stapel und Halde)
+  * Stapel und Halde (*Stack* und *Heap*)
   * Speicher reservieren und freigeben: `malloc` und `free`
+  * [*Memory Leaks Detection* in C](MemoryLeaksDetection.md)
   
 ### Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)
   * Ein- und Ausgabe auf die Konsole: `printf`

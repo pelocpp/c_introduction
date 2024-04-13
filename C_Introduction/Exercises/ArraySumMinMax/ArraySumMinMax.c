@@ -8,7 +8,7 @@
 
 #define Length 10
 
-void exercise_array_zufallszahlen()
+static void exercise_array_zufallszahlen()
 {
     printf("Zufallszahlen\n");
     printf("=============\n");
@@ -35,7 +35,7 @@ void exercise_array_zufallszahlen()
     printf("\n");
 }
 
-void exercise_array_summe()
+static void exercise_array_summe()
 {
     printf("Summe\n");
     printf("=====\n");
@@ -71,7 +71,7 @@ void exercise_array_summe()
     printf("Summe: %d\n\n", sum);
 }
 
-void exercise_array_minimum()
+static void exercise_array_minimum()
 {
     printf("Minumum\n");
     printf("=======\n");
@@ -110,7 +110,7 @@ void exercise_array_minimum()
     printf("Minimum: %d\n\n", min);
 }
 
-void exercise_array_maximum()
+static void exercise_array_maximum()
 {
     printf("Maximum\n");
     printf("=======\n");

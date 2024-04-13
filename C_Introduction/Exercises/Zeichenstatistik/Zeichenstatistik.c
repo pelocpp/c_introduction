@@ -2,7 +2,7 @@
 // Zeichenstatistik.c
 // =====================================================================================
 
-#define _CRT_SECURE_NO_WARNINGS
+// #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
 #include <string.h>
@@ -19,13 +19,7 @@
                          "Zeichenstatistik\\Zeichenstatistik.c"
 
 // function prototypes
-void initLineStatistics(
-    int lowers[],  // array of lower capital letters
-    int uppers[],  // array of upper capital letters
-    int digits[]   // array of digits
-);
-
-void computeLineStatistics(
+static void computeLineStatistics(
     char line[],   // line buffer
     size_t len,    // length of line buffer
     int lowers[],  // array of lower capital letters
@@ -33,17 +27,17 @@ void computeLineStatistics(
     int digits[]   // array of digits
 );
 
-void printLineStatistics(
+static void printLineStatistics(
     int lowers[],  // array of lower capital letters
     int uppers[],  // array of upper capital letters
     int digits[]   // array of digits
 );
 
-FILE* openFile(char name[]);
-void closeFile(FILE* fp);
+static FILE* openFile(char name[]);
+static void closeFile(FILE* fp);
 
 // implementation of functions
-void
+static void
 computeLineStatistics(
     char   line[],
     size_t len,
@@ -54,10 +48,14 @@ computeLineStatistics(
     for (int i = 0; i < len; i++)
     {
         char ch = line[i];
+
         if (islower(ch))
         {
             int index = ch - 'a';
             lowers[index]++;
+
+            // oder 
+            // lowers[ch - 'a']++;
         }
         else if (isupper(ch))
         {
@@ -72,25 +70,7 @@ computeLineStatistics(
     }
 }
 
-void
-initLineStatistics(
-    int lowers[],
-    int uppers[],
-    int digits[])
-{
-    int i = 0;
-
-    for (i = 0; i < NUM_LETTERS; i++)
-        lowers[i] = 0;
-
-    for (i = 0; i < NUM_LETTERS; i++)
-        uppers[i] = 0;
-
-    for (i = 0; i < NUM_DIGITS; i++)
-        digits[i] = 0;
-}
-
-void
+static void
 printLineStatistics(
     int lowers[],
     int uppers[],
@@ -105,22 +85,25 @@ printLineStatistics(
     printf("|%10s|%12s|\n", "Zeichen", "Haeufigkeit");
     printf("-------------------------\n");
 
-    for (i = 0; i < NUM_LETTERS; i++)
+    for (i = 0; i < NUM_LETTERS; i++) {
         printf("|%10c|%12d|\n", 'a' + i, lowers[i]);
+    }
     printf("-------------------------\n");
 
-    for (i = 0; i < NUM_LETTERS; i++)
+    for (i = 0; i < NUM_LETTERS; i++) {
         printf("|%10c|%12d|\n", 'A' + i, uppers[i]);
+    }
     printf("-------------------------\n");
 
-    for (i = 0; i < NUM_DIGITS; i++)
+    for (i = 0; i < NUM_DIGITS; i++) {
         printf("|%10c|%12d|\n", '0' + i, digits[i]);
+    }
     printf("\n");
 }
 
-#if defined( _CRT_SECURE_NO_WARNINGS)
+#if defined(_CRT_SECURE_NO_WARNINGS)
 
-FILE* openFile(char name[])
+static FILE* openFile(char name[])
 {
     FILE* fp;
 
@@ -136,7 +119,7 @@ FILE* openFile(char name[])
 
 #else
 
-FILE* openFile(char name[])
+static FILE* openFile(char name[])
 {
     FILE* fp;
     errno_t err;
@@ -153,7 +136,7 @@ FILE* openFile(char name[])
 
 #endif
 
-void closeFile(FILE* fp)
+static void closeFile(FILE* fp)
 {
     fclose(fp);
 }
@@ -165,20 +148,15 @@ void exercise_zeichenstatistik()
     char buf[BUF_SIZE];
     int lineCount;
 
-    int lowerCaseLetters[NUM_LETTERS];
-    int upperCaseLetters[NUM_LETTERS];
-    int digits[NUM_DIGITS];
-
-    initLineStatistics(
-        lowerCaseLetters,
-        upperCaseLetters,
-        digits);
+    int lowerCaseLetters[NUM_LETTERS] = { 0 };
+    int upperCaseLetters[NUM_LETTERS] = { 0 };
+    int digits[NUM_DIGITS] = { 0 };
 
     fp = openFile(FILE_NAME);
 
     // read all line of this file
     lineCount = 0;
-    while (fgets(buf, BUF_SIZE, fp))
+    while (fgets(buf, BUF_SIZE, fp) != NULL)
     {
         // need length of line
         size_t len = strlen(buf);

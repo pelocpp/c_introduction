@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-double harmonic_series_01(int n)
+static double harmonic_series_01(int n)
 {
     // mit while-Schleife
     
@@ -23,7 +23,7 @@ double harmonic_series_01(int n)
     //printf("Ergebnis: %f", ergebnis);
 }
 
-double harmonic_series_02(int n)
+static double harmonic_series_02(int n)
 {
     // mit for-Schleife
 

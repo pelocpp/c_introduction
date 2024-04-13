@@ -39,8 +39,6 @@ void exercise_division_mit_rest()
 
     printf("Quotient: %d\n", ergebnis.quotient);
     printf("Rest:     %d\n", ergebnis.remainder);
-
-
 }
 
 // =====================================================================================

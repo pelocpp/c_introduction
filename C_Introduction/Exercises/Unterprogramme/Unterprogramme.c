@@ -4,14 +4,14 @@
 
 #include <stdio.h>
 
-double AreaCircle(double radius)
+static double AreaCircle(double radius)
 {
     double area = 2 * 3.141592653589793 * radius;
 
     return area;
 }
 
-void exercise_area_circle()
+static void exercise_area_circle()
 {
     double r = 20;
 
@@ -20,12 +20,12 @@ void exercise_area_circle()
     printf("Circle with radius %f has an area %f.\n", r, area);
 }
 
-void exercise_doubled_interest_rate()
+static void exercise_doubled_interest_rate()
 {
     // to be done ... 
 }
 
-int IsLeapLear(int year)
+static int IsLeapLear(int year)
 {
     int result;
 
@@ -52,7 +52,7 @@ int IsLeapLear(int year)
     return result;
 }
 
-int IsLeapLearCompact(int year)
+static int IsLeapLearCompact(int year)
 {
     int result;
 
@@ -69,8 +69,7 @@ int IsLeapLearCompact(int year)
     return result;
 }
 
-
-void exercise_is_leap_year ()
+static void exercise_is_leap_year ()
 {
     int result;
     int year;
@@ -99,8 +98,8 @@ void exercise_is_leap_year ()
 
 void exercise_unterprogramme()
 {
-    //exercise_area_circle();
-    //exercise_doubled_interest_rate();
+    exercise_area_circle();
+    exercise_doubled_interest_rate();
     exercise_is_leap_year();
 }
 

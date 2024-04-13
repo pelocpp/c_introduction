@@ -8,56 +8,93 @@
 #include <stdlib.h>
 #include <crtdbg.h>
 
+// =====================================================================================
+// types
+
 struct ListItem
 {
-    int m_value;
-    struct ListItem* m_next;
+    int               m_value;
+    struct ListItem*  m_next;
 };
 
 struct LinkedList
 {
-    struct ListItem* m_root;
-    int m_count;
+    struct ListItem*  m_root;
+    size_t            m_count;
 };
 
-void addHead(struct LinkedList* list, int value)
+// =====================================================================================
+// function prototypes
+
+void addHead           (struct LinkedList* list, int value);
+void addHeadEx         (struct LinkedList* list, int value);
+void addTail           (struct LinkedList* list, int value);
+int  find              (struct LinkedList* list, int value);
+int  insert            (struct LinkedList* list, int value, size_t pos);
+void freeList          (struct LinkedList* list);
+void freeListEx        (struct LinkedList* list);
+void freeListRecursive (struct ListItem* item);
+void printList         (struct LinkedList* list);
+void printItem         (struct ListItem* item);
+
+// =====================================================================================
+// implementation
+
+static void addHead(struct LinkedList* list, int value)
 {
     // create a new node
-    struct ListItem* node = (struct ListItem*) malloc(sizeof(struct ListItem));
-    if (node == (struct ListItem*)0) {
+    struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
+    if (item == (struct ListItem*)0) {
         return;
     }
 
-    node->m_value = value;
-    node->m_next = (struct ListItem*)0;
+    item->m_value = value;
+    item->m_next = (struct ListItem*)0;
 
     if (list->m_root == (struct ListItem*)0)
     {
-        list->m_root = node;
+        list->m_root = item;
     }
     else
     {
-        node->m_next = list->m_root;
-        list->m_root = node;
+        item->m_next = list->m_root;
+        list->m_root = item;
     }
 
     list->m_count++;
 }
 
-void addTail(struct LinkedList* list, int value)
+static void addHeadEx(struct LinkedList* list, int value)
 {
     // create a new node
-    struct ListItem* node = (struct ListItem*) malloc(sizeof(struct ListItem));
-    if (node == (struct ListItem*)0) {
+    struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
+    if (item == (struct ListItem*)0) {
         return;
     }
 
-    node->m_value = value;
-    node->m_next = (struct ListItem*)0;
+    // setup node
+    item->m_value = value;
+    item->m_next = list->m_root;
 
-    if (list->m_root == (struct ListItem*)0)
+    // update list
+    list->m_root = item;
+    list->m_count++;
+}
+
+static void addTail(struct LinkedList* list, int value)
+{
+    // create a new node
+    struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
+    if (item == (struct ListItem*)0) {
+        return;
+    }
+
+    item->m_value = value;
+    item->m_next = (struct ListItem*) 0;
+
+    if (list->m_root == (struct ListItem*) 0)
     {
-        list->m_root = node;
+        list->m_root = item;
     }
     else
     {
@@ -68,13 +105,13 @@ void addTail(struct LinkedList* list, int value)
         }
 
         // append node
-        last->m_next = node;
+        last->m_next = item;
     }
 
     list->m_count++;
 }
 
-int find(struct LinkedList* list, int value)
+static int find(struct LinkedList* list, int value)
 {
     struct ListItem* current = list->m_root;
 
@@ -90,36 +127,36 @@ int find(struct LinkedList* list, int value)
     return 0;  // element not found
 }
 
-int insert(struct LinkedList* list, int value, int pos)
+static int insert(struct LinkedList* list, int value, size_t pos)
 {
     // verify params
-    if (pos < 0 || pos > list->m_count)
+    if (pos > list->m_count)
         return 0;
 
     // create a new node
-    struct ListItem* node = (struct ListItem*)malloc(sizeof(struct ListItem));
-    if (node == (struct ListItem*)0) {
+    struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
+    if (item == (struct ListItem*) 0) {
         return 0;
     }
 
-    node->m_value = value;
+    item->m_value = value;
 
     if (pos == 0)
     {
-        node->m_next = list->m_root;
-        list->m_root = node;
+        item->m_next = list->m_root;
+        list->m_root = item;
     }
-    else // i >= 1
+    else // pos >= 1
     {
         struct ListItem* current = list->m_root;
-        while (pos - 1 > 0)
+        while (pos - 1 != 0)
         {
             current = current->m_next;
             pos--;
         }
 
-        node->m_next = current->m_next;
-        current->m_next = node;
+        item->m_next = current->m_next;
+        current->m_next = item;
     }
 
     list->m_count++;
@@ -127,20 +164,52 @@ int insert(struct LinkedList* list, int value, int pos)
     return 1;
 }
 
-void printItem(struct ListItem* item)
+void freeList(struct LinkedList* list) {
+
+    struct ListItem* next = list->m_root;
+    struct ListItem* prev;
+
+    while (next != (struct ListItem*) 0) {
+
+        prev = next;
+
+        next = next->m_next;
+
+        free(prev);
+    }
+}
+
+void freeListEx(struct LinkedList* list)
+{
+    struct ListItem* item = list->m_root;
+
+    freeListRecursive(item);
+}
+
+void freeListRecursive(struct ListItem* item) {
+
+    if (item->m_next != (struct ListItem*) 0)
+    {
+        freeListRecursive(item->m_next);
+    }
+
+    free(item);
+}
+
+static void printItem(struct ListItem* item)
 {
     printf("%d", item->m_value);
 }
 
-void printList(struct LinkedList* l)
+static void printList(struct LinkedList* list)
 {
-    struct ListItem* item = l->m_root;
+    struct ListItem* item = list->m_root;
 
     printf("[");
 
     while (item != (struct ListItem*)0)
     {
-        if (item != l->m_root) {
+        if (item != list->m_root) {
             printf(",");
         }
 
@@ -149,12 +218,15 @@ void printList(struct LinkedList* l)
         item = item->m_next;
     }
 
-    printf("] (%d elements)\n", l->m_count);
+    printf("] (%zu elements)\n", list->m_count);
 }
 
-void exercise_linked_list_01()
+// =====================================================================================
+// application
+
+static void exercise_linked_list_01()
 {
-    struct LinkedList list = { (struct ListItem*)0, 0 };
+    struct LinkedList list = { (struct ListItem*) 0, 0 };
 
     list.m_root = 0;
     list.m_count = 0;
@@ -176,9 +248,11 @@ void exercise_linked_list_01()
     printf("Searching 8: %d\n", find(&list, 8));
     printf("Searching 39: %d\n", find(&list, 39));
     printf("Searching 80: %d\n", find(&list, 80));
+
+    freeListEx(&list);
 }
 
-void exercise_linked_list_02()
+static void exercise_linked_list_02()
 {
     struct LinkedList list = { (struct ListItem*)0, 0 };
     insert(&list, 10, 0);
@@ -198,22 +272,23 @@ void exercise_linked_list_02()
     printList(&list);
 }
 
-
 void exercise_linked_list ()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    exercise_linked_list_01();
-    exercise_linked_list_02();
+    // create a new node
+    struct ListItem* item = (struct ListItem*)malloc(sizeof(struct ListItem));
+    if (item == (struct ListItem*)0) {
+        return;
+    }
+
+   // exercise_linked_list_01();
+    // exercise_linked_list_02();
 }
 
 // =====================================================================================
 // End-of-File
 // =====================================================================================
-
-
-
-// TO BE DONE: AUFRÄUMEN !!!!!!!!!!!!!!!!!!
 
 //
 //class LinkedList

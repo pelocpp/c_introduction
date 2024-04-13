@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-long long fakultaet(int n)
+static long long fakultaet(int n)
 {
      int i;
      long long result;

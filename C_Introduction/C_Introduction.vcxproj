@@ -52,6 +52,7 @@
     <None Include="Markdown\History.md" />
     <None Include="Markdown\InstallationGuide.md" />
     <None Include="Markdown\Literature.md" />
+    <None Include="Markdown\MemoryLeaksDetection.md" />
     <None Include="Markdown\Roadmap.md" />
   </ItemGroup>
   <ItemGroup>
@@ -87,9 +88,12 @@
     <Image Include="Markdown\Buch_Dirk_Louis.png" />
     <Image Include="Markdown\Buch_Einstieg_in_C_Thomas_Theis.png" />
     <Image Include="Markdown\Embedded_Cpp.jpg" />
+    <Image Include="Markdown\Github_Mobile_iPad.png" />
+    <Image Include="Markdown\Github_Mobile_iPhone.png" />
     <Image Include="Markdown\HelloWorld.png" />
     <Image Include="Markdown\I_must_learn_C.png" />
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg" />
+    <Image Include="Markdown\TreatWarningsAsErrors.png" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h" />
@@ -180,6 +184,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <TreatWarningAsError>true</TreatWarningAsError>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

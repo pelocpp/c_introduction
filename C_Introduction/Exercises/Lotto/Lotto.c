@@ -32,9 +32,9 @@ void exercise_lotto_spielen_strukturiert();
 // =====================================================================================
 
 // Realisierung
-void lottoInitialisierung()
+static void lottoInitialisierung()
 {
-    time_t t;
+    time_t t = 0;
 
     //srand((unsigned)time(&t));
     srand(g_reproduktionsWert);  // Mit diesem Wert lassen sich DOPPELTE reproduzieren ...
@@ -47,13 +47,13 @@ void lottoInitialisierung()
     }
 }
 
-int naechsteZahl()
+static int naechsteZahl()
 {
     int zahl = rand() % 49 + 1;
     return zahl;
 }
 
-int zahlSchonVorhanden(int zahl)
+static int zahlSchonVorhanden(int zahl)
 {
     for (int i = 0; i < g_index; ++i)
     {
@@ -66,13 +66,13 @@ int zahlSchonVorhanden(int zahl)
     return 0;   // false
 }
 
-void zahlEinfuegen(int zahl)
+static void zahlEinfuegen(int zahl)
 {
     g_feldLotto[g_index] = zahl;
     g_index++;
 }
 
-void lottoSpielen()
+static void lottoSpielen()
 {
     for (int i = 0; i < 6; ++i)
     {
@@ -87,7 +87,7 @@ void lottoSpielen()
     }
 }
 
-void lottoAusgabe()
+static void lottoAusgabe()
 {
     printf("Ziehung der Lottozahlen:\n");
     printf("========================\n");
@@ -99,7 +99,7 @@ void lottoAusgabe()
     printf("\n");
 }
 
-void lottoVerifizieren()
+static void lottoVerifizieren()
 {
     for (int i = 0; i < 6; ++i) {
 
@@ -118,7 +118,7 @@ void lottoVerifizieren()
     }
 }
 
-void exercise_lotto_spielen_strukturiert()
+static void exercise_lotto_spielen_strukturiert()
 {
     lottoInitialisierung();   // Eingabe
     lottoSpielen();           // Verarbeitung
@@ -128,7 +128,7 @@ void exercise_lotto_spielen_strukturiert()
 
 // =====================================================================================
 
-void exercise_lotto_spielen_brute_force() {
+static void exercise_lotto_spielen_brute_force() {
 
     time_t t;
     int Max = -1;
@@ -175,7 +175,7 @@ void exercise_lotto_spielen_brute_force() {
 void exercise_lotto()
 {
     exercise_lotto_spielen_strukturiert();
-   // exercise_lotto_spielen_brute_force();
+    exercise_lotto_spielen_brute_force();
 }
 
 // =====================================================================================

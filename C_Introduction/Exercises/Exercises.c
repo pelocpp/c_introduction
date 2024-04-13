@@ -38,8 +38,8 @@ void exercises()
     //exercise_pointer();
     //exercise_lotto();
     //exercise_division_mit_rest();
-    //exercise_linked_list();
-    exercise_zeichenstatistik();
+    exercise_linked_list();
+    //exercise_zeichenstatistik();
 }
 
 // ===========================================================================

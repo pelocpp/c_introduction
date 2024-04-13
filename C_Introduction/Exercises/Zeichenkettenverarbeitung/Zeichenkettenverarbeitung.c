@@ -16,7 +16,7 @@ void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel);
 
 // =====================================================================================
 
-int strLength(char* quelle)
+static int strLength(char* quelle)
 {
 	int result = 0;
 	int pos = 0;
@@ -31,7 +31,7 @@ int strLength(char* quelle)
 
 // =====================================================================================
 
-void chrReplace(char* quelle, int pos, char ch) {
+static void chrReplace(char* quelle, int pos, char ch) {
 
 	int lenQuelle = strLength(quelle);
 
@@ -42,7 +42,7 @@ void chrReplace(char* quelle, int pos, char ch) {
 	quelle[pos] = ch;
 }
 
-void exercise_zeichenkettenverarbeitung_01()
+static void exercise_zeichenkettenverarbeitung_01()
 {
 	//  "ABCDE", an der Position 3 das 'D' durch ein '!' ersetzen ===> "ABC!E"
 
@@ -59,9 +59,9 @@ void exercise_zeichenkettenverarbeitung_01()
 	printf("Quelle: Nachher: %s\n", quelle);
 }
 
-// =====================================================
+// =====================================================================================
 
-void chrRemove(char* quelle, int pos, char ch, char* ziel) {
+static void chrRemove(char* quelle, int pos, char ch, char* ziel) {
 
 	int lenQuelle = strLength(quelle);
 	if (pos > lenQuelle) {
@@ -87,7 +87,7 @@ void chrRemove(char* quelle, int pos, char ch, char* ziel) {
 	ziel[lenQuelle + 1] = '\0';
 }
 
-void exercise_zeichenkettenverarbeitung_02()
+static void exercise_zeichenkettenverarbeitung_02()
 {
 	// "ABCDE"  , an der Position 3 ein '!' einfuegen ===> "ABC!DE"
 	char* quelle = "ABCDE";
@@ -98,9 +98,9 @@ void exercise_zeichenkettenverarbeitung_02()
 	printf("Ziel:   %s\n", ziel);
 }
 
-// =====================================================
+// =====================================================================================
 
-void strAppend(char* ergebnis, int len, char* ziel, char* quelle)
+static void strAppend(char* ergebnis, int len, char* ziel, char* quelle)
 {
 	int lenZiel = strLength(ziel);
 
@@ -124,7 +124,7 @@ void strAppend(char* ergebnis, int len, char* ziel, char* quelle)
 	ergebnis[lenZiel + lenQuelle] = '\0';
 }
 
-void exercise_zeichenkettenverarbeitung_append()
+static void exercise_zeichenkettenverarbeitung_append()
 {
 	char* kette1 = "ZIEL";
 
@@ -137,9 +137,9 @@ void exercise_zeichenkettenverarbeitung_append()
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "ZIELKETTE"  !!!
 }
 
-// ====================================================================
+// =====================================================================================
 
-void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
+static void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
 {
 	int lenQuelle = strLength(quelle);
 
@@ -172,7 +172,7 @@ void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
 	ziel[lenQuelle + lenToInsert] = '\0';
 }
 
-void exercise_zeichenkettenverarbeitung_insert()
+static void exercise_zeichenkettenverarbeitung_insert()
 {
 	char* kette1 = "ABCDE";
 
@@ -187,9 +187,9 @@ void exercise_zeichenkettenverarbeitung_insert()
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
 }
 
-// =====================================================
+// =====================================================================================
 
-void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel)
+static void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel)
 {
 	int lenQuelle = strLength(quelle);
 
@@ -214,7 +214,7 @@ void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel)
 	ziel[lenQuelle - pos + 1] = '\0';
 }
 
-void exercise_zeichenkettenverarbeitung_remove()
+static void exercise_zeichenkettenverarbeitung_remove()
 {
 	char* kette = "ABCD123EFGHIJK";
 
@@ -225,21 +225,16 @@ void exercise_zeichenkettenverarbeitung_remove()
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
 }
 
-
-
-// =====================================================
-
-
-
+// =====================================================================================
 
 void exercise_zeichenkettenverarbeitung()
 {
-	//exercise_zeichenkettenverarbeitung_01();
-	//exercise_zeichenkettenverarbeitung_02();
-	//exercise_zeichenkettenverarbeitung_02();
+	exercise_zeichenkettenverarbeitung_01();
+	exercise_zeichenkettenverarbeitung_02();
+	exercise_zeichenkettenverarbeitung_02();
 
 	exercise_zeichenkettenverarbeitung_insert();
-	// exercise_zeichenkettenverarbeitung_remove();
+	exercise_zeichenkettenverarbeitung_remove();
 }
 
 // =====================================================================================
