@@ -26,35 +26,19 @@
     Hanser Fachbuch (9. April 2018), 490 Seiten. Sprache: Deutsch. ISBN-13: 978-3446445970, ISBN-10: 3446445978.
    
 
-    <img src="Buch_Einstieg_in_C_Thomas_Theis.png" width="150">
+    <img src="Buch_Dirk_Louis.png" width="150">
 
 ---
 
 ## C Online Tutorial
 
-  * [Rheinwerk <openbook> &ndash; C von A bis Z](https://openbook.rheinwerk-verlag.de/c_von_a_bis_z/index.htm)
+  * [*Rheinwerk &ndash; &bdquo;C von A bis Z &ndash; Das umfassende Handbuch&rdquo;* (Jürgen Wolf)](https://openbook.rheinwerk-verlag.de/c_von_a_bis_z/index.htm)
+  
+    oder in Buchform
 
-  * Jürgen Wolf, &bdquo;*C von A bis Z &ndash; Das umfassende Handbuch*&rdquo;.</br>
-    Rheinwerk Computing (3. Auflage, 25. September 2009), 1190 Seiten. Sprache: Deutsch. ISBN-13: 978-3836214117, ISBN-10: 3836214113.
+  * Rheinwerk Computing (3. Auflage, 25. September 2009), 1190 Seiten. Sprache: Deutsch. ISBN-13: 978-3836214117, ISBN-10: 3836214113.
    
     <img src="Buch_C_von_A_bis_Z_Juergen_Wolf.png" width="150"><br />
-
----
-
-## Frameworks, Bibliotheken, Ressources und mehr ...
-
-#### WebSite &bdquo;Learn C++&rdquo;
-
-  * [Learn-c.org](https://www.learn-c.org/de/)
-
-Aus der Einführung:
-   
-*&bdquo;Willkommen zu dem kostenlosen, interaktiven C Tutorial von learn-c.org.&rdquo;*
-
-*&bdquo;Ob du ein erfahrener Programmierer bist, oder nicht, diese Website ist für jeden der die C Programmiersprache erlernen will.&rdquo;*
-
-*&bdquo;Du musst nichts herunterladen - Klick einfach auf eines der Kapitel mit dem du beginnen möchtest und folge den Instruktionen. Viel Glück!&rdquo;*
-
 
 ---
 
