@@ -41,13 +41,13 @@ um diverse Features von C zu demonstrieren.
 
 #### Strukturen
 
-[**Division mit Rest: Struktur mit Quotient und Rest**](#link14)
+[**Division mit Rest: Struktur mit Quotient und Rest**](#link14)<br />
 [**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](#link15)
 
 
 #### Dynamische Speicherverwaltung
 
-[**Struktur `DynamicIntArray`**](#link16)
+[**Struktur `DynamicIntArray`**](#link16)<br />
 [**Verkettete Liste (*Linked List*)**](#link17)
 
 
@@ -197,7 +197,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Struktur `DynamicIntArray`](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link16"></a>
+#### [Struktur `DynamicIntArray`](./DynamicIntArray/Exercises_DynamicIntArray.md) <a name="link16"></a>
 
 Folgende Aspekte werden betrachtet:
   * Dynamische Speicherverwaltung

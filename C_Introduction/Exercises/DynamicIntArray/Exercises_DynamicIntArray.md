@@ -68,7 +68,6 @@ Realisieren Sie folgenden Funktionen, die mit der Struktur `DynamicIntArray` zus
 
 | Funktion  | Schnittstelle und Beschreibung |
 |:--------- |--------------------------------|
-
 | Benutzerdefinierter Konstruktor | `DynamicIntArray(size_t size);`<br/>Initialisiert eine `DynamicIntArray`-Strukturvariable mit einem Datenpuffer der Länge `size`. |
 | *getter* `size()`  | `size_t size() const;`<br/>Liefert die aktuelle Länge des Datenpuffers zurück. |
 | `at`     | `int& at (size_t i);`<br/> Zugriff auf ein Element an der Stelle *i*. Bei ungültigem Index wird eine Ausnahme geworfen. |
