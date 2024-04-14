@@ -47,17 +47,18 @@ um diverse Features von C zu demonstrieren.
 
 #### Dynamische Speicherverwaltung
 
-[**Verkettete Liste (*Linked List*)**](#link16)
+[**Struktur `DynamicIntArray`**](#link16)
+[**Verkettete Liste (*Linked List*)**](#link17)
 
 
 #### CRT - *C-Runtime-Library*
 
-[**Zeichenstatistik zu einem Text**](#link17)
+[**Zeichenstatistik zu einem Text**](#link18)
 
 
 #### Verschiedenes
 
-[**Ziehung der Lottozahlen**](#link18)
+[**Ziehung der Lottozahlen**](#link19)
 
 
 ---
@@ -194,28 +195,19 @@ Folgende Aspekte werden betrachtet:
   * Rückgabetyp Struktur
 
 
+---
 
+#### [Struktur `DynamicIntArray`](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link16"></a>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Folgende Aspekte werden betrachtet:
+  * Dynamische Speicherverwaltung
+  * Strukturen
+  * `malloc`, `calloc` und `free`
 
 
 ---
 
-#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link16"></a>
+#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link17"></a>
 
 Folgende Aspekte werden betrachtet:
   * Rekursive Strukturen
@@ -224,7 +216,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link17"></a>
+#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link18"></a>
 
 Folgende Aspekte werden betrachtet:
   * `fopen`, `fclose`, `fgets`
@@ -232,7 +224,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link18"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link19"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme

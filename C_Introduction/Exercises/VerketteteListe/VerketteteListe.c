@@ -4,12 +4,15 @@
 
 #define _CRTDBG_MAP_ALLOC
 
+// ===========================================================================================
+// Includes
+
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h>  // malloc, free
 #include <crtdbg.h>
 
 // =====================================================================================
-// types
+// Types
 
 struct ListItem
 {
@@ -24,7 +27,7 @@ struct LinkedList
 };
 
 // =====================================================================================
-// function prototypes
+// Function Prototypes
 
 void addHead           (struct LinkedList* list, int value);
 void addHeadEx         (struct LinkedList* list, int value);
@@ -38,7 +41,7 @@ void printList         (struct LinkedList* list);
 void printItem         (struct ListItem* item);
 
 // =====================================================================================
-// implementation
+// Implementation
 
 static void addHead(struct LinkedList* list, int value)
 {

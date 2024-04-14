@@ -2,10 +2,13 @@
 // Wallet.c
 // =====================================================================================
 
+// ===========================================================================================
+// Includes
+
 #include <stdio.h>
 
 // =====================================================================================
-// types
+// Types
 
 struct Wallet
 {
@@ -14,7 +17,7 @@ struct Wallet
 };
 
 // =====================================================================================
-// function prototypes
+// Function Prototypes
 
 void                initWallet (struct Wallet* wallet, unsigned long long euros, unsigned int cents);
 unsigned long long  getEuros   (struct Wallet* wallet);
@@ -29,7 +32,7 @@ unsigned long long  toCents    (struct Wallet* wallet);
 void                print      (struct Wallet* wallet);
 
 // =====================================================================================
-// implementation
+// Implementation
 
 void initWallet(struct Wallet* wallet, unsigned long long euros, unsigned int cents)
 {
