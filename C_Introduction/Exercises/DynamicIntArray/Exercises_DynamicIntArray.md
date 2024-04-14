@@ -13,15 +13,15 @@ Es gibt keinerlei Möglichkeit, nach dem Erzeugen eines Felds seine Länge zu ä
 int numbers[10];
 ```
 
-Der Wert 10 muss zur Übersetzungszeit bekannt sein.
+Der Wert 10 muss zur Übersetzungszeit bekannt sein &ndash; und ist nicht veränderbar.
 
 An dieser Stelle kommt die dynamische Speicherverwaltung ins Spiel:
 Mit Hilfe der beiden Funktionen `malloc` (bze. `calloc`) und `free` kann man eine Struktur `DynamicIntArray` realisieren,
-die im Prinzip dieselbe Funktionalität wie C&ndash;Felder besitzt,
+die im Prinzip dieselbe Funktionalität wie ein C&ndash;Feld besitzt,
 nur mit dem Unterschied, dass die Längenangabe sowohl zum Erzeugungszeitpunkt
-als auch während der Lebenszeit einer `DynamicIntArray`-Strukturvariablen änderbar ist.
+als auch während der Lebenszeit der `DynamicIntArray`-Strukturvariablen änderbar ist.
 
-Diese Flexibilität wird erreicht, indem die Daten des Felds in einem Speicherbereich auf der Halde (*Heap*) abgelegt werden.
+Diese Flexibilität wird dadurch erreicht, dass man die Daten des Felds in einem Speicherbereich auf der Halde (*Heap*) ablegt.
 Bei Bedarf, zum Beispiel, wenn der Datenbereich zu klein geworden ist, kann man auf der Halde ein größeres Stück Speicher reservieren.
 
 Implementieren Sie eine Struktur `DynamicIntArray`, die diese Eigenschaft besitzt.
@@ -29,47 +29,51 @@ Eine Variable dieses Typs sollte wie in *Abbildung* 1 gezeigt aussehen:
 
 <img src="c_dynamic_int_array_01.svg" width="550">
 
-*Abbildung* 1. Instanzdatenbereich eines `DynamicIntArray`-Strukturvariables mit dynamisch allokiertem Datenpuffer.
+*Abbildung* 1. Datenbereich einer `DynamicIntArray`-Strukturvariablen mit dynamisch allokiertem Datenpuffer.
 
-Wir erkennen in *Abbildung* 1 zwei Instanzvariablen in der Klasse `DynamicIntArray`: `m_data` und `m_length`.
-`m_data` enthält die Adresse eines Stück Speichers, das sich auf der Halde befindet und mit dem `new`-Operator angelegt wurde.
+Wir erkennen in *Abbildung* 1 zwei Variablen in der Struktur `DynamicIntArray`: `m_data` und `m_length`.
+`m_data` enthält die Adresse eines Stück Speichers, das sich auf der Halde befindet und mit der `malloc`-Funktion angelegt wurde.
 Die Länge dieses Speicherbereichs wird in der zweiten Instanzvariablen `m_length` festgehalten.
 
 Die Problematik, wenn der dynamisch allokierte Datenpuffer zu klein wird, haben wir bereits angesprochen.
-*Abbildung* 2 soll veranschaulichen, wie wir mit einem größeren Datenpuffer größere Anforderungen erfüllen können.
-Neben einem größeren Stück Speicher, das wieder mit dem `new`-Operator angelegt wird, ist zu beachten, dass der
+*Abbildung* 2 soll veranschaulichen, wie wir mit einem neuen Datenpuffer größere Anforderungen erfüllen können.
+Neben einem größeren Stück Speicher, das wieder mit der `malloc`-Funktion angelegt wird, ist zu beachten, dass der
 vorhandene Inhalt des alten Speicherbereichs in den neuen umzukopieren ist.
 
 <img src="c_dynamic_int_array_02.svg" width="550">
 
-*Abbildung* 2. Vergrößerung des Instanzdatenbereich eines `DynamicIntArray`-Strukturvariables.
+*Abbildung* 2. Vergrößerung des Datenbereichs einer `DynamicIntArray`-Strukturvariablen.
 
 
-In *Abbildung* 3 und *Abbildung* 4 sprechen wir ein letztes Problem in der Realisierung der `DynamicIntArray`-Klasse an:
-Die Wertzuweisung zweier `DynamicIntArray`-Strukturvariablee. In einem ersten Ansatz könnte man geneigt sein zu denken,
-dass diese einfach mit dem Kopieren der beteiligten Instanzvariablen umzusetzen ist.
+In *Abbildung* 3 und *Abbildung* 4 sprechen wir ein letztes Problem in der Realisierung der `DynamicIntArray`-Struktur an:
+Die Wertzuweisung zweier `DynamicIntArray`-Strukturvariablen. In einem ersten Ansatz könnte man geneigt sein zu denken,
+dass diese einfach mit dem Kopieren zweier Strukturvariablen umzusetzen ist.
+
 *Abbildung* 3 versucht darzustellen, dass dies nicht zu einer Realisierung führt, die man als korrekt ansehen kann:
-Die beiden in *Abbildung* 3 dargestellten `DynamicIntArray`-Strukturvariable haben einen gemeinsamen Datenbereich auf Grund des kopierten Zeigers.
+Die beiden in *Abbildung* 3 dargestellten `DynamicIntArray`-Strukturvariablen haben einen gemeinsamen Datenbereich auf Grund des kopierten Zeigers.
 Dies ist nicht das, was man sich unter einer echte Kopie vorstellt.
 
 <img src="c_dynamic_int_array_03.svg" width="550">
 
-*Abbildung* 3. Falscher Ansatz beim Kopieren eines `DynamicIntArray`-Strukturvariables.
+*Abbildung* 3. Falscher Ansatz beim Kopieren einer `DynamicIntArray`-Strukturvariablen.
 
-*Abbildung* 4 veranschaulicht, wie hier korrekt vorzugehen ist: Eine Kopie eines `DynamicIntArray`-Strukturvariables muss einen neuen, separaten
-Datenbereich erhalten:
+*Abbildung* 4 veranschaulicht, wie hier korrekt vorzugehen ist:
+Eine Kopie einer `DynamicIntArray`-Strukturvariablen muss einen neuen, separaten Datenbereich erhalten:
 
 <img src="c_dynamic_int_array_04.svg" width="550">
 
-*Abbildung* 4. Korrekter Ansatz beim Kopieren eines `DynamicIntArray`-Strukturvariables.
+*Abbildung* 4. Korrekter Ansatz beim Kopieren einer `DynamicIntArray`-Strukturvariablen.
+
+Zu diesem Zweck finden Sie in *Tabelle* 1 eine Funktion `createDynamicIntArrayFromDynamicIntArray` vor,
+die den Vorgang von *Abbildung* 4 implementiert.
 
 
-Realisieren Sie folgenden Funktionen, die mit der Struktur `DynamicIntArray` zusammenarbeiten:
+Realisieren Sie folgende C-Funktionen, die mit der Struktur `DynamicIntArray` zusammenarbeiten:
 
 | Funktion  | Schnittstelle und Beschreibung |
 |:--------- |--------------------------------|
 | `initDynamicIntArray` | `int initDynamicIntArray(struct DynamicIntArray* array, size_t length);`<br /> Initialisiert eine `DynamicIntArray`-Strukturvariable mit einem Datenpuffer der Länge `size`. |
-| `releaseDynamicIntArray` | void releaseDynamicIntArray(struct DynamicIntArray* array);<br /> Gibt den dynamisch allokierten Speicher wieder frei. |
+| `releaseDynamicIntArray` | `void releaseDynamicIntArray(struct DynamicIntArray* array);`<br /> Gibt den dynamisch allokierten Speicher wieder frei. |
 | `createDynamicIntArrayFromArray` | `void createDynamicIntArrayFromArray(struct DynamicIntArray* array, int* values, int length);`<br /> Übernimmt die Daten eines C-Arrays (Parameter `values` und `length`) in eine `DynamicIntArray`-Strukturvariable. |
 | `createDynamicIntArrayFromDynamicIntArray` | `void createDynamicIntArrayFromDynamicIntArray(struct DynamicIntArray* array, struct DynamicIntArray* other);`<br /> Legt eine Kopie einer vorhandenen `DynamicIntArray`-Strukturvariablen (`other`) an. |
 | `fillDynamicIntArray` | `void fillDynamicIntArray(struct DynamicIntArray* array, int value);`<br /> Belegt alle Elemente des Datenpuffers einer `DynamicIntArray`-Strukturvariablen `array` mit dem Wert `value`. |
@@ -85,7 +89,7 @@ Realisieren Sie folgenden Funktionen, die mit der Struktur `DynamicIntArray` zus
 | `containsDynamicIntArray` | `int containsDynamicIntArray(struct DynamicIntArray* array, int value);`<br /> Liefert 0 oder 1 zurück, je nach dem, ob das Element `value` vorhanden ist oder nicht.|
 | `printDynamicIntArray` | `void printDynamicIntArray(struct DynamicIntArray* array);`<br /> Gibt alle Elemente des Datenpuffers in der Konsole aus. |
 
-*Tabelle* 1: Funktionen, die mit der Struktur DynamicIntArray zusammenarbeiten.
+*Tabelle* 1: Funktionen, die mit der Struktur `DynamicIntArray` zusammenarbeiten.
 
 ---
 
