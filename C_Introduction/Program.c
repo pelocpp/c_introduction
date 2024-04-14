@@ -7,7 +7,7 @@
 // https://peterloos.de
 // =====================================================================================
 
-#pragma message("Collection of introductionary C Code Examples - Copyright (C) 2024 Peter Loos")
+#pragma message("Collection of introductory C Code Examples - Copyright (C) 2024 Peter Loos")
 
 #include <stdio.h>
 
@@ -18,7 +18,7 @@ extern void exercises();
 // entry point
 int main()
 {
-    printf("[Collection of introductionary C Code Examples - Copyright (C) 2024 Peter Loos]\n");
+    printf("[Collection of introductory C Code Examples - Copyright (C) 2024 Peter Loos]\n");
 
     // main entry points code examples
     // testHelloWorld();

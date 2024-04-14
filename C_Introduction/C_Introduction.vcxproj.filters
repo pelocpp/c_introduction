@@ -76,6 +76,9 @@
     <Filter Include="Exercises\DynamicIntArray">
       <UniqueIdentifier>{80115955-fead-4acd-a183-4e1d4dd6a162}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Contacts">
+      <UniqueIdentifier>{a731283e-2e12-45c4-8ff1-bf305293e6ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -199,6 +202,9 @@
     <None Include="Exercises\DynamicIntArray\c_dynamic_int_array_04.svg">
       <Filter>Exercises\DynamicIntArray</Filter>
     </None>
+    <None Include="Exercises\Contacts\Exercises_Contacts.md">
+      <Filter>Exercises\Contacts</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -269,6 +275,15 @@
     </ClCompile>
     <ClCompile Include="Exercises\DynamicIntArray\DynamicIntArray.c">
       <Filter>Exercises\DynamicIntArray</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Contacts\Main_Contacts.c">
+      <Filter>Exercises\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Contacts\ContactsDynamic.c">
+      <Filter>Exercises\Contacts</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Contacts\ContactsStatic.c">
+      <Filter>Exercises\Contacts</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

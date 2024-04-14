@@ -137,7 +137,7 @@ int resizeDynamicIntArray(struct DynamicIntArray* array, int newLength)
 
 int shrinkToFitDynamicIntArray(struct DynamicIntArray* array)
 {
-    // allocate new - temporary and fitting buffer
+    // // allocate new - temporary and fitting - buffer
     int* tmp = (int*) calloc(array->m_length, sizeof(int));
     if (tmp == NULL) {
         printf("shrinkToFitDynamicIntArray: Out of memory");

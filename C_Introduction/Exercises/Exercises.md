@@ -59,6 +59,7 @@ um diverse Features von C zu demonstrieren.
 #### Verschiedenes
 
 [**Ziehung der Lottozahlen**](#link19)
+[**Kontakteverwaltung**](#link20)
 
 
 ---
@@ -230,6 +231,16 @@ Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
   * Zufallszahlen
   * Strukturierung eines Programms
+
+---
+
+#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link20"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Arrays von Strukturen
+  * `printf`-Menü
+  * Strukturierung eines Programms
+  * Bei Bedarf dynamische Daten
 
 ---
 

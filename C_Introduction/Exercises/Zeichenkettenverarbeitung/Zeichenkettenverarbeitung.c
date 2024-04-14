@@ -145,8 +145,8 @@ static void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int len
 
 	int lenToInsert = strLength(toInsert);
 
-	if (lenQuelle + lenToInsert + 1 >= lenZiel) { 
-		printf("Error");
+	if (lenQuelle + lenToInsert + 1 >= lenZiel) {
+		printf("Error: Result buffer not large enough\n");
 		return;
 	}
 
@@ -180,9 +180,9 @@ static void exercise_zeichenkettenverarbeitung_insert()
 
 	// Beispiel: "ABCDE" = 5, "123" = 3 , Null = 1 ==> 
 
-	char ergebnis[9];  // das ist ein Feld von Zeichen ==> Zeichenkette
+	char ergebnis[10];  // das ist ein Feld von Zeichen ==> Zeichenkette
 
-	strInsert(kette1, 2, kette2, ergebnis, 9);
+	strInsert(kette1, 2, kette2, ergebnis, 10);
 
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
 }
@@ -219,7 +219,7 @@ static void exercise_zeichenkettenverarbeitung_remove()
 	char* kette = "ABCD123EFGHIJK";
 
 	char ergebnis[100];
-	
+
 	strRemove(kette, 4, 3, ergebnis, 100);
 
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
