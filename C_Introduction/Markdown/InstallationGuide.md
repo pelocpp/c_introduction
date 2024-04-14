@@ -38,13 +38,9 @@ Und hier zum Vergleich auf einem iPad:
 Die Compiler Option *TreatWarningsAsErrors* behandelt bei der Übersetzung eines Programms
 alle Warnungen als Fehler.
 
-Diese Option ist aus meiner Sicht mehr als empfehlenswert, da einige &bdquo;Warnings&rdquo; in C
-beim besten Willen keinen Hinweis darstellen, sondern einen Fehler beschreiben.
-
+Diese Option ist aus meiner Sicht mehr als empfehlenswert, da es sich bei vielen &bdquo;*Warnings*&rdquo; in C
+schlicht und ergreifend um Fehler handelt!
 In den Eigenschaften eines C-Projekts kann man diese Option unter 
-
-
-Diese Einstellung findet man unter dem Pfad
 
 *Properties -> C/C++ -> General -> Treat Warnings As Errors*
 

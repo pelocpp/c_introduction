@@ -27,7 +27,7 @@ Bei Bedarf, zum Beispiel, wenn der Datenbereich zu klein geworden ist, kann man 
 Implementieren Sie eine Struktur `DynamicIntArray`, die diese Eigenschaft besitzt.
 Eine Variable dieses Typs sollte wie in *Abbildung* 1 gezeigt aussehen:
 
-<img src="c_dynamic_int_array_01.svg" width="550">
+<img src="c_dynamic_int_array_01.svg" width="600">
 
 *Abbildung* 1. Datenbereich einer `DynamicIntArray`-Strukturvariablen mit dynamisch allokiertem Datenpuffer.
 
@@ -40,7 +40,7 @@ Die Problematik, wenn der dynamisch allokierte Datenpuffer zu klein wird, haben 
 Neben einem größeren Stück Speicher, das wieder mit der `malloc`-Funktion angelegt wird, ist zu beachten, dass der
 vorhandene Inhalt des alten Speicherbereichs in den neuen umzukopieren ist.
 
-<img src="c_dynamic_int_array_02.svg" width="550">
+<img src="c_dynamic_int_array_02.svg" width="600">
 
 *Abbildung* 2. Vergrößerung des Datenbereichs einer `DynamicIntArray`-Strukturvariablen.
 
@@ -53,14 +53,14 @@ dass diese einfach mit dem Kopieren zweier Strukturvariablen umzusetzen ist.
 Die beiden in *Abbildung* 3 dargestellten `DynamicIntArray`-Strukturvariablen haben einen gemeinsamen Datenbereich auf Grund des kopierten Zeigers.
 Dies ist nicht das, was man sich unter einer echte Kopie vorstellt.
 
-<img src="c_dynamic_int_array_03.svg" width="550">
+<img src="c_dynamic_int_array_03.svg" width="600">
 
 *Abbildung* 3. Falscher Ansatz beim Kopieren einer `DynamicIntArray`-Strukturvariablen.
 
 *Abbildung* 4 veranschaulicht, wie hier korrekt vorzugehen ist:
 Eine Kopie einer `DynamicIntArray`-Strukturvariablen muss einen neuen, separaten Datenbereich erhalten:
 
-<img src="c_dynamic_int_array_04.svg" width="550">
+<img src="c_dynamic_int_array_04.svg" width="600">
 
 *Abbildung* 4. Korrekter Ansatz beim Kopieren einer `DynamicIntArray`-Strukturvariablen.
 
@@ -80,7 +80,7 @@ Realisieren Sie folgende C-Funktionen, die mit der Struktur `DynamicIntArray` zu
 | `getLength` | `size_t getLength(struct DynamicIntArray* array);`<br /> Liefert die Länge einer `DynamicIntArray`-Strukturvariablen `array` zurück. |
 | `get` | `int get(struct DynamicIntArray* array, int index);`<br /> Liefert das Element an der Stelle *i* zurück. Bei ungültigem Index wird -1 zurückgegeben. |
 | `set` | `void set(struct DynamicIntArray* array, int index, int value);`<br /> Setzt das Element an der Stelle *i* auf einen neuen Wert `value`. |
-| `resizeDynamicIntArray` | `int resizeDynamicIntArray(struct DynamicIntArray* array, int newLength);`<br /> Ändert die Länge des internen Datenpuffers auf den neuen Wert `newLength`. Die vorhandenen Daten im Puffer sollen dabei &ndash; soweit möglich &ndash; erhalten bleiben, sprich: Ist die neue Länge kürzer im Vergleich zur aktuellen Länge, spielen die Daten im oberen Teil des alten Puffers keine Rolle mehr. Ist die neue Länge größer, ist der aktuelle Puffer komplett umzukopieren und die zusätzlichen Elemente im oberen Bereich sind mit `0` vorzubelegen. |
+| `resizeDynamicIntArray` | `int resizeDynamicIntArray(struct DynamicIntArray* array, int newLength);`<br /> Ändert die Länge des internen Datenpuffers auf den neuen Wert `newLength`. Die vorhandenen Daten im Puffer sollen dabei &ndash; soweit möglich &ndash; erhalten bleiben, sprich: Ist die neue Länge kürzer im Vergleich zur aktuellen Länge, spielen die Daten im oberen Teil des alten Puffers keine Rolle mehr. Ist die neue Länge jedoch größer, ist der aktuelle Puffer komplett umzukopieren und die zusätzlichen Elemente im oberen Bereich sind mit `0` vorzubelegen. |
 | `shrinkToFitDynamicIntArray` | `int shrinkToFitDynamicIntArray(struct DynamicIntArray* array);`<br /> Sollte auf Grund eines oder mehrerer `resizeDynamicIntArray`-Aufrufe der Datenpuffer größer als erforderlich sein, wird ein neuer Datenpuffer mit exakt passender Länge angelegt. Natürlich sind die vorhandenen Elemente des alten Puffers umzukopieren. |
 | `minimum` | `int minimum(struct DynamicIntArray* array);`<br /> Liefert das minimale Element im Datenpuffer zurück. |
 | `maximum` | `int maximum(struct DynamicIntArray* array);`<br /> Liefert das maximale Element im Datenpuffer zurück.  |
