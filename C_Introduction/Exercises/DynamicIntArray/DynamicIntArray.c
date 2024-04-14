@@ -118,6 +118,11 @@ int resizeDynamicIntArray(struct DynamicIntArray* array, int newLength)
                 tmp[i] = array->m_data[i];
             }
 
+            // initialize rest of buffer with default values
+            for (size_t i = array->m_length; i < newLength; ++i) {
+                tmp[i] = 0;
+            }
+
             // release current buffer
             free(array->m_data);
 
@@ -266,13 +271,13 @@ static void exercise_DynamicIntArray_03()
 {
     struct DynamicIntArray dia = { 0, 0 };
 
-    initDynamicIntArray(&dia, 5);
+    int values[] = { 1, 2, 3, 4, 5 };
 
-    fillDynamicIntArray(&dia, 5);
+    createDynamicIntArrayFromArray(&dia, values, 5);
 
     printDynamicIntArray(&dia);
 
-    resizeDynamicIntArray(&dia, 8);
+    resizeDynamicIntArray(&dia, 10);
 
     printDynamicIntArray(&dia);
 
@@ -366,7 +371,7 @@ static void exercise_DynamicIntArray_07()
     _CrtDumpMemoryLeaks();
 }
 
-void exercise_DynamicIntArray()
+void exercise_dynamic_int_array()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 

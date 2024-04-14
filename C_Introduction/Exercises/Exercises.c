@@ -20,30 +20,30 @@ extern void exercise_lotto();
 extern void exercise_division_mit_rest();
 extern void exercise_wallet();
 extern void exercise_linked_list();
-extern void exercise_DynamicIntArray();
+extern void exercise_dynamic_int_array();
 extern void exercise_zeichenstatistik();
 
 void exercises()
 {
-    //exercise_erste_schritte();
-    //exercise_variablen_datentypen_operatoren();
-    //exercise_teuflische_folge();
-    //exercise_zinsberechnung();
-    //exercise_maximum();
-    //exercise_fakultaet();
-    //exercise_wahl();
-    //exercise_harmonische_reihe();
-    //exercise_unterprogramme();
-    //exercise_array_minimum_maximum();
-    //exercise_vector();
-    //exercise_zeichenkettenverarbeitung();
-    //exercise_pointer();
-    //exercise_lotto();
-    //exercise_division_mit_rest();
-    //exercise_wallet();
-    exercise_DynamicIntArray();
-    //exercise_linked_list();
-    //exercise_zeichenstatistik();
+    exercise_erste_schritte();
+    exercise_variablen_datentypen_operatoren();
+    exercise_teuflische_folge();
+    exercise_zinsberechnung();
+    exercise_maximum();
+    exercise_fakultaet();
+    exercise_wahl();
+    exercise_harmonische_reihe();
+    exercise_unterprogramme();
+    exercise_array_minimum_maximum();
+    exercise_vector();
+    exercise_zeichenkettenverarbeitung();
+    exercise_pointer();
+    exercise_lotto();
+    exercise_division_mit_rest();
+    exercise_wallet();
+    exercise_dynamic_int_array();
+    exercise_linked_list();
+    exercise_zeichenstatistik();
 }
 
 // ===========================================================================
