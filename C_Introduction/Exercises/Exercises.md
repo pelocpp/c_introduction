@@ -58,7 +58,7 @@ um diverse Features von C zu demonstrieren.
 
 #### Verschiedenes
 
-[**Ziehung der Lottozahlen**](#link19)
+[**Ziehung der Lottozahlen**](#link19)<br />
 [**Kontakteverwaltung**](#link20)
 
 
