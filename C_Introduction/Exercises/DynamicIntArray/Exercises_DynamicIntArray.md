@@ -27,7 +27,7 @@ Bei Bedarf, zum Beispiel, wenn der Datenbereich zu klein geworden ist, kann man 
 Implementieren Sie eine Struktur `DynamicIntArray`, die diese Eigenschaft besitzt.
 Eine Variable dieses Typs sollte wie in *Abbildung* 1 gezeigt aussehen:
 
-<img src="DynamicIntArray/Resources/cpp_dynamic_array_01.svg" width="550">
+<img src="c_dynamic_int_array_01.svg" width="550">
 
 *Abbildung* 1. Instanzdatenbereich eines `DynamicIntArray`-Strukturvariables mit dynamisch allokiertem Datenpuffer.
 
@@ -40,7 +40,7 @@ Die Problematik, wenn der dynamisch allokierte Datenpuffer zu klein wird, haben 
 Neben einem größeren Stück Speicher, das wieder mit dem `new`-Operator angelegt wird, ist zu beachten, dass der
 vorhandene Inhalt des alten Speicherbereichs in den neuen umzukopieren ist.
 
-<img src="DynamicIntArray/Resources/cpp_dynamic_array_02.svg" width="550">
+<img src="c_dynamic_int_array_02.svg" width="550">
 
 *Abbildung* 2. Vergrößerung des Instanzdatenbereich eines `DynamicIntArray`-Strukturvariables.
 
@@ -52,14 +52,14 @@ dass diese einfach mit dem Kopieren der beteiligten Instanzvariablen umzusetzen 
 Die beiden in *Abbildung* 3 dargestellten `DynamicIntArray`-Strukturvariable haben einen gemeinsamen Datenbereich auf Grund des kopierten Zeigers.
 Dies ist nicht das, was man sich unter einer echte Kopie vorstellt.
 
-<img src="DynamicIntArray/Resources/cpp_dynamic_array_03.svg" width="550">
+<img src="c_dynamic_int_array_03.svg" width="550">
 
 *Abbildung* 3. Falscher Ansatz beim Kopieren eines `DynamicIntArray`-Strukturvariables.
 
 *Abbildung* 4 veranschaulicht, wie hier korrekt vorzugehen ist: Eine Kopie eines `DynamicIntArray`-Strukturvariables muss einen neuen, separaten
 Datenbereich erhalten:
 
-<img src="DynamicIntArray/Resources/cpp_dynamic_array_04.svg" width="550">
+<img src="c_dynamic_int_array_04.svg" width="550">
 
 *Abbildung* 4. Korrekter Ansatz beim Kopieren eines `DynamicIntArray`-Strukturvariables.
 
@@ -68,17 +68,6 @@ Realisieren Sie folgenden Funktionen, die mit der Struktur `DynamicIntArray` zus
 
 | Funktion  | Schnittstelle und Beschreibung |
 |:--------- |--------------------------------|
-| Benutzerdefinierter Konstruktor | `DynamicIntArray(size_t size);`<br/>Initialisiert eine `DynamicIntArray`-Strukturvariable mit einem Datenpuffer der Länge `size`. |
-| *getter* `size()`  | `size_t size() const;`<br/>Liefert die aktuelle Länge des Datenpuffers zurück. |
-| `at`     | `int& at (size_t i);`<br/> Zugriff auf ein Element an der Stelle *i*. Bei ungültigem Index wird eine Ausnahme geworfen. |
-| Operator `[]` | `int& operator[] (size_t i);`<br/>Wie Methode `at`, nur ohne Gültigkeitsüberprüfung des Index. |
-| `fill` | `void fill(int value);`<br/>Belegt alle Elemente des Datenpuffers mit dem Wert `value`. |
-| `resize` | `void resize(size_t newSize);`<br/>Ändert die Länge des internen Datenpuffers. Die vorhandenen Daten im Puffer sollen dabei &ndash; soweit möglich &ndash; erhalten bleiben, sprich: Ist die neue Länge kürzer im Vergleich zur aktuellen Länge, spielen die Daten im oberen Teil des alten Puffers keine Rolle mehr. Ist die neue Länge größer, ist der aktuelle Puffer komplett umzukopieren und die zusätzlichen Elemente im oberen Bereich sind mit `0` vorzubelegen. |
-| `release` | `void release();`<br/>Gibt den dynamisch allokierten Speicher frei. |
-| `print` | `void print();`<br/>Gibt alle Elemente des Datenpuffers in der Konsole aus. |
-| `bool operator==` | `friend bool operator== (const DynamicIntArray& left, DynamicIntArray right);`<br/>Vergleicht zwei `DynamicIntArray`-Strukturvariablee auf Gleichheit. |
-| `bool operator!=` | `friend bool operator!= (const DynamicIntArray& left, DynamicIntArray right);`<br/>Vergleicht zwei `DynamicIntArray`-Strukturvariablee auf Ungleichheit. |
-| `XXXX` | `friend bool operator!= (const DynamicIntArray& left, DynamicIntArray right);`<br/>XXXX |
 | `initDynamicIntArray` | `int initDynamicIntArray(struct DynamicIntArray* array, size_t length);`<br /> Initialisiert eine `DynamicIntArray`-Strukturvariable mit einem Datenpuffer der Länge `size`. |
 | `releaseDynamicIntArray` | void releaseDynamicIntArray(struct DynamicIntArray* array);<br /> Gibt den dynamisch allokierten Speicher wieder frei. |
 | `createDynamicIntArrayFromArray` | `void createDynamicIntArrayFromArray(struct DynamicIntArray* array, int* values, int length);`<br /> Übernimmt die Daten eines C-Arrays (Parameter `values` und `length`) in eine `DynamicIntArray`-Strukturvariable. |
@@ -96,8 +85,7 @@ Realisieren Sie folgenden Funktionen, die mit der Struktur `DynamicIntArray` zus
 | `containsDynamicIntArray` | `int containsDynamicIntArray(struct DynamicIntArray* array, int value);`<br /> Liefert 0 oder 1 zurück, je nach dem, ob das Element `value` vorhanden ist oder nicht.|
 | `printDynamicIntArray` | `void printDynamicIntArray(struct DynamicIntArray* array);`<br /> Gibt alle Elemente des Datenpuffers in der Konsole aus. |
 
-*Tabelle* 1: Schnittstelle der Klasse `DynamicIntArray`.
-
+*Tabelle* 1: Funktionen, die mit der Struktur DynamicIntArray zusammenarbeiten.
 
 ---
 

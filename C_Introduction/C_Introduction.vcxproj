@@ -22,6 +22,10 @@
     <None Include="..\Readme.md" />
     <None Include="Exercises\ArraySumMinMax\Exercises_ArraySumMinMax.md" />
     <None Include="Exercises\DivisionMitRest\Exercises_DivisionMitRest.md" />
+    <None Include="Exercises\DynamicIntArray\c_dynamic_int_array_01.svg" />
+    <None Include="Exercises\DynamicIntArray\c_dynamic_int_array_02.svg" />
+    <None Include="Exercises\DynamicIntArray\c_dynamic_int_array_03.svg" />
+    <None Include="Exercises\DynamicIntArray\c_dynamic_int_array_04.svg" />
     <None Include="Exercises\DynamicIntArray\Exercises_DynamicIntArray.md" />
     <None Include="Exercises\ErsteSchritte\Exercises_ErsteSchritte.md" />
     <None Include="Exercises\Exercises.md" />

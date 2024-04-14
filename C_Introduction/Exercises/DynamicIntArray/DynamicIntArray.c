@@ -16,31 +16,31 @@ int initDynamicIntArray(struct DynamicIntArray* da, size_t length)
         return 0;
     }
 
-    da->m_ptr = tmp;
+    da->m_data = tmp;
     da->m_length = length;
     return 1;
 }
 
 void releaseDynamicIntArray(struct DynamicIntArray* da)
 {
-    if (da->m_ptr != NULL) {
+    if (da->m_data != NULL) {
 
-        free(da->m_ptr);
+        free(da->m_data);
 
-        da->m_ptr = NULL;
+        da->m_data = NULL;
         da->m_length = 0;
     }
 }
 
 void createDynamicIntArrayFromArray(struct DynamicIntArray* array, int* values, int length)
 {
-    array->m_ptr = (int*) malloc(sizeof(int) * length);
-    if (array->m_ptr == (int*)0) {
+    array->m_data = (int*) malloc(sizeof(int) * length);
+    if (array->m_data == (int*)0) {
         return;
     }
 
     for (int i = 0; i < length; i++) {
-        array->m_ptr[i] = values[i];
+        array->m_data[i] = values[i];
     }
 
     array->m_length = length;
@@ -48,14 +48,14 @@ void createDynamicIntArrayFromArray(struct DynamicIntArray* array, int* values, 
 
 void createDynamicIntArrayFromDynamicIntArray(struct DynamicIntArray* array, struct DynamicIntArray* other)
 {
-    array->m_ptr = (int*) malloc(sizeof(int) * other->m_length);
-    if (array->m_ptr == (int*)0) {
+    array->m_data = (int*) malloc(sizeof(int) * other->m_length);
+    if (array->m_data == (int*)0) {
         printf("Out of memory");
         return;
     }
 
     for (int i = 0; i < other->m_length; i++) {
-        array->m_ptr[i] = other->m_ptr[i];
+        array->m_data[i] = other->m_data[i];
     }
 
     array->m_length = other->m_length;
@@ -64,7 +64,7 @@ void createDynamicIntArrayFromDynamicIntArray(struct DynamicIntArray* array, str
 void fillDynamicIntArray(struct DynamicIntArray* array, int value)
 {
     for (int i = 0; i < array->m_length; i++) {
-        array->m_ptr[i] = value;
+        array->m_data[i] = value;
     }
 }
 
@@ -76,7 +76,7 @@ size_t getLength(struct DynamicIntArray* array)
 int get(struct DynamicIntArray* array, int index)
 {
     if (index < array->m_length) {
-        return array->m_ptr[index];
+        return array->m_data[index];
     }
     else {
         printf("Wrong Index: %d [Length = %zu]\n", index, array->m_length);
@@ -87,7 +87,7 @@ int get(struct DynamicIntArray* array, int index)
 void set(struct DynamicIntArray* array, int index, int value)
 {
     if (index < array->m_length) {
-        array->m_ptr[index] = value;
+        array->m_data[index] = value;
     }
     else {
         printf("Wrong Index: %d [Length = %zu]\n", index, array->m_length);
@@ -115,14 +115,14 @@ int resizeDynamicIntArray(struct DynamicIntArray* array, int newLength)
 
             // copy current buffer into new one
             for (size_t i = 0; i < array->m_length; ++i) {
-                tmp[i] = array->m_ptr[i];
+                tmp[i] = array->m_data[i];
             }
 
             // release current buffer
-            free(array->m_ptr);
+            free(array->m_data);
 
             // switch to new buffer
-            array->m_ptr = tmp;
+            array->m_data = tmp;
             array->m_length = newLength;
 
             return 1;
@@ -142,14 +142,14 @@ int shrinkToFitDynamicIntArray(struct DynamicIntArray* array)
 
         // copy current buffer into new one
         for (size_t i = 0; i < array->m_length; ++i) {
-            tmp[i] = array->m_ptr[i];
+            tmp[i] = array->m_data[i];
         }
 
         // release current buffer
-        free(array->m_ptr);
+        free(array->m_data);
 
         // switch to new buffer
-        array->m_ptr = tmp;
+        array->m_data = tmp;
 
         return 1;
     }
@@ -161,11 +161,11 @@ int minimum(struct DynamicIntArray* array)
         return 0;
     }
 
-    int min = array->m_ptr[0];
+    int min = array->m_data[0];
 
     for (int i = 1; i < array->m_length; i++) {
-        if (min > array->m_ptr[i]) {
-            min = array->m_ptr[i];
+        if (min > array->m_data[i]) {
+            min = array->m_data[i];
         }
     }
 
@@ -178,11 +178,11 @@ int maximum(struct DynamicIntArray* array)
         return 0;
     }
 
-    int max = array->m_ptr[0];
+    int max = array->m_data[0];
 
     for (int i = 1; i < array->m_length; i++) {
-        if (max < array->m_ptr[i]) {
-            max = array->m_ptr[i];
+        if (max < array->m_data[i]) {
+            max = array->m_data[i];
         }
     }
 
@@ -193,7 +193,7 @@ int indexOf(struct DynamicIntArray* array, int value)
 {
     // perform a linear search
     for (int i = 0; i < array->m_length; i++) {
-        if (array->m_ptr[i] == value) {
+        if (array->m_data[i] == value) {
             return i;
         }
     }
@@ -208,7 +208,7 @@ int equalsDynamicIntArray(struct DynamicIntArray* array, struct DynamicIntArray*
     }
 
     for (int i = 0; i < array->m_length; i++) {
-        if (array->m_ptr[i] != other->m_ptr[i]) {
+        if (array->m_data[i] != other->m_data[i]) {
             return 0;
         }
     }
@@ -219,7 +219,7 @@ int equalsDynamicIntArray(struct DynamicIntArray* array, struct DynamicIntArray*
 int containsDynamicIntArray(struct DynamicIntArray* array, int value)
 {
     for (int i = 0; i < array->m_length; i++) {
-        if (array->m_ptr[i] == value) {
+        if (array->m_data[i] == value) {
             return 1;
         }
     }
@@ -232,7 +232,7 @@ void printDynamicIntArray(struct DynamicIntArray* array)
     printf("{");
     for (int i = 0; i < array->m_length; i++)
     {
-        printf("%d", array->m_ptr[i]);
+        printf("%d", array->m_data[i]);
         if (i < array->m_length - 1) {
             printf(",");
         }

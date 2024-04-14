@@ -23,7 +23,7 @@
 
 struct DynamicIntArray
 {
-    int* m_ptr;
+    int*    m_data;
     size_t  m_length;
 };
 
