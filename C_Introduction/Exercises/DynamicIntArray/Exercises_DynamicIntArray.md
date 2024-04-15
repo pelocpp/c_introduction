@@ -16,7 +16,7 @@ int numbers[10];
 Der Wert 10 muss zur Übersetzungszeit bekannt sein &ndash; und ist nicht veränderbar.
 
 An dieser Stelle kommt die dynamische Speicherverwaltung ins Spiel:
-Mit Hilfe der beiden Funktionen `malloc` (bze. `calloc`) und `free` kann man eine Struktur `DynamicIntArray` realisieren,
+Mit Hilfe der beiden Funktionen `malloc` (bzw. `calloc`) und `free` kann man eine Struktur `DynamicIntArray` realisieren,
 die im Prinzip dieselbe Funktionalität wie ein C&ndash;Feld besitzt,
 nur mit dem Unterschied, dass die Längenangabe sowohl zum Erzeugungszeitpunkt
 als auch während der Lebenszeit der `DynamicIntArray`-Strukturvariablen änderbar ist.
