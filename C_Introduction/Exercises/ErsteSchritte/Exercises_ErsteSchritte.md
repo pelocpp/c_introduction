@@ -44,7 +44,7 @@ Was fällt auf?
    der bestimmt, was für Werte dort gespeichert werden können und einen Wert.
   * Die Variablen `zahl1`, `zahl2` und `ergebnis` sind vom Typ `int` und können somit ganzzahlige
     Werte speichern.
-  * Mit der Anweisung `scanf_s_` kann man Werte vom Benutzer des Programms eingeben lassen.
+  * Mit der Anweisung `scanf_s` kann man Werte vom Benutzer des Programms eingeben lassen.
   * Variablen kann man mit „=“ neue Werte zuweisen, z. B. `ergebnis = zahl1 + zahl2`.
     Mit `printf` kann man die Werte von Variablen auch wieder in der Konsole ausgeben, dazu braucht
     man die Formatanweisung `%d`.
