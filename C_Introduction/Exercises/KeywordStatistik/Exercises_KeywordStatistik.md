@@ -9,7 +9,7 @@
 Erstellen Sie ein C-Programm, das zu einem vorgegebenen Programm eine Statistik
 aller verwendeten C-Schlüsselwörter verwendet.
 
-Eine mögliche Ausgabe des Programms könnte so aussehen (ausschnittsweise):
+Eine mögliche Ausgabe des Programms könnte so aussehen:
 
 ```
 Keyword Table:
@@ -53,8 +53,8 @@ Keyword Table:
 
 ## Quellcode der Lösung
 
-[*KeywordStatistic.c*](./KeywordStatistic.c)
-[*KeywordStatistic.c*](./KeywordStatistic.c)
+[*KeywordStatistic.h*](./KeywordStatistic.h)<br />
+[*KeywordStatistic.c*](./KeywordStatistic.c)<br />
 [*Main_KeywordStatistic.c*](./Main_KeywordStatistic.c)
 
 ---

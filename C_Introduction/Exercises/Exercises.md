@@ -53,7 +53,7 @@ um diverse Features von C zu demonstrieren.
 
 #### CRT - *C-Runtime-Library*
 
-[**Zeichenstatistik zu einem Text**](#link18)
+[**Zeichenstatistik zu einem Text**](#link18)<br />
 [**Statistik aller Schlüsselwörter in einem C-Quelltext**](#link19)
 
 
