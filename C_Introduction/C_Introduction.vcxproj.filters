@@ -79,6 +79,9 @@
     <Filter Include="Exercises\Contacts">
       <UniqueIdentifier>{a731283e-2e12-45c4-8ff1-bf305293e6ec}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\KeywordStatistik">
+      <UniqueIdentifier>{f304862d-3633-4152-8206-e74bf929a9f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -205,6 +208,9 @@
     <None Include="Exercises\Contacts\Exercises_Contacts.md">
       <Filter>Exercises\Contacts</Filter>
     </None>
+    <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md">
+      <Filter>Exercises\KeywordStatistik</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -285,6 +291,12 @@
     <ClCompile Include="Exercises\Contacts\ContactsStatic.c">
       <Filter>Exercises\Contacts</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c">
+      <Filter>Exercises\KeywordStatistik</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\KeywordStatistik\Main_KeywordStatistic.c">
+      <Filter>Exercises\KeywordStatistik</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -339,6 +351,9 @@
     </ClInclude>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h">
       <Filter>Exercises\DynamicIntArray</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h">
+      <Filter>Exercises\KeywordStatistik</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

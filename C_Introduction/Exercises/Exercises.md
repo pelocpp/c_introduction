@@ -54,12 +54,13 @@ um diverse Features von C zu demonstrieren.
 #### CRT - *C-Runtime-Library*
 
 [**Zeichenstatistik zu einem Text**](#link18)
+[**Statistik aller Schlüsselwörter in einem C-Quelltext**](#link19)
 
 
 #### Verschiedenes
 
-[**Ziehung der Lottozahlen**](#link19)<br />
-[**Kontakteverwaltung**](#link20)
+[**Ziehung der Lottozahlen**](#link20)<br />
+[**Kontakteverwaltung**](#link21)
 
 
 ---
@@ -225,7 +226,16 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link19"></a>
+#### [Statistik aller Schlüsselwörter in einem C-Quelltext](./KeywordStatistik/Exercises_KeywordStatistik.md) <a name="link19"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Feld von Strukturen
+  * `fopen`, `fclose`, `fgets`
+  * `islower`, `isupper`
+
+---
+
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link20"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
@@ -234,7 +244,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link20"></a>
+#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link21"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays von Strukturen

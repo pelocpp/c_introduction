@@ -22,10 +22,11 @@ extern void exercise_wallet();
 extern void exercise_linked_list();
 extern void exercise_dynamic_int_array();
 extern void exercise_zeichenstatistik();
+extern void exercise_keywordstatistik();
 
 void exercises()
 {
-    exercise_erste_schritte();
+    /*exercise_erste_schritte();
     exercise_variablen_datentypen_operatoren();
     exercise_teuflische_folge();
     exercise_zinsberechnung();
@@ -43,7 +44,8 @@ void exercises()
     exercise_wallet();
     exercise_dynamic_int_array();
     exercise_linked_list();
-    exercise_zeichenstatistik();
+    exercise_zeichenstatistik();*/
+    exercise_keywordstatistik();
 }
 
 // ===========================================================================

@@ -32,6 +32,7 @@
     <None Include="Exercises\Exercises.md" />
     <None Include="Exercises\Fakultaet\Exercises_Fakultaet.md" />
     <None Include="Exercises\HarmonischeReihe\Exercises_HarmonischeReihe.md" />
+    <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
     <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md" />
@@ -73,6 +74,8 @@
     <ClCompile Include="Exercises\Exercises.c" />
     <ClCompile Include="Exercises\Fakultaet\Fakultaet.c" />
     <ClCompile Include="Exercises\HarmonischeReihe\HarmonischeReihe.c" />
+    <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
+    <ClCompile Include="Exercises\KeywordStatistik\Main_KeywordStatistic.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
     <ClCompile Include="Exercises\TeuflischeFolge\TeuflischeFolge.c" />
@@ -109,6 +112,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />
+    <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
