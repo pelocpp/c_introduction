@@ -5,7 +5,6 @@
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
-#include <string.h>
 
 #include "KeywordStatistic.h"
 
@@ -24,7 +23,7 @@ void exercise_keywordstatistik()
 
     KeywordStatistic table[NUM_KEYWORDS];
 
-    InitTable(table);
+    initTable(table);
 
     fp = fopen(FILE_NAME, "r");
     if (fp == (FILE*)NULL)
@@ -35,11 +34,11 @@ void exercise_keywordstatistik()
 
     while (fgets(buffer, BUF_SIZE, fp) != NULL)
     {
-        ScanLine(buffer);
+        scanLine(buffer);
     }
     fclose(fp);
 
-    PrintTable(table);
+    printTable(table);
 }
 
 // =====================================================================================

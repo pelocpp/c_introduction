@@ -22,7 +22,7 @@ int main()
 
     // main entry points code examples
     // testHelloWorld();
-    exercises();
+    // exercises();
 
     printf("[Done]\n");
     return 0;

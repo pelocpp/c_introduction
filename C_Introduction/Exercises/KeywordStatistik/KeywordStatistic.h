@@ -30,10 +30,10 @@ extern KeywordStatistic table[];
 
 // =====================================================================================
 // function prototypes
-void InitTable();
-void PrintTable();
-void ScanLine(char*);
-int  IsKeyword(char*);
+void initTable();
+void printTable();
+void scanLine(char*);
+int  isKeyword(char*);
 
 // =====================================================================================
 // End-of-File

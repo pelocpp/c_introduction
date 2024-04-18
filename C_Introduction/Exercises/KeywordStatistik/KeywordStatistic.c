@@ -2,15 +2,13 @@
 // KeywordStatistic.c
 // =====================================================================================
 
-// #define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
 
 #include "KeywordStatistic.h"
 
-void InitTable()
+void initTable()
 {
     int i;
 
@@ -52,7 +50,7 @@ void InitTable()
     strcpy_s(table[31].identifier, MAX_KEYWORD_LENGTH, "while");
 }
 
-void PrintTable()
+void printTable()
 {
     printf("Keyword Table:\n");
     printf("==============\n\n");
@@ -66,7 +64,7 @@ void PrintTable()
     printf("\n");
 }
 
-void ScanLine(char* line)
+void scanLine(char* line)
 {
     int i;
     int first, last;
@@ -92,9 +90,9 @@ void ScanLine(char* line)
 
             // copy identifier into temporary buffer using C-Runtime Library
             strncpy_s (buffer, 64, line + first, last - first + 1);
-         //   buffer[last - first + 1] = '\0';
 
-            index = IsKeyword(buffer);
+            // search identifier in keyword table
+            index = isKeyword(buffer);
             if (index >= 0)
                 table[index].count++;
         }
@@ -105,55 +103,7 @@ void ScanLine(char* line)
     }
 }
 
-//void ScanLine(char* line)
-//{
-//    int i;
-//    int first, last;
-//    int index;
-//    char buffer[64];
-//
-//    i = 0;
-//    while (line[i] != '\0' && line[i] != '\n')
-//    {
-//        // check for begin of token
-//        if ((line[i] >= 'a' && line[i] <= 'z') || (line[i] >= 'A' && line[i] <= 'Z'))
-//        {
-//            // store begin of token index
-//            first = i;
-//            i++;
-//
-//            // check for end of token
-//            while (line[i] != '\0' && ((line[i] >= 'a' && line[i] <= 'z') || (line[i] >= 'A' && line[i] <= 'Z')))
-//                i++;
-//
-//            // adjust end of token index
-//            last = i - 1;
-//
-//            // copy identifier into temporary buffer
-//            {
-//                int k;
-//
-//                for (k = first; k <= last; k++)
-//                    buffer[k - first] = line[k];
-//                buffer[k - first] = '\0';
-//            }
-//
-//            // alternative: using C-Runtime Library
-//            // strncpy (buffer, line + first, last - first + 1);
-//            // buffer[last - first + 1] = '\0';
-//
-//            index = IsKeyword(buffer);
-//            if (index >= 0)
-//                table[index].count++;
-//        }
-//        else
-//        {
-//            i++;
-//        }
-//    }
-//}
-
-int IsKeyword(char* id)
+int isKeyword(char* id)
 {
     size_t len = strlen(id);
     if (len == 0 || len == 1 || len > 8)
