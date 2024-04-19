@@ -29,38 +29,39 @@ um diverse Features von C zu demonstrieren.
 #### Arrays
 
 [**Arrays auswerten: Summe, Minimum und Maximum**](#link10)<br />
-[**Ein mathematischer Vektor**](#link11)
+[**Binäre Darstellung ganzer Zahlen**](#link11)<br />
+[**Ein mathematischer Vektor**](#link12)
 
 #### Zeichenkettenverarbeitung
 
-[**Elementare Zeichenketteroperationen: `length`, `replace` und `insert`**](#link12)
+[**Elementare Zeichenketteroperationen: `length`, `replace` und `insert`**](#link13)
 
 #### Zeiger (*Pointer*)
 
-[**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](#link13)
+[**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](#link14)
 
 #### Strukturen
 
-[**Division mit Rest: Struktur mit Quotient und Rest**](#link14)<br />
-[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](#link15)
+[**Division mit Rest: Struktur mit Quotient und Rest**](#link15)<br />
+[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](#link16)
 
 
 #### Dynamische Speicherverwaltung
 
-[**Struktur `DynamicIntArray`**](#link16)<br />
-[**Verkettete Liste (*Linked List*)**](#link17)
+[**Struktur `DynamicIntArray`**](#link17)<br />
+[**Verkettete Liste (*Linked List*)**](#link18)
 
 
 #### CRT - *C-Runtime-Library*
 
-[**Zeichenstatistik zu einem Text**](#link18)<br />
-[**Statistik aller Schlüsselwörter in einem C-Quelltext**](#link19)
+[**Zeichenstatistik zu einem Text**](#link19)<br />
+[**Statistik aller Schlüsselwörter in einem C-Quelltext**](#link20)
 
 
 #### Verschiedenes
 
-[**Ziehung der Lottozahlen**](#link20)<br />
-[**Kontakteverwaltung**](#link21)
+[**Ziehung der Lottozahlen**](#link21)<br />
+[**Kontakteverwaltung**](#link22)
 
 
 ---
@@ -155,7 +156,15 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link11"></a>
+#### [Binäre Darstellung ganzer Zahlen](./BinaryConversion/Exercises_BinaryConversion.md) <a name="link11"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Arrays
+  * Funktionen mit Arrays als Parameter
+
+---
+
+#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link12"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays
@@ -164,7 +173,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md) <a name="link12"></a>
+#### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md) <a name="link13"></a>
 
 Folgende Aspekte werden betrachtet:
   * Zeichen und Zeichenketten
@@ -173,7 +182,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Zeiger/Exercises_Zeiger.md) <a name="link13"></a>
+#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Zeiger/Exercises_Zeiger.md) <a name="link14"></a>
 
 Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger
@@ -182,7 +191,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link14"></a>
+#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link15"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen
@@ -190,7 +199,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zu einem Geldbeutel: Struktur `Wallet`](./Wallet/Exercises_Wallet.md) <a name="link15"></a>
+#### [Aufgabe zu einem Geldbeutel: Struktur `Wallet`](./Wallet/Exercises_Wallet.md) <a name="link16"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen
@@ -199,7 +208,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Struktur `DynamicIntArray`](./DynamicIntArray/Exercises_DynamicIntArray.md) <a name="link16"></a>
+#### [Struktur `DynamicIntArray`](./DynamicIntArray/Exercises_DynamicIntArray.md) <a name="link17"></a>
 
 Folgende Aspekte werden betrachtet:
   * Dynamische Speicherverwaltung
@@ -209,7 +218,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link17"></a>
+#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link18"></a>
 
 Folgende Aspekte werden betrachtet:
   * Rekursive Strukturen
@@ -218,7 +227,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link18"></a>
+#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link19"></a>
 
 Folgende Aspekte werden betrachtet:
   * `fopen`, `fclose`, `fgets`
@@ -226,7 +235,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Statistik aller Schlüsselwörter in einem C-Quelltext](./KeywordStatistik/Exercises_KeywordStatistik.md) <a name="link19"></a>
+#### [Statistik aller Schlüsselwörter in einem C-Quelltext](./KeywordStatistik/Exercises_KeywordStatistik.md) <a name="link20"></a>
 
 Folgende Aspekte werden betrachtet:
   * Feld von Strukturen
@@ -235,7 +244,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link20"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link21"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
@@ -244,7 +253,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link21"></a>
+#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link22"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays von Strukturen

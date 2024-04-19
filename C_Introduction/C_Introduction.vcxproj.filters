@@ -82,6 +82,9 @@
     <Filter Include="Exercises\KeywordStatistik">
       <UniqueIdentifier>{f304862d-3633-4152-8206-e74bf929a9f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\BinaryConversion">
+      <UniqueIdentifier>{f3c5fa81-dcce-464f-82a8-05b3a9f328e2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -211,6 +214,9 @@
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md">
       <Filter>Exercises\KeywordStatistik</Filter>
     </None>
+    <None Include="Exercises\BinaryConversion\Exercises_BinaryConversion.md">
+      <Filter>Exercises\BinaryConversion</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -296,6 +302,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\KeywordStatistik\Main_KeywordStatistic.c">
       <Filter>Exercises\KeywordStatistik</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\BinaryConversion\BinaryConversion.c">
+      <Filter>Exercises\BinaryConversion</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
