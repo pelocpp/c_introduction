@@ -27,7 +27,7 @@ Wählen wir zum Beispiel den Startwert 7, so lautet die Folge
 
 7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1.
 
-Schreiben Sie ein C-Programm, das zu einem fest im Programm eingebauten Startwert aller Folgenglieder in der Konsole ausgibt.
+Schreiben Sie ein C-Programm, das zu einem fest im Programm eingebauten Startwert alle Folgenglieder in der Konsole ausgibt.
 
 Eine mögliche Ausgabe des Programms könnte so aussehen:
 
