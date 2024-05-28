@@ -39,29 +39,30 @@ um diverse Features von C zu demonstrieren.
 #### Zeiger (*Pointer*)
 
 [**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](#link14)
+[**Aufgabe zur Parameterübergabe mit Adressen**](#link15)
 
 #### Strukturen
 
-[**Division mit Rest: Struktur mit Quotient und Rest**](#link15)<br />
-[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](#link16)
+[**Division mit Rest: Struktur mit Quotient und Rest**](#link16)<br />
+[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](#link17)
 
 
 #### Dynamische Speicherverwaltung
 
-[**Struktur `DynamicIntArray`**](#link17)<br />
-[**Verkettete Liste (*Linked List*)**](#link18)
+[**Struktur `DynamicIntArray`**](#link18)<br />
+[**Verkettete Liste (*Linked List*)**](#link19)
 
 
 #### CRT - *C-Runtime-Library*
 
-[**Zeichenstatistik zu einem Text**](#link19)<br />
-[**Statistik aller Schlüsselwörter in einem C-Quelltext**](#link20)
+[**Zeichenstatistik zu einem Text**](#link20)<br />
+[**Statistik aller Schlüsselwörter in einem C-Quelltext**](#link21)
 
 
 #### Verschiedenes
 
-[**Ziehung der Lottozahlen**](#link21)<br />
-[**Kontakteverwaltung**](#link22)
+[**Ziehung der Lottozahlen**](#link22)<br />
+[**Kontakteverwaltung**](#link23)
 
 
 ---
@@ -188,6 +189,13 @@ Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger
   * Referenzieren und Derefenzieren eines Zeigers
 
+---
+
+#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Tausche/Exercises_Tausche.md) <a name="link14"></a>
+
+Folgende Aspekte werden betrachtet:
+  * Datentyp Zeiger und Parameter
+  * Betrachtung von &bdquo;Call-by-Value&rdquo; und &bdquo;Call-by-Address&rdquo;
 
 ---
 

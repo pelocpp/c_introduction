@@ -36,6 +36,7 @@
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
+    <None Include="Exercises\Tausche\Exercises_Tausche.md" />
     <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md" />
     <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md" />
     <None Include="Exercises\VariablenDatentypenOperatoren\Exercises_VariablenDatentypenOperatoren.md" />
@@ -80,6 +81,7 @@
     <ClCompile Include="Exercises\KeywordStatistik\Main_KeywordStatistic.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
+    <ClCompile Include="Exercises\Tausche\Tausche.c" />
     <ClCompile Include="Exercises\TeuflischeFolge\TeuflischeFolge.c" />
     <ClCompile Include="Exercises\Unterprogramme\Unterprogramme.c" />
     <ClCompile Include="Exercises\VariablenDatentypenOperatoren\VariablenDatentypenOperatoren.c" />

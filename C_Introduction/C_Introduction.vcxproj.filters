@@ -85,6 +85,9 @@
     <Filter Include="Exercises\BinaryConversion">
       <UniqueIdentifier>{f3c5fa81-dcce-464f-82a8-05b3a9f328e2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Tausche">
+      <UniqueIdentifier>{bb3ae06e-ce72-4710-8c23-bb6cba87df5b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -217,6 +220,9 @@
     <None Include="Exercises\BinaryConversion\Exercises_BinaryConversion.md">
       <Filter>Exercises\BinaryConversion</Filter>
     </None>
+    <None Include="Exercises\Tausche\Exercises_Tausche.md">
+      <Filter>Exercises\Tausche</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -305,6 +311,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\BinaryConversion\BinaryConversion.c">
       <Filter>Exercises\BinaryConversion</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Tausche\Tausche.c">
+      <Filter>Exercises\Tausche</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
