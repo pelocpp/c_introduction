@@ -38,7 +38,7 @@ um diverse Features von C zu demonstrieren.
 
 #### Zeiger (*Pointer*)
 
-[**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](#link14)
+[**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](#link14)<br />
 [**Aufgabe zur Parameterübergabe mit Adressen**](#link15)
 
 #### Strukturen
@@ -191,7 +191,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Tausche/Exercises_Tausche.md) <a name="link14"></a>
+#### [Aufgabe zur Parameterübergabe mit Adressen](./Tausche/Exercises_Tausche.md) <a name="link15"></a>
 
 Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger und Parameter
@@ -199,7 +199,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link15"></a>
+#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link16"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen
@@ -207,7 +207,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Aufgabe zu einem Geldbeutel: Struktur `Wallet`](./Wallet/Exercises_Wallet.md) <a name="link16"></a>
+#### [Aufgabe zu einem Geldbeutel: Struktur `Wallet`](./Wallet/Exercises_Wallet.md) <a name="link17"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen
@@ -216,7 +216,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Struktur `DynamicIntArray`](./DynamicIntArray/Exercises_DynamicIntArray.md) <a name="link17"></a>
+#### [Struktur `DynamicIntArray`](./DynamicIntArray/Exercises_DynamicIntArray.md) <a name="link18"></a>
 
 Folgende Aspekte werden betrachtet:
   * Dynamische Speicherverwaltung
@@ -226,7 +226,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link18"></a>
+#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link19"></a>
 
 Folgende Aspekte werden betrachtet:
   * Rekursive Strukturen
@@ -235,7 +235,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link19"></a>
+#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link20"></a>
 
 Folgende Aspekte werden betrachtet:
   * `fopen`, `fclose`, `fgets`
@@ -243,7 +243,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Statistik aller Schlüsselwörter in einem C-Quelltext](./KeywordStatistik/Exercises_KeywordStatistik.md) <a name="link20"></a>
+#### [Statistik aller Schlüsselwörter in einem C-Quelltext](./KeywordStatistik/Exercises_KeywordStatistik.md) <a name="link21"></a>
 
 Folgende Aspekte werden betrachtet:
   * Feld von Strukturen
@@ -252,7 +252,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link21"></a>
+#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link22"></a>
 
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
@@ -261,7 +261,7 @@ Folgende Aspekte werden betrachtet:
 
 ---
 
-#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link22"></a>
+#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link23"></a>
 
 Folgende Aspekte werden betrachtet:
   * Arrays von Strukturen
