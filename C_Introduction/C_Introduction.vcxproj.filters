@@ -373,5 +373,8 @@
     <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h">
       <Filter>Exercises\KeywordStatistik</Filter>
     </ClInclude>
+    <ClInclude Include="Exercises\Wallet\Wallet.h">
+      <Filter>Exercises\Wallet</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

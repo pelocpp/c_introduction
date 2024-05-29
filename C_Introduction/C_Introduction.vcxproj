@@ -118,6 +118,7 @@
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />
     <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />
+    <ClInclude Include="Exercises\Wallet\Wallet.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

@@ -24,7 +24,7 @@ Folgende Aktivitäten sollten mit einem Geldbeutel möglich sein:
   * Den Inhalt zweier Geldbeutel vergleichen.
   * Nur Euros hinzufügen.
   * Nur Euros entnehmen.
-  * Einen Geldbeutel mit der Funktion `print` auf der Konsole ausgeben.
+  * Einen Geldbeutel mit einer Funktion `print` auf der Konsole ausgeben.
   * Einen Euro hinzufügen.
   * Einen Euro entnehmen.
 
@@ -37,68 +37,72 @@ Die folgenden zwei Beispiele demonstrieren den Umgang mit der Struktur `Wallet`:
 ```cpp
 01: void test()
 02: {
-03:     struct Wallet wallet1 = { 123, 45 };
-04:     struct Wallet wallet2 = { 3, 30 };
-05:     struct Wallet wallet3 = { 3, 30 };
+03:     struct Wallet wallet = { 0, 0 };
+04: 
+05:     print(&wallet);
 06: 
-07:     print(&wallet1);
-08: 
-09:     addWallet(&wallet1, &wallet2);
-10:     print(&wallet1);
-11: 
-12:     addWallet(&wallet1, &wallet3);
-13:     print(&wallet1);
-14: 
-15:     unsigned long long cents = toCents(&wallet1);
-16:     printf("Cents: %llu\n", cents);
-17: }
+07:     addEurosAndCents(&wallet, 10, 50);
+08:     print(&wallet);
+09: 
+10:     subEurosAndCents(&wallet, 5, 75);
+11:     print(&wallet);
+12: 
+13:     unsigned long long cents = toCents(&wallet);
+14:     printf("Cents: %llu\n", cents);
+15: }
 ```
 
 *Ausgabe*:
 
 
 ```
-123:45
-126:75
-130:05
-Cents: 13005
+0,00 Euro
+10,50 Euro
+4,75 Euro
+Cents: 475
 ```
 
 Und noch ein zweites Beispiel:
 
 
 ```cpp
-01: void test()
+01: void exercise_wallet_02()
 02: {
-03:     struct Wallet wallet1 = { 0, 3 };
-04:     struct Wallet wallet2 = { 0, 1 };
+03:     struct Wallet wallet1 = { 3, 30 };
+04:     struct Wallet wallet2 = { 3, 30 };
 05: 
 06:     print(&wallet1);
-07: 
-08:     subWallet(&wallet1, &wallet2);
-09:     print(&wallet1);
-10: 
-11:     subWallet(&wallet1, &wallet2);
-12:     print(&wallet1);
-13: 
-14:     subWallet(&wallet1, &wallet2);
-15:     print(&wallet1);
-16: 
-17:     subWallet(&wallet1, &wallet2);
-18:     print(&wallet1);
-19: }
+07:     print(&wallet2);
+08: 
+09:     int equal = equals(&wallet1, &wallet2);
+10:     printf("Wallets are equal: %d\n", equal);
+11: 
+12:     subEurosAndCents(&wallet1, 3, 28);
+13:     print(&wallet1);
+14: 
+15:     subEurosAndCents(&wallet1, 0, 1);
+16:     print(&wallet1);
+17: 
+18:     subEurosAndCents(&wallet1, 0, 1);
+19:     print(&wallet1);
+20: 
+21:     subEurosAndCents(&wallet1, 0, 1);
+22:     print(&wallet1);
+23: }
 ```
 
 *Ausgabe*:
 
 
 ```
-0:03
-0:02
-0:01
-0:00
+3,30 Euro
+3,30 Euro
+Wallets are equal: 1
+0,02 Euro
+0,01 Euro
+0,00 Euro
 Not enough money available in wallet!
-0:00
+0,00 Euro
 ```
 
 ---
