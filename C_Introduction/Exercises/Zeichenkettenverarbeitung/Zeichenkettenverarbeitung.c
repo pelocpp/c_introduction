@@ -5,35 +5,40 @@
 #include <stdio.h>
 
 // function prototypes
-int  strLength(char* quelle);
+static int  str_length(char* quelle);
 
-void chrReplace(char* quelle, int pos, char ch);
-void chrRemove(char* quelle, int pos, char ch, char* ziel);
+static void chr_replace(char* quelle, int pos, char ch);
+// static int  chr_append(char* quelle, int pos, char ch, char* ziel, int length);
+static int  chr_insert(char* quelle, int pos, char ch, char* ziel, int length);
+static int  chr_remove(char* quelle, int pos, char* ziel, int length);
 
-void strAppend(char* ergebnis, int len, char* ziel, char* quelle);
-void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel);
-void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel);
+// static void str_replace(char* quelle, int pos, char ch);
+static void str_append(char* ergebnis, int len, char* ziel, char* quelle);
+static void str_insert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel);
+static void str_remove(char* quelle, int pos, int count, char* ziel, int lenZiel);
+
+static void exercise_zeichenkettenverarbeitung_01_chr_replace();
+static void exercise_zeichenkettenverarbeitung_02_chr_insert();
+static void exercise_zeichenkettenverarbeitung_03_chr_remove();
 
 // =====================================================================================
 
-static int strLength(char* quelle)
+static int str_length(char* quelle)
 {
-	int result = 0;
 	int pos = 0;
 
 	while (quelle[pos] != '\0') {
 		pos++;
-		result++;
 	}
 
-	return result;
+	return pos;
 }
 
 // =====================================================================================
 
-static void chrReplace(char* quelle, int pos, char ch) {
+static void chr_replace(char* quelle, int pos, char ch) {
 
-	int lenQuelle = strLength(quelle);
+	int lenQuelle = str_length(quelle);
 
 	if (pos >= lenQuelle) {
 		return;
@@ -42,30 +47,32 @@ static void chrReplace(char* quelle, int pos, char ch) {
 	quelle[pos] = ch;
 }
 
-static void exercise_zeichenkettenverarbeitung_01()
+static void exercise_zeichenkettenverarbeitung_01_chr_replace()
 {
-	//  "ABCDE", an der Position 3 das 'D' durch ein '!' ersetzen ===> "ABC!E"
+	// "ABCDE", an der Position 3 das 'D' durch ein '!' ersetzen ===> "ABC!E"
 
 	// char* quelle = "ABCDE";  // VORSICHT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	//                "ABCDE" liegt im Codesegment -- hier ist ein SCHREIBEN VERBOTEN / Absturz
 
-	char quelle[] = "ABCDE";
-	// Haben wir mit quelle ein Array, das am Stack liegt
-	// Es wird "ABCDE" in das Array umkopiert, bzw. das Array damit vorgelegt.
+	char quelle[] = "ABCDE";    // Zeichenkette liegt in einem Array (!)
 
 	printf("Quelle: Vorher:  %s\n", quelle);
-
-	chrReplace(quelle, 2, '!');
+	chr_replace(quelle, 2, '!');
 	printf("Quelle: Nachher: %s\n", quelle);
 }
 
 // =====================================================================================
 
-static void chrRemove(char* quelle, int pos, char ch, char* ziel) {
+static int chr_insert(char* quelle, int pos, char ch, char* ziel, int length) {
 
-	int lenQuelle = strLength(quelle);
+	int lenQuelle = str_length(quelle);
+
 	if (pos > lenQuelle) {
-		return;
+		return 0;
+	}
+
+	if (length < lenQuelle + 1) {
+		return 0;
 	}
 
 	// copy first part of quelle to ziel
@@ -83,28 +90,66 @@ static void chrRemove(char* quelle, int pos, char ch, char* ziel) {
 	}
 
 	// terminate ziel
-	// ziel[index] = '\0';        // oder
-	ziel[lenQuelle + 1] = '\0';
+	ziel[lenQuelle + 1] = '\0';   // oder ziel[index] = '\0'; 
+
+	return 1;
 }
 
-static void exercise_zeichenkettenverarbeitung_02()
+static void exercise_zeichenkettenverarbeitung_02_chr_insert()
 {
-	// "ABCDE"  , an der Position 3 ein '!' einfuegen ===> "ABC!DE"
+	// In "ABCDE" an der Position 3 ein '!' einfuegen ==> "ABC!DE"
 	char* quelle = "ABCDE";
 	printf("Quelle: %s\n", quelle);
 
 	char ziel[100];
-	chrRemove(quelle, 2, '!', ziel);
+	chr_insert(quelle, 2, '!', ziel, 100);
 	printf("Ziel:   %s\n", ziel);
 }
 
 // =====================================================================================
 
-static void strAppend(char* ergebnis, int len, char* ziel, char* quelle)
-{
-	int lenZiel = strLength(ziel);
+static int chr_remove(char* quelle, int pos, char* ziel, int length) {
 
-	int lenQuelle = strLength(quelle);
+	int lenQuelle = str_length(quelle);
+
+	if (pos > lenQuelle) {
+		return 0;
+	}
+
+	// copy first part of quelle to ziel
+	for (int i = 0; i < pos; ++i) {
+		ziel[i] = quelle[i];
+	}
+
+	// copy second part of quelle to ziel, omitting char at position 'pos'
+	for (int i = pos + 1; i < lenQuelle; ++i) {
+		ziel[i-1] = quelle[i];
+	}
+
+	// terminate ziel
+	ziel[lenQuelle - 1] = '\0';
+
+	return 1;
+}
+
+static void exercise_zeichenkettenverarbeitung_03_chr_remove()
+{
+	// "ABCDE", das Zeichen an der Position 2 entfernen ===> "ABDE"
+	char* quelle = "ABCDE";
+	printf("Quelle: %s\n", quelle);
+
+	char ziel[100];
+	chr_remove(quelle, 2, ziel, 100);
+	printf("Ziel:   %s\n", ziel);
+}
+
+// =====================================================================================
+
+static void str_append(char* ergebnis, int len, char* ziel, char* quelle)
+{
+	int lenZiel = str_length(ziel);
+
+	int lenQuelle = str_length(quelle);
 
 	if (len < lenZiel + lenQuelle + 1) {
 		printf("Puffer zu klein!\n");
@@ -132,18 +177,18 @@ static void exercise_zeichenkettenverarbeitung_append()
 
 	char ergebnis[100];
 
-	strAppend(ergebnis, 100, kette1, kette2);   // "ZIELKETTE" 
+	str_append(ergebnis, 100, kette1, kette2);   // "ZIELKETTE" 
 
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "ZIELKETTE"  !!!
 }
 
 // =====================================================================================
 
-static void strInsert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
+static void str_insert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel)
 {
-	int lenQuelle = strLength(quelle);
+	int lenQuelle = str_length(quelle);
 
-	int lenToInsert = strLength(toInsert);
+	int lenToInsert = str_length(toInsert);
 
 	if (lenQuelle + lenToInsert + 1 >= lenZiel) {
 		printf("Error: Result buffer not large enough\n");
@@ -182,16 +227,16 @@ static void exercise_zeichenkettenverarbeitung_insert()
 
 	char ergebnis[10];  // das ist ein Feld von Zeichen ==> Zeichenkette
 
-	strInsert(kette1, 2, kette2, ergebnis, 10);
+	str_insert(kette1, 2, kette2, ergebnis, 10);
 
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
 }
 
 // =====================================================================================
 
-static void strRemove(char* quelle, int pos, int count, char* ziel, int lenZiel)
+static void str_remove(char* quelle, int pos, int count, char* ziel, int lenZiel)
 {
-	int lenQuelle = strLength(quelle);
+	int lenQuelle = str_length(quelle);
 
 	if (lenQuelle - count > lenZiel) {
 		printf("Error");
@@ -220,7 +265,7 @@ static void exercise_zeichenkettenverarbeitung_remove()
 
 	char ergebnis[100];
 
-	strRemove(kette, 4, 3, ergebnis, 100);
+	str_remove(kette, 4, 3, ergebnis, 100);
 
 	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
 }
@@ -229,12 +274,12 @@ static void exercise_zeichenkettenverarbeitung_remove()
 
 void exercise_zeichenkettenverarbeitung()
 {
-	exercise_zeichenkettenverarbeitung_01();
-	exercise_zeichenkettenverarbeitung_02();
-	exercise_zeichenkettenverarbeitung_02();
+	exercise_zeichenkettenverarbeitung_01_chr_replace();
+	exercise_zeichenkettenverarbeitung_02_chr_insert();
+	exercise_zeichenkettenverarbeitung_03_chr_remove();
 
-	exercise_zeichenkettenverarbeitung_insert();
-	exercise_zeichenkettenverarbeitung_remove();
+	//exercise_zeichenkettenverarbeitung_insert();
+	//exercise_zeichenkettenverarbeitung_remove();
 }
 
 // =====================================================================================
