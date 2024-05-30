@@ -1,4 +1,4 @@
-# Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove` 
+# Elementare Zeichenketteroperationen:<br \>`length`, `replace`, `append`, `insert` und `remove` 
 
 [Zurück](./../Exercises.md)
 
@@ -16,11 +16,11 @@ Realisieren Sie ein oder mehrere Funktionen, die auf Zeichenketten operieren:
 
 *Bemerkung*:
 Die Parameter der Funktionen können bzgl. der Zeichenketten entweder den Datentyp
-`char[]` oder `char*` haben. In beiden Fällen wird die Adresse des ersten Zeichens des Zeichenkette übergeben.
+`char[]` oder `char*` haben. In beiden Fällen wird die Adresse des ersten Zeichens einer Zeichenkette übergeben.
 
 Die Funktionen sollten folgende Schnittstelle haben:
 
-### Modifikation der Zeichenkette durch ein einzelnes Zeichen
+##### Modifikation der Zeichenkette durch ein einzelnes Zeichen
 
 
 ```cpp
@@ -41,7 +41,7 @@ Das Resultat der Funktionsausführung ist jeweils in einem Parameter `dest` abzu
 dessen Pufferlänge im Parameter `destLen` zur Verfügung gestellt wird.
 
 
-### Modifikation der Zeichenkette durch eine zweite Zeichenkette
+##### Modifikation der Zeichenkette durch eine zweite Zeichenkette
 
 ```cpp
 int  str_replace (const char* src, int pos, char* toReplace, char* dest, int destLen);

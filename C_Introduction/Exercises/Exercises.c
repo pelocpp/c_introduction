@@ -40,7 +40,7 @@ void exercises()
     //exercise_array_minimum_maximum();
     //exercise_binary_conversion();
     //exercise_vector();
-    exercise_zeichenkettenverarbeitung();
+    //exercise_zeichenkettenverarbeitung();
     //exercise_pointer();
     //exercise_tausche();
     //exercise_lotto();
