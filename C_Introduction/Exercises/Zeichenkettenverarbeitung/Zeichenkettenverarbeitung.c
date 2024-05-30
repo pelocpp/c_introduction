@@ -4,20 +4,18 @@
 
 #include <stdio.h>
 
-// TBD: Die Fehlerabfragen überprüfen
-
 // function prototypes
-static int  str_length  (char* src);
+static int  str_length  (const char* src);
 
 static void chr_replace (char* src, int pos, char ch);
-static int  chr_append  (char* src, char ch, char* dest, int destLen);
-static int  chr_insert  (char* src, int pos, char ch, char* dest, int destLen);
-static int  chr_remove  (char* src, int pos, char* dest, int destLen);
+static int  chr_append  (const char* src, char ch, char* dest, int destLen);
+static int  chr_insert  (const char* src, int pos, char ch, char* dest, int destLen);
+static int  chr_remove  (const char* src, int pos, char* dest, int destLen);
 
-static int  str_replace (char* src, int pos, char* toReplace, char* dest, int destLen);
-static int  str_append  (char* src, char* toAppend, char* dest, int destLen);
-static int  str_insert  (char* src, int pos, char* toInsert, char* dest, int destLen);
-static int  str_remove  (char* src, int pos, int count, char* dest, int destLen);
+static int  str_replace (const char* src, int pos, char* toReplace, char* dest, int destLen);
+static int  str_append  (const char* src, char* toAppend, char* dest, int destLen);
+static int  str_insert  (const char* src, int pos, char* toInsert, char* dest, int destLen);
+static int  str_remove  (const char* src, int pos, int count, char* dest, int destLen);
 
 static void exercise_01_chr_replace();
 static void exercise_02_chr_append();
@@ -31,7 +29,7 @@ static void exercise_08_str_remove();
 
 // =====================================================================================
 
-static int str_length(char* src)
+static int str_length(const char* src)
 {
 	int pos = 0;
 
@@ -57,25 +55,26 @@ static void chr_replace(char* src, int pos, char ch) {
 
 static void exercise_01_chr_replace()
 {
-	char result[10];
-	char* string = "ABCDE";
+	char string[10] = "ABCDE";
+	// const char* string = "ABCDE";  // crashes
 	printf("String: %s\n", string);
 
 	chr_replace(string, 2, '!');
-	printf("Result: %s\n", result);  // <=== "ABCDE"
+	printf("Result: %s\n", string);  // <=== "AB!DE"
 
-	string = "A";
+	string[0] = 'A';
+	string[1] = '\0';
 	chr_replace(string, 0, '!');
-	printf("Result: %s\n", result);  // <=== "!"
+	printf("Result: %s\n", string);  // <=== "!"
 }
 
 // =====================================================================================
 
-static int chr_append(char* src, char ch, char* dest, int destLen) {
+static int chr_append(const char* src, char ch, char* dest, int destLen) {
 
 	int srcLen = str_length(src);
 
-	if (srcLen + 1 /* char to insert */ + 1 /* '\0' */ >= destLen) {
+	if (srcLen + 1 /* char to insert */ + 1 /* '\0' */ > destLen) {
 		printf("Error in str_append: Result buffer not large enough!\n");
 		return 0;
 	}
@@ -96,7 +95,7 @@ static int chr_append(char* src, char ch, char* dest, int destLen) {
 
 static void exercise_02_chr_append()
 {
-	char result[10];
+	char result[7] = "";
 	char* string = "ABCDE";
 	printf("String: %s\n", string);
 
@@ -110,11 +109,11 @@ static void exercise_02_chr_append()
 
 // =====================================================================================
 
-static int chr_insert(char* src, int pos, char ch, char* dest, int destLen) {
+static int chr_insert(const char* src, int pos, char ch, char* dest, int destLen) {
 
 	int srcLen = str_length(src);
 
-	if (srcLen + 1 /* char to insert */ + 1 /* '\0' */ >= destLen) {
+	if (srcLen + 1 /* char to insert */ + 1 /* '\0' */ > destLen) {
 		printf("Error in chr_insert: Result buffer not large enough!\n");
 		return 0;
 	}
@@ -145,7 +144,7 @@ static int chr_insert(char* src, int pos, char ch, char* dest, int destLen) {
 
 static void exercise_03_chr_insert()
 {
-	char result[10];
+	char result[7] = "";
 	char* string = "ABCDE";
 	printf("String: %s\n", string);
 
@@ -161,11 +160,11 @@ static void exercise_03_chr_insert()
 
 // =====================================================================================
 
-static int chr_remove(char* src, int pos, char* dest, int destLen) {
+static int chr_remove(const char* src, int pos, char* dest, int destLen) {
 
 	int srcLen = str_length(src);
 	
-	if (srcLen - 1 > destLen) {
+	if (srcLen - 1 >= destLen) {
 		printf("Error in chr_remove: Result buffer not large enough!\n");
 	    return 0;
 	}
@@ -188,7 +187,7 @@ static int chr_remove(char* src, int pos, char* dest, int destLen) {
 
 static void exercise_04_chr_remove()
 {
-	char result[10];
+	char result[5] = "";
 	char* string = "ABCDE";
 	printf("String: %s\n", string);
 
@@ -205,12 +204,12 @@ static void exercise_04_chr_remove()
 // =====================================================================================
 // =====================================================================================
 
-static int str_replace(char* src, int pos, char* toReplace, char* dest, int destLen)
+static int str_replace(const char* src, int pos, char* toReplace, char* dest, int destLen)
 {
 	int srcLen = str_length(src);
 	int toReplaceLen = str_length(toReplace);
 
-	if (srcLen + 1 >= destLen) {
+	if (srcLen + 1 > destLen) {
 		printf("Error in str_replace: Result buffer not large enough!\n");
 		return 0;
 	}
@@ -243,7 +242,7 @@ static int str_replace(char* src, int pos, char* toReplace, char* dest, int dest
 
 static void exercise_05_str_replace()
 {
-	char result[32] = "";
+	char result[10] = "";
 	char* string1 = "123456789";
 	char* string2 = "ABC";
 	str_replace(string1, 3, string2, result, sizeof(result));
@@ -267,12 +266,12 @@ static void exercise_05_str_replace()
 
 // =====================================================================================
 
-static int str_append(char* src, char* toAppend, char* dest, int destLen)
+static int str_append(const char* src, char* toAppend, char* dest, int destLen)
 {
 	int srcLen = str_length(src);
 	int toAppendLen = str_length(toAppend);
 
-	if (srcLen + toAppendLen + 1 >= destLen) {
+	if (srcLen + toAppendLen + 1 > destLen) {
 		printf("Error in str_append: Result buffer not large enough!\n");
 		return 0;
 	}
@@ -295,7 +294,7 @@ static int str_append(char* src, char* toAppend, char* dest, int destLen)
 
 static void exercise_06_str_append()
 {
-	char result[32] = "";
+	char result[11] = "";
 	char* string1 = "12345";
 	char* string2 = "ABCDE";
 	str_append(string1, string2, result, sizeof (result));
@@ -319,12 +318,12 @@ static void exercise_06_str_append()
 
 // =====================================================================================
 
-static int str_insert(char* src, int pos, char* toInsert, char* dest, int destLen)
+static int str_insert(const char* src, int pos, char* toInsert, char* dest, int destLen)
 {
 	int srcLen = str_length(src);
 	int toInsertLen = str_length(toInsert);
 
-	if (srcLen + toInsertLen + 1 >= destLen) {
+	if (srcLen + toInsertLen + 1 > destLen) {
 		printf("Error in str_insert: Result buffer not large enough!\n");
 		return 0;
 	}
@@ -352,11 +351,11 @@ static int str_insert(char* src, int pos, char* toInsert, char* dest, int destLe
 
 static void exercise_07_str_insert()
 {
-	char result[20] = "";
+	char result[9] = "";
 	char* string1 = "ABCDE";
 	char* string2 = "123";
 	str_insert(string1, 2, string2, result, sizeof(result));
-	printf("Result: %s\n", result);  // <=== "12ABC345"
+	printf("Result: %s\n", result);  // <=== "AB123CDE"
 
 	str_insert(string1, 0, string2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "123ABCDE"
@@ -367,11 +366,11 @@ static void exercise_07_str_insert()
 
 // =====================================================================================
 
-static int str_remove(char* src, int pos, int count, char* dest, int destLen)
+static int str_remove(const char* src, int pos, int count, char* dest, int destLen)
 {
 	int srcLen = str_length(src);
 
-	if (srcLen - count > destLen) {
+	if (srcLen - count >= destLen) {
 		printf("Error in str_remove: Result buffer not large enough!\n");
 		return 0;
 	}
@@ -387,20 +386,20 @@ static int str_remove(char* src, int pos, int count, char* dest, int destLen)
 	}
 
 	// terminate 'dest'
-	dest[srcLen - pos - 1] = '\0';
+	dest[srcLen - pos] = '\0';
 
 	return 1;
 }
 
 static void exercise_08_str_remove()
 {
-	char result[100] = "";
+	char result[12] = "";
 	char* string = "ABCD123EFGHIJK";
 	str_remove(string, 4, 3, result, sizeof (result));
 	printf("Result: %s\n", result);  // <=== ABCDEFGHIJK
 
 	string = "123456";
-	str_remove(string, 2, 3, result, sizeof(result));
+	str_remove(string, 3, 3, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== 123
 
 	str_remove(string, 0, 3, result, sizeof(result));
@@ -412,14 +411,14 @@ static void exercise_08_str_remove()
 void exercise_zeichenkettenverarbeitung()
 {
 	exercise_01_chr_replace();
-	//exercise_02_chr_append();
-	//exercise_03_chr_insert();
-	//exercise_04_chr_remove();
+	exercise_02_chr_append();
+	exercise_03_chr_insert();
+	exercise_04_chr_remove();
 	
-	//exercise_05_str_replace();
-	//exercise_06_str_append();
-	//exercise_07_str_insert();
-	//exercise_08_str_remove();
+	exercise_05_str_replace();
+	exercise_06_str_append();
+	exercise_07_str_insert();
+	exercise_08_str_remove();
 }
 
 // =====================================================================================

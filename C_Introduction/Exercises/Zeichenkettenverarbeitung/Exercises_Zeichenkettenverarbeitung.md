@@ -1,4 +1,4 @@
-# Elementare Zeichenketteroperationen: `length`, `replace` und `insert`
+# Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove` 
 
 [Zurück](./../Exercises.md)
 
@@ -16,24 +16,38 @@ Realisieren Sie ein oder mehrere Funktionen, die auf Zeichenketten operieren:
 
 *Bemerkung*:
 Die Parameter der Funktionen können bzgl. der Zeichenketten entweder den Datentyp
-`char[]` oder `char*` haben.
+`char[]` oder `char*` haben. In beiden Fällen wird die Adresse des ersten Zeichens des Zeichenkette übergeben.
 
 Die Funktionen sollten folgende Schnittstelle haben:
 
-1. für den Fall des Arbeitens mit einem einzelnen Zeichen:
+### Modifikation der Zeichenkette durch ein einzelnes Zeichen
+
 
 ```cpp
-void chr_replace(char* quelle, int pos, char ch);
-int  chr_insert(char* quelle, int pos, char ch, char* ziel, int length);
-int  chr_remove(char* quelle, int pos, char* ziel, int length);
+void chr_replace (char* src, int pos, char ch);
+int  chr_append  (const char* src, char ch, char* dest, int destLen);
+int  chr_insert  (const char* src, int pos, char ch, char* dest, int destLen);
+int  chr_remove  (const char* src, int pos, char* dest, int destLen);
 ```
 
-2. für den Fall des Arbeitens mit einer Zeichenkette:
+Bei der ersten Funktion `chr_replace` können Sie im ersten Parameter `src` erkennen,
+dass das Schlüsselwort `const` fehlt: Das Resultat der Funktionsausführung soll
+im ersten Parameter abgelegt werden. Es muss also ein Feld von Zeichen übergeben werden,
+das einen schreibenden Zugriff gestattet.
+
+In allen anderen Funktionen soll auf die Zeichen
+des ersten Parameters `src` nur lesend zugegriffen werden dürfen.
+Das Resultat der Funktionsausführung ist jeweils in einem Parameter `dest` abzulegen,
+dessen Pufferlänge im Parameter `destLen` zur Verfügung gestellt wird.
+
+
+### Modifikation der Zeichenkette durch eine zweite Zeichenkette
 
 ```cpp
-void str_append(char* ergebnis, int len, char* ziel, char* quelle);
-void str_insert(char* quelle, int pos, char* toInsert, char* ziel, int lenZiel);
-void str_remove(char* quelle, int pos, int count, char* ziel, int lenZiel);
+int  str_replace (const char* src, int pos, char* toReplace, char* dest, int destLen);
+int  str_append  (const char* src, char* toAppend, char* dest, int destLen);
+int  str_insert  (const char* src, int pos, char* toInsert, char* dest, int destLen);
+int  str_remove  (const char* src, int pos, int count, char* dest, int destLen);
 ```
 
 Es folgen einige grafische Hinweise für das Realisieren dieser Funktionen:

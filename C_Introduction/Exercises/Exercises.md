@@ -34,7 +34,7 @@ um diverse Features von C zu demonstrieren.
 
 #### Zeichenkettenverarbeitung
 
-[**Elementare Zeichenketteroperationen: `length`, `replace` und `insert`**](#link13)
+[**Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove`**](#link13)
 
 #### Zeiger (*Pointer*)
 
