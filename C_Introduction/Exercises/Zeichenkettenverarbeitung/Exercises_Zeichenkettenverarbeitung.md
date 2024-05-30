@@ -1,4 +1,4 @@
-# Elementare Zeichenketteroperationen:<br \>`length`, `replace`, `append`, `insert` und `remove` 
+# Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove` 
 
 [Zurück](./../Exercises.md)
 
