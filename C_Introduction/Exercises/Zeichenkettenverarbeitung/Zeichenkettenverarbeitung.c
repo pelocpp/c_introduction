@@ -7,17 +7,17 @@
 // TBD: Die Fehlerabfragen überprüfen
 
 // function prototypes
-static int  str_length(char* source);
+static int  str_length  (char* src);
 
-static void chr_replace(char* source, int pos, char ch);
-static int  chr_append(char* source, char ch, char* destination, int lenDestination);
-static int  chr_insert(char* source, int pos, char ch, char* destination, int lenDestination);
-static int  chr_remove(char* source, int pos, char* destination, int lenDestination);
+static void chr_replace (char* src, int pos, char ch);
+static int  chr_append  (char* src, char ch, char* dest, int destLen);
+static int  chr_insert  (char* src, int pos, char ch, char* dest, int destLen);
+static int  chr_remove  (char* src, int pos, char* dest, int destLen);
 
-static void str_replace(char* source, int pos, char* toReplace, char* destination, int lenDestination);
-static void str_append(char* ergebnis, int len, char* destination, char* source);
-static void str_insert(char* source, int pos, char* toInsert, char* destination, int lendestination);
-static void str_remove(char* source, int pos, int count, char* destination, int lendestination);
+static int  str_replace (char* src, int pos, char* toReplace, char* dest, int destLen);
+static int  str_append  (char* src, char* toAppend, char* dest, int destLen);
+static int  str_insert  (char* src, int pos, char* toInsert, char* dest, int destLen);
+static int  str_remove  (char* src, int pos, int count, char* dest, int destLen);
 
 static void exercise_01_chr_replace();
 static void exercise_02_chr_append();
@@ -31,11 +31,11 @@ static void exercise_08_str_remove();
 
 // =====================================================================================
 
-static int str_length(char* source)
+static int str_length(char* src)
 {
 	int pos = 0;
 
-	while (source[pos] != '\0') {
+	while (src[pos] != '\0') {
 		pos++;
 	}
 
@@ -44,324 +44,378 @@ static int str_length(char* source)
 
 // =====================================================================================
 
-static void chr_replace(char* source, int pos, char ch) {
+static void chr_replace(char* src, int pos, char ch) {
 
-	int lensource = str_length(source);
+	int srcLen = str_length(src);
 
-	if (pos >= lensource) {
+	if (pos >= srcLen) {
 		return;
 	}
 
-	source[pos] = ch;
+	src[pos] = ch;
 }
 
 static void exercise_01_chr_replace()
 {
-	// "ABCDE", an der Position 3 das 'D' durch ein '!' ersetzen ===> "ABC!E"
+	char result[10];
+	char* string = "ABCDE";
+	printf("String: %s\n", string);
 
-	// char* source = "ABCDE";  // VORSICHT !!!
-	// "ABCDE" liegt im Codesegment =>
-	// hier ist ein SCHREIBEN VERBOTEN / Absturz
+	chr_replace(string, 2, '!');
+	printf("Result: %s\n", result);  // <=== "ABCDE"
 
-	char source[] = "ABCDE";    // Zeichenkette liegt in einem Array (!)
-
-	printf("Quelle: Vorher:  %s\n", source);
-	chr_replace(source, 2, '!');
-	printf("Quelle: Nachher: %s\n", source);
+	string = "A";
+	chr_replace(string, 0, '!');
+	printf("Result: %s\n", result);  // <=== "!"
 }
 
 // =====================================================================================
 
-static int chr_append(char* source, char ch, char* destination, int lenDestination) {
+static int chr_append(char* src, char ch, char* dest, int destLen) {
 
-	int lenSource = str_length(source);
+	int srcLen = str_length(src);
 
-	if (lenDestination < lenSource + 1) {
+	if (srcLen + 1 /* char to insert */ + 1 /* '\0' */ >= destLen) {
+		printf("Error in str_append: Result buffer not large enough!\n");
 		return 0;
 	}
 
-	// copy 'source' to 'destination'
-	for (int i = 0; i < lenSource; ++i) {
-		destination[i] = source[i];
+	// copy 'src' to 'dest'
+	for (int i = 0; i < srcLen; ++i) {
+		dest[i] = src[i];
 	}
 
-	// append character 'ch' at the end of 'destination'
-	destination[lenSource] = ch;
+	// append character 'ch' at the end of 'dest'
+	dest[srcLen] = ch;
 
-	// terminate 'destination'
-	destination[lenSource + 1] = '\0';
+	// terminate 'dest'
+	dest[srcLen + 1] = '\0';
 
 	return 1;
 }
 
 static void exercise_02_chr_append()
 {
-	// In "ABCDE" an der Position 3 ein '!' einfuegen ==> "ABC!DE"
-	char* source = "ABCDE";
-	printf("Quelle: %s\n", source);
-
 	char result[10];
-	chr_insert(source, 2, '!', result, 10);
-	printf("destination:   %s\n", result);
+	char* string = "ABCDE";
+	printf("String: %s\n", string);
+
+	chr_append(string, '!', result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "ABCDE!"
+
+	string = "";
+	chr_append(string, '!', result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "!"
 }
 
 // =====================================================================================
 
-static int chr_insert(char* source, int pos, char ch, char* destination, int lenDestination) {
+static int chr_insert(char* src, int pos, char ch, char* dest, int destLen) {
 
-	int lenSource = str_length(source);
+	int srcLen = str_length(src);
 
-	if (pos > lenSource) {
+	if (srcLen + 1 /* char to insert */ + 1 /* '\0' */ >= destLen) {
+		printf("Error in chr_insert: Result buffer not large enough!\n");
 		return 0;
 	}
 
-	if (lenDestination < lenSource + 1) {
+	if (pos > srcLen) {
+		printf("Error in chr_insert: pos out of range!\n");
 		return 0;
 	}
 
-	// copy first part of 'source' to 'destination'
+	// copy first part of 'src' to 'dest'
 	for (int index = 0; index < pos; ++index) {
-		destination[index] = source[index];
+		dest[index] = src[index];
 	}
 
-	// copy character to insert into 'destination'
-	destination[pos] = ch;
+	// copy character to insert into 'dest'
+	dest[pos] = ch;
 
-	// copy second part of 'source' to 'destination'
-	for (int i = pos; i < lenSource; ++i) {
-		destination[i + 1] = source[i];
+	// copy second part of 'src' to 'dest'
+	for (int i = pos; i < srcLen; ++i) {
+		dest[i + 1] = src[i];
 	}
 
-	// terminate 'destination'
-	destination[lenSource + 1] = '\0';
+	// terminate 'dest'
+	dest[srcLen + 1] = '\0';
 
 	return 1;
 }
 
 static void exercise_03_chr_insert()
 {
-	// In "ABCDE" an der Position 3 ein '!' einfuegen ==> "ABC!DE"
-	char* source = "ABCDE";
-	printf("Quelle: %s\n", source);
+	char result[10];
+	char* string = "ABCDE";
+	printf("String: %s\n", string);
 
-	char destination[100];
-	chr_insert(source, 2, '!', destination, 100);
-	printf("destination:   %s\n", destination);
+	chr_insert(string, 2, '!', result, sizeof (result));
+	printf("Result: %s\n", result);  // <=== "AB!CDE"
+
+	chr_insert(string, 0, '!', result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "!ABCDE"
+
+	chr_insert(string, 5, '!', result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "ABCDE!"
 }
 
 // =====================================================================================
 
-static int chr_remove(char* source, int pos, char* destination, int length) {
+static int chr_remove(char* src, int pos, char* dest, int destLen) {
 
-	int lensource = str_length(source);
-
-	if (pos > lensource) {
-		return 0;
+	int srcLen = str_length(src);
+	
+	if (srcLen - 1 > destLen) {
+		printf("Error in chr_remove: Result buffer not large enough!\n");
+	    return 0;
 	}
 
-	// copy first part of source to destination
+	// copy first part from 'src' to 'dest'
 	for (int i = 0; i < pos; ++i) {
-		destination[i] = source[i];
+		dest[i] = src[i];
 	}
 
-	// copy second part of source to destination, omitting character at position 'pos'
-	for (int i = pos + 1; i < lensource; ++i) {
-		destination[i-1] = source[i];
+	// copy second part from 'src' to 'dest', omitting character at position 'pos'
+	for (int i = pos + 1; i < srcLen; ++i) {
+		dest[i-1] = src[i];
 	}
 
-	// terminate destination
-	destination[lensource - 1] = '\0';
+	// terminate 'dest'
+	dest[srcLen - 1] = '\0';
 
 	return 1;
 }
 
 static void exercise_04_chr_remove()
 {
-	// "ABCDE", das Zeichen an der Position 2 entfernen ===> "ABDE"
-	char* source = "ABCDE";
-	printf("Quelle: %s\n", source);
+	char result[10];
+	char* string = "ABCDE";
+	printf("String: %s\n", string);
 
-	char destination[100];
-	chr_remove(source, 2, destination, 100);
-	printf("destination:   %s\n", destination);
+	chr_remove(string, 2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "ABDE"
+
+	chr_remove(string, 0, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "BCDE" 
+
+	chr_remove(string, 4, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "ABCD" 
 }
 
 // =====================================================================================
 // =====================================================================================
 
-static void str_replace(char* source, int pos, char* toReplace, char* destination, int lenDestination)
+static int str_replace(char* src, int pos, char* toReplace, char* dest, int destLen)
 {
-	//int lendestination = str_length(destination);
+	int srcLen = str_length(src);
+	int toReplaceLen = str_length(toReplace);
 
-	//int lensource = str_length(source);
+	if (srcLen + 1 >= destLen) {
+		printf("Error in str_replace: Result buffer not large enough!\n");
+		return 0;
+	}
 
-	//if (len < lendestination + lensource + 1) {
-	//	printf("Puffer zu klein!\n");
-	//}
+	if (pos + toReplaceLen > srcLen) {
+		printf("Error in str_replace: String to replace too long or wrong position\n");
+		return 0;
+	}
 
-	//// destination an den Anfang von Ergebnis kopieren
-	//for (int i = 0; i < lendestination; i++) {
+	// copy first part from 'src' to 'dest'
+	for (int i = 0; i < pos; i++) {
+		dest[i] = src[i];
+	}
 
-	//	ergebnis[i] = destination[i];
-	//}
+	// replace upcoming 'toReplaceLen' characters with 'toReplace'
+	for (int i = 0; i < toReplaceLen; i++) {
+		dest[pos + i] = toReplace[i];
+	}
 
-	//// dahinter source kopieren
-	//for (int k = 0; k < lensource; k++) {
-	//	ergebnis[lendestination + k] = source[k];
-	//}
+	// copy remainder, if any, from 'src' to 'dest'
+	for (int k = pos + toReplaceLen; k < srcLen; k++) {
+		dest[k] = src[k];
+	}
 
-	//ergebnis[lendestination + lensource] = '\0';
+	// terminate 'dest'
+	dest[srcLen] = '\0';
+
+	return 1;
 }
 
 static void exercise_05_str_replace()
 {
-	//char* kette1 = "destination";
+	char result[32] = "";
+	char* string1 = "123456789";
+	char* string2 = "ABC";
+	str_replace(string1, 3, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "123ABC789" 
 
-	//char* kette2 = "source";
+	string1 = "123456";
+	string2 = "ABC";
+	str_replace(string1, 0, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "ABC456"
 
-	//char ergebnis[100];
+	string1 = "123456";
+	string2 = "ABC";
+	str_replace(string1, 3, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "123ABC"
 
-	//str_replace(ergebnis, 2, kette1, kette2);   // "destinationKETTE" 
-
-	//printf("Ergebnis: %s\n", ergebnis);  // <=== "destinationKETTE"  !!!
+	string1 = "123456";
+	string2 = "ABCDEF";
+	str_replace(string1, 0, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "ABCDEF"   
 }
 
 // =====================================================================================
 
-static void str_append(char* ergebnis, int len, char* destination, char* source)
+static int str_append(char* src, char* toAppend, char* dest, int destLen)
 {
-	int lendestination = str_length(destination);
+	int srcLen = str_length(src);
+	int toAppendLen = str_length(toAppend);
 
-	int lensource = str_length(source);
-
-	if (len < lendestination + lensource + 1) {
-		printf("Puffer zu klein!\n");
+	if (srcLen + toAppendLen + 1 >= destLen) {
+		printf("Error in str_append: Result buffer not large enough!\n");
+		return 0;
 	}
 
-	// destination an den Anfang von Ergebnis kopieren
-	for (int i = 0; i < lendestination; i++) {
-
-		ergebnis[i] = destination[i];
+	// copy 'src' to 'dest'
+	for (int i = 0; i < srcLen; i++) {
+		dest[i] = src[i];
 	}
 
-	// dahinter source kopieren
-	for (int k = 0; k < lensource; k++) {
-		ergebnis[lendestination + k] = source[k];
+	// appending 'toAppend'
+	for (int k = 0; k < toAppendLen; k++) {
+		dest[srcLen + k] = toAppend[k];
 	}
 
-	ergebnis[lendestination + lensource] = '\0';
+	// terminate 'dest'
+	dest[srcLen + toAppendLen] = '\0';
+
+	return 1;
 }
 
 static void exercise_06_str_append()
 {
-	char* kette1 = "destination";
+	char result[32] = "";
+	char* string1 = "12345";
+	char* string2 = "ABCDE";
+	str_append(string1, string2, result, sizeof (result));
+	printf("Result: %s\n", result);  // <=== "12345ABCDE" 
 
-	char* kette2 = "source";
+	string1 = "12345";
+	string2 = "";
+	str_append(string1, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "12345" 
 
-	char ergebnis[100];
+	string1 = "";
+	string2 = "12345";
+	str_append(string1, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "12345" 
 
-	str_append(ergebnis, 100, kette1, kette2);   // "destinationKETTE" 
-
-	printf("Ergebnis: %s\n", ergebnis);  // <=== "destinationKETTE"  !!!
+	string1 = "";
+	string2 = "";
+	str_append(string1, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "" 
 }
 
 // =====================================================================================
 
-static void str_insert(char* source, int pos, char* toInsert, char* destination, int lendestination)
+static int str_insert(char* src, int pos, char* toInsert, char* dest, int destLen)
 {
-	int lensource = str_length(source);
+	int srcLen = str_length(src);
+	int toInsertLen = str_length(toInsert);
 
-	int lenToInsert = str_length(toInsert);
-
-	if (lensource + lenToInsert + 1 >= lendestination) {
-		printf("Error: Result buffer not large enough\n");
-		return;
+	if (srcLen + toInsertLen + 1 >= destLen) {
+		printf("Error in str_insert: Result buffer not large enough!\n");
+		return 0;
 	}
 
-	// copy first part into destination
+	// copy first part from 'src' to 'dest'
 	for (int i = 0; i < pos; i++) {
-
-		destination[i] = source[i];
+		dest[i] = src[i];
 	}
 
-	// copy string to insert into destination
-	for (int i = 0; i < lenToInsert; i++) {
-
-		destination[pos + i] = toInsert[i];
+	// copy string 'toInsert' from 'src' to 'dest'
+	for (int i = 0; i < toInsertLen; i++) {
+		dest[pos + i] = toInsert[i];
 	}
 
-	// copy remainder of source into destination
-	for (int i = pos; i < lensource; i++) {
-
-		destination[lenToInsert + i] = source[i];
+	// copy remainder from 'src' to 'dest'
+	for (int i = pos; i < srcLen; i++) {
+		dest[toInsertLen + i] = src[i];
 	}
 
-	// terminate destination
-	destination[lensource + lenToInsert] = '\0';
+	// terminate 'dest'
+	dest[srcLen + toInsertLen] = '\0';
+
+	return 1;
 }
 
 static void exercise_07_str_insert()
 {
-	char* kette1 = "ABCDE";
+	char result[20] = "";
+	char* string1 = "ABCDE";
+	char* string2 = "123";
+	str_insert(string1, 2, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "12ABC345"
 
-	char* kette2 = "123";
+	str_insert(string1, 0, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "123ABCDE"
 
-	// Beispiel: "ABCDE" = 5, "123" = 3 , Null = 1 ==> 
-
-	char ergebnis[10];  // das ist ein Feld von Zeichen ==> Zeichenkette
-
-	str_insert(kette1, 2, kette2, ergebnis, 10);
-
-	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
+	str_insert(string1, 5, string2, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== "ABCDE123"
 }
 
 // =====================================================================================
 
-static void str_remove(char* source, int pos, int count, char* destination, int lendestination)
+static int str_remove(char* src, int pos, int count, char* dest, int destLen)
 {
-	int lensource = str_length(source);
+	int srcLen = str_length(src);
 
-	if (lensource - count > lendestination) {
-		printf("Error");
-		return;
+	if (srcLen - count > destLen) {
+		printf("Error in str_remove: Result buffer not large enough!\n");
+		return 0;
 	}
 
-	// copy first part into destination
+	// copy first part from 'src' to 'dest'
 	for (int i = 0; i < pos; i++) {
-
-		destination[i] = source[i];
+		dest[i] = src[i];
 	}
 
-	// copy second part into destination
-	for (int i = pos + count; i < lensource; i++) {
-
-		destination[i - count] = source[i];
+	// copy second part from 'src' to 'dest', omitting 'count' characters
+	for (int i = pos + count; i < srcLen; i++) {
+		dest[i - count] = src[i];
 	}
 
-	// terminate destination
-	destination[lensource - pos + 1] = '\0';
+	// terminate 'dest'
+	dest[srcLen - pos - 1] = '\0';
+
+	return 1;
 }
 
 static void exercise_08_str_remove()
 {
-	char* kette = "ABCD123EFGHIJK";
+	char result[100] = "";
+	char* string = "ABCD123EFGHIJK";
+	str_remove(string, 4, 3, result, sizeof (result));
+	printf("Result: %s\n", result);  // <=== ABCDEFGHIJK
 
-	char ergebnis[100];
+	string = "123456";
+	str_remove(string, 2, 3, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== 123
 
-	str_remove(kette, 4, 3, ergebnis, 100);
-
-	printf("Ergebnis: %s\n", ergebnis);  // <=== "12ABC345"  !!!
+	str_remove(string, 0, 3, result, sizeof(result));
+	printf("Result: %s\n", result);  // <=== 456
 }
 
 // =====================================================================================
 
 void exercise_zeichenkettenverarbeitung()
 {
-	//exercise_01_chr_replace();
+	exercise_01_chr_replace();
 	//exercise_02_chr_append();
 	//exercise_03_chr_insert();
-	exercise_04_chr_remove();
-	//
+	//exercise_04_chr_remove();
+	
 	//exercise_05_str_replace();
 	//exercise_06_str_append();
 	//exercise_07_str_insert();
