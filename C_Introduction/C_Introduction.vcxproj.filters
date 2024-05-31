@@ -88,6 +88,12 @@
     <Filter Include="Exercises\Tausche">
       <UniqueIdentifier>{bb3ae06e-ce72-4710-8c23-bb6cba87df5b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tutorial">
+      <UniqueIdentifier>{a6b78f73-d5f4-47f8-bcdf-25c454107c36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\Arrays">
+      <UniqueIdentifier>{f3950a63-81bc-401a-98fd-9db84da67538}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -222,6 +228,9 @@
     </None>
     <None Include="Exercises\Tausche\Exercises_Tausche.md">
       <Filter>Exercises\Tausche</Filter>
+    </None>
+    <None Include="Tutorial\Arrays\Arrays.md">
+      <Filter>Tutorial\Arrays</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

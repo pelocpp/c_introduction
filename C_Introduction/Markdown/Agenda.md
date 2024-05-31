@@ -50,7 +50,7 @@
   * Schachtelung von Variablen-Definitionen
   * Verdeckung von Variablen
    
-### Felder (Arrays)
+### [Felder (Arrays)](../Tutorial/Arrays/Arrays.md)
   * Deklaration und Initialisierung
   * Auf Feldelemente zugreifen
   * Felder in Schleifen durchlaufen
@@ -82,13 +82,18 @@
   * Felder von Strukturen
   * Schlüsselwort `typedef`
 
-### Dynamische Speicherverwaltung
-  * Speicherbereiche eines C–Programms
+### Speicherbereiche eines C–Programms
+  * Globale Variablen
+  * Lokale Variablen
+  * Statische Variablen
+  * Dynamische Variablen
   * Lebensdauer von Variablen in einem C&ndash;Programm
+  
+### Dynamische Speicherverwaltung
   * Stapel und Halde (*Stack* und *Heap*)
   * Speicher reservieren und freigeben: `malloc` und `free`
   * [*Memory Leaks Detection* in C](MemoryLeaksDetection.md)
-  
+   
 ### Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)
   * Ein- und Ausgabe auf die Konsole: `printf`
   * Zeichenkettenverarbeitung mit `strlen`, `strcpy` etc.

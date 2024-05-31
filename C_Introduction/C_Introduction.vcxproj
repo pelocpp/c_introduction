@@ -64,6 +64,7 @@
     <None Include="Markdown\Literature.md" />
     <None Include="Markdown\MemoryLeaksDetection.md" />
     <None Include="Markdown\Roadmap.md" />
+    <None Include="Tutorial\Arrays\Arrays.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c" />
