@@ -14,7 +14,13 @@
 // function prototypes
 extern void testDatatypesVariablesConstants();
 extern void testHelloWorld();
-extern void arrays();
+extern void testArrays();
+extern void testSubroutines();
+extern void testDynamic();
+extern void testStrings();
+extern void testStructs();
+extern void testCrt();
+
 extern void exercises();
 
 // entry point
@@ -25,7 +31,13 @@ int main()
     // main entry points code examples
     //testHelloWorld();
     //testDatatypesVariablesConstants();
-    arrays();
+    //testArrays();
+    //testSubroutines();
+    //testDynamic();
+    testStrings();
+    //testStructs();
+    //testCrt();
+
     //exercises();
 
     printf("[Done]\n");

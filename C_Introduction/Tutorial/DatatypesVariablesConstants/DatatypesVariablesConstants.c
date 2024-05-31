@@ -1,5 +1,5 @@
 // ===========================================================================
-// DatatypesVariablesConstants.cpp // Datatypes, Variables and Constants
+// DatatypesVariablesConstants.c // Datatypes, Variables and Constants
 // ===========================================================================
 
 #include <stdio.h>

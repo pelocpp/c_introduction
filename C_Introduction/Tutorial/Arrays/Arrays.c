@@ -1,5 +1,5 @@
 // ===========================================================================
-// Arrays.cpp // Felder (Arrays)
+// Arrays.c // Felder (Arrays)
 // ===========================================================================
 
 #include <stdio.h>
@@ -12,7 +12,7 @@ static void arrays_01()
 {
     int numbers[Length];
     
-    int n = numbers[0];
+    int n = numbers[0];  // using uninitialized memory :)
     numbers[0] = 123;
 
     for (int i = 0; i < Length; i++) {
@@ -143,8 +143,8 @@ static void arrays_05()
 
     // Bei Arrays sieht die Runtime einen Namen als ANFANGSADRESSE.
 
-    int numbers1[Length];
-    int numbers2[Length];
+    int numbers1[Length] = { 0 };
+    int numbers2[Length] = { 0 };
 
     // numbers1 = numbers2;                // Wertzuweisung: so nicht !!!!
 
@@ -153,7 +153,39 @@ static void arrays_05()
     }
 }
 
-void arrays()
+static void arrays_06_gimmicks()
+{
+    int numbers[Length] = { 0 };  // Hier wird speicher reserviert
+
+    // Was ist 'numbers' per C Sprachdefinition: 
+    // numbers ist die Anfangsadresse des reservierten Speichers.
+    // Diese ist KONSTANT.
+
+    // Wert 123 in das erste Element des Felds schreiben:
+    *numbers = 123;
+
+    // Pointer Arithmetik mit ++
+    int* ip = numbers;
+    ip++;
+    *ip = 12;
+
+    int offset = 3;
+
+    // Pointer Arithmetik mit +:     // Adresse + Offset
+    *(numbers + offset) = 6;         // So sieht es der Compiler
+    // versus
+    numbers[offset] = 6;             // Schreibweise für den Anwender
+
+    // Zum Abschluss:
+    numbers[-3] = 6;                 // Prinzipiell in C definiert :)
+
+    // Oderzum guten Abschluss: Eine Auswirkung der Zeiger-Arithmetik
+    *(offset + numbers) = 6;
+    // oder
+    3[numbers] = 6;
+}
+
+void testArrays()
 {
     arrays_01();
     arrays_02();

@@ -108,8 +108,18 @@
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
     <ClCompile Include="Program.c" />
     <ClCompile Include="Tutorial\Arrays\Arrays.c" />
+    <ClCompile Include="Tutorial\ControlStructures\ControlStructures.c" />
+    <ClCompile Include="Tutorial\CRT\CRT.c" />
     <ClCompile Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.c" />
+    <ClCompile Include="Tutorial\DynamicMemory\DynamicMemory.c" />
     <ClCompile Include="Tutorial\HelloWorld\HelloWorld.c" />
+    <ClCompile Include="Tutorial\MemoryManagement\MemoryManagement.c" />
+    <ClCompile Include="Tutorial\NestedScope\NestedScope.c" />
+    <ClCompile Include="Tutorial\Operators\Operators.c" />
+    <ClCompile Include="Tutorial\Pointers\Pointers.c" />
+    <ClCompile Include="Tutorial\Strings\Strings.c" />
+    <ClCompile Include="Tutorial\Structs\Structs.c" />
+    <ClCompile Include="Tutorial\Subroutines\Subroutines.c" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_01.png" />
@@ -133,6 +143,7 @@
     <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />
     <ClInclude Include="Exercises\Wallet\Wallet.h" />
+    <ClInclude Include="Tutorial\Structs\Time.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

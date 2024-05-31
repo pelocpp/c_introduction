@@ -399,6 +399,36 @@
     <ClCompile Include="Tutorial\Arrays\Arrays.c">
       <Filter>Tutorial\Arrays</Filter>
     </ClCompile>
+    <ClCompile Include="Tutorial\ControlStructures\ControlStructures.c">
+      <Filter>Tutorial\ControlStructures</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\CRT\CRT.c">
+      <Filter>Tutorial\CRT</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\DynamicMemory\DynamicMemory.c">
+      <Filter>Tutorial\DynamicMemory</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\MemoryManagement\MemoryManagement.c">
+      <Filter>Tutorial\MemoryManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\NestedScope\NestedScope.c">
+      <Filter>Tutorial\NestedScope</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\Strings\Strings.c">
+      <Filter>Tutorial\Strings</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\Operators\Operators.c">
+      <Filter>Tutorial\Operators</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\Pointers\Pointers.c">
+      <Filter>Tutorial\Pointers</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\Structs\Structs.c">
+      <Filter>Tutorial\Structs</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\Subroutines\Subroutines.c">
+      <Filter>Tutorial\Subroutines</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -459,6 +489,9 @@
     </ClInclude>
     <ClInclude Include="Exercises\Wallet\Wallet.h">
       <Filter>Exercises\Wallet</Filter>
+    </ClInclude>
+    <ClInclude Include="Tutorial\Structs\Time.h">
+      <Filter>Tutorial\Structs</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
