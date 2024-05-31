@@ -1,6 +1,6 @@
 # &bdquo;Hello World&rdquo;
 
-[Zurück](Agenda.md)
+[Zurück](../../Markdown/Agenda.md)
 
 ---
 
@@ -44,11 +44,11 @@ welcher Compiler gestartet wird!
 
 ## Quellcode des Beispiels:
 
-[*HelloWorld.c*](../HelloWorld.c)
+[*HelloWorld.c*](HelloWorld.c)
 
 ---
 
-[Zurück](Agenda.md)
+[Zurück](../../Markdown/Agenda.md)
 
 ---
 

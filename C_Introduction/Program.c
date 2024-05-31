@@ -12,7 +12,9 @@
 #include <stdio.h>
 
 // function prototypes
+extern void testDatatypesVariablesConstants();
 extern void testHelloWorld();
+extern void arrays();
 extern void exercises();
 
 // entry point
@@ -21,8 +23,10 @@ int main()
     printf("[Collection of introductory C Code Examples - Copyright (C) 2024 Peter Loos]\n");
 
     // main entry points code examples
-    // testHelloWorld();
-    exercises();
+    //testHelloWorld();
+    //testDatatypesVariablesConstants();
+    arrays();
+    //exercises();
 
     printf("[Done]\n");
     return 0;

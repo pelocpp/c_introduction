@@ -94,15 +94,45 @@
     <Filter Include="Tutorial\Arrays">
       <UniqueIdentifier>{f3950a63-81bc-401a-98fd-9db84da67538}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tutorial\CRT">
+      <UniqueIdentifier>{a08f2a48-d6e4-4c56-b736-690a3802dcda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\DatatypesVariablesConstants">
+      <UniqueIdentifier>{37c71026-5e49-4b58-895b-8cecf998f9d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\DynamicMemory">
+      <UniqueIdentifier>{ed52405b-e825-48ae-95d8-208853b077dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\MemoryManagement">
+      <UniqueIdentifier>{8621e5d3-f3b5-4ac1-b577-93ce13101962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\NestedScope">
+      <UniqueIdentifier>{c55c66f8-bf4f-4133-add8-913f0656a325}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\Operators">
+      <UniqueIdentifier>{088ea9a1-662f-4d0b-a663-2ffd9ecf47da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\Pointers">
+      <UniqueIdentifier>{abe32ee5-9365-4a0b-8c39-58b4cad7fdd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\Structs">
+      <UniqueIdentifier>{940fe406-8d32-4e7f-bf59-e8b480461c65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\Subroutines">
+      <UniqueIdentifier>{3980e00b-1ef7-4885-8a64-bc1f055f74ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\ControlStructures">
+      <UniqueIdentifier>{68f50d41-b59d-4238-909c-43ce1b524bcf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\HelloWorld">
+      <UniqueIdentifier>{14b558bc-29ce-4970-8b91-f3c343730a34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
       <Filter>Markdown</Filter>
     </None>
     <None Include="Markdown\FirstOfAll.md">
-      <Filter>Markdown</Filter>
-    </None>
-    <None Include="Markdown\HelloWorld.md">
       <Filter>Markdown</Filter>
     </None>
     <None Include="Markdown\InstallationGuide.md">
@@ -232,6 +262,36 @@
     <None Include="Tutorial\Arrays\Arrays.md">
       <Filter>Tutorial\Arrays</Filter>
     </None>
+    <None Include="Tutorial\ControlStructures\ControlStructures.md">
+      <Filter>Tutorial\CRT</Filter>
+    </None>
+    <None Include="Tutorial\Operators\Operators.md">
+      <Filter>Tutorial\Operators</Filter>
+    </None>
+    <None Include="Tutorial\Pointers\Pointers.md">
+      <Filter>Tutorial\Pointers</Filter>
+    </None>
+    <None Include="Tutorial\Structs\Structs.md">
+      <Filter>Tutorial\Structs</Filter>
+    </None>
+    <None Include="Tutorial\Subroutines\Subroutines.md">
+      <Filter>Tutorial\Subroutines</Filter>
+    </None>
+    <None Include="Tutorial\NestedScope\NestedScope.md">
+      <Filter>Tutorial\NestedScope</Filter>
+    </None>
+    <None Include="Tutorial\MemoryManagement\MemoryManagement.md">
+      <Filter>Tutorial\MemoryManagement</Filter>
+    </None>
+    <None Include="Tutorial\DynamicMemory\DynamicMemory.md">
+      <Filter>Tutorial\DynamicMemory</Filter>
+    </None>
+    <None Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.md">
+      <Filter>Tutorial\DatatypesVariablesConstants</Filter>
+    </None>
+    <None Include="Tutorial\HelloWorld\HelloWorld.md">
+      <Filter>Tutorial\HelloWorld</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -263,9 +323,6 @@
     </ClCompile>
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c">
       <Filter>Exercises\Zeichenkettenverarbeitung</Filter>
-    </ClCompile>
-    <ClCompile Include="HelloWorld.c">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\Lotto\Lotto.c">
       <Filter>Exercises\Lotto</Filter>
@@ -324,12 +381,18 @@
     <ClCompile Include="Exercises\Tausche\Tausche.c">
       <Filter>Exercises\Tausche</Filter>
     </ClCompile>
+    <ClCompile Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.c">
+      <Filter>Tutorial\DatatypesVariablesConstants</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\HelloWorld\HelloWorld.c">
+      <Filter>Tutorial\HelloWorld</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\Arrays\Arrays.c">
+      <Filter>Tutorial\Arrays</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
-      <Filter>Markdown</Filter>
-    </Image>
-    <Image Include="Markdown\HelloWorld.png">
       <Filter>Markdown</Filter>
     </Image>
     <Image Include="Exercises\Maximum\Struktogramm_Maximum.png">
@@ -370,6 +433,9 @@
     </Image>
     <Image Include="Markdown\Github_Mobile_iPhone.png">
       <Filter>Markdown</Filter>
+    </Image>
+    <Image Include="Tutorial\HelloWorld\HelloWorld.png">
+      <Filter>Tutorial\HelloWorld</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

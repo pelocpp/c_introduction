@@ -58,13 +58,22 @@
     <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
     <None Include="Markdown\Agenda.md" />
     <None Include="Markdown\FirstOfAll.md" />
-    <None Include="Markdown\HelloWorld.md" />
     <None Include="Markdown\History.md" />
     <None Include="Markdown\InstallationGuide.md" />
     <None Include="Markdown\Literature.md" />
     <None Include="Markdown\MemoryLeaksDetection.md" />
     <None Include="Markdown\Roadmap.md" />
     <None Include="Tutorial\Arrays\Arrays.md" />
+    <None Include="Tutorial\ControlStructures\ControlStructures.md" />
+    <None Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.md" />
+    <None Include="Tutorial\DynamicMemory\DynamicMemory.md" />
+    <None Include="Tutorial\HelloWorld\HelloWorld.md" />
+    <None Include="Tutorial\MemoryManagement\MemoryManagement.md" />
+    <None Include="Tutorial\NestedScope\NestedScope.md" />
+    <None Include="Tutorial\Operators\Operators.md" />
+    <None Include="Tutorial\Pointers\Pointers.md" />
+    <None Include="Tutorial\Structs\Structs.md" />
+    <None Include="Tutorial\Subroutines\Subroutines.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c" />
@@ -95,8 +104,10 @@
     <ClCompile Include="Exercises\Zeichenstatistik\Zeichenstatistik.c" />
     <ClCompile Include="Exercises\Zeiger\Zeiger.c" />
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
-    <ClCompile Include="HelloWorld.c" />
     <ClCompile Include="Program.c" />
+    <ClCompile Include="Tutorial\Arrays\Arrays.c" />
+    <ClCompile Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.c" />
+    <ClCompile Include="Tutorial\HelloWorld\HelloWorld.c" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_01.png" />
@@ -110,10 +121,10 @@
     <Image Include="Markdown\Embedded_Cpp.jpg" />
     <Image Include="Markdown\Github_Mobile_iPad.png" />
     <Image Include="Markdown\Github_Mobile_iPhone.png" />
-    <Image Include="Markdown\HelloWorld.png" />
     <Image Include="Markdown\I_must_learn_C.png" />
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg" />
     <Image Include="Markdown\TreatWarningsAsErrors.png" />
+    <Image Include="Tutorial\HelloWorld\HelloWorld.png" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />
