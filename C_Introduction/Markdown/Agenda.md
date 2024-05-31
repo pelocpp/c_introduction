@@ -19,7 +19,7 @@
   * "Hello World" &ndash; das erste Programm
   * Fehlermeldungen des Übersetzers
 
-### Datentypen, Variablen und Konstanten
+### [Datentypen, Variablen und Konstanten](../Tutorial/DatatypesVariablesConstants/DatatypesVariablesConstants.md) 
   * Konstante (Literale)
   * Variablen und Schlüsselwörter
   * Datentypen
@@ -28,7 +28,7 @@
   * Typumwandlungen
   * Initialisierung und Zuweisung
 
-### Operatoren und Ausdrücke
+### [Operatoren und Ausdrücke](../Tutorial/Operators/Operators.md)
   * Wertzuweisung
   * Arithmetische Operatoren
   * Logische Operatoren
@@ -36,7 +36,7 @@
   * Inkrement und Dekrement
   * Vorrang und Assoziativität von Operatoren
 
-### Anweisungen und Konstrollstrukturen
+### [Anweisungen und Konstrollstrukturen](../Tutorial/ControlStructures/ControlStructures.md)
   * Bedingungen, Verzweigungen und Wiederholungen
   * Die `if`- und `if`-`else`-Anweisung
   * Die `switch`-Anweisung
@@ -45,7 +45,7 @@
   * Sprünge in Schleifen (`break` und `continue`)
   * Endlosschleifen
 
-### Blockschachtelung
+### [Blockschachtelung](../Tutorial/NestedScope/NestedScope.md)
   * Schachtelung von Kontrollstrukturen
   * Schachtelung von Variablen-Definitionen
   * Verdeckung von Variablen
@@ -56,17 +56,17 @@
   * Felder in Schleifen durchlaufen
   * Mehrdimensionale Felder
 
-### Funktionen / Unterprogramme
+### [Funktionen / Unterprogramme](../Tutorial/Subroutines/Subroutines.md)
   * Funktionsdeklaration und Aufruf
   * Rückgabewert und Parameter
   * Lokale und globale Variablen
   * Funktionen und der *Stack* (*Stapel*)
 
-### Zeichen und Zeichenketten
+### [Zeichen und Zeichenketten](../Tutorial/Strings/Strings.md)
   * Definition von Zeichen (Datentyp `char`) und Zeichenketten (Datentyp `const char*`)
   * Übergabe von Zeichenketten an Unterprogramme
 
-### Zeiger (*Pointer*)
+### [Zeiger (*Pointer*)](../Tutorial/Pointers/Pointers.md)
   * Definition
   * Zeiger (Pointer) initialisieren (Referenzierung), Nullzeiger
   * Dereferenzierung
@@ -74,7 +74,7 @@
   * Anwendung: Parameterübergabemechanismus *Call-by-Value* und *Call-by-Address*
   * Zeiger auf Zeiger
 
-### Strukturen
+### [Strukturen](../Tutorial/Structs/Structs.md)
   * Definition und Anwendung
   * Schlüsselwort `struct`
   * Zugriff auf Elemente
@@ -82,19 +82,19 @@
   * Felder von Strukturen
   * Schlüsselwort `typedef`
 
-### Speicherbereiche eines C–Programms
+### [Speicherbereiche eines C–Programms](../Tutorial/MemoryManagement/MemoryManagement.md)
   * Globale Variablen
   * Lokale Variablen
   * Statische Variablen
   * Dynamische Variablen
   * Lebensdauer von Variablen in einem C&ndash;Programm
   
-### Dynamische Speicherverwaltung
+### [Dynamische Speicherverwaltung](../Tutorial/DynamicMemory/DynamicMemory.md)
   * Stapel und Halde (*Stack* und *Heap*)
   * Speicher reservieren und freigeben: `malloc` und `free`
   * [*Memory Leaks Detection* in C](MemoryLeaksDetection.md)
    
-### Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)
+### [Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)](../Tutorial/CRT/CRT.md)
   * Ein- und Ausgabe auf die Konsole: `printf`
   * Zeichenkettenverarbeitung mit `strlen`, `strcpy` etc.
   * Zufallszahlen: `rand`, `srand`

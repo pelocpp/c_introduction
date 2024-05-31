@@ -113,10 +113,10 @@ static void createRandomNumbers()
     int zahl = rand();   // Zufallszahlen werden berechnet
     printf("Zufall: %d\n", zahl);
 
-    zahl = rand();   // Zufallszahlen werden berechnet
+    zahl = rand();       // Zufallszahlen werden berechnet
     printf("Zufall: %d\n", zahl);
 
-    zahl = rand();   // Zufallszahlen werden berechnet
+    zahl = rand();       // Zufallszahlen werden berechnet
     printf("Zufall: %d\n", zahl);
 }
 
