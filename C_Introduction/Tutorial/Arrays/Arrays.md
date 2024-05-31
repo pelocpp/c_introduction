@@ -6,13 +6,11 @@
 
 ## Allgemeines
 
-## Beispiele
-
 ---
 
 ## Quellcode des Beispiels:
 
-[*Array.c*](../OperatorOverloading/Time.cpp)<br />
+[*Arrays.c*](Arrays.c)<br />
 
 ---
 

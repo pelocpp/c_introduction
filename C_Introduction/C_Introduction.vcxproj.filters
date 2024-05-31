@@ -127,6 +127,9 @@
     <Filter Include="Tutorial\HelloWorld">
       <UniqueIdentifier>{14b558bc-29ce-4970-8b91-f3c343730a34}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tutorial\Strings">
+      <UniqueIdentifier>{09482696-5b60-4fb6-ad78-e091c25599dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -262,9 +265,6 @@
     <None Include="Tutorial\Arrays\Arrays.md">
       <Filter>Tutorial\Arrays</Filter>
     </None>
-    <None Include="Tutorial\ControlStructures\ControlStructures.md">
-      <Filter>Tutorial\CRT</Filter>
-    </None>
     <None Include="Tutorial\Operators\Operators.md">
       <Filter>Tutorial\Operators</Filter>
     </None>
@@ -291,6 +291,15 @@
     </None>
     <None Include="Tutorial\HelloWorld\HelloWorld.md">
       <Filter>Tutorial\HelloWorld</Filter>
+    </None>
+    <None Include="Tutorial\ControlStructures\ControlStructures.md">
+      <Filter>Tutorial\ControlStructures</Filter>
+    </None>
+    <None Include="Tutorial\CRT\CRT.md">
+      <Filter>Tutorial\CRT</Filter>
+    </None>
+    <None Include="Tutorial\Strings\Strings.md">
+      <Filter>Tutorial\Strings</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,4 @@
-# &bdquo;Hello World&rdquo;
+# Einführung in die Arbeitsweise der Werkzeuge
 
 [Zurück](../../Markdown/Agenda.md)
 
@@ -15,9 +15,11 @@ Erst dann kann das Programm ausgeführt werden.
 In der *Visual Studio* Entwicklungsumgebung sind alle notwendigen Werkzeuge (Editor, Übersetzer, Debugger)
 vorhanden bwz. integriert.
 
+## &bdquo;Hello World&rdquo;
+
 Der Quelltext für ein &bdquo;Hello World&rdquo; Programm sieht so aus:
 
-#### Datei [*HelloWorld.c*](../HelloWorld.c):
+#### Datei [*HelloWorld.c*](HelloWorld.c):
 
 ```cpp
 #include <stdio.h>

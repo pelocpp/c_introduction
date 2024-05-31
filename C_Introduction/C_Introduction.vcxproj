@@ -65,6 +65,7 @@
     <None Include="Markdown\Roadmap.md" />
     <None Include="Tutorial\Arrays\Arrays.md" />
     <None Include="Tutorial\ControlStructures\ControlStructures.md" />
+    <None Include="Tutorial\CRT\CRT.md" />
     <None Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.md" />
     <None Include="Tutorial\DynamicMemory\DynamicMemory.md" />
     <None Include="Tutorial\HelloWorld\HelloWorld.md" />
@@ -72,6 +73,7 @@
     <None Include="Tutorial\NestedScope\NestedScope.md" />
     <None Include="Tutorial\Operators\Operators.md" />
     <None Include="Tutorial\Pointers\Pointers.md" />
+    <None Include="Tutorial\Strings\Strings.md" />
     <None Include="Tutorial\Structs\Structs.md" />
     <None Include="Tutorial\Subroutines\Subroutines.md" />
   </ItemGroup>

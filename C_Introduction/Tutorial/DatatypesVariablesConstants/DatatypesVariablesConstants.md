@@ -79,13 +79,11 @@
 68:     printf("ooops:                %d\n", ooops);
 69: }
 ```
-
-
 ---
 
 ## Quellcode des Beispiels:
 
-[*DatatypesVariablesConstants.c*](DatatypesVariablesConstants.cpp)<br />
+[*DatatypesVariablesConstants.c*](DatatypesVariablesConstants.c)<br />
 
 ---
 

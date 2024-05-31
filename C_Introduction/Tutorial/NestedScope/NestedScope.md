@@ -1,4 +1,4 @@
-# XXX
+# Blockschachtelung
 
 [Zurück](../../Markdown/Agenda.md)
 
@@ -6,13 +6,11 @@
 
 ## Allgemeines
 
-## Beispiele
-
 ---
 
 ## Quellcode des Beispiels:
 
-[*Array.c*](../OperatorOverloading/Time.cpp)<br />
+[*NestedScope.c*](NestedScope.c)<br />
 
 ---
 

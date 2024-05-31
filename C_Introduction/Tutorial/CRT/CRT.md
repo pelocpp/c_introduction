@@ -1,4 +1,4 @@
-# XXX
+# Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)
 
 [Zurück](../../Markdown/Agenda.md)
 
@@ -6,13 +6,11 @@
 
 ## Allgemeines
 
-## Beispiele
-
 ---
 
 ## Quellcode des Beispiels:
 
-[*Array.c*](../OperatorOverloading/Time.cpp)<br />
+[*CRT.c*](CRT.c)<br />
 
 ---
 
