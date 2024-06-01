@@ -12,11 +12,13 @@
 #include <stdio.h>
 
 // function prototypes
-extern void testDatatypesVariablesConstants();
-extern void testControlStructures();
 extern void testHelloWorld();
+extern void testDatatypesVariablesConstants();
+extern void testOperators();
+extern void testControlStructures();
 extern void testArrays();
 extern void testSubroutines();
+extern void testNestedScope();
 extern void testPointer();
 extern void testMemoryManagement();
 extern void testDynamic();
@@ -34,15 +36,17 @@ int main()
     // main entry points code examples
     //testHelloWorld();
     //testDatatypesVariablesConstants();
+    //testOperators();
     //testControlStructures();
     //testArrays();
     //testSubroutines();
+    //testNestedScope();
     //testPointer();
     //testMemoryManagement();
     //testDynamic();
-    testStrings();
+    //testStrings();
     //testStructs();
-    //testCrt();
+    testCrt();
 
     //exercises();
 

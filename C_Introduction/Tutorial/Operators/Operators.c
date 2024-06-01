@@ -4,11 +4,18 @@
 
 #include <stdio.h>
 
-// ===========================================================================
-// End-of-File
-// ===========================================================================
+static void testOperators_01()
+{
+    int n = 3 + 4 * 5;   // "Punkt-vor-Strich"    // 23
 
-void test_03()
+    int m = -1 + -2 + -3;                         //-6
+
+    int k = 1 + 2 - 3 * 5 + 6 - 8 * 9;            //-78
+
+    int l = 1 + (2 - 3) * (5 + 6) - 8 * 9;        //-82
+}
+
+static void testOperators_02()
 {
     // Inkrement
 
@@ -17,10 +24,12 @@ void test_03()
     int m;
 
     m = ++n;  // Pre-Inkrement
+    printf("m = %d\n", m);
 
     // versus
 
     m = n++;  // Post-Inkrement
+    printf("m = %d\n", m);
 
     // ============================
 
@@ -28,14 +37,16 @@ void test_03()
 
     ++n;
     m = n;  // Wertzuweisung
+    printf("m = %d\n", m);
 
     // versus
 
     m = n;  // Wertzuweisung
     n++;
+    printf("m = %d\n", m);
 }
 
-void test_04()
+static void testOperators_03()
 {
     // Wann ist eine ganze Zahl gerade oder ungerade ???
 
@@ -55,3 +66,14 @@ void test_04()
         printf("n ist ungerade: %d\n", n);
     }
 }
+
+void testOperators()
+{
+    testOperators_01();
+    testOperators_02();
+    testOperators_03();
+}
+
+// ===========================================================================
+// End-of-File
+// ===========================================================================

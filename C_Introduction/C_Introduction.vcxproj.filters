@@ -476,6 +476,9 @@
     <Image Include="Tutorial\HelloWorld\HelloWorld.png">
       <Filter>Tutorial\HelloWorld</Filter>
     </Image>
+    <Image Include="Tutorial\Strings\ASCII_Table.png">
+      <Filter>Tutorial\Strings</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">

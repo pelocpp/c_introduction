@@ -55,7 +55,7 @@ static void chr_replace(char* src, int pos, char ch) {
 
 static void exercise_01_chr_replace()
 {
-	char string[10] = "ABCDE";
+    char string[10] = "ABCDE";
 	// const char* string = "ABCDE";  // crashes
 	printf("String: %s\n", string);
 

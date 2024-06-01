@@ -10,10 +10,74 @@
 #include <string.h>
 #include <errno.h>
 
-void crt_01()
-{
-    // einzelne Zeichen
+// ===========================================================================
+// <string.h> examples
 
+static void crt_01()
+{
+    char text[] = "This is a simple string";
+    size_t length;
+
+    length = strlen(text);
+    printf("String \"%s\" has %zu characters.\n", text, length);
+}
+
+static void crt_02()
+{
+    char text[20] = { '\0' };
+
+    strcpy_s(text, sizeof (text), "Hallo!");
+    printf("%s\n", text);
+
+    strcpy_s(text, sizeof(text), "Yes - You!");
+    printf("%s\n", text);
+}
+
+static void crt_03()
+{
+    char* s = "123456789";
+
+    printf("%zu\n", strlen(s));
+    printf("%zu\n", sizeof("123456789"));
+
+    // string concatenation
+    char dest[50] = "ABCDEF";
+    // char* dest = "ABCDEF";  // <====== VORSICHT
+    strcat_s(dest, 50, "123456789");
+    printf("%s\n", dest);
+}
+
+static void crt_04()
+{
+    const char string1[] = "Hello";
+    const char string2[] = "World";
+    const char string3[] = "Hello";
+
+    if (strcmp(string1, string2) == 0)
+    {
+        printf("The strings %s und %s are identical.\n", string1, string2);
+    }
+    else
+    {
+        printf("The strings %s und %s are different.\n", string1, string2);
+    }
+
+    if (strcmp(string1, string3) == 0)
+    {
+        printf("The strings %s und %s are identical.\n", string1, string3);
+    }
+    else
+    {
+        printf("The strings %s und %s are different.\n", string1, string3);
+    }
+}
+
+// ===========================================================================
+// <ctype.h> examples
+
+static void crt_05()
+{
+    // single character functions
     char ch;
 
     ch = 'A';
@@ -32,21 +96,7 @@ void crt_01()
     printf("%c\n", ch);
 }
 
-void crt_02()
-{
-    char* s = "123456789";
-
-    printf("%zu\n", strlen(s));
-    printf("%zu\n", sizeof("123456789"));
-
-    // string concatenation
-    char dest[50] = "ABCDEF";
-    // char* dest = "ABCDEF";  // <====== VORSICHT
-    strcat_s(dest, 50, "123456789");
-    printf("%s\n", dest);
-}
-
-void crt_03()
+static void crt_06()
 {
     // ascii to integer
     int n = atoi("1234");
@@ -60,9 +110,10 @@ void crt_03()
 
     n = atoi("0");
     printf("%d\n", n);
-
-    // don't forget:  isdigit
 }
+
+// ===========================================================================
+// <stdlib.h> examples
 
 #define FILE_NAME_1 "..\\C_Introduction\\Tutorial\\CRT\\CRT.c"
 
@@ -70,7 +121,7 @@ void crt_03()
 
 #define FILE_NAME_3 R"(C:\Development\Seminar_C_All_In_One_April_2024\ErsteSchritte\ErsteSchritte\Datei_11.c)"
 
-void crt_04()
+static void crt_07()
 {
     FILE* fp;
 
@@ -109,6 +160,9 @@ void testCrt()
     crt_02();
     crt_03();
     crt_04();
+    crt_05();
+    crt_06();
+    crt_07();
 }
 
 // ===========================================================================

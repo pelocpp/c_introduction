@@ -6,6 +6,24 @@
 
 static void strings_01()
 {
+    char ch;
+    int n;
+
+    ch = 'A';
+    printf("%c\n", ch);
+
+    ch = '*';
+    printf("%c\n", ch);
+
+    n = ch;
+    printf("%c\n", ch);
+
+    ch = 65;                 // ASCII table: 'A' == 65
+    printf("%c\n", ch);
+}
+
+static void strings_02()
+{
     int size = sizeof(char);
 
     char ch = '?';
@@ -15,7 +33,7 @@ static void strings_01()
     char cr = '\r';
 }
 
-static void strings_02()
+static void strings_03()
 {
     // ASCII Tabelle
 
@@ -37,7 +55,7 @@ static void strings_02()
 
 // ===========================================================================
 
-static void strings_03()
+static void strings_04()
 {
     // Das "Null" Zeichen
 
@@ -50,7 +68,7 @@ static void strings_03()
     
 // ===========================================================================
 
-static void strings_04()
+static void strings_05()
 {
     // Konstante Zeichenkette
 
@@ -74,20 +92,20 @@ static void strings_04()
     // Zeichenkette in einem Feld bestehend auf char-Elementen
     // mit Initialisierung
 
-    char mehrZeichen[] = { 'A', 'B', 'C', 'D', 'E', '\0' };;
+    const char mehrZeichen[] = { 'A', 'B', 'C', 'D', 'E', '\0' };;
     printf("3.: %s\n\n", mehrZeichen);
     
     // Zeichenkette in einem Feld bestehend auf char-Elementen
     // mit Initialisierung - ohne Terminierendes Null-Zeichen - Vorsicht !!!
 
-    char nochMehrZeichen[] = { 'A', 'B', 'C', 'D', 'E' };
+    const char nochMehrZeichen[] = { 'A', 'B', 'C', 'D', 'E' };
     printf("4.: %s\n\n", nochMehrZeichen);
 
 
-    // Datentyp für eine konstante Zeichenkette: char*
+    // Datentyp für eine konstante Zeichenkette: const char*
     // (für die Sprache C repräsentiert die Adresse die Anfangsadresse der Zeichenkette)
 
-    char* s = "123456789012";  // 12 Zeichen
+    const char* s = "123456789012";  // 12 Zeichen
 
     printf("5.: %s\n", s);
 
@@ -100,7 +118,7 @@ static void strings_04()
 
 // ===========================================================================
 
-static int str_length(char* cp)   // Liefert Anzahl der Zeichen - ohne '\0' zurück
+static int str_length(const char* cp)   // Liefert Anzahl der Zeichen - ohne '\0' zurück
 {
     int length = 0;
 
@@ -113,20 +131,20 @@ static int str_length(char* cp)   // Liefert Anzahl der Zeichen - ohne '\0' zurü
     return length;
 }
 
-static void strings_05()
+static void strings_06()
 {
-    char* kette1 = "123";
+    const char* kette1 = "123";
 
     // oder
 
-    char kette2[20] = "123";  // Ja, da ist hinten noch Freiraum
+    const char kette2[20] = "123";  // Ja, da ist hinten noch Freiraum
 
     int length1 = str_length(kette1);
 
     int length2 = str_length(kette2);
 }
 
-static int str_insert(char* source, char* destination, int destinationLength, char charToInsert, int pos)
+static int str_insert(const char* source, char* destination, int destinationLength, char charToInsert, int pos)
 {
     // a) teste, ob bereitgestellter Puffer (Array 'destination') groß genug ist
     int lenSource = str_length(source);
@@ -156,13 +174,13 @@ static int str_insert(char* source, char* destination, int destinationLength, ch
 }
 
 
-static void strings_06()
+static void strings_07()
 {
-    char* kette1 = "12345";     // Konstante, kein Array, hinten gehört uns der Platz NICHT !!!
+    const char* kette1 = "12345";     // Konstante, kein Array, hinten gehört uns der Platz NICHT !!!
 
     // oder
 
-    char kette2[20] = "12345";  // Ja, da ist hinten noch Freiraum
+    const char kette2[20] = "12345";  // Ja, da ist hinten noch Freiraum
 
     char result[20];
 
@@ -179,6 +197,7 @@ void testStrings()
     strings_04();
     strings_05();
     strings_06();
+    strings_07();
 }
 
 // ===========================================================================
