@@ -26,6 +26,17 @@ static void arrays_01()
 
 static void arrays_02()
 {
+    // Feld variabler Länge: Never - Arrays are Fixed-Size !
+
+    int n;
+    // .......
+    n = 123;
+
+    // int numbers [n];   // does NOT compile
+}
+
+static void arrays_03()
+{
     // array initialization with initializer list
     int numbers1[Length] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
@@ -77,7 +88,7 @@ static void initArray03(int feld[10], int length)
     // same as above
 }
 
-static void arrays_03()
+static void arrays_04()
 {
     int numbers[Length];
 
@@ -120,7 +131,7 @@ static void createRandomNumbers()
     printf("Zufall: %d\n", zahl);
 }
 
-static void arrays_04()
+static void arrays_05()
 {
     int numbers[Length];
 
@@ -137,7 +148,7 @@ static void arrays_04()
     }
 }
 
-static void arrays_05()
+static void arrays_06()
 {
     // Wertzuweisung von Arrays
 
@@ -153,7 +164,7 @@ static void arrays_05()
     }
 }
 
-static void arrays_06_gimmicks()
+static void arrays_07_gimmicks()
 {
     int numbers[Length] = { 0 };  // Hier wird speicher reserviert
 
@@ -193,6 +204,8 @@ void testArrays()
     createRandomNumbers();
     arrays_04();
     arrays_05();
+    arrays_06();
+    arrays_07_gimmicks();
 }
 
 // ===========================================================================

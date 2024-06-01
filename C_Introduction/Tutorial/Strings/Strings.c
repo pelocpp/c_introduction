@@ -35,21 +35,31 @@ static void strings_02()
     }
 }
 
+// ===========================================================================
+
 static void strings_03()
 {
-    // Das 0 Zeichen
+    // Das "Null" Zeichen
 
     char ch1 = '0';     // falsch
 
     char ch2 = 0;       // perfekt
 
     char ch3 = '\0';    // auch perfekt
+}
+    
+// ===========================================================================
 
-    "ABCDE";   // empty statement
+static void strings_04()
+{
+    // Konstante Zeichenkette
 
-    printf("1.: %s\n", "ABCDE");
+    "ABCDE";   // hier: empty statement
 
-    // Eine Zeichenkette in einem ARRAY
+    printf("1.: %s\n\n", "ABCDE");
+
+    // Zeichenkette in einem Feld bestehend auf char-Elementen
+
     char zeichen[20];
 
     zeichen[0] = 'A';
@@ -59,24 +69,38 @@ static void strings_03()
     zeichen[4] = 'E';
     zeichen[5] = 0;
 
-    printf("2.: %s\n", zeichen);
+    printf("2.: %s\n\n", zeichen);
 
-    // Eine konstante Zeichenkette:
-    // Hier sieht die Sprache C die Anfangsadresse
+    // Zeichenkette in einem Feld bestehend auf char-Elementen
+    // mit Initialisierung
+
+    char mehrZeichen[] = { 'A', 'B', 'C', 'D', 'E', '\0' };;
+    printf("3.: %s\n\n", mehrZeichen);
+    
+    // Zeichenkette in einem Feld bestehend auf char-Elementen
+    // mit Initialisierung - ohne Terminierendes Null-Zeichen - Vorsicht !!!
+
+    char nochMehrZeichen[] = { 'A', 'B', 'C', 'D', 'E' };
+    printf("4.: %s\n\n", nochMehrZeichen);
+
+
+    // Datentyp für eine konstante Zeichenkette: char*
+    // (für die Sprache C repräsentiert die Adresse die Anfangsadresse der Zeichenkette)
 
     char* s = "123456789012";  // 12 Zeichen
 
-    printf("3.: %s\n", s);
-    printf("4.: %zu\n", sizeof(int*));
-    printf("5.: %zu\n", sizeof(s));
+    printf("5.: %s\n", s);
 
-    char anfang = *s;
-
-    printf("6.: %zu\n", sizeof(*s));
-    printf("6.: %zu\n", sizeof(char));
+    printf("    sizeof(s):      %zu\n", sizeof(s)    );
+    printf("    sizeof(*s):     %zu\n", sizeof(*s)   );
+    printf("    sizeof(char):   %zu\n", sizeof(char) );
+    printf("    sizeof(int):    %zu\n", sizeof(int)  );
+    printf("    sizeof(int*):   %zu\n", sizeof(int*) );
 }
 
-static int str_length(char* cp)   // Liefert Anzahl der Zeichen - OHNE '\0' zurück
+// ===========================================================================
+
+static int str_length(char* cp)   // Liefert Anzahl der Zeichen - ohne '\0' zurück
 {
     int length = 0;
 
@@ -89,8 +113,7 @@ static int str_length(char* cp)   // Liefert Anzahl der Zeichen - OHNE '\0' zurü
     return length;
 }
 
-
-static void strings_04()
+static void strings_05()
 {
     char* kette1 = "123";
 
@@ -103,46 +126,50 @@ static void strings_04()
     int length2 = str_length(kette2);
 }
 
-static int str_insert(char* ursprung, char* ergebnis, int length, char welchesZeichen, int pos)
+static int str_insert(char* source, char* destination, int destinationLength, char charToInsert, int pos)
 {
-    // Teste, ob bereitgestellter Puffer (Array 'ergebnis') groß genug ist
-    int lenUrsprung = str_length(ursprung);
+    // a) teste, ob bereitgestellter Puffer (Array 'destination') groß genug ist
+    int lenSource = str_length(source);
 
-    if (length < lenUrsprung + 1 /* einzufügendes Zeichen */ + 1 /* '\0' */) {
+    if (destinationLength < lenSource + 1 /* einzufügendes Zeichen */ + 1 /* '\0' */) {
 
         return 0;
     }
 
-    // a) Bis zur Position pos (einschließlich) alle Zeichen aus 'ursprung' nach 'ergebnis' umkopieren
+    // b) bis zur Position pos (einschließlich) alle Zeichen aus 'source' nach 'destination' umkopieren
     for (int i = 0; i <= pos; ++i) {
-        ergebnis[i] = ursprung[i];
+        destination[i] = source[i];
     }
 
-    // b) Zeichen 'welchesZeichen' in 'ergebnis' anhängen
-    ergebnis[pos + 1] = welchesZeichen;
+    // c) Zeichen 'charToInsert' in 'destination' einfuegen
+    destination[pos + 1] = charToInsert;
 
-    // c) Restlichen Zeichen von  'ursprung' nach 'ergebnis' umkopieren
-    for (int i = pos + 1; i < lenUrsprung; ++i) {
-        ergebnis[i + 1] = ursprung[i];
+    // c) restliche Zeichen von  'source' nach 'destination' umkopieren
+    for (int i = pos + 1; i < lenSource; ++i) {
+        destination[i + 1] = source[i];
     }
 
-    // d) Das ergebnis mit einer '\0' abschließen 
-    ergebnis[lenUrsprung + 1] = '\0';
+    // d) Puffer 'destination' mit einer '\0' abschließen 
+    destination[lenSource + 1] = '\0';
 
-    return 1;  // ungleich 0 
+    return 1;
 }
 
 
-static void strings_05()
+static void strings_06()
 {
     char* kette1 = "12345";     // Konstante, kein Array, hinten gehört uns der Platz NICHT !!!
+
     // oder
+
     char kette2[20] = "12345";  // Ja, da ist hinten noch Freiraum
 
     char result[20];
 
     int succeeded = str_insert(kette1, result, 20, '?', 2);
 }
+
+// ===========================================================================
 
 void testStrings()
 {
@@ -151,6 +178,7 @@ void testStrings()
     strings_03();
     strings_04();
     strings_05();
+    strings_06();
 }
 
 // ===========================================================================

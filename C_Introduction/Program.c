@@ -13,9 +13,12 @@
 
 // function prototypes
 extern void testDatatypesVariablesConstants();
+extern void testControlStructures();
 extern void testHelloWorld();
 extern void testArrays();
 extern void testSubroutines();
+extern void testPointer();
+extern void testMemoryManagement();
 extern void testDynamic();
 extern void testStrings();
 extern void testStructs();
@@ -31,8 +34,11 @@ int main()
     // main entry points code examples
     //testHelloWorld();
     //testDatatypesVariablesConstants();
+    //testControlStructures();
     //testArrays();
     //testSubroutines();
+    //testPointer();
+    //testMemoryManagement();
     //testDynamic();
     testStrings();
     //testStructs();
