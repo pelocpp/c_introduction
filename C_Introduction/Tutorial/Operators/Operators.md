@@ -4,7 +4,7 @@
 
 ---
 
-## Vorrang (Priorität) und Stelligkeitm (Assoziativität) von Operatoren
+## Vorrang (Priorität) und Stelligkeit (Assoziativität) von Operatoren
 
 In der folgenden Tabelle sind die Rangfolge und Assoziativität von C&ndash;Operatoren aufgeführt.
 Die Operatoren werden von oben nach unten in absteigender Reihenfolge aufgelistet.

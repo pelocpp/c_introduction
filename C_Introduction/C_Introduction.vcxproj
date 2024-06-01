@@ -137,6 +137,7 @@
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg" />
     <Image Include="Markdown\TreatWarningsAsErrors.png" />
     <Image Include="Tutorial\HelloWorld\HelloWorld.png" />
+    <Image Include="Tutorial\Operators\OperatorsPrecedence.png" />
     <Image Include="Tutorial\Strings\ASCII_Table.png" />
   </ItemGroup>
   <ItemGroup>

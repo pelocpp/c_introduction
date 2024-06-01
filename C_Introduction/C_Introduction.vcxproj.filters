@@ -479,6 +479,9 @@
     <Image Include="Tutorial\Strings\ASCII_Table.png">
       <Filter>Tutorial\Strings</Filter>
     </Image>
+    <Image Include="Tutorial\Operators\OperatorsPrecedence.png">
+      <Filter>Tutorial\Operators</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">
