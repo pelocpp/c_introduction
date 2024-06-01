@@ -9,7 +9,7 @@
 Der Datentyp *Array* steht in C für Felder **fester** Länge.
 Es gibt keinerlei Möglichkeit, nach dem Erzeugen eines Felds seine Länge zu ändern.
 
-```cpp
+```c
 int numbers[10];
 ```
 

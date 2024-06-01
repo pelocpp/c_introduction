@@ -19,7 +19,7 @@ Wert durch
 Erstellen Sie eine Funktion `binaryConvert`, die den Wert einer ganzen Zahl in ihre binäre
 Darstellung konvertieren kann. Verwenden Sie folgende Schnittstelle für die Funktion:
 
-```cpp
+```c
 // compute prime numbers
 int binaryConvert (int number, char binary[], int len);
 ```

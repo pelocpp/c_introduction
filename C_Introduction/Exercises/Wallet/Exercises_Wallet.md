@@ -34,7 +34,7 @@ Folgende Aktivitäten sollten mit einem Geldbeutel möglich sein:
 
 Die folgenden zwei Beispiele demonstrieren den Umgang mit der Struktur `Wallet`:
 
-```cpp
+```c
 01: void test()
 02: {
 03:     struct Wallet wallet = { 0, 0 };
@@ -64,8 +64,7 @@ Cents: 475
 
 Und noch ein zweites Beispiel:
 
-
-```cpp
+```c
 01: void exercise_wallet_02()
 02: {
 03:     struct Wallet wallet1 = { 3, 30 };

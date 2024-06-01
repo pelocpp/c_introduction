@@ -14,7 +14,7 @@ die an  `swap` übergeben werden, tauschen.
 
 Ein mögliches Hauptprogramm könnte so aussehen:
 
-```cpp
+```c
 01: void exercise_tausche()
 02: {
 03:     printf("Funktion swap\n");

@@ -21,7 +21,7 @@ Der Quelltext für ein &bdquo;Hello World&rdquo; Programm sieht so aus:
 
 #### Datei [*HelloWorld.c*](HelloWorld.c):
 
-```cpp
+```c
 #include <stdio.h>
 
 int main()

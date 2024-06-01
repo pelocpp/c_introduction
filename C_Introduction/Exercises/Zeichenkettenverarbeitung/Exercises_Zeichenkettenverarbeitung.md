@@ -23,7 +23,7 @@ Die Funktionen sollten folgende Schnittstelle haben:
 ##### Modifikation der Zeichenkette durch ein einzelnes Zeichen
 
 
-```cpp
+```c
 void chr_replace (char* src, int pos, char ch);
 int  chr_append  (const char* src, char ch, char* dest, int destLen);
 int  chr_insert  (const char* src, int pos, char ch, char* dest, int destLen);
@@ -43,7 +43,7 @@ dessen Pufferlänge im Parameter `destLen` zur Verfügung gestellt wird.
 
 ##### Modifikation der Zeichenkette durch eine zweite Zeichenkette
 
-```cpp
+```c
 int  str_replace (const char* src, int pos, char* toReplace, char* dest, int destLen);
 int  str_append  (const char* src, char* toAppend, char* dest, int destLen);
 int  str_insert  (const char* src, int pos, char* toInsert, char* dest, int destLen);

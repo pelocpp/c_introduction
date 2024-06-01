@@ -14,7 +14,7 @@ ist dabei zunächst mit Zufallszahlen im Bereich von 1 bis 100 (einschließlich)
 
 Zufallszahlen können Sie in C so erzeugen:
 
-```cpp
+```c
 int zahl = rand();
 ```
 
@@ -25,7 +25,7 @@ Möchten Sie wirklich &bdquo;zufällige Zahlen&rdquo; erzeugen,
 müssen Sie den Zufallszahlengenerator mit einer &bdquo;zufälligen&rdquo; Startzahl initialisieren.
 Dies geht so:
 
-```cpp
+```c
 #include <time.h>
 ...
 time_t t;

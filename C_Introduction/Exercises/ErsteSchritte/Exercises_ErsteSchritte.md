@@ -8,7 +8,7 @@
 
 Erstelle folgendes Programm:
 
-```cpp
+```c
 #include <stdio.h>
 
 int main()
