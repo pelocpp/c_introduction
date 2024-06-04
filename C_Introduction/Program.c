@@ -46,9 +46,9 @@ int main()
     //testDynamic();
     //testStrings();
     //testStructs();
-    testCrt();
+    //testCrt();
 
-    //exercises();
+    exercises();
 
     printf("[Done]\n");
     return 0;

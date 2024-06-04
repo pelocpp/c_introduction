@@ -301,6 +301,12 @@
     <None Include="Tutorial\Strings\Strings.md">
       <Filter>Tutorial\Strings</Filter>
     </None>
+    <None Include="Exercises\ObjectFileViewer\TEST_JaggedArray.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Exercises\ObjectFileViewer\TEST_Point.bin">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -429,6 +435,12 @@
     <ClCompile Include="Tutorial\Subroutines\Subroutines.c">
       <Filter>Tutorial\Subroutines</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTable.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -498,6 +510,9 @@
     </ClInclude>
     <ClInclude Include="Tutorial\Structs\Time.h">
       <Filter>Tutorial\Structs</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

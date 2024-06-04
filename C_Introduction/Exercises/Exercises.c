@@ -26,6 +26,9 @@ extern void exercise_dynamic_int_array();
 extern void exercise_zeichenstatistik();
 extern void exercise_keywordstatistik();
 
+extern void exercise_hash_table();
+extern void exercise_object_file_viewer();
+
 void exercises()
 {
     //exercise_erste_schritte();
@@ -50,6 +53,9 @@ void exercises()
     //exercise_linked_list();
     //exercise_zeichenstatistik();
     //exercise_keywordstatistik();
+
+    //exercise_hash_table();
+    exercise_object_file_viewer();
 }
 
 // ===========================================================================

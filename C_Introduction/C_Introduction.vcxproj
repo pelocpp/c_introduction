@@ -36,6 +36,8 @@
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
+    <None Include="Exercises\ObjectFileViewer\TEST_JaggedArray.bin" />
+    <None Include="Exercises\ObjectFileViewer\TEST_Point.bin" />
     <None Include="Exercises\Tausche\Exercises_Tausche.md" />
     <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md" />
     <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md" />
@@ -89,10 +91,12 @@
     <ClCompile Include="Exercises\Exercises.c" />
     <ClCompile Include="Exercises\Fakultaet\Fakultaet.c" />
     <ClCompile Include="Exercises\HarmonischeReihe\HarmonischeReihe.c" />
+    <ClCompile Include="Exercises\HashTabelle\HashTable.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
     <ClCompile Include="Exercises\KeywordStatistik\Main_KeywordStatistic.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
+    <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c" />
     <ClCompile Include="Exercises\Tausche\Tausche.c" />
     <ClCompile Include="Exercises\TeuflischeFolge\TeuflischeFolge.c" />
     <ClCompile Include="Exercises\Unterprogramme\Unterprogramme.c" />
@@ -143,6 +147,7 @@
   <ItemGroup>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />
     <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h" />
+    <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />
     <ClInclude Include="Exercises\Wallet\Wallet.h" />
     <ClInclude Include="Tutorial\Structs\Time.h" />
