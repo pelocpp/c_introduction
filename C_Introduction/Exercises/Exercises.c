@@ -55,7 +55,7 @@ void exercises()
     //exercise_keywordstatistik();
 
     //exercise_hash_table();
-    exercise_object_file_viewer();
+    //exercise_object_file_viewer();
 }
 
 // ===========================================================================

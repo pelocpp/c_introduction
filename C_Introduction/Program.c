@@ -48,7 +48,7 @@ int main()
     //testStructs();
     //testCrt();
 
-    exercises();
+    //exercises();
 
     printf("[Done]\n");
     return 0;
