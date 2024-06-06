@@ -130,7 +130,7 @@ static void test_pointer_05_gimmicks()
     printf("Wert: %x\n", n);
 }
 
-void testPointer()
+void mainPointer()
 {
     test_pointer_01();
     test_pointer_02();

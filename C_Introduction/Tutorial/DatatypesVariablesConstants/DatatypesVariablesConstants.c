@@ -76,7 +76,7 @@ static void constants()
     printf("ooops:                %d\n", ooops);
 }
 
-void testDatatypesVariablesConstants()
+void mainDatatypesVariablesConstants()
 {
     integral_datatypes();
     floating_point_datatypes();

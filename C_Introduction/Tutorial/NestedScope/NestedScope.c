@@ -84,7 +84,7 @@ static void testNestedScope_04()
 
 // ===========================================================================
 
-void testNestedScope()
+void mainNestedScope()
 {
     testNestedScope_01();
     testNestedScope_02();

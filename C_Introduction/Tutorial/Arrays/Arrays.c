@@ -196,7 +196,7 @@ static void arrays_07_gimmicks()
     3[numbers] = 6;
 }
 
-void testArrays()
+void mainArrays()
 {
     arrays_01();
     arrays_02();

@@ -40,7 +40,7 @@ void memoryManagement_03()
     printf("local:             %d\n", local2);
 }
 
-void testMemoryManagement()
+void mainMemoryManagement()
 {
     memoryManagement_01();
     memoryManagement_01();

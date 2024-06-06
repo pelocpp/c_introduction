@@ -154,7 +154,7 @@ static void structs_07()
     free(pt);
 }
 
-void testStructs()
+void mainStructs()
 {
     structs_01();
     structs_02();

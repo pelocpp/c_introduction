@@ -51,7 +51,7 @@ static void testFunction()
     printf("ergebnisVonPrintf: %d\n", ergebnisVonPrintf);
 }
 
-void testSubroutines()
+void mainSubroutines()
 {
     testSubroutine();
     testFunction();

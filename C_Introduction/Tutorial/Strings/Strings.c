@@ -189,7 +189,7 @@ static void strings_07()
 
 // ===========================================================================
 
-void testStrings()
+void mainStrings()
 {
     strings_01();
     strings_02();

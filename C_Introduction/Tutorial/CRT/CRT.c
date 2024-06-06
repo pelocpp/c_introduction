@@ -154,7 +154,7 @@ static void crt_07()
     }
 }
 
-void testCrt()
+void mainCrt()
 {
     crt_01();
     crt_02();

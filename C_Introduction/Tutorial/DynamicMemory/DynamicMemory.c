@@ -188,7 +188,7 @@ static void dynamic_06()
 
 // ================================================================
 
-void testDynamic()
+void mainDynamic()
 {
     dynamic_01();
     dynamic_02();

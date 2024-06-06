@@ -232,7 +232,7 @@ static void test_while_01()
 
 // ===========================================================================
 
-void testControlStructures()
+void mainControlStructures()
 {
     test_if_01();
     test_if_02();

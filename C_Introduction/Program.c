@@ -12,19 +12,19 @@
 #include <stdio.h>
 
 // function prototypes
-extern void testHelloWorld();
-extern void testDatatypesVariablesConstants();
-extern void testOperators();
-extern void testControlStructures();
-extern void testArrays();
-extern void testSubroutines();
-extern void testNestedScope();
-extern void testPointer();
-extern void testMemoryManagement();
-extern void testDynamic();
-extern void testStrings();
-extern void testStructs();
-extern void testCrt();
+extern void mainHelloWorld();
+extern void mainDatatypesVariablesConstants();
+extern void mainOperators();
+extern void mainControlStructures();
+extern void mainArrays();
+extern void mainSubroutines();
+extern void mainNestedScope();
+extern void mainPointer();
+extern void mainMemoryManagement();
+extern void mainDynamic();
+extern void mainStrings();
+extern void mainStructs();
+extern void mainCrt();
 
 extern void exercises();
 
@@ -34,19 +34,19 @@ int main()
     printf("[Collection of introductory C Code Examples - Copyright (C) 2024 Peter Loos]\n");
 
     // main entry points code examples
-    //testHelloWorld();
-    //testDatatypesVariablesConstants();
-    //testOperators();
-    //testControlStructures();
-    //testArrays();
-    //testSubroutines();
-    //testNestedScope();
-    //testPointer();
-    //testMemoryManagement();
-    //testDynamic();
-    //testStrings();
-    //testStructs();
-    //testCrt();
+    mainHelloWorld();
+    mainDatatypesVariablesConstants();
+    mainOperators();
+    mainControlStructures();
+    mainArrays();
+    mainSubroutines();
+    mainNestedScope();
+    mainPointer();
+    mainMemoryManagement();
+    mainDynamic();
+    mainStrings();
+    mainStructs();
+    mainCrt();
 
     //exercises();
 

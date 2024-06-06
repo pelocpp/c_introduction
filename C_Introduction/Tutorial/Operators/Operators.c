@@ -67,7 +67,7 @@ static void testOperators_03()
     }
 }
 
-void testOperators()
+void mainOperators()
 {
     testOperators_01();
     testOperators_02();

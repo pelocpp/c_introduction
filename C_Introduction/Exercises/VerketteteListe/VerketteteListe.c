@@ -29,32 +29,44 @@ struct LinkedList
 // =====================================================================================
 // Function Prototypes
 
-void addHead           (struct LinkedList* list, int value);
-void addHeadEx         (struct LinkedList* list, int value);
-void addTail           (struct LinkedList* list, int value);
-int  find              (struct LinkedList* list, int value);
-int  insert            (struct LinkedList* list, int value, size_t pos);
-void freeList          (struct LinkedList* list);
-void freeListEx        (struct LinkedList* list);
-void freeListRecursive (struct ListItem* item);
-void printList         (struct LinkedList* list);
-void printItem         (struct ListItem* item);
+void    addHead           (struct LinkedList* list, int value);
+void    addHeadEx         (struct LinkedList* list, int value);
+void    addTail           (struct LinkedList* list, int value);
+int     insert            (struct LinkedList* list, int value, size_t pos); 
+int     contains          (struct LinkedList* list, int value);
+int     removeAt          (struct LinkedList* list, size_t pos);
+void    concat            (struct LinkedList* list1, struct LinkedList* list2);
+void    freeList          (struct LinkedList* list);
+void    freeListEx        (struct LinkedList* list);
+void    freeListRecursive (struct ListItem* item);
+void    printList         (struct LinkedList* list);
+void    printItem         (struct ListItem* item);
+size_t  size              (struct LinkedList* list);
+int     isEmpty           (struct LinkedList* list);
 
 // =====================================================================================
 // Implementation
+
+static size_t size(struct LinkedList* list) {
+    return list->m_count;
+}
+
+static int isEmpty(struct LinkedList* list) {
+    return (list->m_count == 0) ? 1 : 0;
+}
 
 static void addHead(struct LinkedList* list, int value)
 {
     // create a new node
     struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
-    if (item == (struct ListItem*)0) {
+    if (item == (struct ListItem*) 0) {
         return;
     }
 
     item->m_value = value;
-    item->m_next = (struct ListItem*)0;
+    item->m_next = (struct ListItem*) 0;
 
-    if (list->m_root == (struct ListItem*)0)
+    if (list->m_root == (struct ListItem*) 0)
     {
         list->m_root = item;
     }
@@ -71,7 +83,7 @@ static void addHeadEx(struct LinkedList* list, int value)
 {
     // create a new node
     struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
-    if (item == (struct ListItem*)0) {
+    if (item == (struct ListItem*) 0) {
         return;
     }
 
@@ -88,7 +100,7 @@ static void addTail(struct LinkedList* list, int value)
 {
     // create a new node
     struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
-    if (item == (struct ListItem*)0) {
+    if (item == (struct ListItem*) 0) {
         return;
     }
 
@@ -103,7 +115,7 @@ static void addTail(struct LinkedList* list, int value)
     {
         // search end of list
         struct ListItem* last = list->m_root;
-        while (last->m_next != (struct ListItem*)0) {
+        while (last->m_next != (struct ListItem*) 0) {
             last = last->m_next;
         }
 
@@ -114,27 +126,12 @@ static void addTail(struct LinkedList* list, int value)
     list->m_count++;
 }
 
-static int find(struct LinkedList* list, int value)
-{
-    struct ListItem* current = list->m_root;
-
-    while (current != (struct ListItem*)0)
-    {
-        if (current->m_value == value) {
-            return 1;
-        }
-
-        current = current->m_next;
-    }
-
-    return 0;  // element not found
-}
-
 static int insert(struct LinkedList* list, int value, size_t pos)
 {
     // verify params
-    if (pos > list->m_count)
+    if (pos > list->m_count) {
         return 0;
+    }
 
     // create a new node
     struct ListItem* item = (struct ListItem*) malloc(sizeof(struct ListItem));
@@ -163,8 +160,91 @@ static int insert(struct LinkedList* list, int value, size_t pos)
     }
 
     list->m_count++;
-
     return 1;
+}
+
+int contains(struct LinkedList* list, int value)
+{
+    struct ListItem* item = list->m_root;
+
+    while (item != (struct ListItem*) 0)
+    {
+        if (item->m_value == value) {
+            return 1;
+        }
+
+        item = item->m_next;
+    }
+
+    return 0;
+}
+
+int  removeAt(struct LinkedList* list, size_t pos)
+{
+    // verify params
+    if (list->m_count == 0 || pos >= list->m_count) {
+        return 0;
+    }
+
+    if (pos == 0)
+    {
+        struct ListItem* tmp = list->m_root;
+        list->m_root = list->m_root->m_next;
+        free(tmp);
+    }
+    else // pos >= 1
+    {
+        struct ListItem* current = list->m_root;
+        struct ListItem* prev = NULL;
+
+        while (pos != 0)
+        {
+            prev = current;
+            current = current->m_next;
+            pos--;
+        }
+
+        // 'current' has to be removed,
+        // connect previous and following nodes
+        prev->m_next = current->m_next; 
+        free(current);
+    }
+
+    list->m_count--;
+    return 1;
+}
+
+void concat(struct LinkedList* list1, struct LinkedList* list2)
+{
+    if (list1->m_root == (struct ListItem*) 0) {
+        // first list is empty
+        list1->m_root = list2->m_root;
+
+        // reset second list
+        list2->m_root = (struct ListItem*)0;
+        list2->m_count = 0;
+    }
+    else {
+        // search end of first list
+        struct ListItem* item = list1->m_root;
+        struct ListItem* prev = NULL;
+
+        while (item != (struct ListItem*) 0)
+        {
+            prev = item;
+            item = item->m_next;
+        }
+
+        // 'prev' points to last node of first list
+        prev->m_next = list2->m_root;
+
+        // adjust node counter of first list
+        list1->m_count += list2->m_count;
+
+        // reset second list
+        list2->m_root = (struct ListItem*)0;
+        list2->m_count = 0;
+    }
 }
 
 void freeList(struct LinkedList* list) {
@@ -175,9 +255,7 @@ void freeList(struct LinkedList* list) {
     while (next != (struct ListItem*) 0) {
 
         prev = next;
-
         next = next->m_next;
-
         free(prev);
     }
 }
@@ -210,7 +288,7 @@ static void printList(struct LinkedList* list)
 
     printf("[");
 
-    while (item != (struct ListItem*)0)
+    while (item != (struct ListItem*) 0)
     {
         if (item != list->m_root) {
             printf(",");
@@ -229,109 +307,161 @@ static void printList(struct LinkedList* list)
 
 static void exercise_linked_list_01()
 {
+    // testing 'addHead' and 'addTail'
+
     struct LinkedList list = { (struct ListItem*) 0, 0 };
 
-    list.m_root = 0;
-    list.m_count = 0;
-
-    // test addHead
     for (int i = 0; i < 5; i++) {
         addHead(&list, 2 * i);
     }
-
     printList(&list);
 
-    // test addTail
     for (int i = 0; i < 5; i++) {
         addTail(&list, 20 * i);
     }
-
     printList(&list);
 
-    printf("Searching 8: %d\n", find(&list, 8));
-    printf("Searching 39: %d\n", find(&list, 39));
-    printf("Searching 80: %d\n", find(&list, 80));
-
-    freeListEx(&list);
+    freeList(&list);
 }
 
 static void exercise_linked_list_02()
 {
-    struct LinkedList list = { (struct ListItem*)0, 0 };
-    insert(&list, 10, 0);
+    // testing 'insert'
+
+    struct LinkedList list = { (struct ListItem*) 0, 0 };
+
+    insert(&list, 3, 0);
+    insert(&list, 2, 0);
+    insert(&list, 1, 0);
     printList(&list);
 
-    addHead(&list, 11);
-    addHead(&list, 12);
+    insert(&list, 4, 3);
     printList(&list);
 
-    insert(&list, 20, 0);
+    freeList(&list);
+}
+
+static void exercise_linked_list_03()
+{
+    // testing 'removeAt'
+
+    struct LinkedList list = { (struct ListItem*) 0, 0 };
+
+    // test 'insert'
+    insert(&list, 5, 0);
+    insert(&list, 4, 0);
+    insert(&list, 3, 0);
+    insert(&list, 2, 0);
+    insert(&list, 1, 0);
     printList(&list);
 
-    insert(&list, 21, 4);
+    removeAt(&list, 4);
+    printList(&list);
+        
+    removeAt(&list, 3);
+    printList(&list);
+    
+    removeAt(&list, 2);
     printList(&list);
 
-    insert(&list, 22, 2);
+    removeAt(&list, 1);
     printList(&list);
+
+    removeAt(&list, 0);
+    printList(&list);
+
+    freeList(&list);
+}
+
+static void exercise_linked_list_04()
+{
+    // testing 'contains'
+
+    struct LinkedList list = { (struct ListItem*) 0, 0 };
+
+    // test 'insert'
+    insert(&list, 5, 0);
+    insert(&list, 4, 0);
+    insert(&list, 3, 0);
+    insert(&list, 2, 0);
+    insert(&list, 1, 0);
+    printList(&list);
+
+    for (int i = 0; i < 7; ++i) {
+        printf("Contains %d:  %d\n", i, contains(&list, i));
+    }
+
+    freeList(&list);
+}
+
+static void exercise_linked_list_05()
+{
+    // testing 'size' and 'isEmpty'
+
+    struct LinkedList list = { (struct ListItem*) 0, 0 };
+
+    for (int i = 0; i < 6; ++i) {
+
+        printList(&list);
+
+        printf("\nsize: %zu - isEmpty: %d\n", size(&list), isEmpty(&list));
+
+        insert(&list, 5-i, 0);
+    }
+
+    freeList(&list);
+}
+
+static void exercise_linked_list_06()
+{
+    // testing 'concat'
+
+    struct LinkedList first = { (struct ListItem*)0, 0 };
+    struct LinkedList second = { (struct ListItem*)0, 0 };
+
+    concat(&first, &second);
+    printList(&first);
+
+    addTail(&first, 1);
+    addTail(&second, 10);
+    printList(&first);
+    printList(&second);
+
+    concat(&first, &second);
+    printList(&first);
+    printList(&second);
+
+    addTail(&second, 20);
+    addTail(&second, 21);
+    addTail(&second, 22);
+
+    concat(&first, &second);
+    printList(&first);
+    printList(&second);
+
+    freeList(&first);
+    freeList(&second);
+
 }
 
 void exercise_linked_list ()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    // create a new node
-    struct ListItem* item = (struct ListItem*)malloc(sizeof(struct ListItem));
-    if (item == (struct ListItem*)0) {
-        return;
-    }
-
-   // exercise_linked_list_01();
-    // exercise_linked_list_02();
+    exercise_linked_list_01();
+    exercise_linked_list_02();
+    exercise_linked_list_03();
+    exercise_linked_list_04();
+    exercise_linked_list_05();
+    exercise_linked_list_06();
 }
 
 // =====================================================================================
 // End-of-File
 // =====================================================================================
 
-//
-//class LinkedList
-//{
-//    friend ostream& operator<< (ostream&, LinkedList&);
-//
-//private:
-//    // member data
-//    ListItem* m_root;
-//    int m_count;
-//
-//public:
-//    // c'tors and d'tor
-//    LinkedList();
-//    LinkedList(const LinkedList&);
-//    ~LinkedList();
-//
-//    // public interface
-//    void AddHead(int);              // insert item at begin of list
-//    void AddTail(int);              // insert item at end of list
-//    bool Insert(int, int);          // insert item at a specified position
-//    bool RemoveItemAtPosition(int); // remove item at specified position
-//    bool RemoveItem(int);           // remove specified item
-//    void RemoveAll();               // remove all items
-//    bool Contains(int);             // find item
-//    int  Size();                    // retrieve length of linked list
-//    bool IsEmpty();                 // is list empty
-//    void Concat(const LinkedList&); // concatenation of two lists
 //    void Reverse();                 // reverse list
-//
-//    // additional operators
-//    friend LinkedList operator+ (const LinkedList&, const LinkedList&);
-//    friend LinkedList& operator+= (LinkedList&, const LinkedList&);
-//    friend LinkedList& operator+= (LinkedList&, int);
-//    friend LinkedList& operator-= (LinkedList&, int);
-//
+
 //    // comparison operators
 //    friend bool operator== (const LinkedList&, const LinkedList&);
 //    friend bool operator!= (const LinkedList&, const LinkedList&);
-//
-//    // assignment operator
-//    LinkedList& operator= (const LinkedList&);
-//};
