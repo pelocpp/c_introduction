@@ -307,6 +307,7 @@
     <None Include="Exercises\ObjectFileViewer\TEST_Point.bin">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -441,6 +442,9 @@
     <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -493,6 +497,9 @@
     </Image>
     <Image Include="Tutorial\Operators\OperatorsPrecedence.png">
       <Filter>Tutorial\Operators</Filter>
+    </Image>
+    <Image Include="Markdown\C_Logo.png">
+      <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>

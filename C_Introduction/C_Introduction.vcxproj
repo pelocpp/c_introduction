@@ -72,6 +72,7 @@
     <None Include="Tutorial\DynamicMemory\DynamicMemory.md" />
     <None Include="Tutorial\HelloWorld\HelloWorld.md" />
     <None Include="Tutorial\MemoryManagement\MemoryManagement.md" />
+    <None Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.md" />
     <None Include="Tutorial\NestedScope\NestedScope.md" />
     <None Include="Tutorial\Operators\Operators.md" />
     <None Include="Tutorial\Pointers\Pointers.md" />
@@ -118,6 +119,7 @@
     <ClCompile Include="Tutorial\DynamicMemory\DynamicMemory.c" />
     <ClCompile Include="Tutorial\HelloWorld\HelloWorld.c" />
     <ClCompile Include="Tutorial\MemoryManagement\MemoryManagement.c" />
+    <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c" />
     <ClCompile Include="Tutorial\NestedScope\NestedScope.c" />
     <ClCompile Include="Tutorial\Operators\Operators.c" />
     <ClCompile Include="Tutorial\Pointers\Pointers.c" />
@@ -134,6 +136,7 @@
     <Image Include="Markdown\Buch_C_von_A_bis_Z_Juergen_Wolf.png" />
     <Image Include="Markdown\Buch_Dirk_Louis.png" />
     <Image Include="Markdown\Buch_Einstieg_in_C_Thomas_Theis.png" />
+    <Image Include="Markdown\C_Logo.png" />
     <Image Include="Markdown\Embedded_Cpp.jpg" />
     <Image Include="Markdown\Github_Mobile_iPad.png" />
     <Image Include="Markdown\Github_Mobile_iPhone.png" />

@@ -3,34 +3,33 @@
 // =====================================================================================
 
 #include <stdio.h>
-#include <stdlib.h> // rand()
-#include <time.h>   // time_t
+#include <stdlib.h>    // rand()
+#include <time.h>      // time_t
 
-#define Length 10
+#define Length  10
 
 static void exercise_array_zufallszahlen()
 {
     printf("Zufallszahlen\n");
     printf("=============\n");
 
-    int feld[Length];
+    int feld[Length] = { 0 };
 
-    time_t t;
-    srand((unsigned)time(&t)); // s = seed // beeinflusst rand()
-    // printf("Zeit seit Einschalten: %lld\n\n", t); // in Sekunden
-
+    time_t t;                    // srand erzeugt Startwert für den Zufallszahlengenerator,
+    srand((unsigned) time(&t));  // der von rand verwendet wird
+                                
     // Feld vorbelegen mit Zahlen im Bereich von 1 .. 100
     for (int i = 0; i < 10; i++) {
 
-        // rand:  0 .. 32767
-        int zahl = rand() % 100; // 0 .. 99
+        int zahl = rand();       // rand():  0 .. 32767
+        zahl = zahl % 100;       // 0 .. 99
         zahl = zahl + 1;         // 1 .. 100
-        feld[i] = zahl;    // 1 .. 100 
+        feld[i] = zahl;
     }
 
     // Feld ausgeben
     for (int i = 0; i < 10; i++) {
-        printf("%d\n", feld[i]);
+        printf("%2d\n", feld[i]);
     }
     printf("\n");
 }
@@ -40,18 +39,18 @@ static void exercise_array_summe()
     printf("Summe\n");
     printf("=====\n");
 
-    int feld[Length];
+    int feld[Length] = { 0 };
 
-    time_t t;
-    srand((unsigned) time(&t)); // s = seed // beeinflusst rand()
+    time_t t;                    // srand erzeugt Startwert für den Zufallszahlengenerator,
+    srand((unsigned) time(&t));  // der von rand verwendet wird
 
     // Feld vorbelegen mit Zahlen im Bereich von 1 .. 100
     for (int i = 0; i < 10; i++) {
 
-        // rand:  0 .. 32767
-        int rest = rand() % 100; // 0 .. 99
-        rest = rest + 1;         // 1 .. 100
-        feld[i] = rest;    // 1 .. 100 
+        int zahl = rand();       // rand():  0 .. 32767
+        zahl = zahl % 100;       // 0 .. 99
+        zahl = zahl + 1;         // 1 .. 100
+        feld[i] = zahl;
     }
 
     // Berechnung der Summe
@@ -63,7 +62,7 @@ static void exercise_array_summe()
 
     // Feld ausgeben
     for (int i = 0; i < 10; i++) {
-        printf("%d\n", feld[i]);
+        printf("%2d\n", feld[i]);
     }
 
     // Summe ausgeben
@@ -76,24 +75,23 @@ static void exercise_array_minimum()
     printf("Minumum\n");
     printf("=======\n");
 
-    int feld[Length];
+    int feld[Length] = { 0 };
 
-
-    time_t t;
-    srand((unsigned)time(&t)); // s = seed // beeinflusst rand()
-
+    time_t t;                    // srand erzeugt Startwert für den Zufallszahlengenerator,
+    srand((unsigned)time(&t));   // der von rand verwendet wird
+    
     // Feld vorbelegen mit Zahlen im Bereich von 1 .. 100
     for (int i = 0; i < 10; i++) {
 
-        // rand:  0 .. 32767
-        int rest = rand() % 100; // 0 .. 99
-        rest = rest + 1;         // 1 .. 100
-        feld[i] = rest;    // 1 .. 100 
+        int zahl = rand();       // rand():  0 .. 32767
+        zahl = zahl % 100;       // 0 .. 99
+        zahl = zahl + 1;         // 1 .. 100
+        feld[i] = zahl;
     }
 
     // Kleinstes Element suchen
-    int min = 101;
-    for (int i = 0; i < Length; i++)
+    int min = feld[0];
+    for (int i = 1; i < Length; i++)
     {
         if (feld[i] < min) {
             min = feld[i];
@@ -102,10 +100,10 @@ static void exercise_array_minimum()
 
     // Feld ausgeben
     for (int i = 0; i < 10; i++) {
-        printf("%d\n", feld[i]);
+        printf("%2d\n", feld[i]);
     }
 
-    // Minimum und Maximum ausgeben
+    // Minimum ausgeben
     printf("\n");
     printf("Minimum: %d\n\n", min);
 }
@@ -115,8 +113,7 @@ static void exercise_array_maximum()
     printf("Maximum\n");
     printf("=======\n");
 
-    int feld[Length];
-
+    int feld[Length] = { 0 };
 
     time_t t;
     srand((unsigned)time(&t)); // s = seed // beeinflusst rand()
@@ -131,8 +128,8 @@ static void exercise_array_maximum()
     }
 
     // Groesstes Element suchen
-    int max = -1;    // 0 ginge auch
-    for (int i = 0; i < Length; i++)
+    int max = feld[0];
+    for (int i = 1; i < Length; i++)
     {
         if (feld[i] > max) {
             max = feld[i];
@@ -141,10 +138,10 @@ static void exercise_array_maximum()
 
     // Feld ausgeben
     for (int i = 0; i < 10; i++) {
-        printf("%d\n", feld[i]);
+        printf("%2d\n", feld[i]);
     }
 
-    // Minimum und Maximum ausgeben
+    // Maximum ausgeben
     printf("\n");
     printf("Maximum: %d\n\n", max);
 }

@@ -23,6 +23,7 @@ extern void mainPointer();
 extern void mainMemoryManagement();
 extern void mainDynamic();
 extern void mainStrings();
+extern void mainMultidimensionalArrays();
 extern void mainStructs();
 extern void mainCrt();
 
@@ -34,19 +35,20 @@ int main()
     printf("[Collection of introductory C Code Examples - Copyright (C) 2024 Peter Loos]\n");
 
     // main entry points code examples
-    mainHelloWorld();
-    mainDatatypesVariablesConstants();
-    mainOperators();
-    mainControlStructures();
-    mainArrays();
-    mainSubroutines();
-    mainNestedScope();
-    mainPointer();
-    mainMemoryManagement();
-    mainDynamic();
-    mainStrings();
-    mainStructs();
-    mainCrt();
+    //mainHelloWorld();
+    //mainDatatypesVariablesConstants();
+    //mainOperators();
+    //mainControlStructures();
+    //mainArrays();
+    //mainSubroutines();
+    //mainNestedScope();
+    //mainPointer();
+    //mainMemoryManagement();
+    //mainDynamic();
+    //mainStrings();
+    //mainMultidimensionalArrays();
+    //mainStructs();
+    //mainCrt();
 
     //exercises();
 
