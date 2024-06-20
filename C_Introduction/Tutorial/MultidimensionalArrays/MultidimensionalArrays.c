@@ -2,16 +2,12 @@
 // MultidimensionalArrays.c // Multidimensional Arrays
 // ===========================================================================
 
-// https://www.programiz.com/c-programming/c-multi-dimensional-arrays
-
-// https://www.skillvertex.com/blog/how-to-pass-a-2d-array-as-a-parameter-in-c/
-
 #include <stdio.h>     // printf
 #include <stdlib.h>    // malloc, free
 
-#define  M             2
-#define  N             3
-#define  O             4
+#define  M        2
+#define  N        3
+#define  O        4
 
 static void multidimensional_arrays_01()
 {
@@ -271,14 +267,14 @@ static void multidimensional_arrays_08()
 
 void mainMultidimensionalArrays()
 {
-    //multidimensional_arrays_01();
-    //multidimensional_arrays_02();
-    //multidimensional_arrays_03();
-    //multidimensional_arrays_04();
-    //multidimensional_arrays_05();
+    multidimensional_arrays_01();
+    multidimensional_arrays_02();
+    multidimensional_arrays_03();
+    multidimensional_arrays_04();
+    multidimensional_arrays_05();
     multidimensional_arrays_06();
-    //multidimensional_arrays_07();
-    //multidimensional_arrays_08();
+    multidimensional_arrays_07();
+    multidimensional_arrays_08();
 
 }
 

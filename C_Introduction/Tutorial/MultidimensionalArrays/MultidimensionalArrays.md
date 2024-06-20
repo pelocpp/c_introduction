@@ -12,19 +12,49 @@
 
 
 ```c
+01: #define  M    2
+02: #define  N    3
+03: #define  O    4
+04: 
+05: void multidimensional_arrays_01()
+06: {
+07:     int numbers1[M][N] = { { 1, 2, 3 }, { 4, 5, 6} };
+08: 
+09:     int numbers2[][N]  = { { 1, 2, 3 }, { 4, 5, 6} };
+10: 
+11:     int numbers3[M][N] = { 1, 2, 3, 4, 5, 6 };
+12: }
+13: 
+14: static void multidimensional_arrays_02()
+15: {
+16:     int numbers1[M][N][O] =
+17:     {
+18:         {
+19:             { 1, 2, 3, 4 }, 
+20:             { 5, 6, 7, 8 },
+21:             { 9, 10, 11, 12 }
+22:         },
+23:         {
+24:             { 13, 14, 15, 16 }, 
+25:             { 17, 18, 19, 20 }, 
+26:             { 21, 22, 23, 24 }
+27:         } 
+28:     };
+29: 
+30:     int numbers2[M][N][4] =
+31:     {
+32:         1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12 , 13, 14, 15, 16 , 17, 18, 19, 20, 21, 22, 23, 24
+33:     };
+34: }
+35: 
 ```
 
-*Ausgabe*:
-
-
-```
-```
 
 ---
 
 ## Übergabe eines mehrdimensionalen Arrays als Parameter
 
-### Fall 1: Beide Dimensionen sind global verfügbar.
+### Fall 1: Beide Dimensionen sind global verfügbar
 
 *Beispiel*:
 
