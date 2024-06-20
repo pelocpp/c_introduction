@@ -46,7 +46,7 @@ int main()
     //mainMemoryManagement();
     //mainDynamic();
     //mainStrings();
-    //mainMultidimensionalArrays();
+    mainMultidimensionalArrays();
     //mainStructs();
     //mainCrt();
 
