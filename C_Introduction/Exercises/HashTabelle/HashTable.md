@@ -16,6 +16,9 @@ In einem Wörterbuch Deutsch &DoubleLeftRightArrow; Englisch kann das
 Wort &bdquo;Übersetzer&rdquo; ein Schlüssel sein,
 ihm ist der Wert &bdquo;Compiler&rdquo; zugeordnet.
 
+Oder aber ein Schlüssel ist die Zeichenkette &bdquo;Franz&rdquo;,
+sie besitzt den Wert &bdquo;franz.meier@gmx.de&rdquo;
+
 ---
 
 ## Aufbau
@@ -23,7 +26,7 @@ ihm ist der Wert &bdquo;Compiler&rdquo; zugeordnet.
 Eine Hashtabelle ist folgendermaßen aufgebaut:
 
   * Mit Hilfe von Schlüsseln (*keys*)
-  werden Werte (*values*) in einer Tabelle gespeichert.
+  werden Werte (*values*) in einer Tabelle gespeichert. Die Struktur der Tabelle ist nicht festgelegt.
 
   * Mit Hilfe des Schlüssels berechnet man einen Index &ndash; auch als *Hashwert* bezeichnet &ndash;,
   der eine bestimmte Position in dieser Tabelle identifiziert:
@@ -72,7 +75,6 @@ Die Schlüssel seien beliebig verteilt über den Bereich 0 .. K.
 Zur Speicherung der Elemente soll eine Tabelle mit M > N Werten verwendet werden.
 
 Aus dem Schlüssel wird eine Position in der Tabelle berechnet.
-
 Die Position eines Elements in der Tabelle mit dem Schlüssel *k* berechnen wir mit der folgenden Hash-Funktion:
 
 *p* = *k* mod M
@@ -84,11 +86,10 @@ Durch die Modulo-Funktion wird &ndash; anschaulich gesprochen &ndash; ein Teil d
 
 Wir legen nun M = 7 Plätze und N = 3 Elemente fest, deren Positionen (Hash-Wert) in der Tabelle durch die
 vorstehende Hash-Funktion berechnet werden.
-
 Wir wollen die Werte 9, 40, und 77 in der Tabelle eintragen.
 An Hand der zuvor erwähnten Hash-Funktion resultieren die Positionen
 
-9 &#x2794; <br />
+9 &#x2794; 2<br />
 40 &#x2794; 5<br />
 77 &#x2794; 0
 
@@ -108,7 +109,7 @@ Werte haben also immer eine feste Position in der Hash-Tabelle, die von ihrem Sc
 ## Kollisionen
 
 Leider stimmt die Annahme nicht immer, dass alle Schlüssel zu verschiedenen Positionen
-in der Tabelle führen. Es können so genannte &bdquo;Konflikte&rdquo; auftreten.
+in der Tabelle führen. Es können so genannte &bdquo;Konflikte&rdquo; oder &bdquo;Kollisionen&rdquo; auftreten.
 
 Wir ändern unser Beispiel nun wie folgt ab:
 
@@ -121,7 +122,7 @@ Wir ändern unser Beispiel nun wie folgt ab:
 Wir haben die Schlüssel absichtlich so gewählt, dass es bei Anwendung der Hash-Funktion
 zu Konflikten kommt:
 
-<img src="c_hash_03.svg" width="450">
+<img src="c_hash_02.svg" width="450">
 
 *Abbildung* 2. Beispiel einer Hash-Tabelle, die Konflikte aufweist.
 
@@ -141,7 +142,7 @@ was allerdings zu mehr oder weniger verlängerten Zugriffszeiten führt.
 
 <img src="c_hash_03.svg" width="650">
 
-*Abbildung* 2. Beispiel einer Hash-Tabelle und Kollisionsauflösung durch Verkettung.
+*Abbildung* 3. Beispiel einer Hash-Tabelle und Kollisionsauflösung durch Verkettung.
 
 
 ---

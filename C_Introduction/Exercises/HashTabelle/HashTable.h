@@ -9,6 +9,8 @@
 #include <ctype.h>
 #include <crtdbg.h>
 
+https://dbs.cs.uni-duesseldorf.de/lehre/docs/java/javabuch/html/k100091.html
+
 // defines
 #define  Limit         11
 #define  MaxContents   20
