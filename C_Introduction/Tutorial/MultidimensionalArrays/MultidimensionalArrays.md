@@ -299,7 +299,6 @@ und einem zweiten Aufsatz:
 
 [How To Pass A 2D Array As A Parameter In C?](https://www.skillvertex.com/blog/how-to-pass-a-2d-array-as-a-parameter-in-c/) (abgerufen am 20.06.2024)
 
-
 ---
 
 [Zurück](../../Markdown/Agenda.md)
