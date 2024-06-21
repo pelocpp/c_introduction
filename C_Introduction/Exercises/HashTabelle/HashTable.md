@@ -22,17 +22,16 @@ ihm ist der Wert &bdquo;Compiler&rdquo; zugeordnet.
 
 Eine Hashtabelle ist folgendermaßen aufgebaut:
 
-Mit Hilfe von Schlüsseln (*keys*)
-werden Werte (*values*) in einer Tabelle gespeichert.
+  * Mit Hilfe von Schlüsseln (*keys*)
+  werden Werte (*values*) in einer Tabelle gespeichert.
 
-Mit Hilfe des Schlüssels berechnet man einen Index &ndash; auch als *Hashwert* bezeichnet &ndash;,
-der eine bestimmte Position in dieser Tabelle identifiziert:
+  * Mit Hilfe des Schlüssels berechnet man einen Index &ndash; auch als *Hashwert* bezeichnet &ndash;,
+  der eine bestimmte Position in dieser Tabelle identifiziert:
 
 Die Hashwerte (Indizes) werden mit Hilfe einer *Hash-Funktion* bestimmt.
 
 Die Größe der Tabelle orientiert sich an der Anzahl der Elemente,
 die man in dieser Tabelle einsortieren möchte.
-
 Bei 8 Elementen reicht folglich eine Tabellengröße bis zu maximal 8 Einträgen.
 Zur Größe der Hashtabelle wird häufig eine Primzahl verwendet.
 
