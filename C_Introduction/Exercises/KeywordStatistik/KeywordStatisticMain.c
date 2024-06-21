@@ -1,5 +1,5 @@
 // =====================================================================================
-// Main_KeywordStatistic.c
+// KeywordStatisticMain.c
 // =====================================================================================
 
 #define _CRT_SECURE_NO_WARNINGS
@@ -8,13 +8,13 @@
 
 #include "KeywordStatistic.h"
 
-#define   FILE_NAME      "C:\\Development\\GitRepositoryCPlusPlus\\"\
-                         "C_Introduction\\C_Introduction\\Exercises\\"\
-                         "KeywordStatistik\\KeywordStatistic.c"
+#define   FILE_NAME   "C:\\Development\\GitRepositoryCPlusPlus\\"\
+                      "C_Introduction\\C_Introduction\\Exercises\\"\
+                      "KeywordStatistik\\KeywordStatistic.c"
 
 
 // global data
-KeywordStatistic table[NUM_KEYWORDS];
+KeywordStatistic statisticsTable[NUM_KEYWORDS] = {};
 
 void exercise_keywordstatistik()
 {
@@ -23,7 +23,7 @@ void exercise_keywordstatistik()
 
     KeywordStatistic table[NUM_KEYWORDS];
 
-    initTable(table);
+    initKeywordTable(table);
 
     fp = fopen(FILE_NAME, "r");
     if (fp == (FILE*)NULL)
@@ -38,7 +38,7 @@ void exercise_keywordstatistik()
     }
     fclose(fp);
 
-    printTable(table);
+    printKeywordTable();
 }
 
 // =====================================================================================

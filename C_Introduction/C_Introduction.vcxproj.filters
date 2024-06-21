@@ -308,6 +308,10 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.md" />
+    <None Include="Exercises\HashTabelle\HashTable.md" />
+    <None Include="Exercises\HashTabelle\c_hash_01.svg" />
+    <None Include="Exercises\HashTabelle\c_hash_02.svg" />
+    <None Include="Exercises\HashTabelle\c_hash_03.svg" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -388,7 +392,7 @@
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c">
       <Filter>Exercises\KeywordStatistik</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\KeywordStatistik\Main_KeywordStatistic.c">
+    <ClCompile Include="Exercises\KeywordStatistik\KeywordStatisticMain.c">
       <Filter>Exercises\KeywordStatistik</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\BinaryConversion\BinaryConversion.c">
@@ -443,6 +447,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableMain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -519,6 +526,9 @@
       <Filter>Tutorial\Structs</Filter>
     </ClInclude>
     <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\HashTabelle\HashTable.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -33,6 +33,10 @@
     <None Include="Exercises\Exercises.md" />
     <None Include="Exercises\Fakultaet\Exercises_Fakultaet.md" />
     <None Include="Exercises\HarmonischeReihe\Exercises_HarmonischeReihe.md" />
+    <None Include="Exercises\HashTabelle\c_hash_01.svg" />
+    <None Include="Exercises\HashTabelle\c_hash_02.svg" />
+    <None Include="Exercises\HashTabelle\c_hash_03.svg" />
+    <None Include="Exercises\HashTabelle\HashTable.md" />
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
@@ -93,8 +97,9 @@
     <ClCompile Include="Exercises\Fakultaet\Fakultaet.c" />
     <ClCompile Include="Exercises\HarmonischeReihe\HarmonischeReihe.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTable.c" />
+    <ClCompile Include="Exercises\HashTabelle\HashTableMain.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
-    <ClCompile Include="Exercises\KeywordStatistik\Main_KeywordStatistic.c" />
+    <ClCompile Include="Exercises\KeywordStatistik\KeywordStatisticMain.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
     <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c" />
@@ -149,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />
+    <ClInclude Include="Exercises\HashTabelle\HashTable.h" />
     <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h" />
     <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />

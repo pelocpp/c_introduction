@@ -10,12 +10,14 @@
 
 // =====================================================================================
 // constants
+
 #define BUF_SIZE                256
 #define MAX_KEYWORD_LENGTH      9
 #define NUM_KEYWORDS            32
 
 // =====================================================================================
 // types
+
 struct keywordStatistic
 {
     char identifier[MAX_KEYWORD_LENGTH];
@@ -26,14 +28,16 @@ typedef struct keywordStatistic KeywordStatistic;
 
 // =====================================================================================
 // extern declarations
-extern KeywordStatistic table[];
+
+extern KeywordStatistic statisticsTable[];
 
 // =====================================================================================
 // function prototypes
-void initTable();
-void printTable();
-void scanLine(char*);
-int  isKeyword(char*);
+
+extern void initKeywordTable();
+extern void printKeywordTable();
+extern void scanLine(char*);
+extern int  isKeyword(char*);
 
 // =====================================================================================
 // End-of-File
