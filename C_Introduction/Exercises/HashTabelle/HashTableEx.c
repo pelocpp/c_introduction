@@ -11,86 +11,47 @@
 #include <ctype.h>
 #include <crtdbg.h>
 
-#include "HashTable.h"
+#include "HashTableEx.h"
 
 // implementation
-static size_t hash(size_t key) {
-    return key % Limit;
+static size_t hash(char key[]) {
+
+    size_t hash_value = 0;
+    const char* ptr = key;
+    while (*ptr != '\0') {
+        hash_value += *ptr;
+        ptr++;
+    }
+
+    return hash_value % Limit;
 }
 
-void initHashTable(Element* table[], int length)
+
+void initHashTableEx(Element* table[], int length)
 {
     for (int i = 0; i < length; ++i) {
         table[i] = NULL;
     }
 }
 
-void fillHashTable(Element* table[])
+void fillHashTableEx(Element* table[])
 {
-    Element element = { 0, "", NULL };
+    Element element = { "", "", NULL };
 
-    element.m_key = 0;
-    element.m_value[0] = '7';
-    element.m_value[1] = '7';
-    element.m_value[2] = '\0';
-
+    strcpy_s(element.m_key, sizeof (element.m_key), "Fritz");
+    strcpy_s(element.m_value, sizeof (element.m_value), "fritz.meier@gmx.de");
     insert(table, element);
 
-    element.m_key = 2;
-    element.m_value[0] = '9';
-    element.m_value[1] = '\0';
-
+    strcpy_s(element.m_key, sizeof(element.m_key), "Hans");
+    strcpy_s(element.m_value, sizeof(element.m_value), "hans.mueller@yahoo.com");
     insert(table, element);
 
-    element.m_key = 5;
-    element.m_value[0] = '4';
-    element.m_value[1] = '0';
-    element.m_value[2] = '\0';
-
+    strcpy_s(element.m_key, sizeof(element.m_key), "Sepp");
+    strcpy_s(element.m_value, sizeof(element.m_value), "sepp.vogel@gmail.com");
     insert(table, element);
 }
 
-void fillHashTable2(Element* table[])
-{
-    Element element = { 0, "", NULL };
-
-    element.m_key = 13;
-    element.m_value[0] = '1';
-    element.m_value[1] = '3';
-    element.m_value[2] = '\0';
-
-    insert(table, element);
-
-    element.m_key = 19;
-    element.m_value[0] = '1';
-    element.m_value[1] = '9';
-    element.m_value[2] = '\0';
-
-    insert(table, element);
-
-    element.m_key = 34;
-    element.m_value[0] = '3';
-    element.m_value[1] = '4';
-    element.m_value[2] = '\0';
-
-    insert(table, element);
-
-    element.m_key = 43;
-    element.m_value[0] = '4';
-    element.m_value[1] = '3';
-    element.m_value[2] = '\0';
-
-    insert(table, element);
-
-    element.m_key = 92;
-    element.m_value[0] = '9';
-    element.m_value[1] = '2';
-    element.m_value[2] = '\0';
-
-    insert(table, element);
-}
-
-int search(size_t key, Element* table[], Element** result, size_t* pos)
+int searchEx(char key[], Element* table[], Element** result, size_t* pos)
 {
     size_t index;
     Element* element;
@@ -99,7 +60,8 @@ int search(size_t key, Element* table[], Element** result, size_t* pos)
 
     for (element = table[index]; element != NULL; element = element->m_next) {
 
-        if (element->m_key == key) {
+        // if (element->m_key == key) {
+        if (strcmp (element->m_key, key) == 0) {
 
             *result = element;
             *pos = index;
@@ -112,14 +74,14 @@ int search(size_t key, Element* table[], Element** result, size_t* pos)
 }
 
 static void printFirstTableElement(size_t i, Element* element) {
-    printf("%5zu | %6zu | %s", i, element->m_key, element->m_value);
+    printf("%5zu | %6s | %s", i, element->m_key, element->m_value);
 }
 
 static void printTableElement(Element* element) {
-    printf("   ==>  %6zu | %s", element->m_key, element->m_value);
+    printf("   ==>  %6s | %s", element->m_key, element->m_value);
 }
 
-void printHashTable(Element* table[], int length)
+void printHashTableEx(Element* table[], int length)
 {
     Element* element;
 
@@ -133,6 +95,7 @@ void printHashTable(Element* table[], int length)
 
             element = table[i];
             printFirstTableElement(i, element);
+            printf("\n");
 
             while (element->m_next != NULL) {
 
@@ -155,7 +118,7 @@ static void insert(Element* table[], Element element)
     if (table[index] == NULL) {
 
         Element* ptrElement = malloc(sizeof(Element));
-        if (ptrElement == (Element*) 0) {
+        if (ptrElement == (Element*)0) {
             exit(1);
         }
 
@@ -183,7 +146,7 @@ static void insert(Element* table[], Element element)
     }
 }
 
-void releaseHashTable(Element* table[], int length)
+void releaseHashTableEx(Element* table[], int length)
 {
     for (size_t i = 0; i != length; ++i) {
 

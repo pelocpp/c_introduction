@@ -452,6 +452,12 @@
     <ClCompile Include="Exercises\HashTabelle\HashTableMain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainEx.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -529,6 +535,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Exercises\HashTabelle\HashTable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\HashTabelle\HashTableEx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

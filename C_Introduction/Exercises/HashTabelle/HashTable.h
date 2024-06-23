@@ -2,40 +2,33 @@
 // HashTable.h
 // =====================================================================================
 
-// #includes
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <ctype.h>
-#include <crtdbg.h>
-
-https://dbs.cs.uni-duesseldorf.de/lehre/docs/java/javabuch/html/k100091.html
-
 // defines
-#define  Limit         11
-#define  MaxContents   20
+#define  Limit                 7
 
 // types
-struct Element
+struct element
 {
-    size_t             m_key;
-    char               m_value[6];
-    struct Element*    m_next;
+    size_t                     m_key;
+    char                       m_value[6];
+    struct element*            m_next;
 };
 
+typedef struct element         Element;
+
 // global variables
-extern struct Element* hashTable[Limit];
+extern Element*                hashTable[Limit];
 
 // functions
-size_t hash(size_t key);
-void   initHashTable           (struct Element* table[], int length);
-void   fillHashTable           (struct Element* table[], int length);
-void   insert                  (struct Element* table[], int length, struct Element element);
-int    search                  (size_t key, struct Element* table[], struct Element** result, size_t* pos);
-void   printFirstTableElement  (size_t i, struct Element* element);
-void   printTableElement       (struct Element* element);
-void   printHashTable          (struct Element* table[], int length);
-void   releaseHashTable        (struct Element* table[], int length);
+size_t hash                    (size_t key);
+void   initHashTable           (Element* table[], int length);
+void   fillHashTable           (Element* table[]);
+void   fillHashTable2          (Element* table[]);
+void   insert                  (Element* table[], Element element);
+int    search                  (size_t key, Element* table[], Element** result, size_t* pos);
+void   printFirstTableElement  (size_t i, Element* element);
+void   printTableElement       (Element* element);
+void   printHashTable          (Element* table[], int length);
+void   releaseHashTable        (Element* table[], int length);
 
 // =====================================================================================
 // End-of-File

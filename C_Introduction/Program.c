@@ -46,11 +46,11 @@ int main()
     //mainMemoryManagement();
     //mainDynamic();
     //mainStrings();
-    mainMultidimensionalArrays();
+    //mainMultidimensionalArrays();
     //mainStructs();
     //mainCrt();
 
-    //exercises();
+    exercises();
 
     printf("[Done]\n");
     return 0;

@@ -97,7 +97,9 @@
     <ClCompile Include="Exercises\Fakultaet\Fakultaet.c" />
     <ClCompile Include="Exercises\HarmonischeReihe\HarmonischeReihe.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTable.c" />
+    <ClCompile Include="Exercises\HashTabelle\HashTableEx.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTableMain.c" />
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainEx.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatisticMain.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
@@ -155,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />
     <ClInclude Include="Exercises\HashTabelle\HashTable.h" />
+    <ClInclude Include="Exercises\HashTabelle\HashTableEx.h" />
     <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h" />
     <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />
