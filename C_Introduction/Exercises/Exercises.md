@@ -13,6 +13,7 @@ um diverse Features von C zu demonstrieren.
 
 #### Einstieg
 
+[**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](./ErsteSchritte/Exercises_ErsteSchritte.md)<br />
 [**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](#link1)<br />
 [**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](#link2)<br />
 [**Teuflische Folge**](#link3)<br />
