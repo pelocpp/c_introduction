@@ -70,6 +70,8 @@
     <None Include="Markdown\MemoryLeaksDetection.md" />
     <None Include="Markdown\Roadmap.md" />
     <None Include="Tutorial\Arrays\Arrays.md" />
+    <None Include="Tutorial\Arrays\c_array_01.svg" />
+    <None Include="Tutorial\Arrays\c_array_02.svg" />
     <None Include="Tutorial\ControlStructures\ControlStructures.md" />
     <None Include="Tutorial\CRT\CRT.md" />
     <None Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.md" />
@@ -101,6 +103,7 @@
     <ClCompile Include="Exercises\HashTabelle\HashTableMainInt.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTableMainString.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTableMain.c" />
+    <ClCompile Include="Exercises\JaggedArrays\JaggedArrays.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatisticMain.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />

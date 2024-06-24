@@ -153,8 +153,6 @@ void readSectionRawData(FILE* ptr, long size)
 
         free(buffer);
     }
-
-
 }
 
 // =============================================================

@@ -4,7 +4,23 @@
 
 ---
 
-## Allgemeines
+## Ablage von Arrays im Speicher
+
+<img src="c_array_01.svg" width="300">
+
+*Abbildung* 1. Ablage eines 1-dimensionalen Arrays im Speicher
+
+
+<img src="c_array_02.svg" width="700">
+
+*Abbildung* 1. Ablage eines 2-dimensionalen Arrays im Speicher
+
+
+
+
+---
+
+## Beispiel
 
 *Beispiel*:
 

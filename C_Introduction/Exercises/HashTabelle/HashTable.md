@@ -100,7 +100,6 @@ die einfach durch ein Array gegeben ist:
 
 *Abbildung* 1. Beispiel einer Hash-Tabelle mit 3 Einträgen. 
 
-
 Werte haben also immer eine feste Position in der Hash-Tabelle, die von ihrem Schlüssel abhängt.
 
 

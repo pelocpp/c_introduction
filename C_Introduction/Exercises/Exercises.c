@@ -21,6 +21,7 @@ extern void exercise_tausche();
 extern void exercise_lotto();
 extern void exercise_division_mit_rest();
 extern void exercise_wallet();
+extern void jagged_arrays();
 extern void exercise_linked_list();
 extern void exercise_dynamic_int_array();
 extern void exercise_zeichenstatistik();
@@ -48,6 +49,7 @@ void exercises()
     //exercise_lotto();
     //exercise_division_mit_rest();
     //exercise_wallet();
+    jagged_arrays();
     //exercise_dynamic_int_array();
     //exercise_linked_list();
     //exercise_zeichenstatistik();
