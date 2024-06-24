@@ -147,12 +147,67 @@ was allerdings zu mehr oder weniger verlängerten Zugriffszeiten führt.
 
 ---
 
+## Beispiele zu den Abbildungen
 
+*Beispiel*:
 
+```cpp
+01: void exercise_hash_table()
+02: {
+03:     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+04: 
+05:     initHashTable(hashTable, Limit);
+06:     fillHashTable(hashTable);
+07:     printHashTable(hashTable, Limit);
+08: 
+09:     size_t key = 1;
+10:     Element* result;
+11:     size_t pos;
+12:     search(key, hashTable, &result, &pos);
+13:     if (result != NULL) {
+14:         printf("Key %zu: Value = %s\n", key, result->m_value);
+15:     }
+16:     else {
+17:         printf("Key %zu not found!\n", key);
+18:     }
+19: 
+20:     key = 0;
+21:     search(key, hashTable, &result, &pos);
+22:     if (result != NULL) {
+23:         printf("Key %zu: Value = %s\n", key, result->m_value);
+24:     }
+25:     else {
+26:         printf("Key %zu not found!\n", key);
+27:     }
+28: 
+29:     releaseHashTable(hashTable, Limit);
+30: }
+```
+
+*Ausgabe*:
 
 
 ```
+Index |  Key   | Value
+======|========|======
+    0 |      0 |    77
+    2 |      2 |     9
+    5 |      5 |    40
 ```
+
+
+oder im Falle von Kollisionen:
+
+
+```
+Index |  Key   | Value
+======|========|======
+    1 |     43 |    43   ==>      92 |    92
+    5 |     19 |    19
+    6 |     13 |    13   ==>      34 |    34
+```
+
+
 
 ---
 
@@ -160,6 +215,12 @@ was allerdings zu mehr oder weniger verlängerten Zugriffszeiten führt.
 
 [*HashTable.h*](./HashTable.h)
 [*HashTable.c*](./HashTable.c)
+[*HashTableMainInt.c*](./HashTableMainInt.c)
+
+[*HashTableEx.h*](./HashTableEx.h)
+[*HashTableEx.c*](./HashTableEx.c)
+[*HashTableMainString.c*](./HashTableMainString.c)
+
 [*HashTableMain.c*](./HashTableMain.c)
 
 ---

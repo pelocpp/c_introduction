@@ -449,13 +449,16 @@
     <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\HashTabelle\HashTableMain.c">
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainInt.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\HashTabelle\HashTableEx.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\HashTabelle\HashTableMainEx.c">
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainString.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableMain.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

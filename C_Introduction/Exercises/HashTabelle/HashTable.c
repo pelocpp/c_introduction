@@ -112,11 +112,11 @@ int search(size_t key, Element* table[], Element** result, size_t* pos)
 }
 
 static void printFirstTableElement(size_t i, Element* element) {
-    printf("%5zu | %6zu | %s", i, element->m_key, element->m_value);
+    printf("%5zu | %6zu | %5s", i, element->m_key, element->m_value);
 }
 
 static void printTableElement(Element* element) {
-    printf("   ==>  %6zu | %s", element->m_key, element->m_value);
+    printf("   ==>  %6zu | %5s", element->m_key, element->m_value);
 }
 
 void printHashTable(Element* table[], int length)
@@ -125,7 +125,6 @@ void printHashTable(Element* table[], int length)
 
     printf("Index |  Key   | Value\n");
     printf("======|========|======\n");
-    printf("\n");
 
     for (size_t i = 0; i != length; ++i) {
 

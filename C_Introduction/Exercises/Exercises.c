@@ -25,9 +25,7 @@ extern void exercise_linked_list();
 extern void exercise_dynamic_int_array();
 extern void exercise_zeichenstatistik();
 extern void exercise_keywordstatistik();
-
 extern void exercise_hash_table();
-extern void exercise_hash_table_ex();
 extern void exercise_object_file_viewer();
 
 void exercises()
@@ -54,9 +52,7 @@ void exercises()
     //exercise_linked_list();
     //exercise_zeichenstatistik();
     //exercise_keywordstatistik();
-
     //exercise_hash_table();
-    exercise_hash_table_ex();
     //exercise_object_file_viewer();
 }
 

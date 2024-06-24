@@ -23,9 +23,10 @@ static size_t hash(char key[]) {
         ptr++;
     }
 
+    printf("hash of %s: %zu\n", key, (hash_value % Limit));
+
     return hash_value % Limit;
 }
-
 
 void initHashTableEx(Element* table[], int length)
 {
@@ -46,8 +47,20 @@ void fillHashTableEx(Element* table[])
     strcpy_s(element.m_value, sizeof(element.m_value), "hans.mueller@yahoo.com");
     insert(table, element);
 
+    strcpy_s(element.m_key, sizeof(element.m_key), "Lisa");
+    strcpy_s(element.m_value, sizeof(element.m_value), "lisa.schmitt@web.de");
+    insert(table, element);
+
     strcpy_s(element.m_key, sizeof(element.m_key), "Sepp");
     strcpy_s(element.m_value, sizeof(element.m_value), "sepp.vogel@gmail.com");
+    insert(table, element);
+
+    strcpy_s(element.m_key, sizeof(element.m_key), "Susan");
+    strcpy_s(element.m_value, sizeof(element.m_value), "susan.weber@yahoo.de");
+    insert(table, element);
+
+    strcpy_s(element.m_key, sizeof(element.m_key), "Anton");
+    strcpy_s(element.m_value, sizeof(element.m_value), "anton.huber@gmx.de");
     insert(table, element);
 }
 
@@ -87,7 +100,7 @@ void printHashTableEx(Element* table[], int length)
 
     printf("Index |  Key   | Value\n");
     printf("======|========|======\n");
-    printf("\n");
+  //  printf("\n");
 
     for (size_t i = 0; i != length; ++i) {
 
@@ -95,16 +108,15 @@ void printHashTableEx(Element* table[], int length)
 
             element = table[i];
             printFirstTableElement(i, element);
-            printf("\n");
 
             while (element->m_next != NULL) {
 
                 printTableElement(element->m_next);
                 element = element->m_next;
             }
-
             printf("\n");
         }
+
     }
     printf("\n");
 }

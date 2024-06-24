@@ -1,5 +1,5 @@
 // =====================================================================================
-// HashTableMain.c
+// HashTableMainInt.c
 // =====================================================================================
 
 #define _CRTDBG_MAP_ALLOC
@@ -7,40 +7,41 @@
 #include <stdio.h>
 #include <crtdbg.h>
 
-#include "HashTableEx.h"
+#include "HashTable.h"
 
 // global variable
-Element* hashTableEx[Limit] = { NULL };
+Element* hashTable[Limit] = { NULL };
 
-void exercise_hash_table_ex()
+void exercise_hash_table_with_ints()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    initHashTableEx(hashTableEx, Limit);
-    fillHashTableEx(hashTableEx);
-    printHashTableEx(hashTableEx, Limit);
+    initHashTable(hashTable, Limit);
+    fillHashTable(hashTable);
+    //fillHashTable2(hashTable);
+    printHashTable(hashTable, Limit);
 
-    char* key = "Anton";
+    size_t key = 1;
     Element* result;
     size_t pos;
-    searchEx(key, hashTableEx, &result, &pos);
+    search(key, hashTable, &result, &pos);
     if (result != NULL) {
-        printf("Key %s: Value = %s\n", key, result->m_value);
+        printf("Key %zu: Value = %s\n", key, result->m_value);
     }
     else {
-        printf("Key %s not found!\n", key);
+        printf("Key %zu not found!\n", key);
     }
 
-    key = "Fritz";
-    searchEx(key, hashTableEx, &result, &pos);
+    key = 0;
+    search(key, hashTable, &result, &pos);
     if (result != NULL) {
-        printf("Key %s: Value = %s\n", key, result->m_value);
+        printf("Key %zu: Value = %s\n", key, result->m_value);
     }
     else {
-        printf("Key %s not found!\n", key);
+        printf("Key %zu not found!\n", key);
     }
 
-    releaseHashTableEx(hashTableEx, Limit);
+    releaseHashTable(hashTable, Limit);
 }
 
 // =====================================================================================

@@ -98,8 +98,9 @@
     <ClCompile Include="Exercises\HarmonischeReihe\HarmonischeReihe.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTable.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTableEx.c" />
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainInt.c" />
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainString.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTableMain.c" />
-    <ClCompile Include="Exercises\HashTabelle\HashTableMainEx.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatisticMain.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
