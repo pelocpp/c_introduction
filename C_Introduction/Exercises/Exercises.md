@@ -14,256 +14,154 @@ um diverse Features von C zu demonstrieren.
 #### Einstieg
 
 [**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](./ErsteSchritte/Exercises_ErsteSchritte.md)<br />
-[**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](#link1)<br />
-[**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](#link2)<br />
-[**Teuflische Folge**](#link3)<br />
-[**Zinsberechnung**](#link4)<br />
-[**Maximum von drei Zahlen**](#link5)<br />
-[**Berechnung der Fakultät**](#link6)<br />
-[**Auswertung einer Wahl**](#link7)
-
-#### Funktionen und Unterprogramme
-
-[**Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr**](#link8)<br />
-[**Harmonische Reihe**](#link9)
-
-#### Arrays
-
-[**Arrays auswerten: Summe, Minimum und Maximum**](#link10)<br />
-[**Binäre Darstellung ganzer Zahlen**](#link11)<br />
-[**Ein mathematischer Vektor**](#link12)
-
-#### Zeichenkettenverarbeitung
-
-[**Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove`**](#link13)
-
-#### Zeiger (*Pointer*)
-
-[**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](#link14)<br />
-[**Aufgabe zur Parameterübergabe mit Adressen**](#link15)
-
-#### Strukturen
-
-[**Division mit Rest: Struktur mit Quotient und Rest**](#link16)<br />
-[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](#link17)
-
-
-#### Dynamische Speicherverwaltung
-
-[**Struktur `DynamicIntArray`**](#link18)<br />
-[**Verkettete Liste (*Linked List*)**](#link19)
-
-
-#### CRT - *C-Runtime-Library*
-
-[**Zeichenstatistik zu einem Text**](#link20)<br />
-[**Statistik aller Schlüsselwörter in einem C-Quelltext**](#link21)
-
-
-#### Verschiedenes
-
-[**Ziehung der Lottozahlen**](#link22)<br />
-[**Kontakteverwaltung**](#link23)
-
-
----
-
-#### [Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen](./ErsteSchritte/Exercises_ErsteSchritte.md) <a name="link1"></a>
-
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`
   * Division und Modulo-Operation ganzer Zahlen
   * Elementare Datentypen
 
----
 
-#### [Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen](./VariablenDatentypenOperatoren/Exercises_VariablenDatentypenOperatoren.md) <a name="link2"></a>
-
+[**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](./VariablenDatentypenOperatoren/Exercises_VariablenDatentypenOperatoren.md)<br />
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`
   * Division und Modulo-Operation ganzer Zahlen
   * Elementare Datentypen
 
----
 
-#### [Teuflische Folge](./TeuflischeFolge/Exercises_TeuflischeFolge.md) <a name="link3"></a>
-
+[**Teuflische Folge**](./TeuflischeFolge/Exercises_TeuflischeFolge.md)<br />
 Folgende Aspekte werden betrachtet:
-  * Kontrollstrukturen `if` und `for`
+  * Kontrollstrukturen `if` und `while`
   * Division und Modulo-Operation ganzer Zahlen
   * Elementare Datentypen
 
----
 
-#### [Zinsberechnung](./Zinsberechnung/Exercises_Zinsberechnung.md) <a name="link4"></a>
 
+[**Zinsberechnung**](./Zinsberechnung/Exercises_Zinsberechnung.md)<br />
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`
   * Elementare Datentypen
   * Einfache Ausgaben mit `printf`
 
----
 
-#### [Maximum von drei Zahlen](./Maximum/Exercises_Maximum.md) <a name="link5"></a>
-
+[**Maximum von drei Zahlen**](./Maximum/Exercises_Maximum.md)<br />
 Folgende Aspekte werden betrachtet:
   * `if`-Kontrollstruktur 
   * Verknüpfung von mehreren Bedingungen
 
----
-
-#### [Berechnung der Fakultät](./Fakultaet/Exercises_Fakultaet.md) <a name="link6"></a>
-
+[**Berechnung der Fakultät**](./Fakultaet/Exercises_Fakultaet.md)<br />
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen
   * Thematik des Überlaufs
 
----
-
-#### [Auswertung einer Wahl](./Wahl/Exercises_Wahl.md) <a name="link7"></a>
-
+[**Auswertung einer Wahl**](./Wahl/Exercises_Wahl.md)
 Folgende Aspekte werden betrachtet:
   * Datentypen
   * Kontrollstrukturen
   * Prozentrechnung
   * Ein- und Ausgabe
 
----
+#### Funktionen und Unterprogramme
 
-#### [Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr](./Unterprogramme/Exercises_Unterprogramme.md) <a name="link8"></a>
-
+[**Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr**](./Unterprogramme/Exercises_Unterprogramme.md)<br />
 Folgende Aspekte werden betrachtet:
   * Unterprogramme
   * Übergabe von Parametern an Unterprogramme
   * Rückgabe von Ergebnissen aus einem Unterprogramm
 
----
-
-#### [Harmonische Reihe](./HarmonischeReihe/Exercises_HarmonischeReihe.md) <a name="link9"></a>
-
+[**Harmonische Reihe**](./HarmonischeReihe/Exercises_HarmonischeReihe.md)
 Folgende Aspekte werden betrachtet:
   * Unterprogramme
   * Übergabe von Parametern an Unterprogramme
   * Rückgabe von Ergebnissen aus einem Unterprogramm
 
----
+#### Arrays
 
-#### [Arrays auswerten: Summe, Minimum und Maximum](./ArraySumMinMax/Exercises_ArraySumMinMax.md) <a name="link10"></a>
-
+[**Arrays auswerten: Summe, Minimum und Maximum**](./ArraySumMinMax/Exercises_ArraySumMinMax.md)<br />
 Folgende Aspekte werden betrachtet:
   * Arrays
   * Durchlaufen (Traversieren) eines Arrays
   * Einfache Berechnungen mit Arrays
 
-
----
-
-#### [Binäre Darstellung ganzer Zahlen](./BinaryConversion/Exercises_BinaryConversion.md) <a name="link11"></a>
-
+[**Binäre Darstellung ganzer Zahlen**](./BinaryConversion/Exercises_BinaryConversion.md)<br />
 Folgende Aspekte werden betrachtet:
   * Arrays
   * Funktionen mit Arrays als Parameter
 
----
-
-#### [Ein mathematischer Vektor](./Vector/Exercises_Vector.md) <a name="link12"></a>
-
+[**Ein mathematischer Vektor**](./Vector/Exercises_Vector.md)
 Folgende Aspekte werden betrachtet:
   * Arrays
   * Funktionen mit Arrays als Parameter
 
+#### Zeichenkettenverarbeitung
 
----
-
-#### [Elementare Zeichenketteroperationen: `length`, `replace` und `insert`](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md) <a name="link13"></a>
-
+[**Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove`**](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md)
 Folgende Aspekte werden betrachtet:
   * Zeichen und Zeichenketten
   * Fortgeschrittenes Programmieren mit Arrays und/oder Zeigern
 
+#### Zeiger (*Pointer*)
 
----
-
-#### [Aufgabe zum Datentyp *Zeiger* (*Pointer*)](./Zeiger/Exercises_Zeiger.md) <a name="link14"></a>
-
+[**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](./Zeiger/Exercises_Zeiger.md)<br />
 Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger
   * Referenzieren und Derefenzieren eines Zeigers
 
----
-
-#### [Aufgabe zur Parameterübergabe mit Adressen](./Tausche/Exercises_Tausche.md) <a name="link15"></a>
-
+[**Aufgabe zur Parameterübergabe mit Adressen**](./Tausche/Exercises_Tausche.md)
 Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger und Parameter
   * Betrachtung von &bdquo;Call-by-Value&rdquo; und &bdquo;Call-by-Address&rdquo;
 
----
+#### Strukturen
 
-#### [Aufgabe zur Division mit Rest](./DivisionMitRest/Exercises_DivisionMitRest.md) <a name="link16"></a>
-
+[**Division mit Rest: Struktur mit Quotient und Rest**](./DivisionMitRest/Exercises_DivisionMitRest.md)<br />
 Folgende Aspekte werden betrachtet:
   * Funktionen
   * Rückgabetyp Struktur
 
----
-
-#### [Aufgabe zu einem Geldbeutel: Struktur `Wallet`](./Wallet/Exercises_Wallet.md) <a name="link17"></a>
-
+[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](./Wallet/Exercises_Wallet.md)
 Folgende Aspekte werden betrachtet:
   * Funktionen
   * Rückgabetyp Struktur
 
 
----
+#### Dynamische Speicherverwaltung
 
-#### [Struktur `DynamicIntArray`](./DynamicIntArray/Exercises_DynamicIntArray.md) <a name="link18"></a>
-
+[**Struktur `DynamicIntArray`**](./DynamicIntArray/Exercises_DynamicIntArray.md)<br />
 Folgende Aspekte werden betrachtet:
   * Dynamische Speicherverwaltung
   * Strukturen
   * `malloc`, `calloc` und `free`
 
 
----
-
-#### [Verkettete Liste (*Linked List*)](./VerketteteListe/Exercises_VerketteteListe.md) <a name="link19"></a>
-
+[**Verkettete Liste (*Linked List*)**](./VerketteteListe/Exercises_VerketteteListe.md)
 Folgende Aspekte werden betrachtet:
   * Rekursive Strukturen
   * `malloc`, `calloc` und `free`
 
 
----
+#### CRT - *C-Runtime-Library*
 
-#### [Zeichenstatistik zu einem Text](./Zeichenstatistik/Exercises_Zeichenstatistik.md) <a name="link20"></a>
-
+[**Zeichenstatistik zu einem Text**](./Zeichenstatistik/Exercises_Zeichenstatistik.md)<br />
 Folgende Aspekte werden betrachtet:
   * `fopen`, `fclose`, `fgets`
   * `islower`, `isupper`, `isdigit`
 
----
-
-#### [Statistik aller Schlüsselwörter in einem C-Quelltext](./KeywordStatistik/Exercises_KeywordStatistik.md) <a name="link21"></a>
+[**Statistik aller Schlüsselwörter in einem C-Quelltext**](./KeywordStatistik/Exercises_KeywordStatistik.md)
 
 Folgende Aspekte werden betrachtet:
   * Feld von Strukturen
   * `fopen`, `fclose`, `fgets`
   * `islower`, `isupper`
 
----
 
-#### [Ziehung der Lottozahlen](./Lotto/Exercises_Lotto.md) <a name="link22"></a>
+#### Verschiedenes
 
+[**Ziehung der Lottozahlen**](./Lotto/Exercises_Lotto.md)<br />
 Folgende Aspekte werden betrachtet:
   * Funktionen / Unterprogramme
   * Zufallszahlen
   * Strukturierung eines Programms
 
----
-
-#### [Kontakteverwaltung](./Contacts/Exercises_Contacts.md) <a name="link23"></a>
-
+[**Kontakteverwaltung**](./Contacts/Exercises_Contacts.md)
 Folgende Aspekte werden betrachtet:
   * Arrays von Strukturen
   * `printf`-Menü
@@ -271,6 +169,7 @@ Folgende Aspekte werden betrachtet:
   * Bei Bedarf dynamische Daten
 
 ---
+
 
 [Zurück](../../Readme.md)
 
