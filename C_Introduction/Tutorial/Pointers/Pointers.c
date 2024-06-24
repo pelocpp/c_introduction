@@ -130,6 +130,29 @@ static void test_pointer_05_gimmicks()
     printf("Wert: %x\n", n);
 }
 
+
+void test_pointer_06_pointer_of_pointer()
+{
+    int n = 123;
+
+    int* ip = &n;
+    int** ip2 = &ip;
+    int*** ip3 = &ip2;
+    int**** ip4 = &ip3;
+
+    int m;
+    m = *ip;
+    m = **ip2;
+    m = ***ip3;
+    m = ****ip4;
+
+    printf("Wert von n: %d\n", n);
+    printf("Wert von n: %d\n", *ip);
+    printf("Wert von n: %d\n", **ip2);
+    printf("Wert von n: %d\n", ***ip3);
+    printf("Wert von n: %d\n", ****ip4);
+}
+
 void mainPointer()
 {
     test_pointer_01();
@@ -137,6 +160,7 @@ void mainPointer()
     test_pointer_03();
     test_pointer_04();
     test_pointer_05_gimmicks();
+    test_pointer_06_pointer_of_pointer();
 }
 
 // ===========================================================================

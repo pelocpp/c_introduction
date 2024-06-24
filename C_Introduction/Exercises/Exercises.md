@@ -92,7 +92,7 @@ Folgende Aspekte werden betrachtet:
 
 ### Zeichenkettenverarbeitung
 
-[**Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove`**](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md)
+[**Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove`**](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md)<br />
 Folgende Aspekte werden betrachtet:
   * Zeichen und Zeichenketten
   * Fortgeschrittenes Programmieren mit Arrays und/oder Zeigern
@@ -123,6 +123,13 @@ Folgende Aspekte werden betrachtet:
 
 
 ### Dynamische Speicherverwaltung
+
+[**&bdquo;Jagged Array&rdquo; &ndash; Gezackte Felder**](./JaggedArrays/Exercises_JaggedArrays.md)<br />
+Folgende Aspekte werden betrachtet:
+  * Dynamische Speicherverwaltung
+  * Realisierung eines 2-dimensionalen Felds mit Teilfeldern verschiedener Länge
+  * `malloc`, `calloc` und `free`
+
 
 [**Struktur `DynamicIntArray`**](./DynamicIntArray/Exercises_DynamicIntArray.md)<br />
 Folgende Aspekte werden betrachtet:

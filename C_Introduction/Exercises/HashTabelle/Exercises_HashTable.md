@@ -212,12 +212,12 @@ Index |  Key   | Value
 
 ## Quellcode der Lösung
 
-[*HashTable.h*](./HashTable.h)
-[*HashTable.c*](./HashTable.c)
+[*HashTable.h*](./HashTable.h)<br />
+[*HashTable.c*](./HashTable.c)<br />
 [*HashTableMainInt.c*](./HashTableMainInt.c)
 
-[*HashTableEx.h*](./HashTableEx.h)
-[*HashTableEx.c*](./HashTableEx.c)
+[*HashTableEx.h*](./HashTableEx.h)<br />
+[*HashTableEx.c*](./HashTableEx.c)<br />
 [*HashTableMainString.c*](./HashTableMainString.c)
 
 [*HashTableMain.c*](./HashTableMain.c)

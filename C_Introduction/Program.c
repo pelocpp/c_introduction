@@ -50,7 +50,7 @@ int main()
     //mainStructs();
     //mainCrt();
 
-    exercises();
+    //exercises();
 
     printf("[Done]\n");
     return 0;
