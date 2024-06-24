@@ -9,9 +9,9 @@ um diverse Features von C zu demonstrieren.
 
 ---
 
-### Inhaltsverzeichnis
+## Inhaltsverzeichnis
 
-#### Einstieg
+### Einstieg
 
 [**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](./ErsteSchritte/Exercises_ErsteSchritte.md)<br />
 Folgende Aspekte werden betrachtet:
@@ -34,7 +34,6 @@ Folgende Aspekte werden betrachtet:
   * Elementare Datentypen
 
 
-
 [**Zinsberechnung**](./Zinsberechnung/Exercises_Zinsberechnung.md)<br />
 Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen `if` und `for`
@@ -52,14 +51,14 @@ Folgende Aspekte werden betrachtet:
   * Kontrollstrukturen
   * Thematik des Überlaufs
 
-[**Auswertung einer Wahl**](./Wahl/Exercises_Wahl.md)
+[**Auswertung einer Wahl**](./Wahl/Exercises_Wahl.md)<br />
 Folgende Aspekte werden betrachtet:
   * Datentypen
   * Kontrollstrukturen
   * Prozentrechnung
   * Ein- und Ausgabe
 
-#### Funktionen und Unterprogramme
+### Funktionen und Unterprogramme
 
 [**Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr**](./Unterprogramme/Exercises_Unterprogramme.md)<br />
 Folgende Aspekte werden betrachtet:
@@ -67,13 +66,13 @@ Folgende Aspekte werden betrachtet:
   * Übergabe von Parametern an Unterprogramme
   * Rückgabe von Ergebnissen aus einem Unterprogramm
 
-[**Harmonische Reihe**](./HarmonischeReihe/Exercises_HarmonischeReihe.md)
+[**Harmonische Reihe**](./HarmonischeReihe/Exercises_HarmonischeReihe.md)<br />
 Folgende Aspekte werden betrachtet:
   * Unterprogramme
   * Übergabe von Parametern an Unterprogramme
   * Rückgabe von Ergebnissen aus einem Unterprogramm
 
-#### Arrays
+### Arrays
 
 [**Arrays auswerten: Summe, Minimum und Maximum**](./ArraySumMinMax/Exercises_ArraySumMinMax.md)<br />
 Folgende Aspekte werden betrachtet:
@@ -86,44 +85,44 @@ Folgende Aspekte werden betrachtet:
   * Arrays
   * Funktionen mit Arrays als Parameter
 
-[**Ein mathematischer Vektor**](./Vector/Exercises_Vector.md)
+[**Ein mathematischer Vektor**](./Vector/Exercises_Vector.md)<br />
 Folgende Aspekte werden betrachtet:
   * Arrays
   * Funktionen mit Arrays als Parameter
 
-#### Zeichenkettenverarbeitung
+### Zeichenkettenverarbeitung
 
 [**Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove`**](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md)
 Folgende Aspekte werden betrachtet:
   * Zeichen und Zeichenketten
   * Fortgeschrittenes Programmieren mit Arrays und/oder Zeigern
 
-#### Zeiger (*Pointer*)
+### Zeiger (*Pointer*)
 
 [**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](./Zeiger/Exercises_Zeiger.md)<br />
 Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger
   * Referenzieren und Derefenzieren eines Zeigers
 
-[**Aufgabe zur Parameterübergabe mit Adressen**](./Tausche/Exercises_Tausche.md)
+[**Aufgabe zur Parameterübergabe mit Adressen**](./Tausche/Exercises_Tausche.md)<br />
 Folgende Aspekte werden betrachtet:
   * Datentyp Zeiger und Parameter
   * Betrachtung von &bdquo;Call-by-Value&rdquo; und &bdquo;Call-by-Address&rdquo;
 
-#### Strukturen
+### Strukturen
 
 [**Division mit Rest: Struktur mit Quotient und Rest**](./DivisionMitRest/Exercises_DivisionMitRest.md)<br />
 Folgende Aspekte werden betrachtet:
   * Funktionen
   * Rückgabetyp Struktur
 
-[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](./Wallet/Exercises_Wallet.md)
+[**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](./Wallet/Exercises_Wallet.md)<br />
 Folgende Aspekte werden betrachtet:
   * Funktionen
   * Rückgabetyp Struktur
 
 
-#### Dynamische Speicherverwaltung
+### Dynamische Speicherverwaltung
 
 [**Struktur `DynamicIntArray`**](./DynamicIntArray/Exercises_DynamicIntArray.md)<br />
 Folgende Aspekte werden betrachtet:
@@ -132,20 +131,20 @@ Folgende Aspekte werden betrachtet:
   * `malloc`, `calloc` und `free`
 
 
-[**Verkettete Liste (*Linked List*)**](./VerketteteListe/Exercises_VerketteteListe.md)
+[**Verkettete Liste (*Linked List*)**](./VerketteteListe/Exercises_VerketteteListe.md)<br />
 Folgende Aspekte werden betrachtet:
   * Rekursive Strukturen
   * `malloc`, `calloc` und `free`
 
 
-#### CRT - *C-Runtime-Library*
+### CRT - *C-Runtime-Library*
 
 [**Zeichenstatistik zu einem Text**](./Zeichenstatistik/Exercises_Zeichenstatistik.md)<br />
 Folgende Aspekte werden betrachtet:
   * `fopen`, `fclose`, `fgets`
   * `islower`, `isupper`, `isdigit`
 
-[**Statistik aller Schlüsselwörter in einem C-Quelltext**](./KeywordStatistik/Exercises_KeywordStatistik.md)
+[**Statistik aller Schlüsselwörter in einem C-Quelltext**](./KeywordStatistik/Exercises_KeywordStatistik.md)<br />
 
 Folgende Aspekte werden betrachtet:
   * Feld von Strukturen
@@ -153,7 +152,7 @@ Folgende Aspekte werden betrachtet:
   * `islower`, `isupper`
 
 
-#### Verschiedenes
+### Verschiedenes
 
 [**Ziehung der Lottozahlen**](./Lotto/Exercises_Lotto.md)<br />
 Folgende Aspekte werden betrachtet:
@@ -161,12 +160,20 @@ Folgende Aspekte werden betrachtet:
   * Zufallszahlen
   * Strukturierung eines Programms
 
-[**Kontakteverwaltung**](./Contacts/Exercises_Contacts.md)
+[**Kontakteverwaltung**](./Contacts/Exercises_Contacts.md)<br />
 Folgende Aspekte werden betrachtet:
   * Arrays von Strukturen
   * `printf`-Menü
   * Strukturierung eines Programms
   * Bei Bedarf dynamische Daten
+
+[**Hashtabellen**](./HashTabelle/Exercises_HashTable.md)<br />
+Folgende Aspekte werden betrachtet:
+  * Arrays und Strukturen
+  * Header-Files
+  * Dynamische Daten
+  * Verkettete Liste
+
 
 ---
 

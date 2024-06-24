@@ -2,7 +2,10 @@
 // JaggedArrays.c
 // =====================================================================================
 
+#define _CRTDBG_MAP_ALLOC
+
 #include <stdio.h>
+#include <crtdbg.h>
 
 // https://takethenotes.com/jagged-array/
 
@@ -17,6 +20,24 @@ static void jagged_arrays_01()
 {
     // static jagged array on the stack
 
+    char array1[5] = { 'T', 'h', 'i', 's', '\0' };
+    char array2[3] = { 'i', 's', '\0' };
+    char array3[2] = { 'a', '\0' };
+    char array4[7] = { 'j', 'a', 'g', 'g', 'e', 'd', '\0' };
+    char array5[6] = { 'a', 'r', 'r', 'a', 'y', '\0' };
+
+    char* jagged_array[5] = { array1, array2, array3, array4, array5 };
+
+    for (int i = 0; i < 5; i++) {
+        printf("%s ", jagged_array[i]);
+    }
+    printf("\n");
+}
+
+static void jagged_arrays_02()
+{
+    // static jagged array on the stack
+
     int array1[4] = { 1, 2, 3, 4 };
     int array2[2] = { 5, 6 };
     int array3[3] = { 7, 8, 9 };
@@ -24,7 +45,7 @@ static void jagged_arrays_01()
     int* jagged_array[3] = { array1, array2, array3 };
 }
 
-static void jagged_arrays_02()
+static void jagged_arrays_03()
 {
     // static jagged array on the stack - with sizes
 
@@ -48,7 +69,7 @@ static void jagged_arrays_02()
 }
 
 
-static void jagged_arrays_03()
+static void jagged_arrays_04()
 {
     // static jagged array on the heap
 
@@ -70,7 +91,7 @@ static void jagged_arrays_03()
 
 }
 
-static void jagged_arrays_04()
+static void jagged_arrays_05()
 {
     // static jagged array on the heap
 
@@ -125,12 +146,13 @@ static void jagged_arrays_04()
     }
 }
 
-void jagged_arrays()
+void exercise_jagged_arrays()
 {
     jagged_arrays_01();
     jagged_arrays_02();
     jagged_arrays_03();
     jagged_arrays_04();
+    jagged_arrays_05();
 }
 
 // =====================================================================================

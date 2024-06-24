@@ -308,12 +308,14 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.md" />
-    <None Include="Exercises\HashTabelle\HashTable.md" />
     <None Include="Exercises\HashTabelle\c_hash_01.svg" />
     <None Include="Exercises\HashTabelle\c_hash_02.svg" />
     <None Include="Exercises\HashTabelle\c_hash_03.svg" />
     <None Include="Tutorial\Arrays\c_array_01.svg" />
-    <None Include="Tutorial\Arrays\c_array_02.svg" />
+    <None Include="Tutorial\MultidimensionalArrays\c_array_02.svg" />
+    <None Include="Exercises\JaggedArrays\Exercises_JaggedArrays.md" />
+    <None Include="Exercises\HashTabelle\Exercises_HashTable.md" />
+    <None Include="Exercises\JaggedArrays\c_jagged_array.svg" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">

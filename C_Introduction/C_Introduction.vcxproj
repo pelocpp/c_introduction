@@ -36,7 +36,9 @@
     <None Include="Exercises\HashTabelle\c_hash_01.svg" />
     <None Include="Exercises\HashTabelle\c_hash_02.svg" />
     <None Include="Exercises\HashTabelle\c_hash_03.svg" />
-    <None Include="Exercises\HashTabelle\HashTable.md" />
+    <None Include="Exercises\HashTabelle\Exercises_HashTable.md" />
+    <None Include="Exercises\JaggedArrays\c_jagged_array.svg" />
+    <None Include="Exercises\JaggedArrays\Exercises_JaggedArrays.md" />
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
@@ -71,7 +73,7 @@
     <None Include="Markdown\Roadmap.md" />
     <None Include="Tutorial\Arrays\Arrays.md" />
     <None Include="Tutorial\Arrays\c_array_01.svg" />
-    <None Include="Tutorial\Arrays\c_array_02.svg" />
+    <None Include="Tutorial\MultidimensionalArrays\c_array_02.svg" />
     <None Include="Tutorial\ControlStructures\ControlStructures.md" />
     <None Include="Tutorial\CRT\CRT.md" />
     <None Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.md" />
