@@ -316,6 +316,7 @@
     <None Include="Exercises\JaggedArrays\Exercises_JaggedArrays.md" />
     <None Include="Exercises\HashTabelle\Exercises_HashTable.md" />
     <None Include="Exercises\JaggedArrays\c_jagged_array.svg" />
+    <None Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -466,6 +467,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\JaggedArrays\JaggedArrays.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

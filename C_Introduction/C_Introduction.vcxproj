@@ -87,6 +87,7 @@
     <None Include="Tutorial\Strings\Strings.md" />
     <None Include="Tutorial\Structs\Structs.md" />
     <None Include="Tutorial\Subroutines\Subroutines.md" />
+    <None Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c" />
@@ -139,6 +140,7 @@
     <ClCompile Include="Tutorial\Strings\Strings.c" />
     <ClCompile Include="Tutorial\Structs\Structs.c" />
     <ClCompile Include="Tutorial\Subroutines\Subroutines.c" />
+    <ClCompile Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.c" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_01.png" />

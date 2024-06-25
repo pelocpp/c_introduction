@@ -86,6 +86,13 @@
   * Felder von Strukturen
   * Schlüsselwort `typedef`
 
+### [Unions, Bitfelder und Enums](../Tutorial/UnionsBitFieldsEnums/UnionsBitFieldsEnums.md)
+  * Unions
+  * Schlüsselwort `union`
+  * Bitfelder
+  * Aufzählungstypen 
+  * Schlüsselwort `enum`
+
 ### [Speicherbereiche eines C–Programms](../Tutorial/MemoryManagement/MemoryManagement.md)
   * Globale Variablen
   * Lokale Variablen

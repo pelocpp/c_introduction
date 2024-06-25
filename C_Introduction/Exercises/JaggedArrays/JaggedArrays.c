@@ -73,14 +73,14 @@ static void jagged_arrays_04()
 {
     // static jagged array on the heap
 
-    int** jagged_array = (int**) malloc(3 * sizeof(int*));
-    if (jagged_array == (int**)0) {
+    int** jagged_array = (int**) calloc(3, sizeof(int*));
+    if (jagged_array == (int**) 0) {
         return;
     }
 
-    jagged_array[0] = (int*) malloc(4 * sizeof(int));
-    jagged_array[1] = (int*) malloc(2 * sizeof(int));
-    jagged_array[2] = (int*) malloc(3 * sizeof(int));
+    jagged_array[0] = (int*) calloc(4, sizeof(int));
+    jagged_array[1] = (int*) calloc(2, sizeof(int));
+    jagged_array[2] = (int*) calloc(3, sizeof(int));
 
     // release memory
     for (int i = 0; i < 3; i++) {
@@ -97,22 +97,22 @@ static void jagged_arrays_05()
 
     int sizes[] = { 4, 2, 3 };
 
-    int** jagged_array = (int**) malloc(3 * sizeof(int*));
+    int** jagged_array = (int**) calloc(3, sizeof(int*));
     if (jagged_array == (int**)0) {
         return;
     }
 
-    jagged_array[0] = (int*) malloc(sizes[0] * sizeof(int));
+    jagged_array[0] = (int*) calloc(sizes[0], sizeof(int));
     if (jagged_array[0] == (int*)0) {
         return;
     }
 
-    jagged_array[1] = (int*) malloc(sizes[1] * sizeof(int));
+    jagged_array[1] = (int*) calloc(sizes[1], sizeof(int));
     if (jagged_array[1] == (int*)0) {
         return;
     }
 
-    jagged_array[2] = (int*) malloc(sizes[2] * sizeof(int));
+    jagged_array[2] = (int*) calloc(sizes[2], sizeof(int));
     if (jagged_array[2] == (int*)0) {
         return;
     }

@@ -204,7 +204,7 @@ static void exercise_wallet_04()
     print(&wallet1);
 }
 
-static void exercise_wallet()
+void exercise_wallet()
 {
     exercise_wallet_01();
     exercise_wallet_02();

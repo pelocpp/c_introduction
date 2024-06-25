@@ -25,6 +25,7 @@ extern void mainDynamic();
 extern void mainStrings();
 extern void mainMultidimensionalArrays();
 extern void mainStructs();
+extern void mainUnionsBitfieldsEnums();
 extern void mainCrt();
 
 extern void exercises();
@@ -48,6 +49,8 @@ int main()
     //mainStrings();
     //mainMultidimensionalArrays();
     //mainStructs();
+    //mainStructs();
+    //mainUnionsBitfieldsEnums();
     //mainCrt();
 
     //exercises();
