@@ -317,6 +317,9 @@
     <None Include="Exercises\HashTabelle\Exercises_HashTable.md" />
     <None Include="Exercises\JaggedArrays\c_jagged_array.svg" />
     <None Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.md" />
+    <None Include="Exercises\ObjectFileViewer\TEST_ObjectFileViewer.bin">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">

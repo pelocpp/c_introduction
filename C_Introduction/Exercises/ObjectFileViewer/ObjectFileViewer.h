@@ -11,6 +11,8 @@
 
 #define FileName01 "..\\C_Introduction\\Exercises\\ObjectFileViewer\\TEST_Point.bin"
 #define FileName02 "..\\C_Introduction\\Exercises\\ObjectFileViewer\\TEST_JaggedArray.bin"
+#define FileName03 "..\\C_Introduction\\Exercises\\ObjectFileViewer\\TEST_ObjectFileViewer.bin"
+
 
 // functions
 int open(const char* name, FILE** fp);
@@ -26,6 +28,8 @@ void readSectionHeader(struct SectionHeader* header, FILE* ptr);
 void dumpSectionHeader(struct SectionHeader* header);
 
 void readSectionRawData(FILE* ptr, long size);
+
+void convertToDateTime(time_t dateTime, char* result, int length);
 
 // types
 struct FileHeader

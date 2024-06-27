@@ -75,7 +75,6 @@ static int openWithOffset(const char* name, FILE** fp, long int offset)
     }
 }
 
-
 static void close(FILE* fp)
 {
     fclose(fp);
@@ -94,6 +93,7 @@ static void readFileHeader(struct FileHeader* header, FILE* ptr)
 
 static void dumpFileHeader(struct FileHeader* header)
 {
+    char buff[128];
 
     printf("Machine:                  %04x\n", header->f_magic);
     printf("Number of sections:       %d\n",   header->f_numSections);
@@ -104,17 +104,10 @@ static void dumpFileHeader(struct FileHeader* header)
     printf("Flags:                    %04x\n", header->f_flags);
     printf("\n");
 
-   // char buff[32];
-   //// time_t now = time(NULL);
-   // strftime(buff, 32, "%Y-%m-%d %H:%M:%S", localtime(&header->f_timdat));
-   // printf("Date / Time:              %sx\n", buff);
-
-    //asctime_s(str, sizeof str, localtime_s(&t, &buf));
-    //printf("local:     %s", str);
-
+    convertToDateTime(header->f_timdat, buff, sizeof (buff));
+    printf("Date / Time:              %s\n", buff);
     printf("\n");
 }
-
 
 static void readSectionHeader(struct SectionHeader* header, FILE* ptr)
 {
@@ -159,7 +152,7 @@ void readSectionRawData(FILE* ptr, long size)
 
 void exercise_object_file_viewer()
 {
-    char* fileName = FileName02;
+    char* fileName = FileName03;
     FILE* ptr;
 
     if (!(open(fileName, &ptr))) {
@@ -200,35 +193,10 @@ void exercise_object_file_viewer()
     }
 }
 
-//void main_obj_viewer()
-//{
-//    char* fileName = FileName01;
-//    FILE* ptr;
-//
-//    if (!(open(fileName , &ptr))) {
-//        printf("Error\n");
-//    }
-//    else {
-//        printf("Succeeded\n");
-//
-//        struct FileHeader fileHeader;
-//        struct SectionHeader sectionHeader;
-//
-//        readFileHeader(&fileHeader, ptr);
-//        dumpFileHeader(&fileHeader);
-//
-//        unsigned short numSections = fileHeader.f_numSections;
-//
-//        for (int i = 0; i < numSections; ++i) {
-//
-//            readSectionHeader(&sectionHeader, ptr);
-//            dumpSectionHeader(&sectionHeader);
-//        }
-//
-//        close(ptr);
-//    }
-//}
-
+void convertToDateTime(time_t dateTime, char* result, int length)
+{
+    strftime(result, length, "%d.%m.%Y %H:%M:%S", localtime(&dateTime));
+}
 
 // =====================================================================================
 // End-of-File
