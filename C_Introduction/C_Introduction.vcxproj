@@ -45,6 +45,7 @@
     <None Include="Exercises\ObjectFileViewer\TEST_JaggedArray.bin" />
     <None Include="Exercises\ObjectFileViewer\TEST_ObjectFileViewer.bin" />
     <None Include="Exercises\ObjectFileViewer\TEST_Point.bin" />
+    <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md" />
     <None Include="Exercises\Tausche\Exercises_Tausche.md" />
     <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md" />
     <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md" />
@@ -113,6 +114,7 @@
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
     <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c" />
+    <ClCompile Include="Exercises\PascalTriangle\PascalTriangle.c" />
     <ClCompile Include="Exercises\Tausche\Tausche.c" />
     <ClCompile Include="Exercises\TeuflischeFolge\TeuflischeFolge.c" />
     <ClCompile Include="Exercises\Unterprogramme\Unterprogramme.c" />

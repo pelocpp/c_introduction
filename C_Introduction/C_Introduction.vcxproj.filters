@@ -320,6 +320,7 @@
     <None Include="Exercises\ObjectFileViewer\TEST_ObjectFileViewer.bin">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -473,6 +474,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\PascalTriangle\PascalTriangle.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -144,6 +144,14 @@ Folgende Aspekte werden betrachtet:
   * `malloc`, `calloc` und `free`
 
 
+### Mehrdimensionale Felder
+
+[**Pascalsches Dreieck**](./PascalTriangle/Exercises_PascalTriangle.md)<br />
+Folgende Aspekte werden betrachtet:
+  * Zweidimensionales Feld
+  * Parameterübergabe zweidimensionaler Felder
+
+
 ### CRT - *C-Runtime-Library*
 
 [**Zeichenstatistik zu einem Text**](./Zeichenstatistik/Exercises_Zeichenstatistik.md)<br />

@@ -68,15 +68,11 @@ static void jagged_arrays_03()
     }
 }
 
-
 static void jagged_arrays_04()
 {
     // static jagged array on the heap
 
     int** jagged_array = (int**) calloc(3, sizeof(int*));
-    if (jagged_array == (int**) 0) {
-        return;
-    }
 
     jagged_array[0] = (int*) calloc(4, sizeof(int));
     jagged_array[1] = (int*) calloc(2, sizeof(int));
@@ -98,24 +94,11 @@ static void jagged_arrays_05()
     int sizes[] = { 4, 2, 3 };
 
     int** jagged_array = (int**) calloc(3, sizeof(int*));
-    if (jagged_array == (int**)0) {
-        return;
-    }
 
     jagged_array[0] = (int*) calloc(sizes[0], sizeof(int));
-    if (jagged_array[0] == (int*)0) {
-        return;
-    }
-
     jagged_array[1] = (int*) calloc(sizes[1], sizeof(int));
-    if (jagged_array[1] == (int*)0) {
-        return;
-    }
-
     jagged_array[2] = (int*) calloc(sizes[2], sizeof(int));
-    if (jagged_array[2] == (int*)0) {
-        return;
-    }
+
 
     // initialize memory
     jagged_array[0][0] = 1;

@@ -42,7 +42,7 @@ Berechnet sich für alle Schlüssel, die man mit ihren Werten in der Tabelle ein
 ein unterschiedlicher Hashwert, kann man einfach ein Array als Datenstruktur für die Tabelle verwenden.
 
 Wird mehreren Schlüsseln der gleiche Index in der Tabelle zugewiesen, lassen sich die Werte
-nicht unmittelbar an dieselbe Stelle im Array schreiben.
+nicht unmittelbar an dieselbe Stelle in der Tabelle schreiben.
 Man spricht hier auch von einer *Kollision* oder einem *Konflikt*.
 Eine mögliche Kollisionsstrategie besteht darin, alle Daten, die sich denselben Hashwert teilen,
 mit einer Liste zu verketten.
