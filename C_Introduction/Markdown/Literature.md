@@ -21,12 +21,20 @@
 
 ---
 
-
   * Dirk Louis, &bdquo;*C++ &ndash; Das komplette Starterkit für den einfachen Einstieg in die Programmierung*&rdquo;.</br>
     Hanser Fachbuch (9. April 2018), 490 Seiten. Sprache: Deutsch. ISBN-13: 978-3446445970, ISBN-10: 3446445978.
    
 
     <img src="Buch_Dirk_Louis.png" width="150">
+
+---
+
+  * Andrew Koenig, &bdquo;*C Traps and Pitfalls*&rdquo;.</br>
+    Addison Wesley (1. Oktober 1988), 160 Seiten. Sprache: Englisch. ISBN-13: 978-0201179286, ISBN-10: 0201179288.
+   
+
+    <img src="Buch_Andrew_Koenig.png" width="150">
+
 
 ---
 

@@ -150,6 +150,7 @@
     <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_02.png" />
     <Image Include="Exercises\Maximum\Struktogramm_Maximum.png" />
     <Image Include="Exercises\Unterprogramme\Struktogramm_Schaltjahr.png" />
+    <Image Include="Markdown\Buch_Andrew_Koenig.png" />
     <Image Include="Markdown\Buch_C_Dummies_Dan_Gokin.png" />
     <Image Include="Markdown\Buch_C_von_A_bis_Z_Juergen_Wolf.png" />
     <Image Include="Markdown\Buch_Dirk_Louis.png" />

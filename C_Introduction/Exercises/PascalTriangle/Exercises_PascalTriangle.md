@@ -7,11 +7,7 @@
 ## Übersicht
 
 Das *Pascal’sche Dreieck* ist eine Form der grafischen Darstellung der Binomialkoeffizienten $`\binom{n}{k}`$.
-Der Name des Dreiecks geht auf den französischer Mathematiker *Blaise Pascal* zurück.
-
-Die Koeffizienten sind im Dreieck so angeordnet,
-dass jeder Eintrag die Summe der zwei darüberstehenden Einträge ist.
-Damit lässt sich eine Berechnung auch vergleichsweise einfach durchführen.
+Der Name des Dreiecks geht auf den französischen Mathematiker *Blaise Pascal* zurück.
 
 Mathematisch könnte man diese Beobachtung auch aus der Gleichung
 
@@ -44,6 +40,19 @@ die ein *Pascal’sche Dreieck* berechnen und in der Konsole ausgeben.
 
 Beide Funktionen haben einen ganzzahligen Wert als Parameter, der die Anzahl der Zeilen festlegt.
 Verwenden Sie in der Realisierung ein zweidimensionales Feld in C.
+
+Eine mögliche Ausgabe des Programms könnte für 8 Zeilen so aussehen:
+
+```
+  1   0   0   0   0   0   0   0
+  1   1   0   0   0   0   0   0
+  1   2   1   0   0   0   0   0
+  1   3   3   1   0   0   0   0
+  1   4   6   4   1   0   0   0
+  1   5  10  10   5   1   0   0
+  1   6  15  20  15   6   1   0
+  1   7  21  35  35  21   7   1
+```
 
 
 *Bemerkung*: Sie werden die Beobachtung machen, dass zur Berechnung eines *Pascal’schen Dreiecks*

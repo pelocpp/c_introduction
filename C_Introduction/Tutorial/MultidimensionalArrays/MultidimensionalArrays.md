@@ -139,27 +139,31 @@
 *Beispiel*:
 
 ```c
-01: #define  M        2
-02: #define  N        3
-03: 
-04: void print(int arr[M][N])
-05: {
-06:     for (int i = 0; i < M; i++) 
-07:     {
-08:         for (int j = 0; j < N; j++) 
-09:         {
-10:             printf("%d ", arr[i][j]);
-11:         }
-12:         printf("\n");
-13:     }
-14: }
-15: 
-16: void multidimensional_arrays()
-17: {
-18:     int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-19: 
-20:     print(numbers);
-21: }
+01: #define  N     3
+02: 
+03: void print(int arr[N][N])
+04: {
+05:     for (int i = 0; i < N; i++)
+06:     {
+07:         for (int j = 0; j < N; j++) 
+08:         {
+09:             printf("%d ", arr[i][j]);
+10:         }
+11:         printf("\n");
+12:     }
+13: }
+14: 
+15: void multidimensional_arrays()
+16: {
+17:     int numbers[][N] =
+18:     { 
+19:         { 1, 2, 3 },
+20:         { 4, 5, 6 }, 
+21:         { 7, 8, 9 } 
+22:     };
+23: 
+24:     print(numbers);
+25: }
 ```
 
 *Ausgabe*:
@@ -217,33 +221,39 @@ Wir müssen das mehrdimensionale Array beim Übergeben an die Funktion in einen 
 *Beispiel*:
 
 ```c
-01: static void print(int* arr, int m, int n)
-02: {
-03:     for (int i = 0; i < m; i++)
-04:     {
-05:         for (int j = 0; j < N; j++)
-06:         {
-07:             int value = *((arr + i * n) + j);
-08: 
-09:             printf("%2d ", value);
-10:         }
-11:         printf("\n");
-12:     }
-13: }
-14: 
-15: static void multidimensional_arrays()
-16: {
-17:     int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } };
-18: 
-19:     int m = 4;
-20:     int n = 3;
-21: 
-22:     print(&numbers[0][0], m, n);
-23: 
-24:     // oder 
+01: #define  N     3
+02: 
+03: void print(int* arr, int m, int n)
+04: {
+05:     for (int i = 0; i < m; i++)
+06:     {
+07:         for (int j = 0; j < n; j++)
+08:         {
+09:             int value = *((arr + i * n) + j);
+10: 
+11:             printf("%2d ", value);
+12:         }
+13:         printf("\n");
+14:     }
+15: }
+16: 
+17: void multidimensional_arrays()
+18: {
+19:     int numbers[][N] = {
+20:         { 1, 2, 3 },
+21:         { 4, 5, 6 },
+22:         { 7, 8, 9 }, 
+23:         { 10, 11, 12 } 
+24:     };
 25: 
-26:     print( (int*) numbers, m, n);
-27: }
+26:     int m = 4;
+27: 
+28:     print(&numbers[0][0], m, N);
+29: 
+30:     // oder 
+31: 
+32:     print((int*) numbers, m, N);
+33: }
 ```
 
 *Ausgabe*:

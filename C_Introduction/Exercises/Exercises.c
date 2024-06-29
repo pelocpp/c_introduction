@@ -39,6 +39,9 @@ extern void exercise_jagged_arrays();
 extern void exercise_linked_list();
 extern void exercise_dynamic_int_array();
 
+// multidimensional arrays
+extern void exercise_pascal_triangle();
+
 // CRT
 extern void exercise_zeichenstatistik();
 extern void exercise_keywordstatistik();
@@ -51,32 +54,33 @@ extern void exercise_object_file_viewer();
 
 void exercises()
 {
-    //exercise_erste_schritte();
-    //exercise_variablen_datentypen_operatoren();
-    //exercise_teuflische_folge();
-    //exercise_zinsberechnung();
-    //exercise_maximum();
-    //exercise_fakultaet();
-    //exercise_wahl();
-    //exercise_unterprogramme();
-    //exercise_harmonische_reihe();
-    //exercise_array_minimum_maximum();
-    //exercise_binary_conversion();
-    //exercise_vector();
-    //exercise_zeichenkettenverarbeitung();
-    //exercise_pointer();
-    //exercise_tausche();
-    //exercise_division_mit_rest();
-    //exercise_wallet();
+    exercise_erste_schritte();
+    exercise_variablen_datentypen_operatoren();
+    exercise_teuflische_folge();
+    exercise_zinsberechnung();
+    exercise_maximum();
+    exercise_fakultaet();
+    exercise_wahl();
+    exercise_unterprogramme();
+    exercise_harmonische_reihe();
+    exercise_array_minimum_maximum();
+    exercise_binary_conversion();
+    exercise_vector();
+    exercise_zeichenkettenverarbeitung();
+    exercise_pointer();
+    exercise_tausche();
+    exercise_division_mit_rest();
+    exercise_wallet();
     exercise_jagged_arrays();
-    //exercise_linked_list();
-    //exercise_dynamic_int_array();
-    //exercise_zeichenstatistik();
-    //exercise_keywordstatistik();
-    //exercise_lotto();
-    //exercise_contacts();
-    //exercise_hash_table();
-    //exercise_object_file_viewer();
+    exercise_linked_list();
+    exercise_dynamic_int_array();
+    exercise_pascal_triangle();
+    exercise_zeichenstatistik();
+    exercise_keywordstatistik();
+    exercise_lotto();
+    exercise_contacts();
+    exercise_hash_table();
+    exercise_object_file_viewer();
 }
 
 // ===========================================================================

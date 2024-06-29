@@ -106,9 +106,9 @@ static void multidimensional_arrays_02()
 
 // 1) When both dimensions are available globally
 
-static void print(int arr[M][N])
+static void print(int arr[N][N])
 {
-    for (int i = 0; i < M; i++) 
+    for (int i = 0; i < N; i++)
     {
         for (int j = 0; j < N; j++) 
         {
@@ -120,7 +120,12 @@ static void print(int arr[M][N])
 
 static void multidimensional_arrays_03()
 {
-    int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+    int numbers[][N] =
+    { 
+        { 1, 2, 3 },
+        { 4, 5, 6 }, 
+        { 7, 8, 9 } 
+    };
 
     print(numbers);
 }
@@ -156,7 +161,7 @@ static void printExEx(int* arr, int m, int n)
 {
     for (int i = 0; i < m; i++)
     {
-        for (int j = 0; j < N; j++)
+        for (int j = 0; j < n; j++)
         {
             int value = *((arr + i * n) + j);
 
@@ -168,16 +173,20 @@ static void printExEx(int* arr, int m, int n)
 
 static void multidimensional_arrays_05()
 {
-    int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } };
+    int numbers[][N] = {
+        { 1, 2, 3 },
+        { 4, 5, 6 },
+        { 7, 8, 9 }, 
+        { 10, 11, 12 } 
+    };
 
     int m = 4;
-    int n = 3;
 
-    printExEx(&numbers[0][0], m, n);
+    printExEx(&numbers[0][0], m, N);
 
     // oder 
 
-    printExEx((int*)numbers, m, n);
+    printExEx((int*) numbers, m, N);
 }
 
 // ===========================================================================
@@ -203,9 +212,6 @@ static void doSomething(int* arr)
 static void multidimensional_arrays_06()
 {
     int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } };
-
-    int m = 4;
-    int n = 3;
 
     doSomething(&numbers[0][0]);
 
@@ -273,7 +279,7 @@ static void multidimensional_arrays_08()
 
 // ===========================================================================
 
-// 4b) Amother example using the concept of a pointer to an array
+// 4b) Another example using the concept of a pointer to an array
 
 static void doSomethingExEx(int(*arr)[N])
 {
@@ -291,11 +297,22 @@ static void doSomethingExEx(int(*arr)[N])
     printf("Value: %d\n", value);
 }
 
+static void doSomethingExExEx(int(*arr)[N])
+{
+    // retrieve second element of second row
+    int* secondRow = *(arr + 1);
+    int elem = *(secondRow + 1);
+    printf("Value: %d\n", elem);
+}
+
+
 static void multidimensional_arrays_09()
 {
     int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 
     doSomethingExEx(numbers);
+
+    doSomethingExExEx(numbers);
 }
 
 

@@ -41,10 +41,8 @@ static void compute_pascal(int arr[Length][Length])
 
 void exercise_pascal_triangle()
 {
-    int pascal[10][10] = { 0 };
-
+    int pascal[Length][Length] = { 0 };
     compute_pascal(pascal);
-
     print_pascal(pascal);
 }
 

@@ -77,12 +77,12 @@ static void constants()
 
 static void unsignedRangesOfDatatypes()
 {
-    unsigned char      uchar     = -1;
-    unsigned short     ushort    = -1;
-    unsigned int       uint      = -1;
-    unsigned long      ulong     = -1;
-    unsigned long long ulonglong = -1;
-    size_t             uint64    = -1;
+    unsigned char      uchar      = -1;
+    unsigned short     ushort     = -1;
+    unsigned int       uint       = -1;
+    unsigned long      ulong      = -1;
+    unsigned long long ulonglong  = -1;
+    size_t             uint64     = -1;
 
     printf("Maximum Values\n");
     printf("unsigned char:        %u\n", uchar);
@@ -96,41 +96,41 @@ static void unsignedRangesOfDatatypes()
 
 static void signedRangesOfDatatypes()
 {
-    signed char      uchar     = 0x7F;
-    signed short     ushort    = 0x7FFF;
-    signed int       uint      = 0x7FFFFFFF;
-    signed long      ulong     = 0x7FFFFFFF;
-    signed long long ulonglong = 0x7FFFFFFFFFFFFFFF;
+    signed char      schar        = 0x7F;
+    signed short     sshort       = 0x7FFF;
+    signed int       sint         = 0x7FFFFFFF;
+    signed long      slong        = 0x7FFFFFFF;
+    signed long long slonglong    = 0x7FFFFFFFFFFFFFFF;
 
     printf("Maximum Values\n");
-    printf("signed char:          %d\n", uchar);
-    printf("signed short:         %d\n", ushort);
-    printf("signed int:           %d\n", uint);
-    printf("signed long:          %ld\n", ulong);
-    printf("signed long long:     %lld\n", ulonglong);
+    printf("signed char:          %d\n", schar);
+    printf("signed short:         %d\n", sshort);
+    printf("signed int:           %d\n", sint);
+    printf("signed long:          %ld\n", slong);
+    printf("signed long long:     %lld\n", slonglong);
     printf("\n");
 
-    uchar = ~0x7F;
-    ushort = ~0x7FFF;
-    uint = ~0x7FFFFFFF;
-    ulong = ~0x7FFFFFFF;
-    ulonglong = ~0x7FFFFFFFFFFFFFFF;
+    schar     = ~0x7F;
+    sshort    = ~0x7FFF;
+    sint      = ~0x7FFFFFFF;
+    slong     = ~0x7FFFFFFF;
+    slonglong = ~0x7FFFFFFFFFFFFFFF;
 
     printf("Minumum Values\n");
-    printf("signed char:          %d\n", uchar);
-    printf("signed short:         %d\n", ushort);
-    printf("signed int:           %d\n", uint);
-    printf("signed long:          %ld\n", ulong);
-    printf("signed long long:     %lld\n", ulonglong);
+    printf("signed char:          %d\n", schar);
+    printf("signed short:         %d\n", sshort);
+    printf("signed int:           %d\n", sint);
+    printf("signed long:          %ld\n", slong);
+    printf("signed long long:     %lld\n", slonglong);
 }
 
 void mainDatatypesVariablesConstants()
 {
     integral_datatypes();
-    //floating_point_datatypes();
-    //char_string_datatypes();
-    //pointer_datatypes();
-    //constants();
+    floating_point_datatypes();
+    char_string_datatypes();
+    pointer_datatypes();
+    constants();
     unsignedRangesOfDatatypes();
     signedRangesOfDatatypes();
 }

@@ -535,6 +535,9 @@
     <Image Include="Markdown\C_Logo.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Markdown\Buch_Andrew_Koenig.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">
