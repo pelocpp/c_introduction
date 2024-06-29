@@ -55,7 +55,7 @@ Keyword Table:
 
 [*KeywordStatistic.h*](./KeywordStatistic.h)<br />
 [*KeywordStatistic.c*](./KeywordStatistic.c)<br />
-[*Main_KeywordStatistic.c*](./Main_KeywordStatistic.c)
+[*Exercises_KeywordStatistic.c*](./Exercises_KeywordStatistic.c)
 
 ---
 

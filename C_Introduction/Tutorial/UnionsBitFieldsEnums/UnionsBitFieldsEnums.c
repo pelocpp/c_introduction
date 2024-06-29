@@ -38,6 +38,33 @@ static void bitfields()
 }
 
 // ===========================================================================
+// Ein Vergleich
+
+struct Flags
+{
+    unsigned char flag_01 : 1;
+    unsigned char flag_02 : 1;
+    unsigned char flag_03 : 1;
+    unsigned char flag_04 : 1;
+    unsigned char flag_05 : 1;
+    unsigned char flag_06 : 1;
+    unsigned char flag_07 : 1;
+    unsigned char flag_08 : 1;
+};
+
+struct FlagsWithBitfield
+{
+    unsigned char flag_01;
+    unsigned char flag_02;
+    unsigned char flag_03;
+    unsigned char flag_04;
+    unsigned char flag_05;
+    unsigned char flag_06;
+    unsigned char flag_07;
+    unsigned char flag_08;
+};
+
+// ===========================================================================
 // Unions
 
 union UnionExample

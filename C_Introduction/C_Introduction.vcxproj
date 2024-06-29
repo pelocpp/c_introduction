@@ -39,6 +39,7 @@
     <None Include="Exercises\HashTabelle\Exercises_HashTable.md" />
     <None Include="Exercises\JaggedArrays\c_jagged_array.svg" />
     <None Include="Exercises\JaggedArrays\Exercises_JaggedArrays.md" />
+    <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md" />
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
@@ -109,8 +110,9 @@
     <ClCompile Include="Exercises\HashTabelle\HashTableMainString.c" />
     <ClCompile Include="Exercises\HashTabelle\HashTableMain.c" />
     <ClCompile Include="Exercises\JaggedArrays\JaggedArrays.c" />
+    <ClCompile Include="Exercises\JaggedPascalTriangle\JaggedPascalTriangle.c" />
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
-    <ClCompile Include="Exercises\KeywordStatistik\KeywordStatisticMain.c" />
+    <ClCompile Include="Exercises\KeywordStatistik\Exercises_KeywordStatistic.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
     <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c" />
@@ -139,7 +141,7 @@
     <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c" />
     <ClCompile Include="Tutorial\NestedScope\NestedScope.c" />
     <ClCompile Include="Tutorial\Operators\Operators.c" />
-    <ClCompile Include="Tutorial\Pointers\Pointers.c" />
+    <ClCompile Include="Tutorial\Pointers\Pointer.c" />
     <ClCompile Include="Tutorial\Strings\Strings.c" />
     <ClCompile Include="Tutorial\Structs\Structs.c" />
     <ClCompile Include="Tutorial\Subroutines\Subroutines.c" />
@@ -149,6 +151,8 @@
     <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_01.png" />
     <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_02.png" />
     <Image Include="Exercises\Maximum\Struktogramm_Maximum.png" />
+    <Image Include="Exercises\PascalTriangle\PascalTriangle_01.png" />
+    <Image Include="Exercises\PascalTriangle\PascalTriangle_02.png" />
     <Image Include="Exercises\Unterprogramme\Struktogramm_Schaltjahr.png" />
     <Image Include="Markdown\Buch_Andrew_Koenig.png" />
     <Image Include="Markdown\Buch_C_Dummies_Dan_Gokin.png" />

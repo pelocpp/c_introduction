@@ -1,5 +1,5 @@
 // ===========================================================================
-// Pointers.c // Zeiger (Pointer)
+// Pointer.c // Zeiger (Pointer)
 // ===========================================================================
 
 #include <stdio.h>
@@ -104,7 +104,6 @@ static void test_pointer_04()
     printf("n = %d\n", *pi);              // 123
 }
 
-
 static void test_pointer_05_gimmicks()
 {
     unsigned int n = 0xAABBCCDD;
@@ -130,8 +129,9 @@ static void test_pointer_05_gimmicks()
     printf("Wert: %x\n", n);
 }
 
+// ===========================================================================
 
-void test_pointer_06_pointer_of_pointer()
+static void test_pointer_06_pointer_of_pointer()
 {
     int n = 123;
 
@@ -153,14 +153,85 @@ void test_pointer_06_pointer_of_pointer()
     printf("Wert von n: %d\n", ****ip4);
 }
 
+// ===========================================================================
+
+// function with an int parameter and void return type 
+
+static void function(int a)
+{
+    printf("Value: %d\n", a);
+}
+
+static void test_pointer_07_function_pointer_01()
+{
+    // Zeiger einer Funktion // Adresse einer Funktion // Funktionszeiger
+    void (*fp)(int a);
+    fp = &function;
+
+    // oder
+    void (*fp1)(int a) = &function;
+
+    // Aufruf der Funktion mittels Funktionszeiger
+    (*fp)(123);
+    (*fp1)(456);
+}
+
+// ===========================================================
+
+static int add(int a, int b)
+{
+    printf("add: %d+%d=%d\n", a, b, a + b);
+    return a + b;
+}
+
+static int sub(int a, int b)
+{
+    printf("sub: %d-%d=%d\n", a, b, a - b);
+    return a + b;
+}
+
+static int mul(int a, int b)
+{
+    printf("mul: %d*%d=%d\n", a, b, a * b);
+    return a + b;
+}
+
+static int div(int a, int b)
+{
+    printf("div: %d/%d=%d\n", a, b, a / b);
+    return a + b;
+}
+
+void test_pointer_07_function_pointer_02()
+{
+    // 'calculator' is an array of function pointers 
+    // See 'Jump Table'
+
+    int (*(calculator[])) (int, int) =
+    {
+        add, sub, mul, div
+    };
+
+    int result = 0;
+
+    result = (*calculator[0])(8, 4);
+    result = (*calculator[1])(8, 4);
+    result = (*calculator[2])(8, 4);
+    result = (*calculator[3])(8, 4);
+}
+
+// ===========================================================================
+
 void mainPointer()
 {
-    test_pointer_01();
-    test_pointer_02();
-    test_pointer_03();
-    test_pointer_04();
-    test_pointer_05_gimmicks();
-    test_pointer_06_pointer_of_pointer();
+    //test_pointer_01();
+    //test_pointer_02();
+    //test_pointer_03();
+    //test_pointer_04();
+    //test_pointer_05_gimmicks();
+    //test_pointer_06_pointer_of_pointer();
+    test_pointer_07_function_pointer_01();
+    test_pointer_07_function_pointer_02();
 }
 
 // ===========================================================================

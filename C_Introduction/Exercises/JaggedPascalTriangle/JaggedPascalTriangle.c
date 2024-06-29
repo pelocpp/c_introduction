@@ -1,5 +1,5 @@
 // =====================================================================================
-// JaggedArrays.c
+// JaggedPascalTriangle.c
 // =====================================================================================
 
 #define _CRTDBG_MAP_ALLOC
@@ -13,56 +13,21 @@
 // =====================================================================================
 // Stack based Solution (Static Jagged Array)
 
-static void jagged_arrays_01()
+
+static void jaggedPascalTriangle_StackBased()
 {
     // static jagged array on the stack
 
-    char array1[5] = { 'T', 'h', 'i', 's', '\0' };
-    char array2[3] = { 'i', 's', '\0' };
-    char array3[2] = { 'a', '\0' };
-    char array4[7] = { 'j', 'a', 'g', 'g', 'e', 'd', '\0' };
-    char array5[6] = { 'a', 'r', 'r', 'a', 'y', '\0' };
+    int array1[] = { 1 };
+    int array2[] = { 1, 1 };
+    int array3[] = { 1, 2, 1 };
+    int array4[] = { 1, 3, 3, 1 };
+    int array5[] = { 1, 4, 6, 4, 1 };
+    int array6[] = { 1, 5, 10, 10, 5, 1 };
+    int array7[] = { 1, 6, 15, 20, 15, 6, 1 };
+    int array8[] = { 1, 7, 21, 35, 35, 21, 7, 1 };
 
-    char* jagged_array[5] = { array1, array2, array3, array4, array5 };
-
-    for (int i = 0; i < 5; i++) {
-        printf("%s ", jagged_array[i]);
-    }
-    printf("\n");
-}
-
-static void jagged_arrays_02()
-{
-    // static jagged array on the stack
-
-    int array1[4] = { 1, 2, 3, 4 };
-    int array2[2] = { 5, 6 };
-    int array3[3] = { 7, 8, 9 };
-
-    int* jagged_array[3] = { array1, array2, array3 };
-}
-
-static void jagged_arrays_03()
-{
-    // static jagged array on the stack - with sizes
-
-    int array1[4] = { 1, 2, 3, 4 };
-    int array2[2] = { 5, 6 };
-    int array3[3] = { 7, 8, 9 };
-
-    int sizes[] = { 4, 2, 3 };
-
-    int* jagged_array[3] = { array1, array2, array3 };
-
-    // output array
-    for (int i = 0; i < 3; i++) {
-
-        for (int k = 0; k < sizes[i]; k++) {
-
-            printf("i:%d|k:%d: %3d  ", i, k, jagged_array[i][k]);
-        }
-        printf("\n");
-    }
+    int* jagged_pascal_arrays_stack_based[] = { array1, array2, array3, array4, array5, array6, array6, array8 };
 }
 
 // =====================================================================================
@@ -129,13 +94,9 @@ static void jagged_arrays_05()
     }
 }
 
-void exercise_jagged_arrays()
+void exercise_jagged_pascal_arrays()
 {
-    jagged_arrays_01();
-    jagged_arrays_02();
-    jagged_arrays_03();
-    jagged_arrays_04();
-    jagged_arrays_05();
+
 }
 
 // =====================================================================================

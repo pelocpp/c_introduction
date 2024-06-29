@@ -321,6 +321,7 @@
       <Filter>Resource Files</Filter>
     </None>
     <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md" />
+    <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -401,7 +402,7 @@
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c">
       <Filter>Exercises\KeywordStatistik</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\KeywordStatistik\KeywordStatisticMain.c">
+    <ClCompile Include="Exercises\KeywordStatistik\Exercises_KeywordStatistic.c">
       <Filter>Exercises\KeywordStatistik</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\BinaryConversion\BinaryConversion.c">
@@ -440,7 +441,7 @@
     <ClCompile Include="Tutorial\Operators\Operators.c">
       <Filter>Tutorial\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="Tutorial\Pointers\Pointers.c">
+    <ClCompile Include="Tutorial\Pointers\Pointer.c">
       <Filter>Tutorial\Pointers</Filter>
     </ClCompile>
     <ClCompile Include="Tutorial\Structs\Structs.c">
@@ -477,6 +478,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\PascalTriangle\PascalTriangle.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\JaggedPascalTriangle\JaggedPascalTriangle.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -536,6 +540,12 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Markdown\Buch_Andrew_Koenig.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Exercises\PascalTriangle\PascalTriangle_01.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Exercises\PascalTriangle\PascalTriangle_02.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

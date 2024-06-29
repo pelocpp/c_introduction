@@ -144,6 +144,12 @@ Folgende Aspekte werden betrachtet:
   * `malloc`, `calloc` und `free`
 
 
+[**Pascalsches Dreieck**](./JaggedPascalTriangle/Exercises_JaggedPascalTriangle.md)<br />
+Folgende Aspekte werden betrachtet:
+  * &bdquo;Jagged Arrays&rdquo; &ndash;
+  * Parameterübergabe zweidimensionaler Felder
+
+  
 ### Mehrdimensionale Felder
 
 [**Pascalsches Dreieck**](./PascalTriangle/Exercises_PascalTriangle.md)<br />
