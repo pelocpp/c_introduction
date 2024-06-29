@@ -11,6 +11,11 @@ Das *Pascal’sche Dreieck* ist eine Form der grafischen Darstellung der Binomia
 $$\left( ^{N-k} \right)$$
 
 
+
+$$\left( ^p^{N-k} \right)$$
+
+
+
 ---
 
 ## Quellcode der Lösung
