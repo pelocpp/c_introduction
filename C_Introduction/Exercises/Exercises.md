@@ -146,7 +146,7 @@ Folgende Aspekte werden betrachtet:
 
 [**Pascalsches Dreieck**](./JaggedPascalTriangle/Exercises_JaggedPascalTriangle.md)<br />
 Folgende Aspekte werden betrachtet:
-  * &bdquo;Jagged Arrays&rdquo; &ndash;
+  * &bdquo;Jagged Arrays&rdquo;
   * Parameterübergabe zweidimensionaler Felder
 
   
