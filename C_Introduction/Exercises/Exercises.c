@@ -72,9 +72,10 @@ void exercises()
     //exercise_tausche();
     //exercise_division_mit_rest();
     //exercise_wallet();
-    exercise_jagged_arrays();
+    //exercise_jagged_arrays();
     //exercise_linked_list();
     //exercise_dynamic_int_array();
+    //exercise_jagged_pascal_arrays();
     //exercise_pascal_triangle();
     //exercise_zeichenstatistik();
     //exercise_keywordstatistik();

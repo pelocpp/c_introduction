@@ -13,7 +13,6 @@ nachlesen.
 Hinweise zu &bdquo;Pascal’schen Dreiecken&rdquo; wiederum
 [hier](./../PascalTriangle/Exercises_PascalTriangle.md).
 
-
 ---
 
 ## Aufgabe

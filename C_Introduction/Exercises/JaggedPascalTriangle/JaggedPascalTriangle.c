@@ -14,89 +14,106 @@
 // Stack based Solution (Static Jagged Array)
 
 
-static void jaggedPascalTriangle_StackBased()
+static void exercise_jagged_pascal_triangle_stack_based()
 {
     // static jagged array on the stack
+    int triangleRow1[] = { 1 };
+    int triangleRow2[] = { 1, 1 };
+    int triangleRow3[] = { 1, 2, 1 };
+    int triangleRow4[] = { 1, 3, 3, 1 };
+    int triangleRow5[] = { 1, 4, 6, 4, 1 };
+    int triangleRow6[] = { 1, 5, 10, 10, 5, 1 };
+    int triangleRow7[] = { 1, 6, 15, 20, 15, 6, 1 };
+    int triangleRow8[] = { 1, 7, 21, 35, 35, 21, 7, 1 };
 
-    int array1[] = { 1 };
-    int array2[] = { 1, 1 };
-    int array3[] = { 1, 2, 1 };
-    int array4[] = { 1, 3, 3, 1 };
-    int array5[] = { 1, 4, 6, 4, 1 };
-    int array6[] = { 1, 5, 10, 10, 5, 1 };
-    int array7[] = { 1, 6, 15, 20, 15, 6, 1 };
-    int array8[] = { 1, 7, 21, 35, 35, 21, 7, 1 };
+    int* triangle[] =
+    {
+        triangleRow1, triangleRow2, triangleRow3, triangleRow4,
+        triangleRow5, triangleRow6, triangleRow7, triangleRow8
+    };
 
-    int* jagged_pascal_arrays_stack_based[] = { array1, array2, array3, array4, array5, array6, array6, array8 };
+    for (int i = 0; i < 8; i++) {
+
+        for (int j = 0; j <= i; j++) {
+
+            printf(" %3d ", triangle[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\n");
 }
 
 // =====================================================================================
 // Heap based Solution (Dynamic Jagged Array)
 
-static void jagged_arrays_04()
+static int** createPascalTriangle(int rows);
+static void printPascalTriangle(int** triangle, int rows);
+static void releasePascalTriangle(int** triangle, int rows);
+
+static int** createPascalTriangle(int rows)
 {
-    // static jagged array on the heap
+    // create triangle on the heap
+    int** triangle = (int**) calloc(rows, sizeof(int*));
+    for (int i = 0; i < rows; i++) {
 
-    int** jagged_array = (int**) calloc(3, sizeof(int*));
-
-    jagged_array[0] = (int*) calloc(4, sizeof(int));
-    jagged_array[1] = (int*) calloc(2, sizeof(int));
-    jagged_array[2] = (int*) calloc(3, sizeof(int));
-
-    // release memory
-    for (int i = 0; i < 3; i++) {
-        free(jagged_array[i]);
+        triangle[i] = (int*) calloc(i+1, sizeof(int));
     }
 
-    free(jagged_array);
+    // fill triangle
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j <= i; j++)
+        {
+            if (j == 0 || j == i) {
+                triangle[i][j] = 1;
+            }
+            else
+            {
+                triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+            }
+        }
+    }
+
+    return triangle;
 
 }
 
-static void jagged_arrays_05()
+static void printPascalTriangle(int** triangle, int rows)
 {
-    // static jagged array on the heap
+    for (int i = 0; i < rows; i++) {
 
-    int sizes[] = { 4, 2, 3 };
+        for (int j = 0; j <= i; j++) {
 
-    int* row1 = (int*) calloc(sizes[0], sizeof(int));
-    row1[0] = 1;
-    row1[1] = 2;
-    row1[2] = 3;
-    row1[3] = 4;
-
-    int* row2 = (int*) calloc(sizes[1], sizeof(int));
-    row2[0] = 5;
-    row2[1] = 6;
-
-    int* row3 = (int*) calloc(sizes[2], sizeof(int));
-    row3[0] = 7;
-    row3[1] = 8;
-    row3[2] = 9;
-
-    int** jagged_array = (int**)calloc(3, sizeof(int*));
-    jagged_array[0] = row1;
-    jagged_array[1] = row2;
-    jagged_array[2] = row3;
-
-    // output memory
-    for (int i = 0; i < 3; i++) {
-
-        for (int k = 0; k < sizes[i]; k++) {
-
-            printf("i:%d|k:%d: %3d  ", i, k, jagged_array[i][k]);
+            printf(" %3d ", triangle[i][j]);
         }
         printf("\n");
     }
-
-    // release memory
-    for (int i = 0; i < 3; i++) {
-        free(jagged_array[i]);
-    }
+    printf("\n");
 }
+
+static void releasePascalTriangle(int** triangle, int rows)
+{
+    // release dynamically allocated memory
+    for (int i = 0; i < rows; i++) {
+        free(triangle[i]);
+    }
+    free(triangle);
+}
+
+static void exercise_jagged_pascal_triangle_heap_based()
+{
+    const int Rows = 12;
+    int** triangle = createPascalTriangle(Rows);
+    printPascalTriangle(triangle, Rows);
+    releasePascalTriangle(triangle, Rows);
+}
+
+// =====================================================================================
 
 void exercise_jagged_pascal_arrays()
 {
-
+    exercise_jagged_pascal_triangle_stack_based();
+    exercise_jagged_pascal_triangle_heap_based();
 }
 
 // =====================================================================================
