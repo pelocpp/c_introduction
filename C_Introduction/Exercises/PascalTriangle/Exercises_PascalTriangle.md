@@ -15,6 +15,9 @@ $$\left( ^{N-k} {a-n} \right)$$
 $$\left( \binom{n}{k}  \right)$$
 
 
+$$ \binom{n}{k} $$
+
+
 
 
 ---
