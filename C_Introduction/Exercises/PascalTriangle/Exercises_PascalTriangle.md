@@ -8,11 +8,9 @@
 
 Das *Pascal’sche Dreieck* ist eine Form der grafischen Darstellung der Binomialkoeffizienten:
 
-$$\left( ^{N-k} \right)$$
+$$\left( ^{N-k} {a-n} \right)$$
 
 
-
-$$\left( ^p^{N-k} \right)$$
 
 
 
