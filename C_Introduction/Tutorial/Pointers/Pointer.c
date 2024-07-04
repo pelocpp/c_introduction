@@ -171,9 +171,13 @@ static void test_pointer_07_function_pointer_01()
     // oder
     void (*fp1)(int a) = &function;
 
+    // oder - gleichbedeutend
+    void (*fp2)(int a) = function;
+
     // Aufruf der Funktion mittels Funktionszeiger
     (*fp)(123);
     (*fp1)(456);
+    (*fp2)(789);
 }
 
 // ===========================================================
@@ -224,12 +228,12 @@ void test_pointer_07_function_pointer_02()
 
 void mainPointer()
 {
-    //test_pointer_01();
-    //test_pointer_02();
-    //test_pointer_03();
-    //test_pointer_04();
-    //test_pointer_05_gimmicks();
-    //test_pointer_06_pointer_of_pointer();
+    test_pointer_01();
+    test_pointer_02();
+    test_pointer_03();
+    test_pointer_04();
+    test_pointer_05_gimmicks();
+    test_pointer_06_pointer_of_pointer();
     test_pointer_07_function_pointer_01();
     test_pointer_07_function_pointer_02();
 }

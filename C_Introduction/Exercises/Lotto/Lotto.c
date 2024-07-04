@@ -9,10 +9,10 @@
 // =====================================================================================
 
 // globale Variablen
-int g_feldLotto[6]; // 6 Elemente im Feld
-int g_index;        // 
+int g_feldLotto[6] = { 0 };        // 6 Elemente im Feld
+int g_index = 0;                   // 
 
-// Wert zum Reproduzieren:         1651144609
+// Wert zum Reproduzieren:
 unsigned int g_reproduktionsWert = 1651144609;
 
 // =====================================================================================
@@ -37,7 +37,7 @@ static void lottoInitialisierung()
     time_t t = 0;
 
     //srand((unsigned)time(&t));
-    srand(g_reproduktionsWert);  // Mit diesem Wert lassen sich DOPPELTE reproduzieren ...
+    srand(g_reproduktionsWert);  // Mit diesem Wert lassen sich DOPPELTE Lottozahlen reproduzieren ...
 
     g_index = 0;   // Bis Index 0 sind im Feld schon Lottozahlen vorhanden
 
