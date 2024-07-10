@@ -250,7 +250,36 @@ static void multidimensional_arrays_07()
 
 // ===========================================================================
 
-// 4a) Once again the concept of a pointer to an array
+// 4a) C program to understand difference between pointer to an integer
+// and a pointer to an array of integers
+// https://www.geeksforgeeks.org/pointer-array-array-pointer/
+
+void static multidimensional_arrays_08()
+{
+    // Pointer to an integer
+    int* p;
+
+    // Pointer to an array of 5 integers
+    int(*ptr)[5];
+    int arr[5];
+
+    // Points to 0th element of the arr.
+    p = arr;
+
+    // Points to the whole array arr.
+    ptr = &arr;
+
+    printf("p = %p, ptr = %p\n", p, ptr);
+
+    p++;
+    ptr++;
+
+    printf("p = %p, ptr = %p\n", p, ptr);
+}
+  
+// ===========================================================================
+
+// 4b) Once again the concept of a pointer to an array
 
 static void printExExExEx(int(*arr)[N], int length)
 {
@@ -264,7 +293,7 @@ static void printExExExEx(int(*arr)[N], int length)
     }
 }
 
-static void multidimensional_arrays_08()
+static void multidimensional_arrays_09()
 {
     int numbers[][N] =
     {
@@ -279,7 +308,7 @@ static void multidimensional_arrays_08()
 
 // ===========================================================================
 
-// 4b) Another example using the concept of a pointer to an array
+// 4c) Another example using the concept of a pointer to an array
 
 static void doSomethingExEx(int(*arr)[N])
 {
@@ -306,7 +335,7 @@ static void doSomethingExExEx(int(*arr)[N])
 }
 
 
-static void multidimensional_arrays_09()
+static void multidimensional_arrays_10()
 {
     int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
 
@@ -329,6 +358,7 @@ void mainMultidimensionalArrays()
     multidimensional_arrays_07();
     multidimensional_arrays_08();
     multidimensional_arrays_09();
+    multidimensional_arrays_10();
 }
 
 // ===========================================================================
