@@ -14,81 +14,45 @@ um diverse Features von C zu demonstrieren.
 ### Einstieg
 
 [**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](./ErsteSchritte/Exercises_ErsteSchritte.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Kontrollstrukturen `if` und `for`
-  * Division und Modulo-Operation ganzer Zahlen
-  * Elementare Datentypen
-
+Elementare Datentypen, Ein- und Ausgabe
 
 [**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](./VariablenDatentypenOperatoren/Exercises_VariablenDatentypenOperatoren.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Kontrollstrukturen `if` und `for`
-  * Division und Modulo-Operation ganzer Zahlen
-  * Elementare Datentypen
-
+Elementare Datentypen, Ein- und Ausgabe, arithmetische Operatoren
 
 [**Teuflische Folge**](./TeuflischeFolge/Exercises_TeuflischeFolge.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Kontrollstrukturen `if` und `while`
-  * Division und Modulo-Operation ganzer Zahlen
-  * Elementare Datentypen
-
+Kontrollstrukturen `if` und `while`, arithmetische Operatoren (Division und Modulo-Operation ganzer Zahlen)
 
 [**Zinsberechnung**](./Zinsberechnung/Exercises_Zinsberechnung.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Kontrollstrukturen `if` und `for`
-  * Elementare Datentypen
-  * Einfache Ausgaben mit `printf`
-
+Kontrollstruktur `while`, arithmetische Operatoren
 
 [**Maximum von drei Zahlen**](./Maximum/Exercises_Maximum.md)<br />
-Folgende Aspekte werden betrachtet:
-  * `if`-Kontrollstruktur 
-  * Verknüpfung von mehreren Bedingungen
+`if`-Anweisung, Vergleichsoperatoren
 
 [**Berechnung der Fakultät**](./Fakultaet/Exercises_Fakultaet.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Kontrollstrukturen
-  * Thematik des Überlaufs
+Kontrollstruktur `for`, arithmetische Operatoren, Überlauf ganzzahliger Variablen
 
 [**Auswertung einer Wahl**](./Wahl/Exercises_Wahl.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Datentypen
-  * Kontrollstrukturen
-  * Prozentrechnung
-  * Ein- und Ausgabe
+Kontrollstrukturen `if` und `while`, arithmetische Operatoren, Prozentrechnung
 
 ### Funktionen und Unterprogramme
 
 [**Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr**](./Unterprogramme/Exercises_Unterprogramme.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Unterprogramme
-  * Übergabe von Parametern an Unterprogramme
-  * Rückgabe von Ergebnissen aus einem Unterprogramm
+Einfache Unterprogramme, Übergabe von Parametern, Rückgabe eines Ergebnisses
 
 [**Harmonische Reihe**](./HarmonischeReihe/Exercises_HarmonischeReihe.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Unterprogramme
-  * Übergabe von Parametern an Unterprogramme
-  * Rückgabe von Ergebnissen aus einem Unterprogramm
+Einfache Unterprogramme, Übergabe von Parametern, Rückgabe eines Ergebnisses, Datentypkonvertierung
 
 ### Arrays
 
 [**Arrays auswerten: Summe, Minimum und Maximum**](./ArraySumMinMax/Exercises_ArraySumMinMax.md)<br />
 Folgende Aspekte werden betrachtet:
-  * Arrays
-  * Durchlaufen (Traversieren) eines Arrays
-  * Einfache Berechnungen mit Arrays
+  * Arrays, Traversierung, einfache Berechnungen 
 
 [**Binäre Darstellung ganzer Zahlen**](./BinaryConversion/Exercises_BinaryConversion.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Arrays
-  * Funktionen mit Arrays als Parameter
+Arrays, Funktionen mit Array als Parameter
 
 [**Ein mathematischer Vektor**](./Vector/Exercises_Vector.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Arrays
-  * Funktionen mit Arrays als Parameter
+Arrays, Funktionen mit Array als Parameter
 
 ### Zeichenkettenverarbeitung
 
