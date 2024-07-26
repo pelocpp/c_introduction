@@ -7,6 +7,10 @@
 // function prototypes
 static int  str_length  (const char* src);
 
+static void str_toUpper (char* src);
+static void str_toLower (char* src);
+static void str_reverse (char* src); 
+
 static void chr_replace (char* src, int pos, char ch);
 static int  chr_append  (const char* src, char ch, char* dest, int destLen);
 static int  chr_insert  (const char* src, int pos, char ch, char* dest, int destLen);
@@ -17,29 +21,109 @@ static int  str_append  (const char* src, char* toAppend, char* dest, int destLe
 static int  str_insert  (const char* src, int pos, char* toInsert, char* dest, int destLen);
 static int  str_remove  (const char* src, int pos, int count, char* dest, int destLen);
 
-static void exercise_01_chr_replace();
-static void exercise_02_chr_append();
-static void exercise_03_chr_insert();
-static void exercise_04_chr_remove();
+static void exercise_01_str_toUpper();
+static void exercise_01_str_toLower();
+static void exercise_01_str_reverse();
 
-static void exercise_05_str_replace();
-static void exercise_06_str_append();
-static void exercise_07_str_insert();
-static void exercise_08_str_remove();
+static void exercise_02_chr_replace();
+static void exercise_02_chr_append();
+static void exercise_02_chr_insert();
+static void exercise_02_chr_remove();
+
+static void exercise_03_str_replace();
+static void exercise_03_str_append();
+static void exercise_03_str_insert();
+static void exercise_03_str_remove();
 
 // =====================================================================================
 
 static int str_length(const char* src)
 {
-	int pos = 0;
+	int i = 0;
 
-	while (src[pos] != '\0') {
-		pos++;
+	while (src[i] != '\0') {
+		i++;
 	}
 
-	return pos;
+	return i;
 }
 
+// =====================================================================================
+
+static void str_toUpper(char* src)
+{
+	int i = 0;
+
+	while (src[i] != '\0') {
+
+		if (src[i] >= 'a' && src[i] <= 'z') {
+			src[i] = src[i] - 32;   // 32 = 'a' - 'A'
+		}
+
+		i++;
+	}
+}
+
+static void exercise_01_str_toUpper()
+{
+	char s[] = "!abcde123vwxyz?";
+	printf("%s\n", s);
+
+	str_toUpper(s);
+	printf("%s\n", s);
+}
+
+// =====================================================================================
+
+void str_toLower(char* src)
+{
+	int i = 0;
+
+	while (src[i] != '\0') {
+
+		if (src[i] >= 'A' && src[i] <= 'Z') {
+			src[i] = src[i] + 32;   // 32 = 'a' - 'A'
+		}
+
+		i++;
+	}
+}
+
+static void exercise_01_str_toLower()
+{
+	char s[] = "!ABCDE123VWXYZ?";
+	printf("%s\n", s);
+
+	str_toLower(s);
+	printf("%s\n", s);
+}
+
+// =====================================================================================
+
+void str_reverse(char* src)
+{
+	// compute length
+	int length = str_length(src);
+
+    // swap chars
+	for (int i = 0; i < length / 2; i++) {
+
+		char ch = src[length - 1 - i];
+		src[length - 1 - i] = src[i];
+		src[i] = ch;
+	}
+}
+
+static void exercise_01_str_reverse()
+{
+	char s[] = "!abcde123vwxyz?";
+	printf("%s\n", s);
+
+	str_reverse(s);
+	printf("%s\n", s);
+}
+
+// =====================================================================================
 // =====================================================================================
 
 static void chr_replace(char* src, int pos, char ch) {
@@ -53,10 +137,10 @@ static void chr_replace(char* src, int pos, char ch) {
 	src[pos] = ch;
 }
 
-static void exercise_01_chr_replace()
+static void exercise_02_chr_replace()
 {
     char string[10] = "ABCDE";
-	// const char* string = "ABCDE";  // crashes
+	// const char* s = "ABCDE";  // crashes
 	printf("String: %s\n", string);
 
 	chr_replace(string, 2, '!');
@@ -96,14 +180,14 @@ static int chr_append(const char* src, char ch, char* dest, int destLen) {
 static void exercise_02_chr_append()
 {
 	char result[7] = "";
-	char* string = "ABCDE";
-	printf("String: %s\n", string);
+	char* s = "ABCDE";
+	printf("String: %s\n", s);
 
-	chr_append(string, '!', result, sizeof(result));
+	chr_append(s, '!', result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "ABCDE!"
 
-	string = "";
-	chr_append(string, '!', result, sizeof(result));
+	s = "";
+	chr_append(s, '!', result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "!"
 }
 
@@ -142,19 +226,19 @@ static int chr_insert(const char* src, int pos, char ch, char* dest, int destLen
 	return 1;
 }
 
-static void exercise_03_chr_insert()
+static void exercise_02_chr_insert()
 {
 	char result[7] = "";
-	char* string = "ABCDE";
-	printf("String: %s\n", string);
+	char* s = "ABCDE";
+	printf("String: %s\n", s);
 
-	chr_insert(string, 2, '!', result, sizeof (result));
+	chr_insert(s, 2, '!', result, sizeof (result));
 	printf("Result: %s\n", result);  // <=== "AB!CDE"
 
-	chr_insert(string, 0, '!', result, sizeof(result));
+	chr_insert(s, 0, '!', result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "!ABCDE"
 
-	chr_insert(string, 5, '!', result, sizeof(result));
+	chr_insert(s, 5, '!', result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "ABCDE!"
 }
 
@@ -185,19 +269,19 @@ static int chr_remove(const char* src, int pos, char* dest, int destLen) {
 	return 1;
 }
 
-static void exercise_04_chr_remove()
+static void exercise_02_chr_remove()
 {
 	char result[5] = "";
-	char* string = "ABCDE";
-	printf("String: %s\n", string);
+	char* s = "ABCDE";
+	printf("String: %s\n", s);
 
-	chr_remove(string, 2, result, sizeof(result));
+	chr_remove(s, 2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "ABDE"
 
-	chr_remove(string, 0, result, sizeof(result));
+	chr_remove(s, 0, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "BCDE" 
 
-	chr_remove(string, 4, result, sizeof(result));
+	chr_remove(s, 4, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "ABCD" 
 }
 
@@ -240,27 +324,27 @@ static int str_replace(const char* src, int pos, char* toReplace, char* dest, in
 	return 1;
 }
 
-static void exercise_05_str_replace()
+static void exercise_03_str_replace()
 {
 	char result[10] = "";
-	char* string1 = "123456789";
-	char* string2 = "ABC";
-	str_replace(string1, 3, string2, result, sizeof(result));
+	char* s1 = "123456789";
+	char* s2 = "ABC";
+	str_replace(s1, 3, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "123ABC789" 
 
-	string1 = "123456";
-	string2 = "ABC";
-	str_replace(string1, 0, string2, result, sizeof(result));
+	s1 = "123456";
+	s2 = "ABC";
+	str_replace(s1, 0, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "ABC456"
 
-	string1 = "123456";
-	string2 = "ABC";
-	str_replace(string1, 3, string2, result, sizeof(result));
+	s1 = "123456";
+	s2 = "ABC";
+	str_replace(s1, 3, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "123ABC"
 
-	string1 = "123456";
-	string2 = "ABCDEF";
-	str_replace(string1, 0, string2, result, sizeof(result));
+	s1 = "123456";
+	s2 = "ABCDEF";
+	str_replace(s1, 0, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "ABCDEF"   
 }
 
@@ -292,27 +376,27 @@ static int str_append(const char* src, char* toAppend, char* dest, int destLen)
 	return 1;
 }
 
-static void exercise_06_str_append()
+static void exercise_03_str_append()
 {
 	char result[11] = "";
-	char* string1 = "12345";
-	char* string2 = "ABCDE";
-	str_append(string1, string2, result, sizeof (result));
+	char* s1 = "12345";
+	char* s2 = "ABCDE";
+	str_append(s1, s2, result, sizeof (result));
 	printf("Result: %s\n", result);  // <=== "12345ABCDE" 
 
-	string1 = "12345";
-	string2 = "";
-	str_append(string1, string2, result, sizeof(result));
+	s1 = "12345";
+	s2 = "";
+	str_append(s1, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "12345" 
 
-	string1 = "";
-	string2 = "12345";
-	str_append(string1, string2, result, sizeof(result));
+	s1 = "";
+	s2 = "12345";
+	str_append(s1, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "12345" 
 
-	string1 = "";
-	string2 = "";
-	str_append(string1, string2, result, sizeof(result));
+	s1 = "";
+	s2 = "";
+	str_append(s1, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "" 
 }
 
@@ -349,18 +433,18 @@ static int str_insert(const char* src, int pos, char* toInsert, char* dest, int 
 	return 1;
 }
 
-static void exercise_07_str_insert()
+static void exercise_03_str_insert()
 {
 	char result[9] = "";
-	char* string1 = "ABCDE";
-	char* string2 = "123";
-	str_insert(string1, 2, string2, result, sizeof(result));
+	char* s1 = "ABCDE";
+	char* s2 = "123";
+	str_insert(s1, 2, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "AB123CDE"
 
-	str_insert(string1, 0, string2, result, sizeof(result));
+	str_insert(s1, 0, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "123ABCDE"
 
-	str_insert(string1, 5, string2, result, sizeof(result));
+	str_insert(s1, 5, s2, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== "ABCDE123"
 }
 
@@ -391,18 +475,18 @@ static int str_remove(const char* src, int pos, int count, char* dest, int destL
 	return 1;
 }
 
-static void exercise_08_str_remove()
+static void exercise_03_str_remove()
 {
 	char result[12] = "";
-	char* string = "ABCD123EFGHIJK";
-	str_remove(string, 4, 3, result, sizeof (result));
+	char* s = "ABCD123EFGHIJK";
+	str_remove(s, 4, 3, result, sizeof (result));
 	printf("Result: %s\n", result);  // <=== ABCDEFGHIJK
 
-	string = "123456";
-	str_remove(string, 3, 3, result, sizeof(result));
+	s = "123456";
+	str_remove(s, 3, 3, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== 123
 
-	str_remove(string, 0, 3, result, sizeof(result));
+	str_remove(s, 0, 3, result, sizeof(result));
 	printf("Result: %s\n", result);  // <=== 456
 }
 
@@ -410,15 +494,19 @@ static void exercise_08_str_remove()
 
 void exercise_zeichenkettenverarbeitung()
 {
-	exercise_01_chr_replace();
+	exercise_01_str_toUpper();
+	exercise_01_str_toLower();
+	exercise_01_str_reverse();
+
+	exercise_02_chr_replace();
 	exercise_02_chr_append();
-	exercise_03_chr_insert();
-	exercise_04_chr_remove();
+	exercise_02_chr_insert();
+	exercise_02_chr_remove();
 	
-	exercise_05_str_replace();
-	exercise_06_str_append();
-	exercise_07_str_insert();
-	exercise_08_str_remove();
+	exercise_03_str_replace();
+	exercise_03_str_append();
+	exercise_03_str_insert();
+	exercise_03_str_remove();
 }
 
 // =====================================================================================

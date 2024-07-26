@@ -12,11 +12,11 @@ static void exercise_maximum_solution_01()
     int n2 = 5;
     int n3 = 2;
 
-    if (n1 >= n2 && n1 >= n3) 
+    if (n1 > n2 && n1 > n3) 
     {
         printf("%d is the largest number!", n1);
     }
-    else if (n2 >= n1 && n2 >= n3)
+    else if (n2 > n1 && n2 > n3)
     {
         printf("%d is the largest number!", n2);
     }
@@ -34,9 +34,9 @@ static void exercise_maximum_solution_02()
     int n2 = 5;
     int n3 = 2;
 
-    if (n1 >= n2)
+    if (n1 > n2)
     {
-        if (n1 >= n3) 
+        if (n1 > n3) 
         {
             printf("%d is the largest number!", n1);
         }
@@ -47,7 +47,7 @@ static void exercise_maximum_solution_02()
     }
     else 
     {
-        if (n2 >= n3) 
+        if (n2 > n3) 
         {
             printf("%d is the largest number!", n2);
         }

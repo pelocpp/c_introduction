@@ -6,34 +6,30 @@
 
 ## Übersicht
 
-Schreibe ein Programm, das eine Anzahl Tage, Stunden und Minuten
+Schreibe ein Programm, das eine Anzahl Stunden, Minuten und Sekunden
 einliest und diese in Sekunden umrechnet.
 
 <pre>
-Bitte Tage eingeben: <b>5</b>
-Bitte Stunden eingeben: <b>7</b>
-Bitte Minuten eingeben: <b>8</b>
-5 Tage 7 Stunden und 8 Minuten sind 457680 Sekunden
+Bitte Stunden eingeben: <b>10</b>
+Bitte Minuten eingeben: <b>20</b>
+Bitte Sekunden eingeben: <b>30</b>
+10 Stunden, 20 Minuten und 30 Sekunden sind 37230 Sekunden.
 </pre>
-
 
 *Weiterarbeit*:<br />
-Schreibe ein Programm, das eine Anzahl Sekunden einliest und die zugehörige Anzahl Tage,
-Stunden und Minuten ausgibt.
-
+Schreibe ein Programm, das eine Anzahl Sekunden einliest und die zugehörige Anzahl
+Stunden, Minuten und Sekunden ausgibt.
 
 <pre>
-Bitte Sekunden eingeben: <b>978656</b>
-978656 Sekunden sind 11 Tage 7 Stunden 50 Minuten und 56 Sekunden
+Bitte Sekunden eingeben: <b>3661</b>
+3661 Sekunden sind 1 Stunden, 1 Minuten und 1 Sekunden.
 </pre>
-
 
 ---
 
 ## Quellcode der Lösung
 
 [*VariablenDatentypenOperatoren.c*](./VariablenDatentypenOperatoren.c)<br />
-
 
 ---
 

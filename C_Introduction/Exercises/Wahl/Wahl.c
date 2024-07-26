@@ -50,7 +50,7 @@ void exercise_wahl()
             stimmenSPD++;
         }
         else if (stimmzettel != 0) {
-            printf("Ungültiger stimmzettel abgegeben: ");
+            printf("Ungueltiger stimmzettel abgegeben: ");
             continue;
         }
 

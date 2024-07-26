@@ -4,33 +4,62 @@
 
 #include <stdio.h>
 
-void exercise_variablen_datentypen_operatoren()
+static void exercise_variablen_datentypen_operatoren_01()
 {
-    int tage;              // wir betrachten max. 3650 Tage
-    int stunden;           // 0-24 Stunden
-    int minuten;           // 0-60 Minuten
-    long long sekunden;    // 0-315.360.000 Sekunden
+    int stunden;         // Eingabe Stunden im Bereich [0..24)
+    int minuten;         // Eingabe Minuten im Bereich [0..60)
+    int sekunden;        // Eingabe Sekunden im Bereich [0..60)
+    int sekundenTotal;   // Wert im Bereich [0-86.400) Sekunden (24 * 60 * 60)
 
-    long long sekundenTage;
-    long sekundenStunden;
-    int sekundenMinuten;
-
-    printf("Bitte Tage eingeben:");
-    scanf_s("%d", &tage);
-    printf("Bitte Stunden eingeben:");
+    printf("Bitte Stunden eingeben: ");
     scanf_s("%d", &stunden);
-    printf("Bitte Minuten eingeben:");
+    printf("Bitte Minuten eingeben: ");
     scanf_s("%d", &minuten);
+    printf("Bitte Sekunden eingeben: ");
+    scanf_s("%d", &sekunden);
 
     // Verarbeitung
-    sekundenTage = tage * 60 * 60 * 24;     // Tage in Sekunden umrechnen
-    sekundenStunden = stunden * 60 * 60;    // Stunden in Sekunden umrechnen
-    sekundenMinuten = minuten * 60;         // Minuten in Sekunden umrechnen
+    int sekundenStunden = stunden * 60 * 60;    // Stunden in Sekunden umrechnen
+    int sekundenMinuten = minuten * 60;         // Minuten in Sekunden umrechnen
+    sekundenTotal = sekundenStunden + sekundenMinuten + sekunden;
 
-    sekunden = sekundenTage + sekundenStunden + sekundenMinuten;
+    printf("%d Stunden, %d Minuten und %d Sekunden sind %d Sekunden.\n",
+        stunden, minuten, sekunden, sekundenTotal);
+}
 
-    printf("%d Tage %d Stunden und %d Minuten sind %lld Sekunden ",
-        tage, stunden, minuten, sekunden);
+static void exercise_variablen_datentypen_operatoren_02()
+{
+    int sekundenTotal;   // Eingabe Sekunden im Bereich [0-86.400)
+    int stunden;         // Stunden im Bereich [0..24)
+    int minuten;         // Minuten im Bereich [0..60)
+    int sekunden;        // Sekunden im Bereich [0..60)
+
+    printf("Bitte Sekunden eingeben: ");
+    scanf_s("%d", &sekundenTotal);
+
+    int total = sekundenTotal;
+
+    // Verarbeitung
+    sekunden = sekundenTotal % 60;
+
+    sekundenTotal = sekundenTotal - sekunden;
+    sekundenTotal = sekundenTotal / 60;
+
+    minuten = sekundenTotal % 60;
+
+    sekundenTotal = sekundenTotal - minuten;
+    sekundenTotal = sekundenTotal / 60;
+
+    stunden = sekundenTotal;
+
+    printf("%d Sekunden sind %d Stunden, %d Minuten und %d Sekunden.\n",
+        total, stunden, minuten, sekunden);
+}
+
+void exercise_variablen_datentypen_operatoren()
+{
+    exercise_variablen_datentypen_operatoren_01();
+    exercise_variablen_datentypen_operatoren_02();
 }
 
 // =====================================================================================

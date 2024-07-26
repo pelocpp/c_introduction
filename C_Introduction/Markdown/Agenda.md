@@ -2,7 +2,6 @@
 
 [Zurück](../../Readme.md)
 
-
 <img src="Embedded_Cpp.jpg" width="500">
 
 ---
