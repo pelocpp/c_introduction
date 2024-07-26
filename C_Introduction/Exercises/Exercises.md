@@ -14,112 +14,86 @@ um diverse Features von C zu demonstrieren.
 ### Einstieg
 
 [**Aufgabe zum &ldquo;Abtippen&rdquo;: Summe von zwei Zahlen**](./ErsteSchritte/Exercises_ErsteSchritte.md)<br />
-Elementare Datentypen, Ein- und Ausgabe
+Elementare Datentypen, Ein- und Ausgabe.
 
 [**Variablen, Datentypen und Operatoren: Uhrzeiten umrechnen**](./VariablenDatentypenOperatoren/Exercises_VariablenDatentypenOperatoren.md)<br />
-Elementare Datentypen, Ein- und Ausgabe, arithmetische Operatoren
+Elementare Datentypen, Ein- und Ausgabe, arithmetische Operatoren.
 
 [**Teuflische Folge**](./TeuflischeFolge/Exercises_TeuflischeFolge.md)<br />
-Kontrollstrukturen `if` und `while`, arithmetische Operatoren (Division und Modulo-Operation ganzer Zahlen)
+Kontrollstrukturen `if` und `while`, arithmetische Operatoren (Division und Modulo-Operation ganzer Zahlen).
 
 [**Zinsberechnung**](./Zinsberechnung/Exercises_Zinsberechnung.md)<br />
-Kontrollstruktur `while`, arithmetische Operatoren
+Kontrollstruktur `while`, arithmetische Operatoren.
 
 [**Maximum von drei Zahlen**](./Maximum/Exercises_Maximum.md)<br />
-`if`-Anweisung, Vergleichsoperatoren
+`if`-Anweisung, Vergleichsoperatoren.
 
 [**Berechnung der Fakultät**](./Fakultaet/Exercises_Fakultaet.md)<br />
-Kontrollstruktur `for`, arithmetische Operatoren, Überlauf ganzzahliger Variablen
+Kontrollstruktur `for`, arithmetische Operatoren, Überlauf ganzzahliger Variablen.
 
 [**Auswertung einer Wahl**](./Wahl/Exercises_Wahl.md)<br />
-Kontrollstrukturen `if` und `while`, arithmetische Operatoren, Prozentrechnung
+Kontrollstrukturen `if` und `while`, arithmetische Operatoren, Prozentrechnung.
 
 ### Funktionen und Unterprogramme
 
 [**Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr**](./Unterprogramme/Exercises_Unterprogramme.md)<br />
-Einfache Unterprogramme, Übergabe von Parametern, Rückgabe eines Ergebnisses
+Einfache Unterprogramme, Übergabe von Parametern, Rückgabe eines Ergebnisses.
 
 [**Harmonische Reihe**](./HarmonischeReihe/Exercises_HarmonischeReihe.md)<br />
-Einfache Unterprogramme, Übergabe von Parametern, Rückgabe eines Ergebnisses, Datentypkonvertierung
+Einfache Unterprogramme, Übergabe von Parametern, Rückgabe eines Ergebnisses, Datentypkonvertierung.
 
 ### Arrays
 
 [**Arrays auswerten: Summe, Minimum und Maximum**](./ArraySumMinMax/Exercises_ArraySumMinMax.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Arrays, Traversierung, einfache Berechnungen 
+Arrays, Traversierung, einfache Berechnungen.
 
 [**Binäre Darstellung ganzer Zahlen**](./BinaryConversion/Exercises_BinaryConversion.md)<br />
-Arrays, Funktionen mit Array als Parameter
+Arrays, Funktionen mit Array als Parameter.
 
 [**Ein mathematischer Vektor**](./Vector/Exercises_Vector.md)<br />
-Arrays, Funktionen mit Array als Parameter
+Arrays, Funktionen mit Array als Parameter.
 
 ### Zeichenkettenverarbeitung
 
-[**Elementare Zeichenketteroperationen: `length`, `replace`, `append`, `insert` und `remove`**](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Zeichen und Zeichenketten
-  * Fortgeschrittenes Programmieren mit Arrays und/oder Zeigern
+[**Elementare Zeichenketteroperationen: `replace`, `append`, `insert` etc.**](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md)<br />
+Zeichen und Zeichenketten, verschiedene Operationen auf `char`-Arrays.
 
 ### Zeiger (*Pointer*)
 
 [**Aufgabe zum Datentyp *Zeiger* (*Pointer*)**](./Zeiger/Exercises_Zeiger.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Datentyp Zeiger
-  * Referenzieren und Derefenzieren eines Zeigers
+Datentyp Zeiger, Referenzieren und Derefenzieren eines Zeigers.
 
 [**Aufgabe zur Parameterübergabe mit Adressen**](./Tausche/Exercises_Tausche.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Datentyp Zeiger und Parameter
-  * Betrachtung von &bdquo;Call-by-Value&rdquo; und &bdquo;Call-by-Address&rdquo;
+&bdquo;Call-by-Value&rdquo; und &bdquo;Call-by-Address&rdquo; an einem Beispiel betrachtet.
 
 ### Strukturen
 
 [**Division mit Rest: Struktur mit Quotient und Rest**](./DivisionMitRest/Exercises_DivisionMitRest.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Funktionen
-  * Rückgabetyp Struktur
+Strukturen, Funktionen mit Rückgabetyp `struct`.
 
 [**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](./Wallet/Exercises_Wallet.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Funktionen
-  * Rückgabetyp Struktur
+Funktionen mit Strukturen als Parameter, Header-Dateien.
 
 
 ### Dynamische Speicherverwaltung
 
-[**&bdquo;Jagged Array&rdquo; &ndash; Gezackte Felder**](./JaggedArrays/Exercises_JaggedArrays.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Dynamische Speicherverwaltung
-  * Realisierung eines 2-dimensionalen Felds mit Teilfeldern verschiedener Länge
-  * `malloc`, `calloc` und `free`
-
+[**&bdquo;Jagged Arrays&rdquo; &ndash; Gezackte Felder**](./JaggedArrays/Exercises_JaggedArrays.md)<br />
+Realisierung zweidimensionaler Felder mit Teilfeldern unterschiedlicher Länge.
 
 [**Struktur `DynamicIntArray`**](./DynamicIntArray/Exercises_DynamicIntArray.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Dynamische Speicherverwaltung
-  * Strukturen
-  * `malloc`, `calloc` und `free`
-
+Dynamische Speicherverwaltung, Strukturen mit Zeiger-Variablen.
 
 [**Verkettete Liste (*Linked List*)**](./VerketteteListe/Exercises_VerketteteListe.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Rekursive Strukturen
-  * `malloc`, `calloc` und `free`
+Rekursive Strukturen, Realisierung einer verketteten Liste.
+
+[**Pascal'sches Dreieck**](./JaggedPascalTriangle/Exercises_JaggedPascalTriangle.md)<br />
+&bdquo;Jagged Arrays&rdquo;, Parameterübergabe zweidimensionaler Felder.
 
 
-[**Pascalsches Dreieck**](./JaggedPascalTriangle/Exercises_JaggedPascalTriangle.md)<br />
-Folgende Aspekte werden betrachtet:
-  * &bdquo;Jagged Arrays&rdquo;
-  * Parameterübergabe zweidimensionaler Felder
-
-  
 ### Mehrdimensionale Felder
 
 [**Pascalsches Dreieck**](./PascalTriangle/Exercises_PascalTriangle.md)<br />
-Folgende Aspekte werden betrachtet:
-  * Zweidimensionales Feld
-  * Parameterübergabe zweidimensionaler Felder
+Zweidimensionale Felder, Parameterübergabe zweidimensionaler Felder.
 
 
 ### CRT - *C-Runtime-Library*

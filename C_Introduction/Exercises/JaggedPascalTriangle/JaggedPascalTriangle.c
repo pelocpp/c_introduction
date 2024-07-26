@@ -13,7 +13,6 @@
 // =====================================================================================
 // Stack based Solution (Static Jagged Array)
 
-
 static void exercise_jagged_pascal_triangle_stack_based()
 {
     // static jagged array on the stack
