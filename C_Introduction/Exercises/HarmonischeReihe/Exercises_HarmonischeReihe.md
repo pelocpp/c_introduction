@@ -18,7 +18,12 @@ Testen Sie Ihre Realisierung mit unterschiedlichen Werten für *N*:
 
 <img src="HarmonischeReihe_01.png" width="200">
 
+
 *Abbildung* 1: Reihenentwicklung der harmonischen Reihe.
+
+
+$$ 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + ... + \frac{1}{N}$$
+
 
 Die Berechnung der harmonischen Reihe ist in einer Funktion vorzunehmen.
 Das Ergebnis der Berechnung ist mit einem geeigneten Rückgabetyp zurückzuliefern.
