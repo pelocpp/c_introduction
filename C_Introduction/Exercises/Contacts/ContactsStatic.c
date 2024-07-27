@@ -2,8 +2,6 @@
 // ContactsStatic.c
 // =====================================================================================
 
-#define _CRT_SECURE_NO_WARNINGS
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -11,14 +9,15 @@
 // ==========================================
 // Kontakte-Verwaltung
 
-#define MaxContacts  10
+#define MaxContacts    10
+#define MaxNameLength  32
 
 struct Contact
 {
-    char             m_firstname[32];
-    char             m_lastname[32];
-    size_t           m_phone;
-    int              m_isEmpty;
+    char     m_firstName[MaxNameLength];
+    char     m_lastName[MaxNameLength];
+    size_t   m_phone;
+    int      m_isEmpty;
 };
 
 // global
@@ -32,33 +31,20 @@ static void initContacts()
     }
 }
 
-static enterContact()
+static void enterContact()
 {
     struct Contact tmp = { 0 };
 
     printf("Geben Sie den Vornamen ein: ");
 
-    // UGLY
-    fgets(tmp.m_firstname, sizeof(tmp.m_firstname), stdin);  // flush .......
-    fgets(tmp.m_firstname, sizeof(tmp.m_firstname), stdin);
-    fflush(stdin);
+    printf("Bitte Vornamen eingeben: ");
+    scanf_s("%s", tmp.m_firstName, MaxNameLength);
 
-    printf("Geben Sie den Nachnamen ein: ");
-    fgets(tmp.m_lastname, sizeof(tmp.m_lastname), stdin);
+    printf("Bitte Nachnamen eingeben: ");
+    scanf_s("%s", tmp.m_lastName, MaxNameLength);
 
-    char buffer[64] = { 0 };
-    printf("Geben Sie die Telefonnummer ein: ");
-    fgets(buffer, sizeof(buffer), stdin);
-
-    // Nachbearbeitung:
-    // Newlines entfernen
-    size_t indexNewline = strlen(tmp.m_firstname);
-    tmp.m_firstname[indexNewline - 1] = '\0';
-    indexNewline = strlen(tmp.m_lastname);
-    tmp.m_lastname[indexNewline - 1] = '\0';
-
-    // convert phone from string to size_t
-    tmp.m_phone = atoi(buffer);
+    printf("Bitte Tel.Nummer eingeben: ");
+    scanf_s("%zu", &tmp.m_phone);
 
     // enter temporary contact into global array
     int succeeded = 0;
@@ -81,8 +67,8 @@ static enterContact()
 
 static void printContact(struct Contact* contact)
 {
-    printf("   Vorname:  %s\n", contact->m_firstname);
-    printf("   Nachname: %s\n", contact->m_lastname);
+    printf("   Vorname:  %s\n", contact->m_firstName);
+    printf("   Nachname: %s\n", contact->m_lastName);
     printf("   Phone:    %zu\n", contact->m_phone);
     printf("\n");
 }
@@ -94,14 +80,12 @@ static void printContacts()
         if (g_Contacts[i].m_isEmpty == 0) {
 
             printContact(&g_Contacts[i]);
-            // printContact( g_Contacts + i );
         }
     }
 }
 
 static void clearContacts()
 {
-
 }
 
 static void printfMenu()
@@ -155,4 +139,3 @@ void exercise_contacts_static()
 // =====================================================================================
 // End-of-File
 // =====================================================================================
-

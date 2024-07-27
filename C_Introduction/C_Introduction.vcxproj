@@ -66,6 +66,7 @@
     <None Include="Exercises\Zeichenstatistik\Exercises_Zeichenstatistik.md" />
     <None Include="Exercises\Zeiger\c_pointer_tabelle_stack.svg" />
     <None Include="Exercises\Zeiger\Exercises_Zeiger.md" />
+    <None Include="Exercises\ZinsberechnungMitArray\Exercises_ZinsberechnungMitArray.md" />
     <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
     <None Include="Markdown\Agenda.md" />
     <None Include="Markdown\FirstOfAll.md" />
@@ -129,6 +130,7 @@
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
     <ClCompile Include="Exercises\Zeichenstatistik\Zeichenstatistik.c" />
     <ClCompile Include="Exercises\Zeiger\Zeiger.c" />
+    <ClCompile Include="Exercises\ZinsberechnungMitArray\ZinsberechnungMitArray.c" />
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
     <ClCompile Include="Program.c" />
     <ClCompile Include="Tutorial\Arrays\Arrays.c" />

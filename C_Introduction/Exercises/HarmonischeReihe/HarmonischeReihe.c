@@ -6,35 +6,34 @@
 
 static double harmonic_series_01(int n)
 {
-    // mit while-Schleife
+    // using while-loop
     
     int m = 1;
-    double ergebnis = 0.0;
+
+    double result = 0.0;
     
     while (m <= n)
     {
-        ergebnis = ergebnis + 1.0 / (double) m;
+        result = result + 1.0 / (double) m;
 
         m++; // m = m + 1
     }
 
-    return ergebnis;
-
-    //printf("Ergebnis: %f", ergebnis);
+    return result;
 }
 
 static double harmonic_series_02(int n)
 {
-    // mit for-Schleife
+    // using for-loop
 
-    double ergebnis = 0.0;
+    double result = 0.0;
 
     for (int m = 1; m <= n; m++)
     {
-        ergebnis = ergebnis + 1.0 / (double) m;
+        result = result + 1.0 / (double) m;
     }
 
-    return ergebnis;
+    return result;
 }
 
 void exercise_harmonische_reihe()
@@ -42,7 +41,7 @@ void exercise_harmonische_reihe()
     // obere Grenze 
     int n = 0;
 
-    printf("Bitte wert eingeben: ");
+    printf("Bitte Wert eingeben: ");
     scanf_s("%d", &n);
 
     double value = harmonic_series_01(n);

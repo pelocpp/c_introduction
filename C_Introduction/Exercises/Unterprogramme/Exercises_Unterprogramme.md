@@ -8,7 +8,7 @@
 
 ### Fläche eines Kreises
 
-Schreiben Sie ein Unterprogramm `AreaCircle`, das die Fläche eines Kreises berechnet.
+Schreiben Sie eine Funktion `areaCircle`, die die Fläche eines Kreises berechnet.
 Der Radius des Kreises ist von der Konsole einzulesen und an das Unterprogramm zu übergeben.
 Das Ergebnis ist als Rückgabewert von dem Unterprogramm zurückzuliefern
 und wiederum im Hauptprogramm auszugeben.
@@ -16,14 +16,14 @@ und wiederum im Hauptprogramm auszugeben.
 
 ### Zinsrechnung
 
-Schreiben Sie ein Unterprogramm `DoubledInterestRate`, das in zwei Parametern ein Startkapital und einen Zinssatz (jährlich) entgegennimmt.
+Schreiben Sie eine Funktion `doubleInterestRate`, das in zwei Parametern ein Startkapital und einen Zinssatz (pro Jahr) entgegennimmt.
 
-Als Rückgabewert liefert das Unterprogramm einen ganzzahligen Wert zurück, der beschreibt,
+Als Rückgabewert liefert die Funktion einen ganzzahligen Wert zurück, der beschreibt,
 nach wie vielen Jahren das eingesetzte Kapital sich verdoppelt hat.
 
 ### Schaltjahr
 
-Entwickeln Sie ein Unterprogramm `IsLeapYear`, welches von einem gegebenen Jahr ermittelt, ob dieses ein Schaltjahr ist oder nicht.
+Entwickeln Sie ein Unterprogramm `isLeapYear`, welches von einem gegebenen Jahr ermittelt, ob dieses ein Schaltjahr ist oder nicht.
 
 *Eingabe*:
 Beliebiges Jahr *N* ab 1800.

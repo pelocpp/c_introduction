@@ -2,23 +2,23 @@
 // ContactsDynamic.c
 // =====================================================================================
 
-#define _CRT_SECURE_NO_WARNINGS
-
 #define _CRTDBG_MAP_ALLOC
+
 #include <stdio.h>
-#include <stdlib.h>          // malloc, free
+#include <stdlib.h>  // malloc, free
 #include <crtdbg.h>
 #include <string.h>
 
 // ==========================================
 // Kontakte-Verwaltung
 
-#define MaxContacts  10
+#define MaxContacts          10
+#define MaxNameBufferLength  32
 
 struct Contact
 {
-    char*     m_firstname;
-    char*     m_lastname;
+    char*     m_firstName;
+    char*     m_lastName;
     size_t    m_phone;
     int       m_isEmpty;
 };
@@ -34,50 +34,39 @@ static void initContacts()
     }
 }
 
-static enterContact()
+static void enterContact()
 {
-    struct Contact tmp = { 0 };
-    char buffer[64] = { 0 };
+    char buffer[MaxNameBufferLength] = { '\0' };
+    int  number;
+    char* ptrFirstName;
+    char* ptrLastName;
 
-    // UGLY
-    fgets(buffer, sizeof(buffer), stdin);  // flush .......
+    printf("Bitte Vornamen eingeben: ");
+    scanf_s("%s", buffer, MaxNameBufferLength);
 
-    printf("Geben Sie den Vornamen ein: ");
-    fgets(buffer, sizeof(buffer), stdin);
-    fflush(stdin);
+    // allocate dynamic memory according to the exact size of the name
+    size_t lenFirstName = 1 + strlen(buffer); // includíng '\0' !!!
+    ptrFirstName = malloc(lenFirstName * sizeof(char));
+    if (ptrFirstName == NULL) {
+        return;
+    }
+    strcpy_s(ptrFirstName, lenFirstName * sizeof(char), buffer);
 
-    // Nachbearbeitung:
-    // Newline entfernen
-    size_t indexNewline = strlen(buffer);
-    buffer[indexNewline - 1] = '\0';
+    printf("Bitte Nachnamen eingeben: ");
+    scanf_s("%s", buffer, MaxNameBufferLength);
 
-    // Vorname ist vom Puffer in das Hilfsobjekt tmp zu kopieren
-    tmp.m_firstname = malloc(indexNewline);
-    strcpy_s(tmp.m_firstname, indexNewline, buffer);
+    // allocate dynamic memory according to the exact size of the name
+    size_t lenLastName = 1 + strlen(buffer); // includíng '\0' !!!
+    ptrLastName = malloc(lenLastName * sizeof(char));
+    if (ptrLastName == NULL) {
+        return;
+    }
+    strcpy_s(ptrLastName, lenLastName * sizeof(char), buffer);
 
+    printf("Bitte Tel.Nummer eingeben: ");
+    scanf_s("%d", &number);
 
-
-    printf("Geben Sie den Nachnamen ein: ");
-    fgets(buffer, sizeof(buffer), stdin);
-    fflush(stdin);
-
-    // Nachbearbeitung:
-    // Newline entfernen
-    indexNewline = strlen(buffer);
-    buffer[indexNewline - 1] = '\0';
-
-    // Vorname ist vom Puffer in das Hilfsobjekt tmp zu kopieren
-    tmp.m_lastname = malloc(indexNewline);
-    strcpy_s(tmp.m_lastname, indexNewline, buffer);
-
-
-    printf("Geben Sie die Telefonnummer ein: ");
-    fgets(buffer, sizeof(buffer), stdin);
-
-    // convert phone from string to size_t
-    tmp.m_phone = atoi(buffer);
-
-
+    struct Contact tmp = { ptrFirstName , ptrLastName, number };
 
     // enter temporary contact into global array
     int succeeded = 0;
@@ -86,7 +75,7 @@ static enterContact()
 
         if (g_Contacts[i].m_isEmpty == 1) {
 
-            g_Contacts[i] = tmp;  // Strukturzuweisung ! Geht in diesem Fall auch mit Zeigern
+            g_Contacts[i] = tmp;
             succeeded = 1;
             break;
         }
@@ -101,8 +90,8 @@ static enterContact()
 
 static void printContact(struct Contact* contact)
 {
-    printf("   Vorname:  %s\n", contact->m_firstname);
-    printf("   Nachname: %s\n", contact->m_lastname);
+    printf("   Vorname:  %s\n", contact->m_firstName);
+    printf("   Nachname: %s\n", contact->m_lastName);
     printf("   Phone:    %zu\n", contact->m_phone);
     printf("\n");
 }
@@ -114,23 +103,21 @@ static void printContacts()
         if (g_Contacts[i].m_isEmpty == 0) {
 
             printContact(&g_Contacts[i]);
-            // printContact( g_Contacts + i );
         }
     }
 }
 
 static void clearContacts()
 {
-    // müssen zu jedem malloc free aufrufen !!!
     for (int i = 0; i < MaxContacts; i++) {
 
         if (g_Contacts[i].m_isEmpty == 0) {
 
-            free(g_Contacts[i].m_firstname);
-            free(g_Contacts[i].m_lastname);
+            free(g_Contacts[i].m_firstName);
+            free(g_Contacts[i].m_lastName);
 
-            g_Contacts[i].m_firstname = NULL;
-            g_Contacts[i].m_lastname = NULL;
+            g_Contacts[i].m_firstName = NULL;
+            g_Contacts[i].m_lastName = NULL;
 
             g_Contacts[i].m_isEmpty = 1;
         }

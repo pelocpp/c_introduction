@@ -20,11 +20,12 @@ extern void exercise_harmonische_reihe();
 
 // arrays
 extern void exercise_array_minimum_maximum();
-extern void exercise_binary_conversion();
+extern void exercise_zinsberechnung_mit_array();
 extern void exercise_vector();
 
 // strings
 extern void exercise_zeichenkettenverarbeitung();
+extern void exercise_binary_conversion();
 
 // pointer
 extern void exercise_pointer();
@@ -34,14 +35,14 @@ extern void exercise_tausche();
 extern void exercise_division_mit_rest();
 extern void exercise_wallet();
 
-// dynamic memory
-extern void exercise_jagged_arrays();
-extern void exercise_linked_list();
-extern void exercise_dynamic_int_array();
-extern void exercise_jagged_pascal_arrays();
-
 // multidimensional arrays
 extern void exercise_pascal_triangle();
+
+// dynamic memory management
+extern void exercise_jagged_arrays();
+extern void exercise_dynamic_int_array();
+extern void exercise_linked_list();
+extern void exercise_jagged_pascal_arrays();
 
 // CRT
 extern void exercise_zeichenstatistik();
@@ -65,18 +66,19 @@ void exercises()
     //exercise_unterprogramme();
     //exercise_harmonische_reihe();
     //exercise_array_minimum_maximum();
-    //exercise_binary_conversion();
+    //exercise_zinsberechnung_mit_array();
     //exercise_vector();
     //exercise_zeichenkettenverarbeitung();
+    //exercise_binary_conversion();
     //exercise_pointer();
     //exercise_tausche();
     //exercise_division_mit_rest();
     //exercise_wallet();
-    //exercise_jagged_arrays();
-    //exercise_linked_list();
-    //exercise_dynamic_int_array();
-    //exercise_jagged_pascal_arrays();
     //exercise_pascal_triangle();
+    //exercise_jagged_arrays();
+    //exercise_dynamic_int_array();
+    //exercise_linked_list();
+    //exercise_jagged_pascal_arrays();
     //exercise_zeichenstatistik();
     //exercise_keywordstatistik();
     //exercise_lotto();
@@ -88,3 +90,7 @@ void exercises()
 // ===========================================================================
 // End-of-File
 // ===========================================================================
+
+
+
+
