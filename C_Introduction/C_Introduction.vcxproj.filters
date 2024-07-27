@@ -513,10 +513,7 @@
     <Image Include="Markdown\Buch_Einstieg_in_C_Thomas_Theis.png">
       <Filter>Markdown</Filter>
     </Image>
-    <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_01.png">
-      <Filter>Exercises\HarmonischeReihe</Filter>
-    </Image>
-    <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_02.png">
+    <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe.png">
       <Filter>Exercises\HarmonischeReihe</Filter>
     </Image>
     <Image Include="Markdown\Buch_C_von_A_bis_Z_Juergen_Wolf.png">

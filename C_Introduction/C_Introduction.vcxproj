@@ -150,8 +150,7 @@
     <ClCompile Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.c" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_01.png" />
-    <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe_02.png" />
+    <Image Include="Exercises\HarmonischeReihe\HarmonischeReihe.png" />
     <Image Include="Exercises\Maximum\Struktogramm_Maximum.png" />
     <Image Include="Exercises\PascalTriangle\PascalTriangle_01.png" />
     <Image Include="Exercises\PascalTriangle\PascalTriangle_02.png" />
