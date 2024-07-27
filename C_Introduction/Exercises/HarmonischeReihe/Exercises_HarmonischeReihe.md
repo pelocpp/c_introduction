@@ -16,7 +16,7 @@ Lösen Sie die Aufgabe sowohl mit einer `for()`- als auch mit einer `while()`-Wi
 
 Testen Sie Ihre Realisierung mit unterschiedlichen Werten für *N*:
 
-$$ 1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + ... + \frac{1}{N}$$
+$1 + \frac{1}{2} + \frac{1}{3} + \frac{1}{4} + ... + \frac{1}{N}$
 
 *Abbildung* 1: Reihenentwicklung der harmonischen Reihe.
 
