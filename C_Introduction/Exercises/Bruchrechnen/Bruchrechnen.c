@@ -1,63 +1,5 @@
 // =====================================================================================
-// Bruchrechnen.c
-// =====================================================================================
-
-#include <stdio.h>
-
-static double harmonic_series_01(int n)
-{
-    // using while-loop
-    
-    int m = 1;
-
-    double result = 0.0;
-    
-    while (m <= n)
-    {
-        result = result + 1.0 / (double) m;
-
-        m++; // m = m + 1
-    }
-
-    return result;
-}
-
-static double harmonic_series_02(int n)
-{
-    // using for-loop
-
-    double result = 0.0;
-
-    for (int m = 1; m <= n; m++)
-    {
-        result = result + 1.0 / (double) m;
-    }
-
-    return result;
-}
-
-void exercise_harmonische_reihe()
-{
-    // obere Grenze 
-    int n = 0;
-
-    printf("Bitte Wert eingeben: ");
-    scanf_s("%d", &n);
-
-    double value = harmonic_series_01(n);
-    printf("Ergebnis: %f\n", value);
-
-    value = harmonic_series_02(n);
-    printf("Ergebnis: %f\n", value);
-}
-
-// =====================================================================================
-// End-of-File
-// =====================================================================================
-
-
-// =====================================================================================
-// Aufgabe zu Strukturen / Brueche.c
+// Bruchrechnen.c // Aufgabe zu Strukturen und Bruchrechnen
 // =====================================================================================
 
 #include <stdio.h>
@@ -68,10 +10,16 @@ struct Fraction
 	int denominator;
 };
 
-// erste Funktion / erstes Unterprogramm
+int ggT(int zaehler, int nenner);
+void print(struct Fraction f);
+struct Fraction scalarMul(struct Fraction f, int scalar);
+struct Fraction add(struct Fraction f1, struct Fraction f2);
+struct Fraction sub(struct Fraction f1, struct Fraction f2);
+struct Fraction mul(struct Fraction f1, struct Fraction f2);
 
-// https://de.wikibooks.org/wiki/C%2B%2B-Programmierung/_Br%C3%BCche/_Die_Methoden
-int ggT(int zaehler, int nenner)
+// =====================================================================================
+
+static int ggT(int zaehler, int nenner)
 {
 	if (nenner == 0) {
 		return zaehler;
@@ -82,105 +30,112 @@ int ggT(int zaehler, int nenner)
 	}
 }
 
-
-void printBruch(struct Bruch b)
+static void print(struct Fraction f)
 {
-	printf("%d / %d", b.zaehler, b.nenner);
+	printf("%d / %d", f.numerator, f.denominator);
 }
 
-// 3 mal 1/7 = 3/7
-struct Bruch scalarProdukt(struct Bruch b, int scalar)
+static struct Fraction scalarMul(struct Fraction f, int scalar)
 {
-	struct Bruch result;
+	struct Fraction result = { 0, 1 };
 
-	result.zaehler = b.zaehler * scalar;
-	result.nenner = b.nenner;
+	result.numerator = f.numerator * scalar;
+	result.denominator = f.denominator;
 
 	return result;
 }
 
-// 1. Aufgabe:
-// 3 / 7 und 1 / 7 = 4 / 7
-
-struct Bruch addiereBruch(struct Bruch b1, struct Bruch b2)
+static struct Fraction add(struct Fraction f1, struct Fraction f2)
 {
-	struct Bruch result;
+	struct Fraction result = { 0, 1 };
 
-	int hauptNenner = b1.nenner * b2.nenner;
+	int mainDenominator = f1.denominator * f2.denominator;
 
-	result.zaehler = b1.zaehler * b2.nenner + b2.zaehler * b1.nenner;
-	result.nenner = hauptNenner;
+	result.numerator = f1.numerator * f2.denominator + f2.numerator * f1.denominator;
+	result.denominator = mainDenominator;
 
 	// mit kuerzen
-	int teiler = ggT(result.zaehler, result.nenner);
+	int teiler = ggT(result.numerator, result.denominator);
 
-	result.zaehler = result.zaehler / teiler;
-	result.nenner = result.nenner / teiler; ;
+	result.numerator = result.numerator / teiler;
+	result.denominator = result.denominator / teiler; ;
 
 	return result;
 }
 
-// 2. Aufgabe:
-// 3 / 7 mal 2 / 7 = 6 / 49
-
-struct Bruch multipliziereBruch(struct Bruch b1, struct Bruch b2)
+static struct Fraction sub(struct Fraction f1, struct Fraction f2)
 {
-	struct Bruch result;
+	// TO BE TESTED !!!!!!!!!!!!!!!!!!!!!!!
 
-	result.zaehler = b1.zaehler * b2.zaehler;
-	result.nenner = b1.nenner * b2.nenner;
+	struct Fraction result = { 0, 1 };
+
+	int mainDenominator = f1.denominator * f2.denominator;
+
+	result.numerator = f1.numerator * f2.denominator + f2.numerator * f1.denominator;
+	result.denominator = mainDenominator;
 
 	// mit kuerzen
-	int teiler = ggT(result.zaehler, result.nenner);
+	int teiler = ggT(result.numerator, result.denominator);
 
-	result.zaehler = result.zaehler / teiler;
-	result.nenner = result.nenner / teiler; ;
+	result.numerator = result.numerator / teiler;
+	result.denominator = result.denominator / teiler; ;
+
+	return result;
+}
+
+static struct Fraction mul(struct Fraction f1, struct Fraction f2)
+{
+	struct Fraction result = { 0, 1 };
+
+	result.numerator = f1.numerator * f2.numerator;
+	result.denominator = f1.denominator * f2.denominator;
+
+	// mit kuerzen
+	int teiler = ggT(result.numerator, result.denominator);
+
+	result.numerator = result.numerator / teiler;
+	result.denominator = result.denominator / teiler; ;
 
 	return result;
 }
 
 // Sonderaufgabe:
 // 2 / 8 und 2 / 8 = 4 / 8 = 1 / 2  
-// Wie k?nnten wir das l?sen .............................
+// Wie koennten wir das loesen .............................
 
-void test_bruch()
+void test_bruchrechnen()
 {
-	struct Bruch b = { 1, 7 };
-	printBruch(b);
+	struct Fraction f = { 1, 7 };
+	print(f);
 	printf("\n");
 
-	struct Bruch ergebnis;
-	ergebnis = scalarProdukt(b, 3);
-	printBruch(ergebnis);
+	struct Fraction result;
+	result = scalarMul(f, 3);
+	print(result);
 	printf("\n");
 
 	// Test der Addition
-	struct Bruch b1 = { 1, 3 };
-	struct Bruch b2 = { 4, 3 };
-	ergebnis = addiereBruch(b1, b2);
+	struct Fraction f1 = { 1, 3 };
+	struct Fraction f2 = { 4, 3 };
+	result = add(f1, f2);
 
-	printBruch(b1);
+	print(f1);
 	printf(" + ");
-	printBruch(b2);
+	print(f2);
 	printf(" = ");
-	printBruch(ergebnis);
+	print(result);
 	printf("\n");
 
 	// Test der Multiplikation
-	ergebnis = multipliziereBruch(b1, b2);
+	result = mul(f1, f2);
 
-	printBruch(b1);
+	print(f1);
 	printf(" * ");
-	printBruch(b2);
+	print(f2);
 	printf(" = ");
-	printBruch(ergebnis);
+	print(result);
 	printf("\n");
 }
-
-//void main()
-//{
-//	test_bruch();
-//}
 
 // =====================================================================================
 // End-of-File
