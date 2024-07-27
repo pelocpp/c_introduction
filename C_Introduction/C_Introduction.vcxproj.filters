@@ -323,6 +323,7 @@
     <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md" />
     <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md" />
     <None Include="Exercises\ZinsberechnungMitArray\Exercises_ZinsberechnungMitArray.md" />
+    <None Include="Exercises\Bruchrechnen\Exercises_Bruchrechnen.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -485,6 +486,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\ZinsberechnungMitArray\ZinsberechnungMitArray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Bruchrechnen\Bruchrechnen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

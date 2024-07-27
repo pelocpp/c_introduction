@@ -22,6 +22,7 @@
     <None Include="..\Readme.md" />
     <None Include="Exercises\ArraySumMinMax\Exercises_ArraySumMinMax.md" />
     <None Include="Exercises\BinaryConversion\Exercises_BinaryConversion.md" />
+    <None Include="Exercises\Bruchrechnen\Exercises_Bruchrechnen.md" />
     <None Include="Exercises\Contacts\Exercises_Contacts.md" />
     <None Include="Exercises\DivisionMitRest\Exercises_DivisionMitRest.md" />
     <None Include="Exercises\DynamicIntArray\c_dynamic_int_array_01.svg" />
@@ -96,6 +97,7 @@
   <ItemGroup>
     <ClCompile Include="Exercises\ArraySumMinMax\ArraySumMinMax.c" />
     <ClCompile Include="Exercises\BinaryConversion\BinaryConversion.c" />
+    <ClCompile Include="Exercises\Bruchrechnen\Bruchrechnen.c" />
     <ClCompile Include="Exercises\Contacts\ContactsDynamic.c" />
     <ClCompile Include="Exercises\Contacts\ContactsStatic.c" />
     <ClCompile Include="Exercises\Contacts\Main_Contacts.c" />

@@ -25,7 +25,7 @@ Untersuchen Sie, was für große Werte von *N* geschieht.
 
 <img src="HarmonischeReihe.png" width="400">
 
-*Abbildung* 2: Die harmonische Reihe konvergiert nicht.
+*Abbildung* 1: Die harmonische Reihe konvergiert nicht.
 
 ---
 
