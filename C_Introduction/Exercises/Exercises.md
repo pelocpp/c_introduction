@@ -117,7 +117,7 @@ Funktionen / Unterprogramme, Zufallszahlen, Strukturierung eines Programms.
 Felder von Strukturen, Zeichenketten, `printf`-Menü, bei Bedarf dynamische Daten.
 
 [**Hashtabellen**](./HashTabelle/Exercises_HashTable.md)<br />
-Feld von Strukturen, Header-Files, dynamische Daten, verkettete Liste
+Feld von Strukturen, Header-Files, dynamische Daten, verkettete Liste.
 
 ---
 
