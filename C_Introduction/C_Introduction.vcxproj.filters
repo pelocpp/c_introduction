@@ -324,6 +324,8 @@
     <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md" />
     <None Include="Exercises\ZinsberechnungMitArray\Exercises_ZinsberechnungMitArray.md" />
     <None Include="Exercises\Bruchrechnen\Exercises_Bruchrechnen.md" />
+    <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md" />
+    <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">

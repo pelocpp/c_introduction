@@ -78,7 +78,7 @@ Datentyp Zeiger, Referenzieren und Derefenzieren eines Zeigers.
 ### Strukturen
 
 [**Division mit Rest: Struktur mit Quotient und Rest**](./DivisionMitRest/Exercises_DivisionMitRest.md)<br />
-Strukturen, Funktionen mit Rückgabetyp `struct`.
+Strukturen, Funktionen mit einer Struktur als Rückgabetyp.
 
 [**Bruchrechnen: Struktur `Fraction`**](./Bruchrechnen/Exercises_Bruchrechnen.md)<br />
 Funktionen mit Strukturen als Parameter (&bdquo;Call-by-Value&rdquo; ), Header-Dateien.
@@ -127,8 +127,10 @@ Felder von Strukturen, Zeichenketten, `printf`-Menü, bei Bedarf dynamische Date
 [**Hashtabellen**](./HashTabelle/Exercises_HashTable.md)<br />
 Feld von Strukturen, Header-Files, dynamische Daten, verkettete Liste.
 
----
+[**Object File Viewer**](./ObjectFileViewer/Exercises_ObjectFileViewer.md)<br />
+Komplexübung, Systemprogrammierung, dynamische Speicherverwaltung, Einlesen einer Binärdatei.
 
+---
 
 [Zurück](../../Readme.md)
 

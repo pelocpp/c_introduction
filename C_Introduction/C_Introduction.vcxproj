@@ -44,6 +44,8 @@
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
+    <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
+    <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md" />
     <None Include="Exercises\ObjectFileViewer\TEST_JaggedArray.bin" />
     <None Include="Exercises\ObjectFileViewer\TEST_ObjectFileViewer.bin" />
     <None Include="Exercises\ObjectFileViewer\TEST_Point.bin" />
