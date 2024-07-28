@@ -26,7 +26,9 @@ in der Konsole ausgibt.
 
 ## Quellcode der Lösung
 
-[*Bruchrechnen.c*](./Bruchrechnen.c)
+[*ObjectFileViewer.h*](./ObjectFileViewer.h)<br />
+[*ObjectFileViewer.c*](./ObjectFileViewer.c)<br />
+
 
 ---
 
