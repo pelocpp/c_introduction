@@ -226,11 +226,9 @@ Index |  Key   | Value
 
 ## Literaturhinweise
 
-
 Einige Anregungen zu den Beispielen aus diesem Abschnitt stammen aus dem Artikel
 
 [Hashtabelle](https://simpleclub.com/lessons/fachinformatikerin-hashtabelle) (abgerufen am 21.06.2024).
-
 
 ---
 

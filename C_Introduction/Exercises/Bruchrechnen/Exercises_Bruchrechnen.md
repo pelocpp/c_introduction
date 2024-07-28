@@ -6,11 +6,6 @@
 
 ## Übersicht
 
-Literatur hinzuzufügen
-
-
-
-
 In dieser Aufgabe erinnern wir uns an die vergangenen Zeiten unser Schulausbildung.
 Wir schreiben ein Programm, das Brüche addieren und subtrahieren kann, zum Beispiel
 
@@ -61,6 +56,87 @@ $\frac{1}{2} * \frac{3}{4} = \frac{3}{8}$
 oder 
 
 $\frac{2}{8} * \frac{2}{8} = \frac{4}{64} = \frac{1}{16}$
+
+Abschließend betrachten wir einige Beispiele:
+
+*Beispiel*:
+
+```c
+01: struct Fraction f1 = { 1, 3 };
+02: struct Fraction f2 = { 4, 3 };
+03: struct Fraction result = add(f1, f2);
+04: 
+05: print(f1);
+06: printf(" + ");
+07: print(f2);
+08: printf(" = ");
+09: print(result);
+10: printf("\n");
+```
+
+*Ausgabe*:
+
+```
+1 / 3 + 4 / 3 = 5 / 3
+```
+
+*Beispiel*:
+
+```c
+01: struct Fraction f = { 1, 7 };
+02: print(f);
+03: printf("\n");
+04: 
+05: struct Fraction result;
+06: result = scalarMul(f, 3);
+07: print(result);
+08: printf("\n");
+09: 
+10: struct Fraction f2 = { 3, 9 };
+11: print(f2);
+12: printf("\n");
+13: 
+14: result = scalarMul(f2, 3);
+15: print(result);
+16: printf("\n");
+```
+
+*Ausgabe*:
+
+```
+1 / 7
+3 / 7
+3 / 9
+1 / 1
+```
+
+*Beispiel*:
+
+
+```c
+01: struct Fraction f = { 3, 9 };
+02: print(f);
+03: printf("\n");
+04: 
+05: f = reduce(f);
+06: print(f);
+07: printf("\n");
+```
+
+*Ausgabe*:
+
+```
+3 / 9
+1 / 3
+```
+
+---
+
+## Literaturhinweise
+
+Einige Anregungen zu den Beispielen aus diesem Abschnitt stammen aus dem Artikel
+
+[Bruchrechnen](https://lehrerfortbildung-bw.de/u_matnatech/mathematik/bs/bej/bej1/bruch/) (abgerufen am 28.07.2024).
 
 ---
 

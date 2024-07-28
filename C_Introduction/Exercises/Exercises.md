@@ -34,6 +34,7 @@ Kontrollstruktur `for`, arithmetische Operatoren, Überlauf ganzzahliger Variabl
 [**Auswertung einer Wahl**](./Wahl/Exercises_Wahl.md)<br />
 Kontrollstrukturen `if` und `while`, arithmetische Operatoren, Ein- und Ausgabe, Prozentrechnung.
 
+
 ### Funktionen und Unterprogramme
 
 [**Aufgaben zu Funktionen: Kreisfläche, Zinsrechnung und Schaltjahr**](./Unterprogramme/Exercises_Unterprogramme.md)<br />
@@ -41,6 +42,7 @@ Einfache Funktionen, Übergabe von Parametern, Rückgabe eines Ergebnisses.
 
 [**Harmonische Reihe**](./HarmonischeReihe/Exercises_HarmonischeReihe.md)<br />
 Einfache Funktionen, Übergabe von Parametern, Rückgabe eines Ergebnisses, Datentypkonvertierung.
+
 
 ### Arrays
 
@@ -54,6 +56,7 @@ Einfache Funktionen, Übergabe von Parametern, Rückgabe eines Ergebnisses, Date
 [**Ein mathematischer Vektor**](./Vector/Exercises_Vector.md)<br />
 `double`-Arrays, Funktionen mit Array als Parameter.
 
+
 ### Zeichen und Zeichenketten
 
 [**Elementare Zeichenketteroperationen: `replace`, `append`, `insert` etc.**](./Zeichenkettenverarbeitung/Exercises_Zeichenkettenverarbeitung.md)<br />
@@ -61,6 +64,7 @@ Zeichen und Zeichenketten, verschiedene Operationen auf `char`-Arrays.
 
 [**Binäre Darstellung ganzer Zahlen**](./BinaryConversion/Exercises_BinaryConversion.md)<br />
 `char`-Arrays, Funktion mit Array als Parameter, terminierendes Nullzeichen.
+
 
 ### Zeiger (*Pointer*)
 
@@ -70,13 +74,17 @@ Datentyp Zeiger, Referenzieren und Derefenzieren eines Zeigers.
 [**Aufgabe zur Parameterübergabe mit Zeigern**](./Tausche/Exercises_Tausche.md)<br />
 &bdquo;Call-by-Value&rdquo; und &bdquo;Call-by-Address&rdquo; an einem Beispiel betrachtet.
 
+
 ### Strukturen
 
 [**Division mit Rest: Struktur mit Quotient und Rest**](./DivisionMitRest/Exercises_DivisionMitRest.md)<br />
 Strukturen, Funktionen mit Rückgabetyp `struct`.
 
+[**Bruchrechnen: Struktur `Fraction`**](./Bruchrechnen/Exercises_Bruchrechnen.md)<br />
+Funktionen mit Strukturen als Parameter (&bdquo;Call-by-Value&rdquo; ), Header-Dateien.
+
 [**Aufgabe zu einem Geldbeutel: Struktur `Wallet`**](./Wallet/Exercises_Wallet.md)<br />
-Funktionen mit Strukturen als Parameter, Header-Dateien.
+Funktionen mit Strukturen als Parameter (&bdquo;Call-by-Address&rdquo;), Header-Dateien.
 
 
 ### Mehrdimensionale Felder

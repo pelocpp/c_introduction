@@ -33,6 +33,7 @@ extern void exercise_tausche();
 
 // structs
 extern void exercise_division_mit_rest();
+extern void exercise_bruchrechnen();
 extern void exercise_wallet();
 
 // multidimensional arrays
@@ -73,6 +74,7 @@ void exercises()
     //exercise_pointer();
     //exercise_tausche();
     //exercise_division_mit_rest();
+    //exercise_bruchrechnen();
     //exercise_wallet();
     //exercise_pascal_triangle();
     //exercise_jagged_arrays();
