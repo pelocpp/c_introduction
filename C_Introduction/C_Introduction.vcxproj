@@ -72,6 +72,7 @@
     <None Include="Exercises\ZinsberechnungMitArray\Exercises_ZinsberechnungMitArray.md" />
     <None Include="Exercises\Zinsberechnung\Exercises_Zinsberechnung.md" />
     <None Include="Markdown\Agenda.md" />
+    <None Include="Markdown\cman.pdf" />
     <None Include="Markdown\FirstOfAll.md" />
     <None Include="Markdown\History.md" />
     <None Include="Markdown\InstallationGuide.md" />

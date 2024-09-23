@@ -326,6 +326,7 @@
     <None Include="Exercises\Bruchrechnen\Exercises_Bruchrechnen.md" />
     <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md" />
     <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
+    <None Include="Markdown\cman.pdf" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">

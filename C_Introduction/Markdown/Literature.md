@@ -4,12 +4,18 @@
 
 ---
 
-## Der ultimative Klassiker
+## Zwei ultimative Klassiker
 
   * Brian W. Kernighan, Dennis M. Ritchie &bdquo;*The C Programming Language*&rdquo;.</br>
     Prentice Hall (1. Mai 1983), 228 Seiten. Sprache: Englisch. ISBN-13: 9978-0131101630, ISBN-10: 0131101633.
 
     <img src="Buch_C_Kernighan_Ritchie.png" width="150">
+
+
+  * Dennis M. Ritchie &bdquo;*C Reference Manual*&rdquo;.</br>
+    Bell Telephone Laboratories, Murray Hill, New Jersey 07974.
+
+    [C Reference Manual](cman.pdf)
 
 ---
 
