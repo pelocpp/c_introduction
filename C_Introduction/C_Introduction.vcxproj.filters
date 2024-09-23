@@ -555,6 +555,9 @@
     <Image Include="Exercises\PascalTriangle\PascalTriangle_02.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Markdown\Buch_C_Kernighan_Ritchie.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">

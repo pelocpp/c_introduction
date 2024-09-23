@@ -4,8 +4,17 @@
 
 ---
 
+## Der ultimative Klassiker
 
-## C
+  * Brian W. Kernighan, Dennis M. Ritchie &bdquo;*The C Programming Language*&rdquo;.</br>
+    Prentice Hall (1. Mai 1983), 228 Seiten. Sprache: Englisch. ISBN-13: 9978-0131101630, ISBN-10: 0131101633.
+
+    <img src="Buch_C_Kernighan_Ritchie.png" width="150">
+
+---
+
+
+## Weitere Bücher
 
   * Dan Gokin, &bdquo;*C für Dummies*&rdquo;.</br>
     Wiley-VCH (7. April 2021), 640 Seiten. Sprache: Deutsch. ISBN-13: 978-3527718450.
