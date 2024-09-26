@@ -446,7 +446,7 @@
     <ClCompile Include="Tutorial\Operators\Operators.c">
       <Filter>Tutorial\Operators</Filter>
     </ClCompile>
-    <ClCompile Include="Tutorial\Pointers\Pointer.c">
+    <ClCompile Include="Tutorial\Pointers\Pointers.c">
       <Filter>Tutorial\Pointers</Filter>
     </ClCompile>
     <ClCompile Include="Tutorial\Structs\Structs.c">

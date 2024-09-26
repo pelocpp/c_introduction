@@ -148,7 +148,7 @@
     <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c" />
     <ClCompile Include="Tutorial\NestedScope\NestedScope.c" />
     <ClCompile Include="Tutorial\Operators\Operators.c" />
-    <ClCompile Include="Tutorial\Pointers\Pointer.c" />
+    <ClCompile Include="Tutorial\Pointers\Pointers.c" />
     <ClCompile Include="Tutorial\Strings\Strings.c" />
     <ClCompile Include="Tutorial\Structs\Structs.c" />
     <ClCompile Include="Tutorial\Subroutines\Subroutines.c" />

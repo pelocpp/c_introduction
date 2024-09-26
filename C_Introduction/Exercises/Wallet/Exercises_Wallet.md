@@ -108,6 +108,7 @@ Not enough money available in wallet!
 
 ## Quellcode der Lösung
 
+[*Wallet.h*](./Wallet.h)<br />
 [*Wallet.c*](./Wallet.c)
 
 ---
