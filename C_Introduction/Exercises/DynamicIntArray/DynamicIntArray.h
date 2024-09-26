@@ -19,31 +19,33 @@
 // ===========================================================================================
 // Types
 
-struct DynamicIntArray
+struct dynamicIntArray
 {
     int*    m_data;
     size_t  m_length;
 };
 
+typedef struct dynamicIntArray DynamicIntArray;
+
 // ===========================================================================================
 // Function Prototypes
 
-int initDynamicIntArray(struct DynamicIntArray* array, size_t length);
-void releaseDynamicIntArray(struct DynamicIntArray* array);
-void createDynamicIntArrayFromArray(struct DynamicIntArray* array, int* values, int length);
-void createDynamicIntArrayFromDynamicIntArray(struct DynamicIntArray* array, struct DynamicIntArray* other);
-void fillDynamicIntArray(struct DynamicIntArray* array, int value);
-size_t getLength(struct DynamicIntArray* array);
-int get(struct DynamicIntArray* array, int index);
-void set(struct DynamicIntArray* array, int index, int value);
-int resizeDynamicIntArray(struct DynamicIntArray* array, int newLength);
-int shrinkToFitDynamicIntArray(struct DynamicIntArray* array);
-int minimum(struct DynamicIntArray* array);
-int maximum(struct DynamicIntArray* array);
-int indexOf(struct DynamicIntArray* array, int value);
-int equalsDynamicIntArray(struct DynamicIntArray* array, struct DynamicIntArray* other);
-int containsDynamicIntArray(struct DynamicIntArray* array, int value);
-void printDynamicIntArray(struct DynamicIntArray* array);
+int    initDynamicIntArray                      (DynamicIntArray* array, size_t length);
+void   releaseDynamicIntArray                   (DynamicIntArray* array);
+void   createDynamicIntArrayFromArray           (DynamicIntArray* array, int* values, int length);
+void   createDynamicIntArrayFromDynamicIntArray (DynamicIntArray* array, DynamicIntArray* other);
+void   fillDynamicIntArray                      (DynamicIntArray* array, int value);
+size_t getLength                                (DynamicIntArray* array);
+int    get                                      (DynamicIntArray* array, int index);
+void   set                                      (DynamicIntArray* array, int index, int value);
+int    resizeDynamicIntArray                    (DynamicIntArray* array, int newLength);
+int    shrinkToFitDynamicIntArray               (DynamicIntArray* array);
+int    minimum                                  (DynamicIntArray* array);
+int    maximum                                  (DynamicIntArray* array);
+int    indexOf                                  (DynamicIntArray* array, int value);
+int    equalsDynamicIntArray                    (DynamicIntArray* array, DynamicIntArray* other);
+int    containsDynamicIntArray                  (DynamicIntArray* array, int value);
+void   printDynamicIntArray                     (DynamicIntArray* array);
 
 // =====================================================================================
 // End-of-File

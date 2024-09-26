@@ -17,11 +17,11 @@ static void jagged_arrays_01()
 {
     // static jagged array on the stack
 
-    char array1[5] = { 'T', 'h', 'i', 's', '\0' };
-    char array2[3] = { 'i', 's', '\0' };
-    char array3[2] = { 'a', '\0' };
-    char array4[7] = { 'j', 'a', 'g', 'g', 'e', 'd', '\0' };
-    char array5[6] = { 'a', 'r', 'r', 'a', 'y', '\0' };
+    char array1[] = { 'T', 'h', 'i', 's', '\0' };
+    char array2[] = { 'i', 's', '\0' };
+    char array3[] = { 'a', '\0' };
+    char array4[] = { 'j', 'a', 'g', 'g', 'e', 'd', '\0' };
+    char array5[] = { 'a', 'r', 'r', 'a', 'y', '\0' };
 
     char* jagged_array[5] = { array1, array2, array3, array4, array5 };
 

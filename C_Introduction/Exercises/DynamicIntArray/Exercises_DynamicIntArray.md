@@ -72,7 +72,7 @@ Realisieren Sie folgende C-Funktionen, die mit der Struktur `DynamicIntArray` zu
 
 | Funktion  | Schnittstelle und Beschreibung |
 |:--------- |--------------------------------|
-| `initDynamicIntArray` | `int initDynamicIntArray(struct DynamicIntArray* array, size_t length);`<br /> Initialisiert eine `DynamicIntArray`-Strukturvariable mit einem Datenpuffer der Länge `size`. |
+| `initDynamicIntArray` | `int initDynamicIntArray(struct DynamicIntArray* array, size_t length);`<br /> Initialisiert eine `DynamicIntArray`-Strukturvariable mit einem Datenpuffer der Länge `length`. |
 | `releaseDynamicIntArray` | `void releaseDynamicIntArray(struct DynamicIntArray* array);`<br /> Gibt den dynamisch allokierten Speicher wieder frei. |
 | `createDynamicIntArrayFromArray` | `void createDynamicIntArrayFromArray(struct DynamicIntArray* array, int* values, int length);`<br /> Übernimmt die Daten eines C-Arrays (Parameter `values` und `length`) in eine `DynamicIntArray`-Strukturvariable. |
 | `createDynamicIntArrayFromDynamicIntArray` | `void createDynamicIntArrayFromDynamicIntArray(struct DynamicIntArray* array, struct DynamicIntArray* other);`<br /> Legt eine Kopie einer vorhandenen `DynamicIntArray`-Strukturvariablen (`other`) an. |

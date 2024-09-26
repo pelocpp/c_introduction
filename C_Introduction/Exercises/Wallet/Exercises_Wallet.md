@@ -7,8 +7,7 @@
 
 ## Übersicht
 
-Schreiben Sie eine Struktur `Wallet`, die einen *Geldbeutel* (*Portemonnaie*, ein aus dem Französischen stammender Begriff)
-repräsentiert.
+Schreiben Sie eine Struktur `Wallet`, die einen *Geldbeutel* repräsentiert.
 Im Geldbeutel sind Euros und Cent enthalten.
 Dabei sollten nicht mehr als 99 Cent in dem Geldbeutel sein,
 bei größeren Cent-Beträgen ist der Euro-Betrag entsprechend aufzurunden.

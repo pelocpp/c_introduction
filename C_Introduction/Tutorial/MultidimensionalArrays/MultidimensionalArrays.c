@@ -16,13 +16,13 @@ static void multidimensional_arrays_01()
     int numbers1[M][N] = 
     {
         { 1, 2, 3 },
-        { 4, 5, 6} 
+        { 4, 5, 6 } 
     };
 
     int numbers2[][N]  = 
     { 
         { 1, 2, 3 }, 
-        { 4, 5, 6} 
+        { 4, 5, 6 } 
     };
 
     int numbers3[M][N] = { 1, 2, 3, 4, 5, 6 };

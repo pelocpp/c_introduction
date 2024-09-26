@@ -14,40 +14,40 @@ void initKeywordTable()
 
     // traverse table
     for (i = 0; i < NUM_KEYWORDS; i++)
-        statisticsTable[i].count = 0;
+        statisticsTable[i].m_count = 0;
 
-    strcpy_s(statisticsTable[0].identifier, MAX_KEYWORD_LENGTH, "auto");
-    strcpy_s(statisticsTable[1].identifier, MAX_KEYWORD_LENGTH, "break");
-    strcpy_s(statisticsTable[2].identifier, MAX_KEYWORD_LENGTH, "case");
-    strcpy_s(statisticsTable[3].identifier, MAX_KEYWORD_LENGTH, "char");
-    strcpy_s(statisticsTable[4].identifier, MAX_KEYWORD_LENGTH, "const");
-    strcpy_s(statisticsTable[5].identifier, MAX_KEYWORD_LENGTH, "continue");
-    strcpy_s(statisticsTable[6].identifier, MAX_KEYWORD_LENGTH, "default");
-    strcpy_s(statisticsTable[7].identifier, MAX_KEYWORD_LENGTH, "do");
-    strcpy_s(statisticsTable[8].identifier, MAX_KEYWORD_LENGTH, "double");
-    strcpy_s(statisticsTable[9].identifier, MAX_KEYWORD_LENGTH, "else");
-    strcpy_s(statisticsTable[10].identifier, MAX_KEYWORD_LENGTH, "enum");
-    strcpy_s(statisticsTable[11].identifier, MAX_KEYWORD_LENGTH, "extern");
-    strcpy_s(statisticsTable[12].identifier, MAX_KEYWORD_LENGTH, "float");
-    strcpy_s(statisticsTable[13].identifier, MAX_KEYWORD_LENGTH, "for");
-    strcpy_s(statisticsTable[14].identifier, MAX_KEYWORD_LENGTH, "goto");
-    strcpy_s(statisticsTable[15].identifier, MAX_KEYWORD_LENGTH, "if");
-    strcpy_s(statisticsTable[16].identifier, MAX_KEYWORD_LENGTH, "int");
-    strcpy_s(statisticsTable[17].identifier, MAX_KEYWORD_LENGTH, "long");
-    strcpy_s(statisticsTable[18].identifier, MAX_KEYWORD_LENGTH, "register");
-    strcpy_s(statisticsTable[19].identifier, MAX_KEYWORD_LENGTH, "return");
-    strcpy_s(statisticsTable[20].identifier, MAX_KEYWORD_LENGTH, "short");
-    strcpy_s(statisticsTable[21].identifier, MAX_KEYWORD_LENGTH, "signed");
-    strcpy_s(statisticsTable[22].identifier, MAX_KEYWORD_LENGTH, "sizeof");
-    strcpy_s(statisticsTable[23].identifier, MAX_KEYWORD_LENGTH, "static");
-    strcpy_s(statisticsTable[24].identifier, MAX_KEYWORD_LENGTH, "struct");
-    strcpy_s(statisticsTable[25].identifier, MAX_KEYWORD_LENGTH, "switch");
-    strcpy_s(statisticsTable[26].identifier, MAX_KEYWORD_LENGTH, "typedef");
-    strcpy_s(statisticsTable[27].identifier, MAX_KEYWORD_LENGTH, "union");
-    strcpy_s(statisticsTable[28].identifier, MAX_KEYWORD_LENGTH, "unsigned");
-    strcpy_s(statisticsTable[29].identifier, MAX_KEYWORD_LENGTH, "void");
-    strcpy_s(statisticsTable[30].identifier, MAX_KEYWORD_LENGTH, "volatile");
-    strcpy_s(statisticsTable[31].identifier, MAX_KEYWORD_LENGTH, "while");
+    statisticsTable[ 0].m_identifier = "auto";
+    statisticsTable[ 1].m_identifier = "break";
+    statisticsTable[ 2].m_identifier = "case";
+    statisticsTable[ 3].m_identifier = "char";
+    statisticsTable[ 4].m_identifier = "const";
+    statisticsTable[ 5].m_identifier = "continue";
+    statisticsTable[ 6].m_identifier = "default";
+    statisticsTable[ 7].m_identifier = "do";
+    statisticsTable[ 8].m_identifier = "double";
+    statisticsTable[ 9].m_identifier = "else";
+    statisticsTable[10].m_identifier = "enum";
+    statisticsTable[11].m_identifier = "extern";
+    statisticsTable[12].m_identifier = "float";
+    statisticsTable[13].m_identifier = "for";
+    statisticsTable[14].m_identifier = "goto";
+    statisticsTable[15].m_identifier = "if";
+    statisticsTable[16].m_identifier = "int";
+    statisticsTable[17].m_identifier = "long";
+    statisticsTable[18].m_identifier = "register";
+    statisticsTable[19].m_identifier = "return";
+    statisticsTable[20].m_identifier = "short";
+    statisticsTable[21].m_identifier = "signed";
+    statisticsTable[22].m_identifier = "sizeof";
+    statisticsTable[23].m_identifier = "static";
+    statisticsTable[24].m_identifier = "struct";
+    statisticsTable[25].m_identifier = "switch";
+    statisticsTable[26].m_identifier = "typedef";
+    statisticsTable[27].m_identifier = "union";
+    statisticsTable[28].m_identifier = "unsigned";
+    statisticsTable[29].m_identifier = "void";
+    statisticsTable[30].m_identifier = "volatile";
+    statisticsTable[31].m_identifier = "while";
 }
 
 void printKeywordTable()
@@ -58,8 +58,8 @@ void printKeywordTable()
     // traverse table
     for (int i = 0; i < NUM_KEYWORDS; i++)
     {
-        if (statisticsTable[i].count > 0)
-            printf("%12s: %3d\n", statisticsTable[i].identifier, statisticsTable[i].count);
+        if (statisticsTable[i].m_count > 0)
+            printf("%12s: %3d\n", statisticsTable[i].m_identifier, statisticsTable[i].m_count);
     }
     printf("\n");
 }
@@ -94,7 +94,7 @@ void scanLine(char* line)
             // search identifier in keyword table
             index = isKeyword(buffer);
             if (index >= 0) {
-                statisticsTable[index].count++;
+                statisticsTable[index].m_count++;
             }
         }
         else
@@ -116,7 +116,7 @@ static int isKeyword(char* id)
     // linear search
     for (int i = 0; i < NUM_KEYWORDS; i++)
     {
-        if (strcmp(id, statisticsTable[i].identifier) == 0)
+        if (strcmp(id, statisticsTable[i].m_identifier) == 0)
             return i;
     }
 

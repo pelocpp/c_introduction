@@ -2,35 +2,38 @@
 // Wallet.h
 // =====================================================================================
 
-// ===========================================================================================
-// Defines
+// -----------------------------------
+// defines
+
 #pragma once
 
-// =====================================================================================
-// Types
+// -----------------------------------
+// types
 
-struct Wallet
+struct wallet
 {
     unsigned long long m_euros;
     unsigned int m_cents;
 };
 
-// =====================================================================================
-// Function Prototypes
+typedef struct wallet Wallet;
 
-void                initWallet(struct Wallet* wallet, unsigned long long euros, unsigned int cents);
-unsigned long long  getEuros(struct Wallet* wallet);
-unsigned int        getCent(struct Wallet* wallet);
-void                addWallet(struct Wallet* wallet, struct Wallet* other);
-void                addEuros(struct Wallet* wallet, unsigned long long euros);
-void                addEurosAndCents(struct Wallet* wallet, unsigned long long euros, unsigned int cents);
-int                 subWallet(struct Wallet* wallet, struct Wallet* other);
-int                 subEuros(struct Wallet* wallet, unsigned long long euros);
-int                 subEurosAndCents(struct Wallet* wallet, unsigned long long euros, unsigned int cents);
-int                 lessThan(struct Wallet* wallet, struct Wallet* other);
-int                 equals(struct Wallet* wallet, struct Wallet* other);
-unsigned long long  toCents(struct Wallet* wallet);
-void                print(struct Wallet* wallet);
+// -----------------------------------
+// function prototypes
+
+void                initWallet       (Wallet* wallet, unsigned long long euros, unsigned int cents);
+unsigned long long  getEuros         (Wallet* wallet);
+unsigned int        getCent          (Wallet* wallet);
+void                addWallet        (Wallet* wallet, Wallet* other);
+void                addEuros         (Wallet* wallet, unsigned long long euros);
+void                addEurosAndCents (Wallet* wallet, unsigned long long euros, unsigned int cents);
+int                 subWallet        (Wallet* wallet, Wallet* other);
+int                 subEuros         (Wallet* wallet, unsigned long long euros);
+int                 subEurosAndCents (Wallet* wallet, unsigned long long euros, unsigned int cents);
+int                 lessThan         (Wallet* wallet, Wallet* other);
+int                 equals           (Wallet* wallet, Wallet* other);
+unsigned long long  toCents          (Wallet* wallet);
+void                print            (Wallet* wallet);
 
 // =====================================================================================
 // End-of-File

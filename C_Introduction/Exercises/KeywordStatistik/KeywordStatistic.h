@@ -20,8 +20,8 @@
 
 struct keywordStatistic
 {
-    char identifier[MAX_KEYWORD_LENGTH];
-    int  count;
+    char* m_identifier;
+    int   m_count;
 };
 
 typedef struct keywordStatistic KeywordStatistic;

@@ -9,10 +9,8 @@
 // =====================================================================================
 // Implementation
 
-static void initWallet(struct Wallet* wallet, unsigned long long euros, unsigned int cents)
+static void initWallet(Wallet* wallet, unsigned long long euros, unsigned int cents)
 {
-    // Alternative: Wenn cents größer 100, dann abschneiden und auf die Euros drauf addieren.
-
     if (cents >= 100) {
         printf("Cents larger than 100 are not allowed!\n");
         wallet->m_cents = 0;
@@ -24,17 +22,17 @@ static void initWallet(struct Wallet* wallet, unsigned long long euros, unsigned
     wallet->m_euros = euros;
 }
 
-static unsigned long long getEuros(struct Wallet* wallet)
+static unsigned long long getEuros(Wallet* wallet)
 {
     return wallet->m_euros;
 }
 
-static unsigned int getCent(struct Wallet* wallet)
+static unsigned int getCent(Wallet* wallet)
 {
     return wallet->m_cents;
 }
 
-static void addWallet(struct Wallet* wallet, struct Wallet* other)
+static void addWallet(Wallet* wallet, Wallet* other)
 {
     wallet->m_cents = wallet->m_cents + other->m_cents;
     unsigned int carry = wallet->m_cents / 100;
@@ -42,19 +40,19 @@ static void addWallet(struct Wallet* wallet, struct Wallet* other)
     wallet->m_euros = wallet->m_euros + other->m_euros + carry;
 }
 
-static void addEuros(struct Wallet* wallet, unsigned long long euros)
+static void addEuros(Wallet* wallet, unsigned long long euros)
 {
     wallet->m_euros = wallet->m_euros + euros;
 }
 
-static void addEurosAndCents(struct Wallet* wallet, unsigned long long euros, unsigned int cents)
+static void addEurosAndCents(Wallet* wallet, unsigned long long euros, unsigned int cents)
 {
-    struct Wallet tmp = { euros, cents };
+    Wallet tmp = { euros, cents };
 
     addWallet(wallet, &tmp);
 }
 
-static int subWallet(struct Wallet* wallet, struct Wallet* other)
+static int subWallet(Wallet* wallet, Wallet* other)
 {
     if (lessThan(wallet, other)) {
         printf("Not enough money available in wallet!\n");
@@ -74,7 +72,7 @@ static int subWallet(struct Wallet* wallet, struct Wallet* other)
     return 1;
 }
 
-static int subEuros(struct Wallet* wallet, unsigned long long euros)
+static int subEuros(Wallet* wallet, unsigned long long euros)
 {
     if (wallet->m_euros < euros) {
         printf("Not enough money available in wallet!\n");
@@ -86,14 +84,14 @@ static int subEuros(struct Wallet* wallet, unsigned long long euros)
     return 1;
 }
 
-static int subEurosAndCents(struct Wallet* wallet, unsigned long long euros, unsigned int cents)
+static int subEurosAndCents(Wallet* wallet, unsigned long long euros, unsigned int cents)
 {
-    struct Wallet tmp = { euros, cents };
+    Wallet tmp = { euros, cents };
 
     return subWallet(wallet, &tmp);
 }
 
-static int lessThan(struct Wallet* wallet, struct Wallet* other)
+static int lessThan(Wallet* wallet, Wallet* other)
 {
     if (wallet->m_euros < other->m_euros) {
         return 1;
@@ -106,7 +104,7 @@ static int lessThan(struct Wallet* wallet, struct Wallet* other)
     }
 }
 
-static int equals(struct Wallet* wallet, struct Wallet* other)
+static int equals(Wallet* wallet, Wallet* other)
 {
     if (wallet->m_euros == other->m_euros && wallet->m_cents == other->m_cents) {
         return 1;
@@ -116,19 +114,19 @@ static int equals(struct Wallet* wallet, struct Wallet* other)
     }
 }
 
-static unsigned long long toCents(struct Wallet* wallet)
+static unsigned long long toCents(Wallet* wallet)
 {
     return 100 * wallet->m_euros + wallet->m_cents;
 }
 
-static void print(struct Wallet* wallet)
+static void print(Wallet* wallet)
 {
     printf("%llu,%02u Euro\n", wallet->m_euros, wallet->m_cents);
 }
 
 static void exercise_wallet_01()
 {
-    struct Wallet wallet = { 0, 0 };
+    Wallet wallet = { 0, 0 };
 
     print(&wallet);
 
@@ -144,8 +142,8 @@ static void exercise_wallet_01()
 
 static void exercise_wallet_02()
 {
-    struct Wallet wallet1 = { 3, 30 };
-    struct Wallet wallet2 = { 3, 30 };
+    Wallet wallet1 = { 3, 30 };
+    Wallet wallet2 = { 3, 30 };
 
     print(&wallet1);
     print(&wallet2);
@@ -168,9 +166,9 @@ static void exercise_wallet_02()
 
 static void exercise_wallet_03()
 {
-    struct Wallet wallet1 = { 123, 45 };
-    struct Wallet wallet2 = { 3, 30 };
-    struct Wallet wallet3 = { 3, 30 };
+    Wallet wallet1 = { 123, 45 };
+    Wallet wallet2 = { 3, 30 };
+    Wallet wallet3 = { 3, 30 };
 
     print(&wallet1);
 
@@ -186,8 +184,8 @@ static void exercise_wallet_03()
 
 static void exercise_wallet_04()
 {
-    struct Wallet wallet1 = { 0, 3 };
-    struct Wallet wallet2 = { 0, 1 };
+    Wallet wallet1 = { 0, 3 };
+    Wallet wallet2 = { 0, 1 };
 
     print(&wallet1);
 
