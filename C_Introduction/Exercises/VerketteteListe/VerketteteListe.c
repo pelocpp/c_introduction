@@ -459,9 +459,3 @@ void exercise_linked_list ()
 // =====================================================================================
 // End-of-File
 // =====================================================================================
-
-//    void Reverse();                 // reverse list
-
-//    // comparison operators
-//    friend bool operator== (const LinkedList&, const LinkedList&);
-//    friend bool operator!= (const LinkedList&, const LinkedList&);

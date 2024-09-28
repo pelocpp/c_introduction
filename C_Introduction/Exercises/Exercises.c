@@ -78,7 +78,7 @@ void exercises()
     //exercise_bruchrechnen();
     //exercise_wallet();
     //exercise_pascal_triangle();
-    exercise_zeichenkettenverarbeitung_dynamisch();
+    //exercise_zeichenkettenverarbeitung_dynamisch();
     //exercise_jagged_arrays();
     //exercise_dynamic_int_array();
     //exercise_linked_list();
@@ -86,7 +86,7 @@ void exercises()
     //exercise_zeichenstatistik();
     //exercise_keywordstatistik();
     //exercise_lotto();
-    //exercise_contacts();
+    exercise_contacts();
     //exercise_hash_table();
     //exercise_object_file_viewer();
 }

@@ -126,7 +126,6 @@ static void exercise_isLeapLear()
     printf("%d ist Schaltjahr: %d\n", year, result);
 }
 
-
 void exercise_unterprogramme()
 {
     exercise_areaCircle();

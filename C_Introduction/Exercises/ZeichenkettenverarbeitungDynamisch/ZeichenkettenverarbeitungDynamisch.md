@@ -51,14 +51,13 @@ Realisieren Sie eine der beiden `str_append`-Varianten.
 
 *Beispiel*:
 
-
 ```c
 01: void exercise()
 02: {
-03: 	char* result = NULL;
-04: 	result = str_append("Hello ", "World!");
-05: 	printf("Ergebnis: %s\n", result);
-06: 	free(result);
+03:     char* result = NULL;
+04:     result = str_append("Hello ", "World!");
+05:     printf("Ergebnis: %s\n", result);
+06:     free(result);
 07: }
 ```
 

@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int binaryConvert(int number, char binary[], int len)
+static int binaryConvert(int number, char binary[], int len)
 {
     int index = 0;
     while (number != 0)

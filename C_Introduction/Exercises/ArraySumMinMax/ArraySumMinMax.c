@@ -2,11 +2,11 @@
 // ArraySumMinMax.c
 // =====================================================================================
 
-#include <stdio.h>     // printf
-#include <stdlib.h>    // rand
-#include <time.h>      // time
+#include <stdio.h>   // printf
+#include <stdlib.h>  // rand
+#include <time.h>    // time
 
-#define  Length    10
+#define  Length      10
 
 static void exercise_array_zufallszahlen()
 {

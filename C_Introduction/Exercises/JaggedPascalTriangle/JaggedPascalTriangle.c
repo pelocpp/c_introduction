@@ -74,7 +74,6 @@ static int** createPascalTriangle(int rows)
     }
 
     return triangle;
-
 }
 
 static void printPascalTriangle(int** triangle, int rows)

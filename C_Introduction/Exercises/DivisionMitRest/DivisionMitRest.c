@@ -10,7 +10,7 @@ struct Result
     int remainder;
 };
 
-struct Result divisioMitRest(int zaehler, int nenner)
+static struct Result divisioMitRest(int zaehler, int nenner)
 {
     struct Result result;
 

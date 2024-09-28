@@ -8,7 +8,7 @@
 
 // =====================================================================================
 
-int initDynamicIntArray(DynamicIntArray* da, size_t length)
+static int initDynamicIntArray(DynamicIntArray* da, size_t length)
 {
     int* tmp = (int*) calloc(length, sizeof(int));
     if (tmp == NULL) {
@@ -21,7 +21,7 @@ int initDynamicIntArray(DynamicIntArray* da, size_t length)
     return 1;
 }
 
-void releaseDynamicIntArray(DynamicIntArray* da)
+static void releaseDynamicIntArray(DynamicIntArray* da)
 {
     if (da->m_data != NULL) {
 
@@ -32,7 +32,7 @@ void releaseDynamicIntArray(DynamicIntArray* da)
     }
 }
 
-void createDynamicIntArrayFromArray(DynamicIntArray* array, int* values, int length)
+static void createDynamicIntArrayFromArray(DynamicIntArray* array, int* values, int length)
 {
     array->m_data = (int*) malloc(sizeof(int) * length);
     if (array->m_data == (int*)0) {
@@ -46,7 +46,7 @@ void createDynamicIntArrayFromArray(DynamicIntArray* array, int* values, int len
     array->m_length = length;
 }
 
-void createDynamicIntArrayFromDynamicIntArray(DynamicIntArray* array, DynamicIntArray* other)
+static void createDynamicIntArrayFromDynamicIntArray(DynamicIntArray* array, DynamicIntArray* other)
 {
     array->m_data = (int*) malloc(sizeof(int) * other->m_length);
     if (array->m_data == (int*)0) {
@@ -61,19 +61,19 @@ void createDynamicIntArrayFromDynamicIntArray(DynamicIntArray* array, DynamicInt
     array->m_length = other->m_length;
 }
 
-void fillDynamicIntArray(DynamicIntArray* array, int value)
+static void fillDynamicIntArray(DynamicIntArray* array, int value)
 {
     for (int i = 0; i < array->m_length; i++) {
         array->m_data[i] = value;
     }
 }
 
-size_t getLength(DynamicIntArray* array)
+static size_t getLength(DynamicIntArray* array)
 {
     return array->m_length;
 }
 
-int get(DynamicIntArray* array, int index)
+static int get(DynamicIntArray* array, int index)
 {
     if (index >= 0 && index < array->m_length) {
         return array->m_data[index];
@@ -84,7 +84,7 @@ int get(DynamicIntArray* array, int index)
     }
 }
 
-void set(DynamicIntArray* array, int index, int value)
+static void set(DynamicIntArray* array, int index, int value)
 {
     if (index >= 0 && index < array->m_length) {
         array->m_data[index] = value;
@@ -94,7 +94,7 @@ void set(DynamicIntArray* array, int index, int value)
     }
 }
 
-int resizeDynamicIntArray(DynamicIntArray* array, int newLength)
+static int resizeDynamicIntArray(DynamicIntArray* array, int newLength)
 {
     if (newLength <= array->m_length)
     {
@@ -131,7 +131,7 @@ int resizeDynamicIntArray(DynamicIntArray* array, int newLength)
     }
 }
 
-int shrinkToFitDynamicIntArray(DynamicIntArray* array)
+static int shrinkToFitDynamicIntArray(DynamicIntArray* array)
 {
     // allocate new - temporary and fitting - buffer
     int* tmp = (int*) calloc(array->m_length, sizeof(int));
@@ -156,7 +156,7 @@ int shrinkToFitDynamicIntArray(DynamicIntArray* array)
     }
 }
 
-int minimum(DynamicIntArray* array)
+static int minimum(DynamicIntArray* array)
 {
     if (array->m_length == 0) {
         return 0;
@@ -173,7 +173,7 @@ int minimum(DynamicIntArray* array)
     return min;
 }
 
-int maximum(DynamicIntArray* array)
+static int maximum(DynamicIntArray* array)
 {
     if (array->m_length == 0) {
         return 0;
@@ -190,7 +190,7 @@ int maximum(DynamicIntArray* array)
     return max;
 }
 
-int indexOf(DynamicIntArray* array, int value)
+static int indexOf(DynamicIntArray* array, int value)
 {
     // perform a linear search
     for (int i = 0; i < array->m_length; i++) {
@@ -202,7 +202,7 @@ int indexOf(DynamicIntArray* array, int value)
     return -1;
 }
 
-int equalsDynamicIntArray(DynamicIntArray* array, DynamicIntArray* other)
+static int equalsDynamicIntArray(DynamicIntArray* array, DynamicIntArray* other)
 {
     if (array->m_length != other->m_length) {
         return 0;
@@ -217,7 +217,7 @@ int equalsDynamicIntArray(DynamicIntArray* array, DynamicIntArray* other)
     return 1;
 }
 
-int containsDynamicIntArray(DynamicIntArray* array, int value)
+static int containsDynamicIntArray(DynamicIntArray* array, int value)
 {
     for (int i = 0; i < array->m_length; i++) {
         if (array->m_data[i] == value) {
@@ -228,7 +228,7 @@ int containsDynamicIntArray(DynamicIntArray* array, int value)
     return 0;
 }
 
-void printDynamicIntArray(DynamicIntArray* array)
+static void printDynamicIntArray(DynamicIntArray* array)
 {
     printf("{");
     for (int i = 0; i < array->m_length; i++)
@@ -246,96 +246,95 @@ void printDynamicIntArray(DynamicIntArray* array)
 
 static void exercise_DynamicIntArray_01()
 {
-    DynamicIntArray einFeld = { NULL, 0 };
+    DynamicIntArray da = { NULL, 0 };
 
-    releaseDynamicIntArray(&einFeld);
+    releaseDynamicIntArray(&da);
 }
 
 static void exercise_DynamicIntArray_02()
 {
-    DynamicIntArray einFeld = { NULL, 0 };
+    DynamicIntArray da = { NULL, 0 };
 
-    initDynamicIntArray(&einFeld, 10);
+    initDynamicIntArray(&da, 10);
 
-    printDynamicIntArray(&einFeld);
+    printDynamicIntArray(&da);
 
-    releaseDynamicIntArray(&einFeld);
+    releaseDynamicIntArray(&da);
 }
-
 
 static void exercise_DynamicIntArray_03()
 {
-    DynamicIntArray dia = { 0, 0 };
+    DynamicIntArray da = { 0, 0 };
 
     int values[] = { 1, 2, 3, 4, 5 };
 
-    createDynamicIntArrayFromArray(&dia, values, 5);
+    createDynamicIntArrayFromArray(&da, values, 5);
 
-    printDynamicIntArray(&dia);
+    printDynamicIntArray(&da);
 
-    resizeDynamicIntArray(&dia, 10);
+    resizeDynamicIntArray(&da, 10);
 
-    printDynamicIntArray(&dia);
+    printDynamicIntArray(&da);
 
-    releaseDynamicIntArray(&dia);
+    releaseDynamicIntArray(&da);
 
-    printDynamicIntArray(&dia);
+    printDynamicIntArray(&da);
 }
 
 static void exercise_DynamicIntArray_04()
 {
     int values[] = { -10, -5, 0, 5, 10 };
 
-    DynamicIntArray dia = { 0, 0 };
+    DynamicIntArray da = { 0, 0 };
 
-    createDynamicIntArrayFromArray(&dia, values, 5);
+    createDynamicIntArrayFromArray(&da, values, 5);
 
-    printDynamicIntArray(&dia);
+    printDynamicIntArray(&da);
 
-    int min = minimum(&dia);
+    int min = minimum(&da);
     printf("Minimum: %d\n", min);
 
-    int max = maximum(&dia);
+    int max = maximum(&da);
     printf("Maximum: %d\n", max);
 
-    releaseDynamicIntArray(&dia);
+    releaseDynamicIntArray(&da);
 }
 
 static void exercise_DynamicIntArray_05()
 {
     int values[] = { 10, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
-    DynamicIntArray dia = { 0, 0 };
+    DynamicIntArray da = { 0, 0 };
 
-    createDynamicIntArrayFromArray(&dia, values, 10);
+    createDynamicIntArrayFromArray(&da, values, 10);
 
-    printDynamicIntArray(&dia);
+    printDynamicIntArray(&da);
 
-    int n = get(&dia, 5);
+    int n = get(&da, 5);
     printf("Value at index 5: %d\n", n);
 
-    n = get(&dia, -5);
+    n = get(&da, -5);
     printf("Value at index -5: %d\n", n);
 
-    set(&dia, 5, 30);
+    set(&da, 5, 30);
 
-    printDynamicIntArray(&dia);
+    printDynamicIntArray(&da);
 
-    releaseDynamicIntArray(&dia);
+    releaseDynamicIntArray(&da);
 }
 
 static void exercise_DynamicIntArray_06()
 {
     int values[] = { 10, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
-    DynamicIntArray dia = { 0, 0 };
+    DynamicIntArray da = { 0, 0 };
 
-    createDynamicIntArrayFromArray(&dia, values, 10);
+    createDynamicIntArrayFromArray(&da, values, 10);
 
-    printDynamicIntArray(&dia);
+    printDynamicIntArray(&da);
 
     // put into comments
-    releaseDynamicIntArray(&dia);
+    releaseDynamicIntArray(&da);
 
     _CrtDumpMemoryLeaks();
 }
@@ -346,9 +345,9 @@ static void exercise_DynamicIntArray_07()
 
     int values[] = { 10, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 
-    DynamicIntArray dia1 = { 0, 0 };
+    DynamicIntArray da1 = { 0, 0 };
 
-    createDynamicIntArrayFromArray(&dia1, values, 10);
+    createDynamicIntArrayFromArray(&da1, values, 10);
 
     // ------------------------
     // Standard C: Hmm, da wird eine neue Struktur-Variable
@@ -358,35 +357,33 @@ static void exercise_DynamicIntArray_07()
     // DynamicIntArray sa2 = sa1;
 
     // Lösung
-    DynamicIntArray dia2;
-    createDynamicIntArrayFromDynamicIntArray(&dia2, &dia1);
+    DynamicIntArray da2;
+    createDynamicIntArrayFromDynamicIntArray(&da2, &da1);
 
-    printDynamicIntArray(&dia1);
-    printDynamicIntArray(&dia2);
+    printDynamicIntArray(&da1);
+    printDynamicIntArray(&da2);
 
-    releaseDynamicIntArray(&dia1);
-    releaseDynamicIntArray(&dia2);
+    releaseDynamicIntArray(&da1);
+    releaseDynamicIntArray(&da2);
 
     _CrtDumpMemoryLeaks();
-}
-
-void exercise_dynamic_int_array()
-{
-    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-
-    //exercise_DynamicIntArray_01();
-    //exercise_DynamicIntArray_02();
-    //exercise_DynamicIntArray_03();
-    //exercise_DynamicIntArray_04();
-    exercise_DynamicIntArray_05();
-    //exercise_DynamicIntArray_06();
-    //exercise_DynamicIntArray_07();
 }
 
 // =================================================================================
 // ==========================================================================
 
+void exercise_dynamic_int_array()
+{
+    _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
+    exercise_DynamicIntArray_01();
+    exercise_DynamicIntArray_02();
+    exercise_DynamicIntArray_03();
+    exercise_DynamicIntArray_04();
+    exercise_DynamicIntArray_05();
+    exercise_DynamicIntArray_06();
+    exercise_DynamicIntArray_07();
+}
 
 // =====================================================================================
 // End-of-File

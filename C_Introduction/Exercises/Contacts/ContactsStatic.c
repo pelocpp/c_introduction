@@ -26,6 +26,17 @@ struct Contact
 // global
 struct Contact g_Contacts[MaxContacts];
 
+// ==========================================
+// function prototypes
+static void initContacts();
+static void enterContact();
+static void searchContact();
+static void printContact(struct Contact* contact);
+static void clearContacts();
+static void printfMenu();
+
+// ==========================================
+
 static void initContacts()
 {
     for (int i = 0; i < MaxContacts; i++) {
@@ -37,8 +48,6 @@ static void initContacts()
 static void enterContact()
 {
     struct Contact tmp = { 0 };
-
-    printf("Geben Sie den Vornamen ein: ");
 
     printf("Bitte Vornamen eingeben: ");
     scanf_s("%s", tmp.m_firstName, MaxNameLength);
@@ -65,7 +74,40 @@ static void enterContact()
     if (succeeded == 0) {
         printf("Contacts Folder full !\n");
     }
+}
 
+static void searchContact()
+{
+    char firstName[MaxNameLength] = { 0 };
+    char lastName[MaxNameLength] = { 0 };;
+
+    printf("Bitte Vornamen eingeben: ");
+    scanf_s("%s", firstName, MaxNameLength);
+
+    printf("Bitte Nachnamen eingeben: ");
+    scanf_s("%s", lastName, MaxNameLength);
+
+    // search corresponding contact in global array
+    int succeeded = 0;
+
+    for (int i = 0; i < MaxContacts; i++) {
+
+        if (g_Contacts[i].m_isEmpty == NotEmpty) {
+
+            struct Contact tmp = g_Contacts[i];
+
+            if (strcmp(tmp.m_firstName, firstName) == 0 && strcmp(tmp.m_lastName, lastName) == 0)
+            {
+                printf("%s %s hat die Telefonnummer %zu\n", firstName, lastName, tmp.m_phone);
+                succeeded = 1;
+                break;
+            }
+        }
+    }
+
+    if (succeeded == 0) {
+        printf("%s %s im Telefonbuch nicht gefunden!\n", firstName, lastName);
+    }
 }
 
 static void printContact(struct Contact* contact)
@@ -89,6 +131,7 @@ static void printContacts()
 
 static void clearContacts()
 {
+    initContacts();
 }
 
 static void printfMenu()
@@ -105,8 +148,9 @@ static void printfMenu()
         printf("Bitte Aktion waehlen:\n");
         printf("(1) = Kontakte ausgeben\n");
         printf("(2) = Kontakt eingeben\n");
-        printf("(3) = Alle Kontakte loeschen\n");
-        printf("(4) = Programm verlassen\n");
+        printf("(3) = Kontakt suchen\n");
+        printf("(4) = Alle Kontakte loeschen\n");
+        printf("(5) = Programm verlassen\n");
 
         int aktion = -1;
 
@@ -121,9 +165,12 @@ static void printfMenu()
             enterContact();
             break;
         case 3:
-            clearContacts();
+            searchContact();
             break;
         case 4:
+            clearContacts();
+            break;
+        case 5:
             clearContacts();
             fertig = 0;
             break;

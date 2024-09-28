@@ -11,14 +11,16 @@ Wir schreiben ein Programm, das Brüche addieren und subtrahieren kann, zum Beis
 
 $\frac{1}{3} + \frac{4}{3} = \frac{5}{3}$
 
-Einen Bruch selbst stellen mit einer Strukturvariablen des Typs `struct Fraction` dar:
+Einen Bruch selbst stellen mit einer Strukturvariablen des Typs `Fraction` dar:
 
 ```c
-struct Fraction
-{
-	int numerator;
-	int denominator;
-};
+01: struct fraction
+02: {
+03:     int numerator;
+04:     int denominator;
+05: };
+06: 
+07: typedef struct fraction Fraction;
 ```
 
 Die englischen Bezeichner `numerator` und `denominator` stehen im Deutschen
@@ -62,9 +64,9 @@ Abschließend betrachten wir einige Beispiele:
 *Beispiel*:
 
 ```c
-01: struct Fraction f1 = { 1, 3 };
-02: struct Fraction f2 = { 4, 3 };
-03: struct Fraction result = add(f1, f2);
+01: Fraction f1 = { 1, 3 };
+02: Fraction f2 = { 4, 3 };
+03: Fraction result = add(f1, f2);
 04: 
 05: print(f1);
 06: printf(" + ");
@@ -83,16 +85,16 @@ Abschließend betrachten wir einige Beispiele:
 *Beispiel*:
 
 ```c
-01: struct Fraction f = { 1, 7 };
+01: Fraction f = { 1, 7 };
 02: print(f);
 03: printf("\n");
 04: 
-05: struct Fraction result;
+05: Fraction result;
 06: result = scalarMul(f, 3);
 07: print(result);
 08: printf("\n");
 09: 
-10: struct Fraction f2 = { 3, 9 };
+10: Fraction f2 = { 3, 9 };
 11: print(f2);
 12: printf("\n");
 13: 
@@ -114,7 +116,7 @@ Abschließend betrachten wir einige Beispiele:
 
 
 ```c
-01: struct Fraction f = { 3, 9 };
+01: Fraction f = { 3, 9 };
 02: print(f);
 03: printf("\n");
 04: 
