@@ -49,11 +49,10 @@ int main()
     //mainStrings();
     //mainMultidimensionalArrays();
     //mainStructs();
-    //mainStructs();
     //mainUnionsBitfieldsEnums();
     //mainCrt();
 
-    //exercises();
+    exercises();
 
     printf("[Done]\n");
     return 0;

@@ -327,6 +327,7 @@
     <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md" />
     <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
     <None Include="Markdown\cman.pdf" />
+    <None Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -494,6 +495,9 @@
     <ClCompile Include="Exercises\Bruchrechnen\Bruchrechnen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -557,6 +561,18 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Markdown\Buch_C_Kernighan_Ritchie.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_01.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_02.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_03.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_04.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

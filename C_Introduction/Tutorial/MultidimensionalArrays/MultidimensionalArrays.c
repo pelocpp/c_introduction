@@ -11,7 +11,8 @@
 
 static void multidimensional_arrays_01()
 {
-    // Different ways to initialize two-dimensional array
+    // --------------------------------------------------
+    // different ways to initialize two-dimensional array
 
     int numbers1[M][N] = 
     {
@@ -28,14 +29,14 @@ static void multidimensional_arrays_01()
     int numbers3[M][N] = { 1, 2, 3, 4, 5, 6 };
 
     // traversing array using bracket notation
-for (int i = 0; i < M; ++i)
-{
-    for (int j = 0; j < N; ++j)
+    for (int i = 0; i < M; ++i)
     {
-        printf("[%d][%d]: %2d   ", i, j, numbers1[i][j]);
+        for (int j = 0; j < N; ++j)
+        {
+            printf("[%d][%d]: %2d   ", i, j, numbers1[i][j]);
+        }
+        printf("\n");
     }
-    printf("\n");
-}
     printf("\n");
 
     // traversing array without using bracket notation (!)
@@ -52,6 +53,25 @@ for (int i = 0; i < M; ++i)
 
 static void multidimensional_arrays_02()
 {
+    // --------------------------------------------------
+    // different ways to initialize two-dimensional array:
+    // designated initializer lists for arrays
+
+    int vector[3] = 
+    {
+        [0] = 123, [1] = 456, [2] = 789 
+    };
+
+    int grid[3][4] =
+    { 
+        [0][0] = 1,[0][1] =  2, [0][2] =  3, [0][3] =  4,
+        [1][0] = 5,[1][1] =  6, [1][2] =  7, [1][3] =  8,
+        [2][0] = 9,[2][1] = 10, [2][2] = 11, [2][3] = 12 
+    };
+}
+
+static void multidimensional_arrays_03()
+{
     int numbers1[M][N][O] =
     {
         {
@@ -66,9 +86,9 @@ static void multidimensional_arrays_02()
         } 
     };
 
-    int numbers2[M][N][4] =
+    int numbers2[M][N][O] =
     {
-        1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12 , 13, 14, 15, 16 , 17, 18, 19, 20, 21, 22, 23, 24
+        1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24
     };
 
     // traversing array using bracket notation
@@ -118,7 +138,7 @@ static void print(int arr[N][N])
     }
 }
 
-static void multidimensional_arrays_03()
+static void multidimensional_arrays_04()
 {
     int numbers[][N] =
     { 
@@ -146,9 +166,15 @@ static void printEx(int arr[][N], int m)
     }
 }
 
-static void multidimensional_arrays_04()
+static void multidimensional_arrays_05()
 {
-    int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } };
+    int numbers[][N] = 
+    {
+        { 1, 2, 3 },
+        { 4, 5, 6 },
+        { 7, 8, 9 },
+        { 10, 11, 12 } 
+    };
 
     printEx(numbers, 4);
 }
@@ -171,9 +197,10 @@ static void printExEx(int* arr, int m, int n)
     }
 }
 
-static void multidimensional_arrays_05()
+static void multidimensional_arrays_06()
 {
-    int numbers[][N] = {
+    int numbers[][N] = 
+    {
         { 1, 2, 3 },
         { 4, 5, 6 },
         { 7, 8, 9 }, 
@@ -209,9 +236,14 @@ static void doSomething(int* arr)
     printf("Value: %d\n", value);
 }
 
-static void multidimensional_arrays_06()
+static void multidimensional_arrays_07()
 {
-    int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } };
+    int numbers[][N] = { 
+        { 1, 2, 3 },
+        { 4, 5, 6 },
+        { 7, 8, 9 }, 
+        { 10, 11, 12 }
+    };
 
     doSomething(&numbers[0][0]);
 
@@ -236,7 +268,7 @@ static void printExExEx(int(*arr)[N])
     }
 }
 
-static void multidimensional_arrays_07()
+static void multidimensional_arrays_08()
 {
     int numbers[][N] = 
     {
@@ -254,19 +286,21 @@ static void multidimensional_arrays_07()
 // and a pointer to an array of integers
 // https://www.geeksforgeeks.org/pointer-array-array-pointer/
 
-void static multidimensional_arrays_08()
+void static multidimensional_arrays_09()
 {
-    // Pointer to an integer
+    // pointer to an integer
     int* p;
 
-    // Pointer to an array of 5 integers
+    // pointer to an array of 5 integers
     int(*ptr)[5];
-    int arr[5];
 
-    // Points to 0th element of the arr.
+    // array of 5 integers
+    int arr[5] = { 1, 2, 3, 4, 5 };
+
+    // points to 0-th element of this 'arr'
     p = arr;
 
-    // Points to the whole array arr.
+    // points to the whole array 'arr'
     ptr = &arr;
 
     printf("p = %p, ptr = %p\n", p, ptr);
@@ -293,7 +327,7 @@ static void printExExExEx(int(*arr)[N], int length)
     }
 }
 
-static void multidimensional_arrays_09()
+static void multidimensional_arrays_10()
 {
     int numbers[][N] =
     {
@@ -335,9 +369,14 @@ static void doSomethingExExEx(int(*arr)[N])
 }
 
 
-static void multidimensional_arrays_10()
+static void multidimensional_arrays_11()
 {
-    int numbers[][N] = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+    int numbers[][N] = 
+    { 
+        { 1, 2, 3 },
+        { 4, 5, 6 },
+        { 7, 8, 9 } 
+    };
 
     doSomethingExEx(numbers);
 
@@ -359,6 +398,7 @@ void mainMultidimensionalArrays()
     multidimensional_arrays_08();
     multidimensional_arrays_09();
     multidimensional_arrays_10();
+    multidimensional_arrays_11();
 }
 
 // ===========================================================================

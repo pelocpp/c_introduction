@@ -15,6 +15,9 @@
 #define MaxContacts          10
 #define MaxNameBufferLength  32
 
+#define NotEmpty             0
+#define Empty                1
+
 struct Contact
 {
     char*     m_firstName;
@@ -30,7 +33,7 @@ static void initContacts()
 {
     for (int i = 0; i < MaxContacts; i++) {
 
-        g_Contacts[i].m_isEmpty = 1;
+        g_Contacts[i].m_isEmpty = Empty;
     }
 }
 
@@ -66,14 +69,14 @@ static void enterContact()
     printf("Bitte Tel.Nummer eingeben: ");
     scanf_s("%d", &number);
 
-    struct Contact tmp = { ptrFirstName , ptrLastName, number };
+    struct Contact tmp = { ptrFirstName , ptrLastName, number, NotEmpty };
 
     // enter temporary contact into global array
     int succeeded = 0;
 
     for (int i = 0; i < MaxContacts; i++) {
 
-        if (g_Contacts[i].m_isEmpty == 1) {
+        if (g_Contacts[i].m_isEmpty == Empty) {
 
             g_Contacts[i] = tmp;
             succeeded = 1;
@@ -119,7 +122,7 @@ static void clearContacts()
             g_Contacts[i].m_firstName = NULL;
             g_Contacts[i].m_lastName = NULL;
 
-            g_Contacts[i].m_isEmpty = 1;
+            g_Contacts[i].m_isEmpty = Empty;
         }
     }
 }

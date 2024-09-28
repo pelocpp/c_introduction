@@ -26,6 +26,24 @@ static void arrays_01()
 
 static void arrays_02()
 {
+    int vector1[] =
+    {
+        [0] = 1, [1] = 2, [2] = 3
+    };
+
+    int vector2[3] =
+    {
+        [0] = 1, [1] = 2, [2] = 3
+    };
+
+    int vector3[3] =
+    {
+        [2] = 3
+    };
+}
+
+static void arrays_03()
+{
     // Feld variabler Länge: Never - Arrays are Fixed-Size !
 
     int n;
@@ -35,7 +53,7 @@ static void arrays_02()
     // int numbers [n];   // does NOT compile
 }
 
-static void arrays_03()
+static void arrays_04()
 {
     // array initialization with initializer list
     int numbers1[Length] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
@@ -88,7 +106,7 @@ static void initArray03(int feld[10], int length)
     // same as above
 }
 
-static void arrays_04()
+static void arrays_05()
 {
     int numbers[Length];
 
@@ -131,7 +149,7 @@ static void createRandomNumbers()
     printf("Zufall: %d\n", zahl);
 }
 
-static void arrays_05()
+static void arrays_06()
 {
     int numbers[Length];
 
@@ -148,7 +166,7 @@ static void arrays_05()
     }
 }
 
-static void arrays_06()
+static void arrays_07()
 {
     // Wertzuweisung von Arrays
 
@@ -164,7 +182,7 @@ static void arrays_06()
     }
 }
 
-static void arrays_07_gimmicks()
+static void arrays_08_gimmicks()
 {
     int numbers[Length] = { 0 };  // Hier wird speicher reserviert
 
@@ -190,7 +208,7 @@ static void arrays_07_gimmicks()
     // Zum Abschluss:
     numbers[-3] = 6;                 // Prinzipiell in C definiert :)
 
-    // Oderzum guten Abschluss: Eine Auswirkung der Zeiger-Arithmetik
+    // Oder zum guten Abschluss: Eine Auswirkung der Zeiger-Arithmetik
     *(offset + numbers) = 6;
     // oder
     3[numbers] = 6;
@@ -201,11 +219,12 @@ void mainArrays()
     arrays_01();
     arrays_02();
     arrays_03();
-    createRandomNumbers();
     arrays_04();
+    createRandomNumbers();
     arrays_05();
     arrays_06();
-    arrays_07_gimmicks();
+    arrays_07();
+    arrays_08_gimmicks();
 }
 
 // ===========================================================================

@@ -12,6 +12,9 @@
 #define MaxContacts    10
 #define MaxNameLength  32
 
+#define NotEmpty       0
+#define Empty          1
+
 struct Contact
 {
     char     m_firstName[MaxNameLength];
@@ -27,7 +30,7 @@ static void initContacts()
 {
     for (int i = 0; i < MaxContacts; i++) {
 
-        g_Contacts[i].m_isEmpty = 1;
+        g_Contacts[i].m_isEmpty = Empty;
     }
 }
 
@@ -51,7 +54,7 @@ static void enterContact()
 
     for (int i = 0; i < MaxContacts; i++) {
 
-        if (g_Contacts[i].m_isEmpty == 1) {
+        if (g_Contacts[i].m_isEmpty == Empty) {
 
             g_Contacts[i] = tmp;  // Strukturzuweisung !
             succeeded = 1;
@@ -77,7 +80,7 @@ static void printContacts()
 {
     for (int i = 0; i < MaxContacts; i++) {
 
-        if (g_Contacts[i].m_isEmpty == 0) {
+        if (g_Contacts[i].m_isEmpty == NotEmpty) {
 
             printContact(&g_Contacts[i]);
         }

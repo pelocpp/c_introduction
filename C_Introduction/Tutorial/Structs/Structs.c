@@ -10,14 +10,7 @@
 
 // ===========================================================================
 
-//static void initTime(struct Time time, int hours, int minutes, int seconds)
-//{
-//    time.hours = hours;
-//    time.minutes = minutes;
-//    time.seconds = seconds;
-//}
-
-static void initTime(struct Time* time, int hours, int minutes, int seconds)
+static void initTime(Time* time, int hours, int minutes, int seconds)
 {
     // a) Passt -- etwas schwer lesbar
     (*time).hours = hours;
@@ -28,15 +21,21 @@ static void initTime(struct Time* time, int hours, int minutes, int seconds)
     time->hours = hours;
     time->minutes = minutes;
     time->seconds = seconds;
-
 }
 
-static void printTime(struct Time* time)
+static void printTime(Time* time)
 {
     printf("%02d:%02d:%02d\n", time->hours, time->minutes, time->seconds);
 }
 
-//static void printTime(struct Time time)
+//static void initTime(Time time, int hours, int minutes, int seconds)
+//{
+//    time.hours = hours;
+//    time.minutes = minutes;
+//    time.seconds = seconds;
+//}
+
+//static void printTime(Time time)
 //{
 //    printf("%02d:%02d:%02d\n", time.hours, time.minutes, time.seconds);
 //}
@@ -45,13 +44,13 @@ static void printTime(struct Time* time)
 
 static void structs_01()
 {
-    struct Time now;
+    Time now;
 
     now.hours = 11;
     now.minutes = 9;
     now.seconds = 33;
 
-    struct Time than;
+    Time than;
 
     than.hours = 17;
     than.minutes = 0;
@@ -63,21 +62,29 @@ static void structs_01()
 
 static void structs_02()
 {
-    struct Time now = { 9, 0, 0 };
-    printTime(&now);
+    // ----------------------
+    // using initializer list
 
-    struct Time than = { .hours = 12, .minutes = 15, .seconds = 0 };
-    printTime(&than);
+    Time t1 = { 9, 15, 30 };
+    printTime(&t1);
 
-    struct Time later = { .seconds = 0, .minutes = 0, .hours = 17 };
-    printTime(&later);
-}
+    Time t2 = { 9 };
+    printTime(&t2);
 
-static void structs_03()
-{
-    struct Time now = { 0 };
+    // -------------------------------------------
+    // designated initializers for aggregate types
 
-    printTime(&now);
+    Time t3 = { .hours = 10, .minutes = 30, .seconds = 59};
+    printTime(&t3);
+
+    Time t4 = { .hours = 10 };
+    printTime(&t4);
+
+    Time t5 = { .seconds = 10 };
+    printTime(&t5);
+
+    Time t6 = { .seconds = 20, .minutes = 30, .hours = 12 };
+    printTime(&t6);
 }
 
 static void printZahlen(int* feld, int len)
@@ -95,7 +102,7 @@ static void printZahlen(int* feld, int len)
 //    // ...
 //}
 
-static void structs_04()
+static void structs_03()
 {
     int zahlen[100];
 
@@ -112,20 +119,20 @@ static void tueWas(struct Zahlen zahlen)
     zahlen.daten[0] = 100;
 }
 
-static void structs_05()
+static void structs_04()
 {
     struct Zahlen zahlen = { 1 };
 
     tueWas(zahlen);
 }
 
-static void structs_06()
+static void structs_05()
 {
     // Bei Strukturen sieht der Compiler / hat die Runtime
     // auch die Information der Länge der Struktur
 
-    struct Time t1 = { 0, 0, 0 };
-    struct Time t2 = { 0, 0, 0 };
+    Time t1 = { 0, 0, 0 };
+    Time t2 = { 0, 0, 0 };
     t1 = t2;            // Wertzuweisung
 
     struct Zahlen zahlen1;
@@ -133,7 +140,7 @@ static void structs_06()
     zahlen1 = zahlen2;  // Wertzuweisung
 }
 
-static void structs_07()
+static void structs_06()
 {
     // Aufruf von initTime :
 
@@ -141,13 +148,13 @@ static void structs_07()
 
     // A) 
     // Eine Struktur-Variable, die auf dem STACK liegt
-    struct Time time;
+    Time time;
 
     initTime(&time, 1, 2, 3);
 
     // B)
     // Eine Struktur-Variable, die auf dem HEAP liegt
-    struct Time* pt = (struct Time*) malloc(sizeof(struct Time));
+    Time* pt = (Time*) malloc(sizeof(Time));
 
     initTime(pt, 1, 2, 3);
 
@@ -162,7 +169,6 @@ void mainStructs()
     structs_04();
     structs_05();
     structs_06();
-    structs_07();
 }
 
 // ===========================================================================

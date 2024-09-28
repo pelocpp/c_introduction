@@ -86,10 +86,10 @@
   * Felder von Strukturen
   * Schlüsselwort `typedef`
 
-### [Unions, Bitfelder und Enums](../Tutorial/UnionsBitFieldsEnums/UnionsBitFieldsEnums.md)
+### [Bitfelder, Unions und Enums](../Tutorial/UnionsBitFieldsEnums/UnionsBitFieldsEnums.md)
+  * Bitfelder
   * Unions
   * Schlüsselwort `union`
-  * Bitfelder
   * Aufzählungstypen 
   * Schlüsselwort `enum`
 

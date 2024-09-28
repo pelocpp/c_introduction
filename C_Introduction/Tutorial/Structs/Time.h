@@ -5,18 +5,21 @@
 #pragma once
 
 // types
-struct Time
+struct time
 {
     int hours;
     int minutes;
     int seconds;
 };
 
+typedef struct time Time;
+
 // function prototypes
-void initTime(struct Time* time, int hours, int minutes, int seconds);
-// void initTime(struct Time time, int hours, int minutes, int seconds);
-void printTime(struct Time* time);
-// void printTime(struct Time time);
+void initTime(Time* time, int hours, int minutes, int seconds);
+void printTime(Time* time);
+
+// void initTime(Time time, int hours, int minutes, int seconds);
+// void printTime(Time time);
 
 // ===========================================================================
 // End-of-File

@@ -40,6 +40,7 @@ extern void exercise_wallet();
 extern void exercise_pascal_triangle();
 
 // dynamic memory management
+extern void exercise_zeichenkettenverarbeitung_dynamisch();
 extern void exercise_jagged_arrays();
 extern void exercise_dynamic_int_array();
 extern void exercise_linked_list();
@@ -77,6 +78,7 @@ void exercises()
     //exercise_bruchrechnen();
     //exercise_wallet();
     //exercise_pascal_triangle();
+    exercise_zeichenkettenverarbeitung_dynamisch();
     //exercise_jagged_arrays();
     //exercise_dynamic_int_array();
     //exercise_linked_list();

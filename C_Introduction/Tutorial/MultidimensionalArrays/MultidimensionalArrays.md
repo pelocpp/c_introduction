@@ -20,8 +20,8 @@
 
 
 ```c
-01: #define  M        2
-02: #define  N        3
+01: #define  M    2
+02: #define  N    3
 03: 
 04: void multidimensional_arrays()
 05: {
@@ -41,13 +41,25 @@
 19: }
 ```
 
+*Beispiel*: 2-dimensionale Arrays &ndash; mit der *designator list syntax*
+
+
+```c
+01: int grid[3][4] =
+02: { 
+03:     [0][0] = 1,[0][1] =  2, [0][2] =  3, [0][3] =  4,
+04:     [1][0] = 5,[1][1] =  6, [1][2] =  7, [1][3] =  8,
+05:     [2][0] = 9,[2][1] = 10, [2][2] = 11, [2][3] = 12 
+06: };
+```
+
 *Beispiel*: 3-dimensionale Arrays
 
 
 ```c
-01: #define  M        2
-02: #define  N        3
-03: #define  O        4
+01: #define  M    2
+02: #define  N    3
+03: #define  O    4
 04: 
 05: void multidimensional_arrays()
 06: {
@@ -65,7 +77,7 @@
 18:         } 
 19:     };
 20: 
-21:     int numbers2[M][N][4] =
+21:     int numbers2[M][N][O] =
 22:     {
 23:         1, 2, 3, 4 , 5, 6, 7, 8, 9, 10, 11, 12 , 13, 14, 15, 16 , 17, 18, 19, 20, 21, 22, 23, 24
 24:     };
@@ -73,7 +85,7 @@
 ```
 
 
-*Beispiel*: Traversieren eines 2-dimensionalen Arrays
+*Beispiel*: Traversieren eines 2-dimensionalen Arrays &ndash; *Brace*-Notation
 
 ```c
 01: for (int i = 0; i < M; ++i)
@@ -85,7 +97,7 @@
 07: }
 ```
 
-*Beispiel*: Traversieren eines 2-dimensionalen Arrays
+*Beispiel*: Traversieren eines 2-dimensionalen Arrays &ndash; Zeiger-Arithmetik
 
 ```c
 01: for (int i = 0; i < M; ++i)
@@ -97,9 +109,7 @@
 07: }
 ```
 
-
-
-*Beispiel*: Traversieren eines 3-dimensionalen Arrays
+*Beispiel*: Traversieren eines 3-dimensionalen Arrays &ndash; *Brace*-Notation
 
 ```c
 01: for (int i = 0; i < M; ++i)
@@ -114,7 +124,7 @@
 10: }
 ```
 
-*Beispiel*: Traversieren eines 3-dimensionalen Arrays
+*Beispiel*: Traversieren eines 3-dimensionalen Arrays &ndash; Zeiger-Arithmetik
 
 ```c
 01: for (int i = 0; i < M; ++i)
@@ -221,39 +231,40 @@ Wir müssen das mehrdimensionale Array beim Übergeben an die Funktion in einen 
 *Beispiel*:
 
 ```c
-01: #define  N     3
-02: 
-03: void print(int* arr, int m, int n)
-04: {
-05:     for (int i = 0; i < m; i++)
-06:     {
-07:         for (int j = 0; j < n; j++)
-08:         {
-09:             int value = *((arr + i * n) + j);
-10: 
-11:             printf("%2d ", value);
-12:         }
-13:         printf("\n");
-14:     }
-15: }
+01: void print(int* arr, int m, int n)
+02: {
+03:     for (int i = 0; i < m; i++)
+04:     {
+05:         for (int j = 0; j < n; j++)
+06:         {
+07:             int value = *((arr + i * n) + j);
+08: 
+09:             printf("%2d ", value);
+10:         }
+11:         printf("\n");
+12:     }
+13: }
+14: 
+15: #define  N   3
 16: 
 17: void multidimensional_arrays()
 18: {
-19:     int numbers[][N] = {
-20:         { 1,   2,  3 },
-21:         { 4,   5,  6 },
-22:         { 7,   8,  9 }, 
-23:         { 10, 11, 12 } 
-24:     };
-25: 
-26:     int m = 4;
-27: 
-28:     print(&numbers[0][0], m, N);
-29: 
-30:     // oder 
-31: 
-32:     print((int*) numbers, m, N);
-33: }
+19:     int numbers[][N] = 
+20:     {
+21:         { 1, 2, 3 },
+22:         { 4, 5, 6 },
+23:         { 7, 8, 9 }, 
+24:         { 10, 11, 12 } 
+25:     };
+26: 
+27:     int m = 4;
+28: 
+29:     print(&numbers[0][0], m, N);
+30: 
+31:     // oder 
+32: 
+33:     print((int*) numbers, m, N);
+34: }
 ```
 
 *Ausgabe*:
@@ -263,41 +274,6 @@ Wir müssen das mehrdimensionale Array beim Übergeben an die Funktion in einen 
  4  5  6
  7  8  9
 10 11 12
-```
-
-
----
-
-### Fall 3: Zweites Beispiel zum Verwenden des Konzepts eines Zeigers auf ein einzelnes Element
-
-
-
-*Beispiel*:
-
-```c
-01: static void doSomething(int* arr)
-02: {
-03:     int value = *arr;
-04:     printf("Value: %d\n", value);
-05: 
-06:     arr++;
-07: 
-08:     value = *arr;
-09:     printf("Value: %d\n", value);
-10: 
-11:     arr++;
-12: 
-13:     value = *arr;
-14:     printf("Value: %d\n", value);
-15: }
-```
-
-*Ausgabe*:
-
-```
-Value: 1
-Value: 2
-Value: 3
 ```
 
 ---

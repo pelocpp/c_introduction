@@ -63,6 +63,7 @@
     <None Include="Exercises\VerketteteListe\Exercises_VerketteteListe.md" />
     <None Include="Exercises\Wahl\Exercises_Wahl.md" />
     <None Include="Exercises\Wallet\Exercises_Wallet.md" />
+    <None Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.md" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_append.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\c_string_insert.svg" />
     <None Include="Exercises\Zeichenkettenverarbeitung\Exercises_Zeichenkettenverarbeitung.md" />
@@ -132,6 +133,7 @@
     <ClCompile Include="Exercises\VerketteteListe\VerketteteListe.c" />
     <ClCompile Include="Exercises\Wahl\Wahl.c" />
     <ClCompile Include="Exercises\Wallet\Wallet.c" />
+    <ClCompile Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.c" />
     <ClCompile Include="Exercises\Zeichenkettenverarbeitung\Zeichenkettenverarbeitung.c" />
     <ClCompile Include="Exercises\Zeichenstatistik\Zeichenstatistik.c" />
     <ClCompile Include="Exercises\Zeiger\Zeiger.c" />
@@ -176,6 +178,10 @@
     <Image Include="Tutorial\HelloWorld\HelloWorld.png" />
     <Image Include="Tutorial\Operators\OperatorsPrecedence.png" />
     <Image Include="Tutorial\Strings\ASCII_Table.png" />
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_01.png" />
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_02.png" />
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_03.png" />
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_04.png" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />

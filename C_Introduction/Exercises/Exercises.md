@@ -95,6 +95,9 @@ Zweidimensionale Felder, Parameterübergabe zweidimensionaler Felder.
 
 ### Dynamische Speicherverwaltung
 
+[**Zeichenkettenverarbeitung mit dynamisch allokiertem Speicher**](./ZeichenkettenverarbeitungDynamisch/ZeichenkettenverarbeitungDynamisch.md)<br />
+Dynamische Speicherverwaltung, Funktionen `malloc` und `free`, Rückgabe von Adressen
+
 [**&bdquo;Jagged Arrays&rdquo; &ndash; Gezackte Felder**](./JaggedArrays/Exercises_JaggedArrays.md)<br />
 Realisierung zweidimensionaler Felder mit Teilfeldern unterschiedlicher Länge.
 
