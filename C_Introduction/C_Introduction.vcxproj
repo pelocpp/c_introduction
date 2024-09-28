@@ -75,6 +75,7 @@
     <None Include="Markdown\Agenda.md" />
     <None Include="Markdown\cman.pdf" />
     <None Include="Markdown\FirstOfAll.md" />
+    <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf" />
     <None Include="Markdown\History.md" />
     <None Include="Markdown\InstallationGuide.md" />
     <None Include="Markdown\Literature.md" />

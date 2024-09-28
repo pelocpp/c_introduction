@@ -328,6 +328,7 @@
     <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
     <None Include="Markdown\cman.pdf" />
     <None Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.md" />
+    <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">

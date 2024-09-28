@@ -13,7 +13,7 @@
 struct wallet
 {
     unsigned long long m_euros;
-    unsigned int m_cents;
+    unsigned int       m_cents;
 };
 
 typedef struct wallet Wallet;

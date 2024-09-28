@@ -14,18 +14,18 @@ void str_append(char* original, char* toAppend);
 ```
 
 Es sollen zwei Zeichenketten aneinander angehängt werden,
-also das Ergebnis eines str_append-Funktionsaufrufs angewendet auf die beiden 
+also das Ergebnis eines `str_append`-Funktionsaufrufs angewendet auf die beiden 
 Zeichenketten `"Hello "` und `"World!"` sollte die Resultatzeichenkette
  `"Hello World!"` bilden.
 
-Im Prinzip sollte die Aufgabenstellung einfach verständlich sein,
-die einzig noch zu klärende Frage dürfte sein: &bdquo;Wohin mit der Ergbniszeichenkette?&rdquo;
+Im Prinzip sollte die Aufgabenstellung verständlich sein,
+die einzig noch zu klärende Frage ist: &bdquo;Wohin mit der Ergebniszeichenkette?&rdquo;
 
 Dies wollen wir mit den Möglichkeiten der dynamischen Speicherverwaltung in C,
 also mit den beiden Bibliotheksfunktionen `malloc` und `free` angehen.
 
 In einer ersten Verfeinerung der Funktionsschnittstelle `str_append`
-könnte folgende beiden Schnittstellen zum Ziel führen:
+könnten folgende beiden Schnittstellenvarianten zum Ziel führen:
 
 
 ```c
@@ -40,27 +40,26 @@ int str_append(char* original, char* toAppend, char** result);
 ```
 
 In der ersten der beiden Schnittstellen wird das Ergebnis
-(das auf der Halde durch `malloc` gebildet worden ist)
+(das auf der Halde durch `malloc` gebildet wird)
 als Ergebnis der Funktion zurückgeliefert.
 
-In einer zweiten Variante wird der Heap-Zeiger durch einen Adressparamter (hier: `result`)
+In einer zweiten Variante wird der Heap-Zeiger durch einen Adressparameter (hier: `result`)
 zurückgeliefert. Der damit noch zur Verfügung stehende Rückgabewert
 könnte dann zum Beispiel die Länge der Ergbniszeichenkette zurücklieferen.
 
 Realisieren Sie eine der beiden `str_append`-Varianten.
 
-Beispiel:
+*Beispiel*:
 
 
 ```c
 01: void exercise()
 02: {
 03: 	char* result = NULL;
-04: 
-05: 	result = str_append("Hello ", "World!");
-06: 	printf("Ergebnis: %s\n", result);
-07: 	free(result);
-08: }
+04: 	result = str_append("Hello ", "World!");
+05: 	printf("Ergebnis: %s\n", result);
+06: 	free(result);
+07: }
 ```
 
 *Ausgabe*:
@@ -74,7 +73,7 @@ Ergebnis: Hello World!
 
 ## Quellcode der Lösung
 
-[*Tausche.c*](./ZeichenkettenverarbeitungDynamisch.c)
+[*ZeichenkettenverarbeitungDynamisch.c*](./ZeichenkettenverarbeitungDynamisch.c)
 
 ---
 
