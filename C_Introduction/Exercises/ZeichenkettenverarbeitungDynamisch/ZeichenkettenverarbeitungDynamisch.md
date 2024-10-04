@@ -13,8 +13,8 @@ Wir betrachten folgenden C-Funktionsprototyp:
 void str_append(char* original, char* toAppend);
 ```
 
-Es sollen zwei Zeichenketten aneinander angehängt werden,
-also das Ergebnis eines `str_append`-Funktionsaufrufs angewendet auf die beiden 
+Es sollen zwei Zeichenketten aneinander gehängt werden,
+also das Ergebnis eines `str_append`-Funktionsaufrufs mit den beiden 
 Zeichenketten `"Hello "` und `"World!"` sollte die Resultatzeichenkette
  `"Hello World!"` bilden.
 
@@ -45,7 +45,7 @@ als Ergebnis der Funktion zurückgeliefert.
 
 In einer zweiten Variante wird der Heap-Zeiger durch einen Adressparameter (hier: `result`)
 zurückgeliefert. Der damit noch zur Verfügung stehende Rückgabewert
-könnte dann zum Beispiel die Länge der Ergbniszeichenkette zurücklieferen.
+könnte dann zum Beispiel die Länge der Ergebniszeichenkette zurückliefern.
 
 Realisieren Sie eine der beiden `str_append`-Varianten.
 
