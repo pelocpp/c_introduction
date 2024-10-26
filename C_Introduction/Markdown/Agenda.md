@@ -113,6 +113,7 @@
 
 ### [Einige fortgeschrittene Themen](../Tutorial/AdvancedTopics/AdvancedTopics.md)
   * Vektorisieren von Funktionsaufrufen (Makro-Techniken, Gebrauch von `__VA_ARGS__`)
+  * Funktionsüberladungen nachahmen (C11 Schlüsselwort `_Generic`)
 
 
 ---
