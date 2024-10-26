@@ -53,7 +53,7 @@
   * Deklaration und Initialisierung
   * Auf Feldelemente zugreifen
   * Felder in Schleifen durchlaufen
-  * Mehrdimensionale Felder
+
 
 ### [Funktionen / Unterprogramme](../Tutorial/Subroutines/Subroutines.md)
   * Funktionsdeklaration und Aufruf
@@ -110,6 +110,10 @@
   * Zeichenkettenverarbeitung mit `strlen`, `strcpy` etc.
   * Zufallszahlen: `rand`, `srand`
   * Typkonvertierungen: `atof`, `atoi`, `atol`, `strtod`, `strtol`, `strtoul`
+
+### [Einige fortgeschrittene Themen](../Tutorial/AdvancedTopics/AdvancedTopics.md)
+  * Vektorisieren von Funktionsaufrufen (Makro-Techniken, Gebrauch von `__VA_ARGS__`)
+
 
 ---
 

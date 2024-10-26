@@ -81,6 +81,7 @@
     <None Include="Markdown\Literature.md" />
     <None Include="Markdown\MemoryLeaksDetection.md" />
     <None Include="Markdown\Roadmap.md" />
+    <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md" />
     <None Include="Tutorial\Arrays\Arrays.md" />
     <None Include="Tutorial\Arrays\c_array_01.svg" />
     <None Include="Tutorial\MultidimensionalArrays\c_array_02.svg" />
@@ -141,6 +142,7 @@
     <ClCompile Include="Exercises\ZinsberechnungMitArray\ZinsberechnungMitArray.c" />
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
     <ClCompile Include="Program.c" />
+    <ClCompile Include="Tutorial\AdvancedTopics\AdvancedTopics.c" />
     <ClCompile Include="Tutorial\Arrays\Arrays.c" />
     <ClCompile Include="Tutorial\ControlStructures\ControlStructures.c" />
     <ClCompile Include="Tutorial\CRT\CRT.c" />
@@ -169,6 +171,7 @@
     <Image Include="Markdown\Buch_C_von_A_bis_Z_Juergen_Wolf.png" />
     <Image Include="Markdown\Buch_Dirk_Louis.png" />
     <Image Include="Markdown\Buch_Einstieg_in_C_Thomas_Theis.png" />
+    <Image Include="Markdown\Buch_Harbison_Steel_C_Reference_Manual.png" />
     <Image Include="Markdown\C_Logo.png" />
     <Image Include="Markdown\Embedded_Cpp.jpg" />
     <Image Include="Markdown\Github_Mobile_iPad.png" />
@@ -280,7 +283,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <TreatWarningAsError>true</TreatWarningAsError>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

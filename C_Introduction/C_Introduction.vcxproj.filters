@@ -329,6 +329,7 @@
     <None Include="Markdown\cman.pdf" />
     <None Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.md" />
     <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf" />
+    <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -499,6 +500,9 @@
     <ClCompile Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tutorial\AdvancedTopics\AdvancedTopics.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -574,6 +578,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_04.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Markdown\Buch_Harbison_Steel_C_Reference_Manual.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

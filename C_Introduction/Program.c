@@ -27,6 +27,7 @@ extern void mainMultidimensionalArrays();
 extern void mainStructs();
 extern void mainUnionsBitfieldsEnums();
 extern void mainCrt();
+extern void mainAdvancedTopics();
 
 extern void exercises();
 
@@ -51,8 +52,9 @@ int main()
     //mainStructs();
     //mainUnionsBitfieldsEnums();
     //mainCrt();
+    mainAdvancedTopics();
 
-    exercises();
+    //exercises();
 
     printf("[Done]\n");
     return 0;
