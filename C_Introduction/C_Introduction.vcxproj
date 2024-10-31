@@ -143,6 +143,7 @@
     <ClCompile Include="Exercises\Zinsberechnung\Zinsberechnung.c" />
     <ClCompile Include="Program.c" />
     <ClCompile Include="Tutorial\AdvancedTopics\AdvancedTopics.c" />
+    <ClCompile Include="Tutorial\AdvancedTopics\GenericProgramming.c" />
     <ClCompile Include="Tutorial\Arrays\Arrays.c" />
     <ClCompile Include="Tutorial\ControlStructures\ControlStructures.c" />
     <ClCompile Include="Tutorial\CRT\CRT.c" />

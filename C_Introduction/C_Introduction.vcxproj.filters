@@ -503,6 +503,9 @@
     <ClCompile Include="Tutorial\AdvancedTopics\AdvancedTopics.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Tutorial\AdvancedTopics\GenericProgramming.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">

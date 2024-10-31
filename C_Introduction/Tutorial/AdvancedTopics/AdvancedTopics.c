@@ -6,6 +6,10 @@
 #include <stdlib.h>
 
 // ---------------------------------------------------------------------------
+
+void mainGenericProgramming();
+
+// ---------------------------------------------------------------------------
 // Vectorizing of multiple method calls
 
 #define Fn_apply(type, fn, ...) {                    \
@@ -74,12 +78,12 @@ static void mainAdvancedTopics03()
 
 // ---------------------------------------------------------------------------
 
-
 void mainAdvancedTopics()
 {
-    //mainAdvancedTopics01();
-    mainAdvancedTopics02();
-    mainAdvancedTopics03();
+    mainAdvancedTopics01();    // Vectorizing of multiple method calls
+    mainAdvancedTopics02();    // Usage of _Generic: Overloading of functions
+    mainAdvancedTopics03();    // Usage of _Generic: Overloading of functions
+    mainGenericProgramming();  // "Generic Programming" style in C - using void*
 }
 
 // ===========================================================================
