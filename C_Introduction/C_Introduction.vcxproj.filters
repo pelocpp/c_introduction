@@ -541,12 +541,6 @@
     <Image Include="Markdown\TreatWarningsAsErrors.png">
       <Filter>Markdown</Filter>
     </Image>
-    <Image Include="Markdown\Github_Mobile_iPad.png">
-      <Filter>Markdown</Filter>
-    </Image>
-    <Image Include="Markdown\Github_Mobile_iPhone.png">
-      <Filter>Markdown</Filter>
-    </Image>
     <Image Include="Tutorial\HelloWorld\HelloWorld.png">
       <Filter>Tutorial\HelloWorld</Filter>
     </Image>
@@ -590,6 +584,12 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Markdown\VisualStudioLanguageSettings.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Markdown\Github_Mobile_iPad.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Markdown\Github_Mobile_iPhone.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
