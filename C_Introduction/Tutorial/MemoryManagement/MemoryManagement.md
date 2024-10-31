@@ -6,6 +6,13 @@
 
 ## Allgemeines
 
+Zum Speicherverwaltung eines Programms erläutern wir:
+
+  * Überblick über die Speicherbereiche eines C&ndash;Programms
+  * Lebensdauer von Variablen in einem C&ndash;Programm
+
+---
+
 ### Überblick über die Speicherbereiche eines C&ndash;Programms
 
 In einem C&ndash;Programm sind mehrere Speicherbereiche vorhanden,
@@ -77,51 +84,6 @@ Man kann die Lebensdauer von Variablen in einem C&ndash;Programm in drei Gruppen
   Ihr großer Vorteil besteht darin, dass man mit ihrer Hilfe genau so viel Speicher anfordern kann,
   wie man für einen Programmablauf benötigt.<br /><br />
   Zum Reservieren dynamischen Speichers gibt es die beiden CRT-Bibliotheksfunktionen `malloc()` und `free()`.
-
-
----
-
-## Beispiel
-
-*Beispiel*:
-
-```c
-01: int programGlobal = 123;               // globale Variable, im gesamten Programm verfügbar
-02: 
-03: static int fileGlobal = 456;           // globale Variable, aber nur in dieser Datei verfügbar
-04: 
-05: static void memoryManagement_01()
-06: {
-07:     printf("global:            %d\n", programGlobal);
-08:     printf("file static:       %d\n\n", fileGlobal);
-09: 
-10:     programGlobal++;
-11:     fileGlobal++;
-12: }
-13: 
-14: void memoryManagement_02()
-15: {
-16:     static int fileGlobal = 111;       // globale Variable, aber nur im Scope dieser Funktion verfügbar
-17: 
-18:     fileGlobal++;
-19: 
-20:     printf("function global:   %d\n\n", fileGlobal);
-21: 
-22:     return;
-23: }
-24: 
-25: void memoryManagement_03()
-26: {
-27:     auto int local1 = 0;               // lokale Variable, nur im Scope dieser Funktion verfügbar
-28:     int local2 = 0;                    // lokale Variable, nur im Scope dieser Funktion verfügbar
-29: 
-30:     local1++;
-31:     local2++;
-32: 
-33:     printf("local:             %d\n", local1);
-34:     printf("local:             %d\n", local2);
-35: }
-```
 
 ---
 

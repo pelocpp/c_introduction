@@ -8,11 +8,11 @@ static void testOperators_01()
 {
     int n = 3 + 4 * 5;   // "Punkt-vor-Strich"    // 23
 
-    int m = -1 + -2 + -3;                         //-6
+    int m = -1 + -2 + -3;                         // -6
 
-    int k = 1 + 2 - 3 * 5 + 6 - 8 * 9;            //-78
+    int k = 1 + 2 - 3 * 5 + 6 - 8 * 9;            // -78
 
-    int l = 1 + (2 - 3) * (5 + 6) - 8 * 9;        //-82
+    int l = 1 + (2 - 3) * (5 + 6) - 8 * 9;        // -82
 }
 
 static void testOperators_02()

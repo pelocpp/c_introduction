@@ -37,8 +37,9 @@ Zu den Begriffen:
     Diese (im englischen als *Operator-Precedence* bezeichnete) Rangordnung
     stellt die Assoziativität verschiedenartiger Operatoren aufgrund deren Priorität sicher.
 
+---
 
-### Assoziativität
+## Assoziativität
 
 Mit der *Priorität* von Operatoren beschreibt man die Reihenfolge in der Auswertung
 von arithmetischen Ausdrücken mit unterschiedlichen Operatoren.
@@ -75,78 +76,6 @@ Hieraus hat sich der Begriff der *Assoziativität* von Operatoren entwickelt:
 
   * *Assoziativität* :<br />
     Die Assoziativität gibt an, ob eine Folge von Operatoren gleichen Vorrangs von links oder von rechts abgearbeitet wird.
-
----
-
-## Beispiele
-
-
-*Beispiel*:
-
-```c
-01: static void testOperators_01()
-02: {
-03:     int n = 3 + 4 * 5;   // "Punkt-vor-Strich"    // 23
-04: 
-05:     int m = -1 + -2 + -3;                         //-6
-06: 
-07:     int k = 1 + 2 - 3 * 5 + 6 - 8 * 9;            //-78
-08: 
-09:     int l = 1 + (2 - 3) * (5 + 6) - 8 * 9;        //-82
-10: }
-11: 
-12: static void testOperators_02()
-13: {
-14:     // Inkrement
-15: 
-16:     int n = 10;
-17: 
-18:     int m;
-19: 
-20:     m = ++n;  // Pre-Inkrement
-21:     printf("m = %d\n", m);
-22: 
-23:     // versus
-24: 
-25:     m = n++;  // Post-Inkrement
-26:     printf("m = %d\n", m);
-27: 
-28:     // ============================
-29: 
-30:     // Tipp
-31: 
-32:     ++n;
-33:     m = n;  // Wertzuweisung
-34:     printf("m = %d\n", m);
-35: 
-36:     // versus
-37: 
-38:     m = n;  // Wertzuweisung
-39:     n++;
-40:     printf("m = %d\n", m);
-41: }
-42: 
-43: static void testOperators_03()
-44: {
-45:     // Wann ist eine ganze Zahl gerade oder ungerade ???
-46: 
-47:     int n = 10;
-48: 
-49:     // ....
-50: 
-51:     if ((n % 2) == 0) {
-52: 
-53:         printf("n ist gerade: %d\n", n);
-54:     }
-55: 
-56:     n = 11;
-57: 
-58:     if ((n % 2) == 1) {
-59: 
-60:         printf("n ist ungerade: %d\n", n);
-61:     }
-62: }
-```
 
 ---
 

@@ -4,6 +4,18 @@
 
 ---
 
+## Allgemeines
+
+Wir betrachten im Einzelnen:
+
+  * Bitfelder
+  * Unions
+  * Schachtelung von Unions und Arrays
+  * Die *Designated Initializer Syntax* für Unions und Felder
+  * Enums (Aufzählungen)
+
+---
+
 ## Beispiele zu Bitfeldern
 
 *Beispiel*:

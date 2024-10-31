@@ -52,7 +52,7 @@ int main()
     //mainStructs();
     //mainUnionsBitfieldsEnums();
     //mainCrt();
-    mainAdvancedTopics();
+    //mainAdvancedTopics();
 
     //exercises();
 

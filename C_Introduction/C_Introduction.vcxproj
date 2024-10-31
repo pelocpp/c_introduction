@@ -187,6 +187,7 @@
     <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_02.png" />
     <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_03.png" />
     <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_04.png" />
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Union_01.png" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\DynamicIntArray\DynamicIntArray.h" />

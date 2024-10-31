@@ -586,6 +586,9 @@
     <Image Include="Markdown\Buch_Harbison_Steel_C_Reference_Manual.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Union_01.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">
