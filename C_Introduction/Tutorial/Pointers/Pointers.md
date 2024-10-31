@@ -13,7 +13,7 @@ Wir betrachten die Themen:
   * Bilden eine Adresse einer Variablen
   * Indirekter Zugriff auf eine Variable mit Hilfe ihrer Adresse
   * Nomenklatur: *Referenzieren* / *Dereferenzieren*
-  * Datentyp Zeiger im Zusammenspiel mit der Parameterübergabe
+  * Datentyp &bdquo;Zeiger&rdquo; im Zusammenspiel mit der Parameterübergabe
   * *Call-by-Value* und *Call-by-Address*
   * Zeigerarithmetik
 

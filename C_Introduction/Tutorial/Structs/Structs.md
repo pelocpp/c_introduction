@@ -9,9 +9,9 @@
 Wir betrachten bei Strukturen folgende Themen:
 
   * Vereinbarung einer Struktur
-  * Zusammenspiel von Strukturen und `typedef`
+  * Strukturdefinition und `typedef`
   * Initialisierung von Strukturvariablen
-  * Die *Designated Initializer Syntax* für Strukturen
+  * Die *Designated Initializer Syntax* für Strukturvariablen
   * Zugriff auf die Komponenten einer Strukturvariablen
   * Übergabe von Strukturvariablen an Unterprogramme
   * Unterschied *Call-by-Value* und *Call-by-Address*

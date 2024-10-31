@@ -589,6 +589,9 @@
     <Image Include="Tutorial\UnionsBitFieldsEnums\Union_01.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Markdown\VisualStudioLanguageSettings.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercises\Vector\Vector.h">

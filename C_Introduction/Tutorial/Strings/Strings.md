@@ -6,7 +6,17 @@
 
 ## Allgemeines
 
-### Zeichen
+Wir betrachten:
+
+  * Zeichen
+  * ASCII-Tabelle
+  * Zeichenketten
+  * Terminierende Null
+  * Konstante und nicht-konstante Zeichenketten
+
+---
+
+## Zeichen
 
 Zeichen werden in C auf den Datentyp `char` abgebildet.
 
@@ -57,7 +67,7 @@ war. Später hat IBM einen erweiterten ASCII-Code mit 8 Bit eingeführt, der zus
 
 ---
 
-### Zeichenketten
+## Zeichenketten
 
 Hier müssen wir unterscheiden:
 

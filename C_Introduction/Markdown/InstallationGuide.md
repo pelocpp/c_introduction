@@ -9,6 +9,26 @@
 Das Repository wurde mit der &bdquo;*Visual Studio*&rdquo; Entwicklungsumgebung 2022 erstellt.
 Alle Beispiel müssten aber auch mit dem GCC Compiler übersetzungsfähig sein.
 
+
+---
+
+## C-Versionen
+
+Es gibt von der Programmiersprache C mehrere, historisch bedingte Versionen:
+
+  * *K&R* Standard &ndash; Definition von C nach *Brian Kernighan* und *Dennis Ritchie*.
+  * *ANSI C89* &ndash; Übergabe der Definition von C an das *American National Standard Institute*.
+  * *ISO C99* &ndash; Weiterentwicklung der bisherigen Versionen.
+  * *C 11* &ndash; Weiterentwicklung der bisherigen Versionen durch das *ISO* Gremium.
+
+
+Die Beispiele dieses Repositories versuchen soweit wie möglich, spezielle Eigenheiten
+einer bestimmten Sprachversion zu vermeiden. Das letzte Kapitel &bdquo;Einige fortgeschrittene Themen&rdquo;
+benötigt unter Visual Studio die Einstellung *ISO C11 Standard*.
+
+<img src="VisualStudioLanguageSettings.png" width="600">
+
+
 ---
 
 ## GitHub Mobile

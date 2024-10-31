@@ -4,6 +4,18 @@
 
 ---
 
+## Allgemeines
+
+
+Wir betrachten die Themen:
+
+  * Ablage von Arrays im Speicher
+  * Initialisierung eines mehrdimensionalen Arrays
+  * Übergabe eines mehrdimensionalen Arrays als Parameter
+  * Konzept &bdquo;Zeiger auf ein Array&rdquo;
+
+---
+
 ## Ablage von Arrays im Speicher
 
 <img src="c_array_02.svg" width="700">
@@ -12,9 +24,7 @@
 
 ---
 
-## Allgemeines
-
-### Initialisierung eines mehrdimensionalen Arrays
+## Initialisierung eines mehrdimensionalen Arrays
 
 *Beispiel*: 2-dimensionale Arrays
 
