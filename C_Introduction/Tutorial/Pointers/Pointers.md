@@ -10,7 +10,7 @@
 Wir betrachten die Themen:
 
   * Was ist eine Zeiger(*Pointer*)-Variable?
-  * Bilden eine Adresse einer Variablen
+  * Bilden einer Adresse einer Variablen
   * Indirekter Zugriff auf eine Variable mit Hilfe ihrer Adresse
   * Nomenklatur: *Referenzieren* / *Dereferenzieren*
   * Datentyp &bdquo;Zeiger&rdquo; im Zusammenspiel mit der Parameterübergabe
