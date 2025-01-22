@@ -5,14 +5,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static int str_length(char* s)
+static int str_length(const char* s)
 {
     int length = 0;
     while (s[length] != '\0') length++;
     return length;
 }
 
-static char* str_append_01(char* original, char* toAppend)
+static char* str_append_01(const char* original, const char* toAppend)
 {
     // Berechne Länge des Ergebnisstrings
     int lenTotal = str_length(original) + str_length(toAppend) + 1;
@@ -42,7 +42,7 @@ static char* str_append_01(char* original, char* toAppend)
     return result;
 }
 
-static int str_append_02(char* original, char* toAppend, char** result)
+static int str_append_02(const char* original, const char* toAppend, char** result)
 {
     // Berechne Länge des Ergebnisstrings
     int lenTotal = str_length(original) + str_length(toAppend) + 1;

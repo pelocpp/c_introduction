@@ -10,7 +10,7 @@ Wir betrachten folgenden C-Funktionsprototyp:
 
 
 ```c
-void str_append(char* original, char* toAppend);
+void str_append(const char* original, const char* toAppend);
 ```
 
 Es sollen zwei Zeichenketten aneinander gehängt werden,
@@ -29,14 +29,14 @@ könnten folgende beiden Schnittstellenvarianten zum Ziel führen:
 
 
 ```c
-char* str_append(char* original, char* toAppend)
+char* str_append(const char* original, const char* toAppend)
 ```
 
 oder
 
 
 ```c
-int str_append(char* original, char* toAppend, char** result);
+int str_append(const char* original, const char* toAppend, char** result);
 ```
 
 In der ersten der beiden Schnittstellen wird das Ergebnis
