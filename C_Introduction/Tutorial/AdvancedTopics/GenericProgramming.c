@@ -18,10 +18,10 @@ struct key_value_pair
 
 typedef struct key_value_pair KeyValuePair;
 
-static KeyValuePair* newKeyValue(char* key, void* value);
-static KeyValuePair* copyKeyValue(KeyValuePair* in);
-static void          freeKeyValue(KeyValuePair* in);
-static int           keyMatches(char const* key, KeyValuePair* in);
+static KeyValuePair* newKeyValue   (char* key, void* value);
+static KeyValuePair* copyKeyValue  (KeyValuePair* in);
+static void          freeKeyValue  (KeyValuePair* in);
+static int           keyMatches    (char const* key, KeyValuePair* in);
 
 static KeyValuePair* newKeyValue(char* key, void* value)
 {
@@ -66,13 +66,13 @@ struct dictionary
 
 typedef struct dictionary Dictionary;
 
-static Dictionary* dictionary_new();
-static void        dictionary_add_key_value(Dictionary* in, KeyValuePair* kv);
-static void        dictionary_add_key_and_value(Dictionary* in, char* key, void* value);
-static void*       dictionary_find(const Dictionary* in, char const* key);
-static Dictionary* dictionary_copy(const Dictionary* in);
-static void        dictionary_free(Dictionary* in);
-static void        dictionary_print_keys(Dictionary* in);
+static Dictionary* dictionary_new               ();
+static void        dictionary_add_key_value     (Dictionary* in, KeyValuePair* kv);
+static void        dictionary_add_key_and_value (Dictionary* in, char* key, void* value);
+static void*       dictionary_find              (const Dictionary* in, char const* key);
+static Dictionary* dictionary_copy              (const Dictionary* in);
+static void        dictionary_free              (Dictionary* in);
+static void        dictionary_print_keys        (Dictionary* in);
 
 static Dictionary* dictionary_new()
 {
