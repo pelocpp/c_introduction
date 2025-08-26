@@ -16,9 +16,9 @@ static int  chr_append  (const char* src, char ch, char* dest, int destLen);
 static int  chr_insert  (const char* src, int pos, char ch, char* dest, int destLen);
 static int  chr_remove  (const char* src, int pos, char* dest, int destLen);
 
-static int  str_replace (const char* src, int pos, char* toReplace, char* dest, int destLen);
-static int  str_append  (const char* src, char* toAppend, char* dest, int destLen);
-static int  str_insert  (const char* src, int pos, char* toInsert, char* dest, int destLen);
+static int  str_replace (const char* src, int pos, const char* toReplace, char* dest, int destLen);
+static int  str_append  (const char* src, const char* toAppend, char* dest, int destLen);
+static int  str_insert  (const char* src, int pos, const char* toInsert, char* dest, int destLen);
 static int  str_remove  (const char* src, int pos, int count, char* dest, int destLen);
 
 static void exercise_01_str_toUpper();
@@ -288,7 +288,7 @@ static void exercise_02_chr_remove()
 // =====================================================================================
 // =====================================================================================
 
-static int str_replace(const char* src, int pos, char* toReplace, char* dest, int destLen)
+static int str_replace(const char* src, int pos, const char* toReplace, char* dest, int destLen)
 {
     int srcLen = str_length(src);
     int toReplaceLen = str_length(toReplace);
@@ -350,7 +350,7 @@ static void exercise_03_str_replace()
 
 // =====================================================================================
 
-static int str_append(const char* src, char* toAppend, char* dest, int destLen)
+static int str_append(const char* src, const char* toAppend, char* dest, int destLen)
 {
     int srcLen = str_length(src);
     int toAppendLen = str_length(toAppend);
@@ -402,7 +402,7 @@ static void exercise_03_str_append()
 
 // =====================================================================================
 
-static int str_insert(const char* src, int pos, char* toInsert, char* dest, int destLen)
+static int str_insert(const char* src, int pos, const char* toInsert, char* dest, int destLen)
 {
     int srcLen = str_length(src);
     int toInsertLen = str_length(toInsert);

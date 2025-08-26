@@ -547,9 +547,6 @@
     <Image Include="Tutorial\Strings\ASCII_Table.png">
       <Filter>Tutorial\Strings</Filter>
     </Image>
-    <Image Include="Tutorial\Operators\OperatorsPrecedence.png">
-      <Filter>Tutorial\Operators</Filter>
-    </Image>
     <Image Include="Markdown\C_Logo.png">
       <Filter>Resource Files</Filter>
     </Image>
@@ -590,6 +587,9 @@
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Markdown\Github_Mobile_iPhone.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tutorial\Operators\OperatorsPrecedence.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>

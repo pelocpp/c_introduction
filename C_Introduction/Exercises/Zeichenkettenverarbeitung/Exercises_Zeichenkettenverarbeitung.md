@@ -73,9 +73,9 @@ wird durch `destLen` festgelegt.
 
 
 ```c
-int  str_replace (const char* src, int pos, char* toReplace, char* dest, int destLen);
-int  str_append  (const char* src, char* toAppend, char* dest, int destLen);
-int  str_insert  (const char* src, int pos, char* toInsert, char* dest, int destLen);
+int  str_replace (const char* src, int pos, const char* toReplace, char* dest, int destLen);
+int  str_append  (const char* src, const char* toAppend, char* dest, int destLen);
+int  str_insert  (const char* src, int pos, const char* toInsert, char* dest, int destLen);
 int  str_remove  (const char* src, int pos, int count, char* dest, int destLen);
 ```
 
