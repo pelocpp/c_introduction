@@ -507,7 +507,7 @@
     <ClCompile Include="Tutorial\AdvancedTopics\GenericProgramming.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel01.c">
+    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevelProgramming.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel02.c">

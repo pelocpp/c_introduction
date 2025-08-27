@@ -151,7 +151,7 @@
     <ClCompile Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.c" />
     <ClCompile Include="Tutorial\DynamicMemory\DynamicMemory.c" />
     <ClCompile Include="Tutorial\HelloWorld\HelloWorld.c" />
-    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel01.c" />
+    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevelProgramming.c" />
     <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel02.c" />
     <ClCompile Include="Tutorial\MemoryManagement\MemoryManagement.c" />
     <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c" />

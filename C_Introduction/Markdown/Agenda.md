@@ -105,22 +105,11 @@
   * Speicher reservieren und freigeben: `malloc` und `free`
   * [*Memory Leaks Detection* in C](MemoryLeaksDetection.md)
    
-
-
-
-
-
-### [Low-Level Programming in C](../Tutorial/LowLevelProgramming/LowLevelProgramming.md)
+### [Low-Level Programmierung in C](../Tutorial/LowLevelProgramming/LowLevelProgramming.md)
   * Operatoren zur Bitmanipulation: `&`, `|`, `^` und `~`
   * Bitweise Shift-Operatoren `<<` und `>>`
   * Kleinere Beispiele auf Basis der Bitmanipulationsoperatoren
    
-
-
-
-
-
-
 ### [Die C-Standardbibliothek *CRT* (*C-Runtime-Library*)](../Tutorial/CRT/CRT.md)
   * Ein- und Ausgabe auf die Konsole: `printf`
   * Zeichenkettenverarbeitung mit `strlen`, `strcpy` etc.
