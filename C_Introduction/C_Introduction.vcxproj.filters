@@ -330,6 +330,7 @@
     <None Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.md" />
     <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf" />
     <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md" />
+    <None Include="Tutorial\LowLevelProgramming\LowLevelProgramming.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -504,6 +505,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Tutorial\AdvancedTopics\GenericProgramming.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel01.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel02.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

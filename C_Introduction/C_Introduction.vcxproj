@@ -84,6 +84,7 @@
     <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md" />
     <None Include="Tutorial\Arrays\Arrays.md" />
     <None Include="Tutorial\Arrays\c_array_01.svg" />
+    <None Include="Tutorial\LowLevelProgramming\LowLevelProgramming.md" />
     <None Include="Tutorial\MultidimensionalArrays\c_array_02.svg" />
     <None Include="Tutorial\ControlStructures\ControlStructures.md" />
     <None Include="Tutorial\CRT\CRT.md" />
@@ -150,6 +151,8 @@
     <ClCompile Include="Tutorial\DatatypesVariablesConstants\DatatypesVariablesConstants.c" />
     <ClCompile Include="Tutorial\DynamicMemory\DynamicMemory.c" />
     <ClCompile Include="Tutorial\HelloWorld\HelloWorld.c" />
+    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel01.c" />
+    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel02.c" />
     <ClCompile Include="Tutorial\MemoryManagement\MemoryManagement.c" />
     <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c" />
     <ClCompile Include="Tutorial\NestedScope\NestedScope.c" />

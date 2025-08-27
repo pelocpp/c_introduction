@@ -26,6 +26,7 @@ extern void mainStrings();
 extern void mainMultidimensionalArrays();
 extern void mainStructs();
 extern void mainUnionsBitfieldsEnums();
+extern void mainLowLevelProgramming();
 extern void mainCrt();
 extern void mainAdvancedTopics();
 
@@ -51,6 +52,7 @@ int main()
     //mainMultidimensionalArrays();
     //mainStructs();
     //mainUnionsBitfieldsEnums();
+    mainLowLevelProgramming();
     //mainCrt();
     //mainAdvancedTopics();
 

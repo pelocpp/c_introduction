@@ -22,12 +22,12 @@ static void initWallet(Wallet* wallet, unsigned long long euros, unsigned int ce
     wallet->m_euros = euros;
 }
 
-static unsigned long long getEuros(Wallet* wallet)
+static unsigned long long getEuros(const Wallet* wallet)
 {
     return wallet->m_euros;
 }
 
-static unsigned int getCent(Wallet* wallet)
+static unsigned int getCent(const Wallet* wallet)
 {
     return wallet->m_cents;
 }
@@ -91,7 +91,7 @@ static int subEurosAndCents(Wallet* wallet, unsigned long long euros, unsigned i
     return subWallet(wallet, &tmp);
 }
 
-static int lessThan(Wallet* wallet, Wallet* other)
+static int lessThan(const Wallet* wallet, const Wallet* other)
 {
     if (wallet->m_euros < other->m_euros) {
         return 1;
@@ -104,7 +104,7 @@ static int lessThan(Wallet* wallet, Wallet* other)
     }
 }
 
-static int equals(Wallet* wallet, Wallet* other)
+static int equals(const Wallet* wallet, const Wallet* other)
 {
     if (wallet->m_euros == other->m_euros && wallet->m_cents == other->m_cents) {
         return 1;
@@ -114,12 +114,12 @@ static int equals(Wallet* wallet, Wallet* other)
     }
 }
 
-static unsigned long long toCents(Wallet* wallet)
+static unsigned long long toCents(const Wallet* wallet)
 {
     return 100 * wallet->m_euros + wallet->m_cents;
 }
 
-static void print(Wallet* wallet)
+static void print(const Wallet* wallet)
 {
     printf("%llu,%02u Euro\n", wallet->m_euros, wallet->m_cents);
 }
