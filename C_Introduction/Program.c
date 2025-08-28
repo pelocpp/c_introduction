@@ -7,7 +7,7 @@
 // https://peterloos.de
 // =====================================================================================
 
-#define MessageText "Collection of introductory C Code Examples - Copyright (C) 2025 Peter Loos"
+#define MessageText "Collection of introductory C Code Examples - Copyright (C) 2025 Peter Loos."
 
 #pragma message(MessageText)
 
@@ -34,7 +34,6 @@ extern void mainAdvancedTopics();
 
 extern void exercises();
 
-// entry point
 int main()
 {
     printf(MessageText "\n");
