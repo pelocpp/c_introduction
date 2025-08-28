@@ -75,7 +75,7 @@ static void exercise_01_str_toUpper()
 
 // =====================================================================================
 
-void str_toLower(char* src)
+static void str_toLower(char* src)
 {
     int i = 0;
 
@@ -100,7 +100,7 @@ static void exercise_01_str_toLower()
 
 // =====================================================================================
 
-void str_reverse(char* src)
+static void str_reverse(char* src)
 {
     // compute length
     int length = str_length(src);

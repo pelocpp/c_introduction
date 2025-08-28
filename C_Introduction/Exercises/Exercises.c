@@ -46,6 +46,9 @@ extern void exercise_dynamic_int_array();
 extern void exercise_linked_list();
 extern void exercise_jagged_pascal_arrays();
 
+// low level programming
+extern void exercise_low_level_programming();
+
 // CRT
 extern void exercise_zeichenstatistik();
 extern void exercise_keywordstatistik();
@@ -83,10 +86,11 @@ void exercises()
     //exercise_dynamic_int_array();
     //exercise_linked_list();
     //exercise_jagged_pascal_arrays();
+    exercise_low_level_programming();
     //exercise_zeichenstatistik();
     //exercise_keywordstatistik();
     //exercise_lotto();
-    exercise_contacts();
+    //exercise_contacts();
     //exercise_hash_table();
     //exercise_object_file_viewer();
 }

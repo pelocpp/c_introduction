@@ -12,7 +12,7 @@ Es werden die vier Operatoren zur Bitmanipulation (engl. *bitwise operators*)
 Shift-Operatoren `<<` und `>>` an entsprechenden Beispielen vorgeführt.
 
 Kleinere Funktion mit Anwendung der Bitmanipulationsoperatoren 
-runden das Programm ab:
+runden den Abschnitt ab:
 
 
 | Funktion | Schnittstelle und Beschreibung |

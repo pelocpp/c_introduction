@@ -331,6 +331,7 @@
     <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf" />
     <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md" />
     <None Include="Tutorial\LowLevelProgramming\LowLevelProgramming.md" />
+    <None Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -510,7 +511,7 @@
     <ClCompile Include="Tutorial\LowLevelProgramming\LowLevelProgramming.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel02.c">
+    <ClCompile Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

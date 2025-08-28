@@ -25,11 +25,11 @@ void     print     (Fraction f);
 // =====================================================================================
 
 // test functions
-void test_fraction_reduce    ();
-void test_fraction_scalarMul ();
-void test_fraction_add       ();
-void test_fraction_sub       ();
-void test_fraction_mul       ();
+static void test_fraction_reduce    ();
+static void test_fraction_scalarMul ();
+static void test_fraction_add       ();
+static void test_fraction_sub       ();
+static void test_fraction_mul       ();
 
 // =====================================================================================
 

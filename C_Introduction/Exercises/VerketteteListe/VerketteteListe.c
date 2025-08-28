@@ -29,20 +29,20 @@ struct LinkedList
 // =====================================================================================
 // Function Prototypes
 
-void    addHead           (struct LinkedList* list, int value);
-void    addHeadEx         (struct LinkedList* list, int value);
-void    addTail           (struct LinkedList* list, int value);
-int     insert            (struct LinkedList* list, int value, size_t pos); 
-int     contains          (struct LinkedList* list, int value);
-int     removeAt          (struct LinkedList* list, size_t pos);
-void    concat            (struct LinkedList* list1, struct LinkedList* list2);
-void    freeList          (struct LinkedList* list);
-void    freeListEx        (struct LinkedList* list);
-void    freeListRecursive (struct ListItem* item);
-void    printList         (struct LinkedList* list);
-void    printItem         (struct ListItem* item);
-size_t  size              (struct LinkedList* list);
-int     isEmpty           (struct LinkedList* list);
+static void    addHead           (struct LinkedList* list, int value);
+static void    addHeadEx         (struct LinkedList* list, int value);
+static void    addTail           (struct LinkedList* list, int value);
+static int     insert            (struct LinkedList* list, int value, size_t pos); 
+static int     contains          (struct LinkedList* list, int value);
+static int     removeAt          (struct LinkedList* list, size_t pos);
+static void    concat            (struct LinkedList* list1, struct LinkedList* list2);
+static void    freeList          (struct LinkedList* list);
+static void    freeListEx        (struct LinkedList* list);
+static void    freeListRecursive (struct ListItem* item);
+static void    printList         (struct LinkedList* list);
+static void    printItem         (struct ListItem* item);
+static size_t  size              (struct LinkedList* list);
+static int     isEmpty           (struct LinkedList* list);
 
 // =====================================================================================
 // Implementation
@@ -163,7 +163,7 @@ static int insert(struct LinkedList* list, int value, size_t pos)
     return 1;
 }
 
-int contains(struct LinkedList* list, int value)
+static int contains(struct LinkedList* list, int value)
 {
     struct ListItem* item = list->m_root;
 
@@ -179,7 +179,7 @@ int contains(struct LinkedList* list, int value)
     return 0;
 }
 
-int  removeAt(struct LinkedList* list, size_t pos)
+static int  removeAt(struct LinkedList* list, size_t pos)
 {
     // verify params
     if (list->m_count == 0 || pos >= list->m_count) {
@@ -214,7 +214,7 @@ int  removeAt(struct LinkedList* list, size_t pos)
     return 1;
 }
 
-void concat(struct LinkedList* list1, struct LinkedList* list2)
+static void concat(struct LinkedList* list1, struct LinkedList* list2)
 {
     if (list1->m_root == (struct ListItem*) 0) {
         // first list is empty
@@ -247,7 +247,7 @@ void concat(struct LinkedList* list1, struct LinkedList* list2)
     }
 }
 
-void freeList(struct LinkedList* list) {
+static void freeList(struct LinkedList* list) {
 
     struct ListItem* next = list->m_root;
     struct ListItem* prev;
@@ -260,14 +260,14 @@ void freeList(struct LinkedList* list) {
     }
 }
 
-void freeListEx(struct LinkedList* list)
+static void freeListEx(struct LinkedList* list)
 {
     struct ListItem* item = list->m_root;
 
     freeListRecursive(item);
 }
 
-void freeListRecursive(struct ListItem* item) {
+static void freeListRecursive(struct ListItem* item) {
 
     if (item->m_next != (struct ListItem*) 0)
     {

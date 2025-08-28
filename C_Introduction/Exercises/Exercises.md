@@ -111,6 +111,18 @@ Rekursive Strukturen, Realisierung einer verketteten Liste.
 &bdquo;Jagged Arrays&rdquo;, Parameterübergabe zweidimensionaler Felder.
 
 
+
+
+
+### Aufgaben zur Low-Level Programmierung in C
+
+[**Pascal'sches Dreieck**](./JaggedPascalTriangle/Exercises_JaggedPascalTriangle.md)<br />
+&bdquo;Jagged Arrays&rdquo;, Parameterübergabe zweidimensionaler Felder.
+
+
+
+
+
 ### CRT - *C-Runtime-Library*
 
 [**Zeichenstatistik zu einem Text**](./Zeichenstatistik/Exercises_Zeichenstatistik.md)<br />

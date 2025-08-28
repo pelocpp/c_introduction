@@ -43,6 +43,7 @@
     <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md" />
     <None Include="Exercises\KeywordStatistik\Exercises_KeywordStatistik.md" />
     <None Include="Exercises\Lotto\Exercises_Lotto.md" />
+    <None Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.md" />
     <None Include="Exercises\Maximum\Exercises_Maximum.md" />
     <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
     <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md" />
@@ -124,6 +125,7 @@
     <ClCompile Include="Exercises\KeywordStatistik\KeywordStatistic.c" />
     <ClCompile Include="Exercises\KeywordStatistik\Exercises_KeywordStatistic.c" />
     <ClCompile Include="Exercises\Lotto\Lotto.c" />
+    <ClCompile Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.c" />
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
     <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c" />
     <ClCompile Include="Exercises\PascalTriangle\PascalTriangle.c" />
@@ -152,7 +154,6 @@
     <ClCompile Include="Tutorial\DynamicMemory\DynamicMemory.c" />
     <ClCompile Include="Tutorial\HelloWorld\HelloWorld.c" />
     <ClCompile Include="Tutorial\LowLevelProgramming\LowLevelProgramming.c" />
-    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevel02.c" />
     <ClCompile Include="Tutorial\MemoryManagement\MemoryManagement.c" />
     <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c" />
     <ClCompile Include="Tutorial\NestedScope\NestedScope.c" />

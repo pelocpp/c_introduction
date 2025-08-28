@@ -44,7 +44,7 @@ static int doubleInterestRate(double capital, double rate)
     return year;
 }
 
-void exercise_doubleInterestRate()
+static void exercise_doubleInterestRate()
 {
     double capital = 1000.0;
 
