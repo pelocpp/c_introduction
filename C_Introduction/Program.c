@@ -7,7 +7,9 @@
 // https://peterloos.de
 // =====================================================================================
 
-#pragma message("Collection of introductory C Code Examples - Copyright (C) 2024 Peter Loos")
+#define MessageText "Collection of introductory C Code Examples - Copyright (C) 2025 Peter Loos"
+
+#pragma message(MessageText)
 
 #include <stdio.h>
 
@@ -35,7 +37,7 @@ extern void exercises();
 // entry point
 int main()
 {
-    printf("[Collection of introductory C Code Examples - Copyright (C) 2024 Peter Loos]\n");
+    printf(MessageText "\n");
 
     // main entry points code examples
     //mainHelloWorld();
@@ -52,13 +54,13 @@ int main()
     //mainMultidimensionalArrays();
     //mainStructs();
     //mainUnionsBitfieldsEnums();
-    mainLowLevelProgramming();
+    //mainLowLevelProgramming();
     //mainCrt();
     //mainAdvancedTopics();
 
     //exercises();
 
-    printf("[Done]\n");
+    printf("Done.\n");
     return 0;
 }
 

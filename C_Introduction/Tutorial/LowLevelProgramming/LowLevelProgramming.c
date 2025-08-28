@@ -2,9 +2,6 @@
 // LowLevelProgramming.c // Low Level Programming in C
 // ===========================================================================
 
-//#include <iostream>
-//#include <bitset>
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -15,7 +12,7 @@
 static void setBit(unsigned int* value, int pos);
 static void clearBit(unsigned int* value, int pos);
 static int  isBitSet(unsigned int value, int pos);
-static int   isBitCleared(unsigned int value, int pos);
+static int  isBitCleared(unsigned int value, int pos);
 
 static void low_level_01_bitwise_and();
 static void low_level_02_bitwise_or();
@@ -24,9 +21,8 @@ static void low_level_04_bitwise_negate();
 static void low_level_05_left_shift();
 static void low_level_06_right_shift_unsigned();
 static void low_level_07_right_shift_signed();
-
-
-static void low_level_set_clear_bit();
+static void low_level_08_set_clear_bit();
+static void low_level_09_signed_vs_unsigned_shift();
 
 // ===========================================================================
 
@@ -152,7 +148,7 @@ static int isBitCleared(unsigned int value, int pos)
     return (tmp == 0) ? 1 : 0;
 }
 
-static void low_level_set_clear_bit()
+static void low_level_08_set_clear_bit()
 {
     unsigned int s = 0b1011'0011;
     printf("Before: %04X\n", s);
@@ -164,7 +160,7 @@ static void low_level_set_clear_bit()
     printf("After:  %04X\n", s);
 }
 
-void low_level_06_testSignedVsUnsignedShift()
+void low_level_09_signed_vs_unsigned_shift()
 {
     // create initial mask: 1 in leftmost position
     // note: study output of this program using 'int' vs 'unsigned int' mask
@@ -213,10 +209,8 @@ void mainLowLevelProgramming()
     low_level_05_left_shift();
     low_level_06_right_shift_unsigned();
     low_level_07_right_shift_signed();
-
-    low_level_set_clear_bit();
-
-    low_level_06_testSignedVsUnsignedShift();
+    low_level_08_set_clear_bit();
+    low_level_09_signed_vs_unsigned_shift();
 }
 
 // ===========================================================================

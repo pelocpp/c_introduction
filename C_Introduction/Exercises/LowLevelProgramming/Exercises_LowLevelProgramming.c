@@ -5,6 +5,7 @@
 #include <stdio.h>
 
 // =====================================================================================
+// function prototypes
 
 static int countOnes(unsigned int value);
 static int countZeros(unsigned int value);
