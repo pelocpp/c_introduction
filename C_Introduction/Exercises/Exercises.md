@@ -114,7 +114,7 @@ Rekursive Strukturen, Realisierung einer verketteten Liste.
 ### Aufgaben zur Low-Level Programmierung in C
 
 [**Elementare Beispiele: Funktionen `countOnes`, `countZeros`, `powerOfTwo`, `printIntAsBinary` etc.**](./LowLevelProgramming/Exercises_LowLevelProgramming.md)<br />
-Einfache Funktionen zur Low-Level Programmierung in C
+Einfache Funktionen zur Low-Level Programmierung in C.
 
 
 ### CRT - *C-Runtime-Library*
