@@ -61,7 +61,7 @@ static void enterContact()
 
     // allocate dynamic memory according to the exact size of the name
     size_t lenFirstName = 1 + strlen(buffer); // includíng '\0' !!!
-    ptrFirstName = malloc(lenFirstName * sizeof(char));
+    ptrFirstName = (char*) malloc(lenFirstName * sizeof(char));
     if (ptrFirstName == NULL) {
         return;
     }
@@ -72,7 +72,7 @@ static void enterContact()
 
     // allocate dynamic memory according to the exact size of the name
     size_t lenLastName = 1 + strlen(buffer); // includíng '\0' !!!
-    ptrLastName = malloc(lenLastName * sizeof(char));
+    ptrLastName = (char*) malloc(lenLastName * sizeof(char));
     if (ptrLastName == NULL) {
         return;
     }
@@ -98,8 +98,6 @@ static void enterContact()
 
     if (succeeded == 0) {
         printf("Contacts Folder full !\n");
-
-        // ACHTUNG:  Hier müssten alle mallocs von oben mit free freigegeben werden !!!
     }
 }
 
