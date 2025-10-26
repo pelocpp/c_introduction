@@ -70,7 +70,7 @@ und vorübergehend &ndash; es verblasst wie die Details einer Geschichte, die Sie
 
   * Setzen Sie sich für jede Lerneinheit ein klares Ziel:<br /> Lesen Sie nicht wahllos. Sagen Sie sich: &bdquo;Heute werde ich mir ein paar Tipps aneignen &ndash; und sie anwenden&rdquo;.
   * Konzentrieren Sie sich auf Qualität, nicht auf Quantität:<br />  Zehn Seiten praktisches Programmieren sind viel besser als fünfzig Seiten passives Lesen.
-  * Mach Sie sich beim Programmieren Notizen:<br />  Schreiben Sie in deinen eigenen Worten auf, was Sie verstanden haben &ndash; in einem Notizbuch oder einer einfachen Textdatei.
+  * Machen Sie sich beim Programmieren Notizen:<br />  Schreiben Sie in deinen eigenen Worten auf, was Sie verstanden haben &ndash; in einem Notizbuch oder einer einfachen Textdatei.
   * Verwandeln Sie Beispiele in kleine Projekte:<br />  Kopieren Sie nicht einfach den Code aus einem Buch &ndash; ändern Sie ihn, erweitern Sie ihn oder verwenden Sie ihn auf neue Weise.
   * Überprüfen Sie ihren Code nach ein paar Tagen:<br />  Schreiben Sie dasselbe Programm neu, ohne den Quellcode anzusehen. So wissen Sie, dass Sie ihn wirklich gelernt haben.
 
