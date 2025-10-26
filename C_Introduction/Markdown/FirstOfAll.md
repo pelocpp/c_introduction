@@ -37,7 +37,7 @@ von C einzugehen!
 
 ## Wie erlernt man eine Programmiersprache?
 
-<sup>Frei übersetzt nach [hier](https://www.linkedin.com/pulse/i-read-many-c-books-dont-really-learn-what-should-do-ayman-alheraki-yyxmf)</sup>
+<sup>Frei übersetzt nach [I Read Many C++ Books, But I Don’t Really Learn &ndash; What Should I Do?](https://www.linkedin.com/pulse/i-read-many-c-books-dont-really-learn-what-should-do-ayman-alheraki-yyxmf)</sup>
 
 Viele Menschen stürzen sich mit großer Begeisterung in die Welt des Programmierens.
 Sie kaufen Bücher, folgen Tutorials und lesen täglich Artikel &ndash; doch nach einer Weile sind sie frustriert.
@@ -50,7 +50,7 @@ erstarren sie vor dem Bildschirm. Was ist das Problem?
 
 Programmieren ist keine Geschichte oder ein Aufsatz, den man einfach liest.
 Es ist eine praktische Fähigkeit, bevor es eine theoretische Wissenschaft ist.
-Man kann eine Sprache wie C/C++ nicht allein durch Lesen beherrschen &ndash; genauso wenig wie man Schwimmen aus einem Buch lernen kann, ohne jemals Wasser berührt zu haben.
+Man kann eine Sprache wie C/C++ nicht alleine durch Lesen beherrschen &ndash; genauso wenig wie man Schwimmen aus einem Buch lernen kann, ohne jemals Wasser berührt zu haben.
 
 Wenn man nicht die Hände auf die Tastatur legt und anfängt
 zu experimentieren,
@@ -68,21 +68,19 @@ und vorübergehend &ndash; es verblasst wie die Details einer Geschichte, die Sie
 
 ### Wie man liest und wirklich lernt
 
-  * Setzen Sie sich für jede Lerneinheit ein klares Ziel. Lesen Sie nicht wahllos. Sagen Sie sich: „Heute werde ich mir ein paar Tipps aneignen &ndash; und sie anwenden.“
-  * Konzentrieren Sie sich auf Qualität, nicht auf Quantität. Zehn Seiten praktisches Programmieren sind viel besser als fünfzig Seiten passives Lesen.
-  * Mach dir beim Programmieren Notizen. Schreibe in deinen eigenen Worten auf, was du verstanden hast &ndash; in einem Notizbuch oder einer einfachen Textdatei.
-  * Verwandle Beispiele in kleine Projekte. Kopiere nicht einfach den Code aus dem Buch &ndash; ändere ihn, erweitere ihn oder verwende ihn auf neue Weise.
-  * Überprüfe deinen Code nach ein paar Tagen. Schreibe dasselbe Programm neu, ohne den Quellcode anzusehen. So weißt du, dass du es wirklich gelernt hast.
+  * Setzen Sie sich für jede Lerneinheit ein klares Ziel:<br /> Lesen Sie nicht wahllos. Sagen Sie sich: &bdquo;Heute werde ich mir ein paar Tipps aneignen &ndash; und sie anwenden&rdquo;.
+  * Konzentrieren Sie sich auf Qualität, nicht auf Quantität:<br />  Zehn Seiten praktisches Programmieren sind viel besser als fünfzig Seiten passives Lesen.
+  * Mach Sie sich beim Programmieren Notizen:<br />  Schreiben Sie in deinen eigenen Worten auf, was Sie verstanden haben &ndash; in einem Notizbuch oder einer einfachen Textdatei.
+  * Verwandeln Sie Beispiele in kleine Projekte:<br />  Kopieren Sie nicht einfach den Code aus einem Buch &ndash; ändern Sie ihn, erweitern Sie ihn oder verwenden Sie ihn auf neue Weise.
+  * Überprüfen Sie ihren Code nach ein paar Tagen:<br />  Schreiben Sie dasselbe Programm neu, ohne den Quellcode anzusehen. So wissen Sie, dass Sie ihn wirklich gelernt haben.
 
 ### Programmieren = Lesen + Üben + Erstellen
 
 Wer nur liest, bleibt Zuschauer. Wer programmiert, ohne zu verstehen, wird sich schwertun.
-Doch wer ausgewogenes Lesen, konsequentes Üben und progressives Projektaufbauen kombiniert,
+Doch wer ausgewogenes Lesen, konsequentes Üben und progressives bauen von Projekten kombiniert,
 erreicht wahre Meisterschaft.
 
 Lesen öffnet Türen, aber Programmieren führt dich hindurch.
-
-
 
 ---
 
