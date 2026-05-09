@@ -6,11 +6,11 @@
 
 ## Übersicht
 
-Schreiben Sie eine Funktion `doubleInterestRateWithWithAccumulation`,
+Schreiben Sie eine Funktion `doubleCapitalWithWithAccumulation`,
 die in zwei Parametern `capital` und `rate` ein Startkapital und einen Zinssatz (pro Jahr) entgegennimmt:
 
 ```c
-int doubleInterestRateWithWithAccumulation(double capital, double rate, double accumulation[], int length)
+int doubleCapitalWithWithAccumulation(double capital, double rate, double accumulation[], int length)
 ```
 
 Als Rückgabewert liefert die Funktion einen ganzzahligen Wert zurück, der beschreibt,
@@ -26,7 +26,7 @@ des Startkapitals und der angehäuften Zinsen vor.
 *Beispiel*:
 
 ```
-After 15 years, a capital of 1000.000000 with interest rate  5.00 is doubled!
+After 15 years, a capital of 1000.00 with interest rate  5.00 is doubled!
  1. years: capital = 1050.00
  2. years: capital = 1102.50
  3. years: capital = 1157.62

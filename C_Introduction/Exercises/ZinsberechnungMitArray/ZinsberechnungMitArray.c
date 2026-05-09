@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-static int doubleInterestRateWithWithAccumulation(double capital, double rate, double accumulation[], int length)
+static int doubleCapitalWithWithAccumulation(double capital, double rate, double accumulation[], int length)
 {
     double newCapital = capital;
 
@@ -37,9 +37,9 @@ void exercise_zinsberechnung_mit_array()
 
     double accumulatedCapital[Length] = { 0.0 };
 
-    int years = doubleInterestRateWithWithAccumulation(capital, rate, accumulatedCapital, Length);
+    int years = doubleCapitalWithWithAccumulation(capital, rate, accumulatedCapital, Length);
 
-    printf("After %d years, a capital of %lf with interest rate  %.2lf is doubled!\n",
+    printf("After %d years, a capital of %.2f with interest rate  %.2f is doubled!\n",
         years, capital, rate);
 
     int upperLimit = (years < Length) ? years : Length;
