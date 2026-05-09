@@ -134,7 +134,7 @@
       <UniqueIdentifier>{db19e38b-d453-4220-9d91-21ea3f3f0831}</UniqueIdentifier>
     </Filter>
     <Filter Include="Exercises\ZinsberechnungMitArray">
-      <UniqueIdentifier>{cf700ad2-6b8f-4985-893f-37874dd3498a}</UniqueIdentifier>
+      <UniqueIdentifier>{33b2fbb7-0c7b-4be2-94cf-0dca0f9c8eab}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -328,7 +328,6 @@
     </None>
     <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md" />
     <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md" />
-    <None Include="Exercises\ZinsberechnungMitArray\Exercises_ZinsberechnungMitArray.md" />
     <None Include="Exercises\Bruchrechnen\Exercises_Bruchrechnen.md" />
     <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md" />
     <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
@@ -340,6 +339,9 @@
     <None Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.md" />
     <None Include="Exercises\ZinsberechnungDynamisch\Exercises_ZinsberechnungDynamisch.md">
       <Filter>Exercises\ZinsberechnungDynamisch</Filter>
+    </None>
+    <None Include="Exercises\ZinsberechnungMitArray\Exercises_ZinsberechnungMitArray.md">
+      <Filter>Exercises\ZinsberechnungMitArray</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -502,9 +504,6 @@
     <ClCompile Include="Exercises\JaggedPascalTriangle\JaggedPascalTriangle.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\ZinsberechnungMitArray\ZinsberechnungMitArray.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Exercises\Bruchrechnen\Bruchrechnen.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -525,6 +524,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\ZinsberechnungDynamisch\ZinsberechnungDynamisch.c">
       <Filter>Exercises\ZinsberechnungDynamisch</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\ZinsberechnungMitArray\ZinsberechnungMitArray.c">
+      <Filter>Exercises\ZinsberechnungMitArray</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
