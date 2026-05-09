@@ -2,9 +2,9 @@
 // ContactsStatic.c
 // =====================================================================================
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include <stdio.h>   // printf, scanf_s
+#include <stdlib.h>  // malloc, free
+#include <string.h>  // strlen, strcpy_s, strcmp
 
 // ==========================================
 // Kontakte-Verwaltung
@@ -15,7 +15,7 @@
 #define NotEmpty       0
 #define Empty          1
 
-struct Contact
+struct contact
 {
     char     m_firstName[MaxNameLength];
     char     m_lastName[MaxNameLength];
@@ -23,17 +23,19 @@ struct Contact
     int      m_isEmpty;
 };
 
+typedef struct contact Contact;
+
 // global
-struct Contact g_Contacts[MaxContacts];
+Contact g_Contacts[MaxContacts];
 
 // ==========================================
 // function prototypes
-static void initContacts();
-static void enterContact();
-static void searchContact();
-static void printContact(struct Contact* contact);
-static void clearContacts();
-static void printfMenu();
+static void initContacts  ();
+static void enterContact  ();
+static void searchContact ();
+static void printContact  (const Contact* contact);
+static void clearContacts ();
+static void printfMenu    ();
 
 // ==========================================
 
@@ -47,7 +49,7 @@ static void initContacts()
 
 static void enterContact()
 {
-    struct Contact tmp = { 0 };
+    Contact tmp = { 0 };
 
     printf("Bitte Vornamen eingeben: ");
     scanf_s("%s", tmp.m_firstName, MaxNameLength);
@@ -79,7 +81,7 @@ static void enterContact()
 static void searchContact()
 {
     char firstName[MaxNameLength] = { 0 };
-    char lastName[MaxNameLength] = { 0 };;
+    char lastName[MaxNameLength] = { 0 };
 
     printf("Bitte Vornamen eingeben: ");
     scanf_s("%s", firstName, MaxNameLength);
@@ -94,7 +96,7 @@ static void searchContact()
 
         if (g_Contacts[i].m_isEmpty == NotEmpty) {
 
-            struct Contact tmp = g_Contacts[i];
+            Contact tmp = g_Contacts[i];
 
             if (strcmp(tmp.m_firstName, firstName) == 0 && strcmp(tmp.m_lastName, lastName) == 0)
             {
@@ -110,7 +112,7 @@ static void searchContact()
     }
 }
 
-static void printContact(struct Contact* contact)
+static void printContact(const Contact* contact)
 {
     printf("   Vorname:  %s\n", contact->m_firstName);
     printf("   Nachname: %s\n", contact->m_lastName);

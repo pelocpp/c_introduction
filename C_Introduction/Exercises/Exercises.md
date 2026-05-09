@@ -52,7 +52,6 @@ Einfache Funktionen, Übergabe von Parametern, Rückgabe eines Ergebnisses, Date
 [**Zinsrechnung mit Berechnung des Zinseszins**](./ZinsberechnungMitArray/Exercises_ZinsberechnungMitArray.md)<br />
 `double`-Array, Funktion mit Array als Parameter.
 
-
 [**Ein mathematischer Vektor**](./Vector/Exercises_Vector.md)<br />
 `double`-Arrays, Funktionen mit Array als Parameter.
 
@@ -94,6 +93,9 @@ Zweidimensionale Felder, Parameterübergabe zweidimensionaler Felder.
 
 
 ### Dynamische Speicherverwaltung
+
+[**Zinsrechnung mit Berechnung des Zinseszins**](./ZinsberechnungDynamisch/Exercises_ZinsberechnungDynamisch.md)<br />
+Funktionen `malloc` und `free`, dynamisches `double`-Array.
 
 [**Zeichenkettenverarbeitung mit dynamisch allokiertem Speicher**](./ZeichenkettenverarbeitungDynamisch/ZeichenkettenverarbeitungDynamisch.md)<br />
 Dynamische Speicherverwaltung, Funktionen `malloc` und `free`, Rückgabe von Adressen.

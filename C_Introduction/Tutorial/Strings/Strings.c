@@ -92,7 +92,7 @@ static void strings_05()
     // Zeichenkette in einem Feld bestehend auf char-Elementen
     // mit Initialisierung
 
-    const char mehrZeichen[] = { 'A', 'B', 'C', 'D', 'E', '\0' };;
+    const char mehrZeichen[] = { 'A', 'B', 'C', 'D', 'E', '\0' };
     printf("3.: %s\n\n", mehrZeichen);
     
     // Zeichenkette in einem Feld bestehend auf char-Elementen

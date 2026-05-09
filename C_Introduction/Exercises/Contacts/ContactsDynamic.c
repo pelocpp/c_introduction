@@ -4,10 +4,10 @@
 
 #define _CRTDBG_MAP_ALLOC
 
-#include <stdio.h>
+#include <stdio.h>   // printf, scanf_s
 #include <stdlib.h>  // malloc, free
-#include <crtdbg.h>
-#include <string.h>
+#include <crtdbg.h>  // _CrtSetDbgFlag
+#include <string.h>  // strlen, strcpy_s, strcmp
 
 // ==========================================
 // Kontakte-Verwaltung
@@ -18,7 +18,7 @@
 #define NotEmpty             0
 #define Empty                1
 
-struct Contact
+struct contact
 {
     char*     m_firstName;
     char*     m_lastName;
@@ -26,18 +26,20 @@ struct Contact
     int       m_isEmpty;
 };
 
+typedef struct contact Contact;
+
 // global
-struct Contact g_Contacts[MaxContacts];
+Contact g_Contacts[MaxContacts];
 
 // ==========================================
 // function prototypes
 
-static void initContacts();
-static void enterContact();
-static void searchContact();
-static void printContact(struct Contact* contact);
-static void clearContacts();
-static void printfMenu();
+static void initContacts  ();
+static void enterContact  ();
+static void searchContact ();
+static void printContact  (const Contact* contact);
+static void clearContacts ();
+static void printfMenu    ();
 
 // ==========================================
 
@@ -51,10 +53,10 @@ static void initContacts()
 
 static void enterContact()
 {
-    char buffer[MaxNameBufferLength] = { '\0' };
-    int  number;
-    char* ptrFirstName;
-    char* ptrLastName;
+    char   buffer[MaxNameBufferLength] = { '\0' };
+    size_t number;
+    char*  ptrFirstName;
+    char*  ptrLastName;
 
     printf("Bitte Vornamen eingeben: ");
     scanf_s("%s", buffer, MaxNameBufferLength);
@@ -79,9 +81,9 @@ static void enterContact()
     strcpy_s(ptrLastName, lenLastName * sizeof(char), buffer);
 
     printf("Bitte Tel.Nummer eingeben: ");
-    scanf_s("%d", &number);
+    scanf_s("%zu", &number);
 
-    struct Contact tmp = { ptrFirstName , ptrLastName, number, NotEmpty };
+    Contact tmp = { ptrFirstName , ptrLastName, number, NotEmpty };
 
     // enter temporary contact into global array
     int succeeded = 0;
@@ -104,7 +106,7 @@ static void enterContact()
 static void searchContact()
 {
     char firstName[MaxNameBufferLength] = { 0 };
-    char lastName[MaxNameBufferLength] = { 0 };;
+    char lastName[MaxNameBufferLength] = { 0 };
 
     printf("Bitte Vornamen eingeben: ");
     scanf_s("%s", firstName, MaxNameBufferLength);
@@ -119,7 +121,7 @@ static void searchContact()
 
         if (g_Contacts[i].m_isEmpty == NotEmpty) {
 
-            struct Contact tmp = g_Contacts[i];
+            Contact tmp = g_Contacts[i];
 
             if (strcmp(tmp.m_firstName, firstName) == 0 && strcmp(tmp.m_lastName, lastName) == 0)
             {
@@ -135,7 +137,7 @@ static void searchContact()
     }
 }
 
-static void printContact(struct Contact* contact)
+static void printContact(const Contact* contact)
 {
     printf("   Vorname:  %s\n", contact->m_firstName);
     printf("   Nachname: %s\n", contact->m_lastName);

@@ -2,8 +2,8 @@
 // Main_Contacts.c
 // =====================================================================================
 
-void exercise_contacts_static();
-void exercise_contacts_dynamic();
+extern void exercise_contacts_static();
+extern void exercise_contacts_dynamic();
 
 void exercise_contacts()
 {

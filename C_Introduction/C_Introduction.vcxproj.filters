@@ -130,6 +130,12 @@
     <Filter Include="Tutorial\Strings">
       <UniqueIdentifier>{09482696-5b60-4fb6-ad78-e091c25599dd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\ZinsberechnungDynamisch">
+      <UniqueIdentifier>{db19e38b-d453-4220-9d91-21ea3f3f0831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\ZinsberechnungMitArray">
+      <UniqueIdentifier>{cf700ad2-6b8f-4985-893f-37874dd3498a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -332,6 +338,9 @@
     <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md" />
     <None Include="Tutorial\LowLevelProgramming\LowLevelProgramming.md" />
     <None Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.md" />
+    <None Include="Exercises\ZinsberechnungDynamisch\Exercises_ZinsberechnungDynamisch.md">
+      <Filter>Exercises\ZinsberechnungDynamisch</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -513,6 +522,9 @@
     </ClCompile>
     <ClCompile Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.c">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\ZinsberechnungDynamisch\ZinsberechnungDynamisch.c">
+      <Filter>Exercises\ZinsberechnungDynamisch</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
