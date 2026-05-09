@@ -4,6 +4,12 @@
 
 ---
 
+## Quellcode des Beispiels:
+
+[*Operators.c*](Operators.c)<br />
+
+---
+
 ## Vorrang (Priorität) und Stelligkeit (Assoziativität) von Operatoren
 
 In der folgenden Tabelle sind die Rangfolge und Assoziativität von C&ndash;Operatoren aufgeführt.
@@ -77,11 +83,6 @@ Hieraus hat sich der Begriff der *Assoziativität* von Operatoren entwickelt:
   * *Assoziativität* :<br />
     Die Assoziativität gibt an, ob eine Folge von Operatoren gleichen Vorrangs von links oder von rechts abgearbeitet wird.
 
----
-
-## Quellcode des Beispiels:
-
-[*Operators.c*](Operators.c)<br />
 
 ---
 

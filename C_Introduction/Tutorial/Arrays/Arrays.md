@@ -26,17 +26,17 @@ Und zum Abschluss:
 
 ---
 
+## Quellcode des Beispiels:
+
+[*Arrays.c*](Arrays.c)<br />
+
+---
+
 ## Ablage von Arrays im Speicher
 
 <img src="c_array_01.svg" width="300">
 
 *Abbildung* 1. Ablage eines 1-dimensionalen Arrays im Speicher
-
----
-
-## Quellcode des Beispiels:
-
-[*Arrays.c*](Arrays.c)<br />
 
 ---
 

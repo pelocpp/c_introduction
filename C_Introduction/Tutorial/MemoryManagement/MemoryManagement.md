@@ -13,6 +13,12 @@ Zum Speicherverwaltung eines Programms erläutern wir:
 
 ---
 
+## Quellcode des Beispiels:
+
+[*MemoryManagement.c*](MemoryManagement.c)<br />
+
+---
+
 ### Überblick über die Speicherbereiche eines C&ndash;Programms
 
 In einem C&ndash;Programm sind mehrere Speicherbereiche vorhanden,
@@ -85,11 +91,6 @@ Man kann die Lebensdauer von Variablen in einem C&ndash;Programm in drei Gruppen
   wie man für einen Programmablauf benötigt.<br /><br />
   Zum Reservieren dynamischen Speichers gibt es die beiden CRT-Bibliotheksfunktionen `malloc()` und `free()`.
 
----
-
-## Quellcode des Beispiels:
-
-[*MemoryManagement.c*](MemoryManagement.c)<br />
 
 ---
 

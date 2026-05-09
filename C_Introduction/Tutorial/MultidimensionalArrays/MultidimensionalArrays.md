@@ -16,6 +16,12 @@ Wir betrachten die Themen:
 
 ---
 
+## Quellcode des Beispiels:
+
+[*MultidimensionalArrays.c*](MultidimensionalArrays.c)<br />
+
+---
+
 ## Ablage von Arrays im Speicher
 
 <img src="c_array_02.svg" width="700">
@@ -375,11 +381,6 @@ erfolgen kann:
 10 11 12
 ```
 
----
-
-## Quellcode des Beispiels:
-
-[*MultidimensionalArrays.c*](MultidimensionalArrays.c)<br />
 
 ---
 

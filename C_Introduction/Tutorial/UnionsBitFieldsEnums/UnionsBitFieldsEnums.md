@@ -16,6 +16,12 @@ Wir betrachten im Einzelnen:
 
 ---
 
+## Quellcode des Beispiels:
+
+[*UnionsBitFieldsEnums.c*](UnionsBitFieldsEnums.c)<br />
+
+---
+
 ## Beispiele zu Bitfeldern
 
 *Beispiel*:
@@ -272,11 +278,6 @@ Medium Level
 Level: 1
 ```
 
----
-
-## Quellcode des Beispiels:
-
-[*UnionsBitFieldsEnums.c*](UnionsBitFieldsEnums.c)<br />
 
 ---
 

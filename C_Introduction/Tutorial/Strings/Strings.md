@@ -16,6 +16,12 @@ Wir betrachten:
 
 ---
 
+## Quellcode des Beispiels:
+
+[*Strings.c*](Strings.c)<br />
+
+---
+
 ## Zeichen
 
 Zeichen werden in C auf den Datentyp `char` abgebildet.
@@ -83,11 +89,6 @@ Diese so genannten &bdquo;Zeichenkettenverarbeitungsfunktionen&rdquo; gehören z
 
 Der Begriff der &bdquo;*terminierenden Null*&rdquo; ist zu betrachten.
 
----
-
-## Quellcode des Beispiels:
-
-[*Strings.c*](Strings.c)<br />
 
 ---
 
