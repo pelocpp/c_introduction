@@ -136,6 +136,42 @@
     <Filter Include="Exercises\ZinsberechnungMitArray">
       <UniqueIdentifier>{33b2fbb7-0c7b-4be2-94cf-0dca0f9c8eab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\Bruchrechnen">
+      <UniqueIdentifier>{85273062-3e31-4588-8d61-9c4030ee3820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\HashTable">
+      <UniqueIdentifier>{aa66bbf7-d8ba-41e1-a74e-a869fd225b7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\ObjectFileViewer">
+      <UniqueIdentifier>{22cd8772-32c9-4a08-89c3-400cffb9cc0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\LowLevelProgramming">
+      <UniqueIdentifier>{75071d88-3335-4f1f-a3bc-2d1b94dd606e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\JaggedArray">
+      <UniqueIdentifier>{a1c36543-cfa8-4249-a241-4625f3de64f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\PascalTriangle">
+      <UniqueIdentifier>{29a3fc78-635e-439e-a1e8-ae2abcd731b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\JaggedPascalTriangle">
+      <UniqueIdentifier>{f4f7ea9a-ba54-4e2e-90b9-e38e0410e025}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\MultidimensionalArrays">
+      <UniqueIdentifier>{cf8582cb-1665-4092-b9fd-0569f11f29a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\UnionsBitFieldsEnums">
+      <UniqueIdentifier>{0125890d-06e4-4e8a-9141-6ab890e688e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\LowLevelProgramming">
+      <UniqueIdentifier>{738f3f51-ec4d-4f17-bcdb-4078350f24de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tutorial\AdvancedTopics">
+      <UniqueIdentifier>{59a8673a-fec3-480e-8e16-a1d807ca6378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Exercises\ZeichenkettenverarbeitungDynamisch">
+      <UniqueIdentifier>{6fcaacf5-e0d2-4502-8ee6-df4f9a52c95f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -307,41 +343,83 @@
     <None Include="Tutorial\Strings\Strings.md">
       <Filter>Tutorial\Strings</Filter>
     </None>
-    <None Include="Exercises\ObjectFileViewer\TEST_JaggedArray.bin">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="Exercises\ObjectFileViewer\TEST_Point.bin">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.md" />
-    <None Include="Exercises\HashTabelle\c_hash_01.svg" />
-    <None Include="Exercises\HashTabelle\c_hash_02.svg" />
-    <None Include="Exercises\HashTabelle\c_hash_03.svg" />
-    <None Include="Tutorial\Arrays\c_array_01.svg" />
-    <None Include="Tutorial\MultidimensionalArrays\c_array_02.svg" />
-    <None Include="Exercises\JaggedArrays\Exercises_JaggedArrays.md" />
-    <None Include="Exercises\HashTabelle\Exercises_HashTable.md" />
-    <None Include="Exercises\JaggedArrays\c_jagged_array.svg" />
-    <None Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.md" />
-    <None Include="Exercises\ObjectFileViewer\TEST_ObjectFileViewer.bin">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md" />
-    <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md" />
-    <None Include="Exercises\Bruchrechnen\Exercises_Bruchrechnen.md" />
-    <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md" />
-    <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf" />
-    <None Include="Markdown\cman.pdf" />
-    <None Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.md" />
-    <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf" />
-    <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md" />
-    <None Include="Tutorial\LowLevelProgramming\LowLevelProgramming.md" />
-    <None Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.md" />
     <None Include="Exercises\ZinsberechnungDynamisch\Exercises_ZinsberechnungDynamisch.md">
       <Filter>Exercises\ZinsberechnungDynamisch</Filter>
     </None>
     <None Include="Exercises\ZinsberechnungMitArray\Exercises_ZinsberechnungMitArray.md">
       <Filter>Exercises\ZinsberechnungMitArray</Filter>
+    </None>
+    <None Include="Exercises\Bruchrechnen\Exercises_Bruchrechnen.md">
+      <Filter>Exercises\Bruchrechnen</Filter>
+    </None>
+    <None Include="Exercises\HashTabelle\c_hash_01.svg">
+      <Filter>Exercises\HashTable</Filter>
+    </None>
+    <None Include="Exercises\HashTabelle\c_hash_02.svg">
+      <Filter>Exercises\HashTable</Filter>
+    </None>
+    <None Include="Exercises\HashTabelle\c_hash_03.svg">
+      <Filter>Exercises\HashTable</Filter>
+    </None>
+    <None Include="Exercises\ObjectFileViewer\TEST_JaggedArray.bin">
+      <Filter>Exercises\ObjectFileViewer</Filter>
+    </None>
+    <None Include="Exercises\ObjectFileViewer\TEST_ObjectFileViewer.bin">
+      <Filter>Exercises\ObjectFileViewer</Filter>
+    </None>
+    <None Include="Exercises\ObjectFileViewer\TEST_Point.bin">
+      <Filter>Exercises\ObjectFileViewer</Filter>
+    </None>
+    <None Include="Exercises\ObjectFileViewer\COFF_Texas_Instruments.pdf">
+      <Filter>Exercises\ObjectFileViewer</Filter>
+    </None>
+    <None Include="Exercises\ObjectFileViewer\Exercises_ObjectFileViewer.md">
+      <Filter>Exercises\ObjectFileViewer</Filter>
+    </None>
+    <None Include="Exercises\HashTabelle\Exercises_HashTable.md">
+      <Filter>Exercises\HashTable</Filter>
+    </None>
+    <None Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.md">
+      <Filter>Exercises\LowLevelProgramming</Filter>
+    </None>
+    <None Include="Exercises\JaggedArrays\Exercises_JaggedArrays.md">
+      <Filter>Exercises\JaggedArray</Filter>
+    </None>
+    <None Include="Exercises\JaggedArrays\c_jagged_array.svg">
+      <Filter>Exercises\JaggedArray</Filter>
+    </None>
+    <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md">
+      <Filter>Exercises\PascalTriangle</Filter>
+    </None>
+    <None Include="Exercises\JaggedPascalTriangle\Exercises_JaggedPascalTriangle.md">
+      <Filter>Exercises\JaggedPascalTriangle</Filter>
+    </None>
+    <None Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.md">
+      <Filter>Tutorial\MultidimensionalArrays</Filter>
+    </None>
+    <None Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.md">
+      <Filter>Tutorial\UnionsBitFieldsEnums</Filter>
+    </None>
+    <None Include="Tutorial\LowLevelProgramming\LowLevelProgramming.md">
+      <Filter>Tutorial\LowLevelProgramming</Filter>
+    </None>
+    <None Include="Tutorial\AdvancedTopics\AdvancedTopics.md">
+      <Filter>Tutorial\AdvancedTopics</Filter>
+    </None>
+    <None Include="Tutorial\MultidimensionalArrays\c_array_02.svg">
+      <Filter>Tutorial\MultidimensionalArrays</Filter>
+    </None>
+    <None Include="Tutorial\Arrays\c_array_01.svg">
+      <Filter>Tutorial\Arrays</Filter>
+    </None>
+    <None Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.md">
+      <Filter>Exercises\ZeichenkettenverarbeitungDynamisch</Filter>
+    </None>
+    <None Include="Markdown\cman.pdf">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf">
+      <Filter>Resource Files</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -471,62 +549,62 @@
     <ClCompile Include="Tutorial\Subroutines\Subroutines.c">
       <Filter>Tutorial\Subroutines</Filter>
     </ClCompile>
-    <ClCompile Include="Exercises\HashTabelle\HashTable.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\HashTabelle\HashTableMainInt.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\HashTabelle\HashTableEx.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\HashTabelle\HashTableMainString.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\HashTabelle\HashTableMain.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\JaggedArrays\JaggedArrays.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\PascalTriangle\PascalTriangle.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\JaggedPascalTriangle\JaggedPascalTriangle.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\Bruchrechnen\Bruchrechnen.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Tutorial\AdvancedTopics\AdvancedTopics.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Tutorial\AdvancedTopics\GenericProgramming.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevelProgramming.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Exercises\ZinsberechnungDynamisch\ZinsberechnungDynamisch.c">
       <Filter>Exercises\ZinsberechnungDynamisch</Filter>
     </ClCompile>
     <ClCompile Include="Exercises\ZinsberechnungMitArray\ZinsberechnungMitArray.c">
       <Filter>Exercises\ZinsberechnungMitArray</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Bruchrechnen\Bruchrechnen.c">
+      <Filter>Exercises\Bruchrechnen</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTable.c">
+      <Filter>Exercises\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableEx.c">
+      <Filter>Exercises\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableMain.c">
+      <Filter>Exercises\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainInt.c">
+      <Filter>Exercises\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\HashTabelle\HashTableMainString.c">
+      <Filter>Exercises\HashTable</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c">
+      <Filter>Exercises\ObjectFileViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\LowLevelProgramming\Exercises_LowLevelProgramming.c">
+      <Filter>Exercises\LowLevelProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\JaggedArrays\JaggedArrays.c">
+      <Filter>Exercises\JaggedArray</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\PascalTriangle\PascalTriangle.c">
+      <Filter>Exercises\PascalTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\JaggedPascalTriangle\JaggedPascalTriangle.c">
+      <Filter>Exercises\JaggedPascalTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\MultidimensionalArrays\MultidimensionalArrays.c">
+      <Filter>Tutorial\MultidimensionalArrays</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\UnionsBitFieldsEnums\UnionsBitFieldsEnums.c">
+      <Filter>Tutorial\UnionsBitFieldsEnums</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\LowLevelProgramming\LowLevelProgramming.c">
+      <Filter>Tutorial\LowLevelProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\AdvancedTopics\AdvancedTopics.c">
+      <Filter>Tutorial\AdvancedTopics</Filter>
+    </ClCompile>
+    <ClCompile Include="Tutorial\AdvancedTopics\GenericProgramming.c">
+      <Filter>Tutorial\AdvancedTopics</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.c">
+      <Filter>Exercises\ZeichenkettenverarbeitungDynamisch</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -575,31 +653,10 @@
     <Image Include="Markdown\Buch_Andrew_Koenig.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Exercises\PascalTriangle\PascalTriangle_01.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Exercises\PascalTriangle\PascalTriangle_02.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Markdown\Buch_C_Kernighan_Ritchie.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_01.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_02.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_03.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_04.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="Markdown\Buch_Harbison_Steel_C_Reference_Manual.png">
-      <Filter>Resource Files</Filter>
-    </Image>
-    <Image Include="Tutorial\UnionsBitFieldsEnums\Union_01.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="Markdown\VisualStudioLanguageSettings.png">
@@ -611,8 +668,29 @@
     <Image Include="Markdown\Github_Mobile_iPhone.png">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="Exercises\PascalTriangle\PascalTriangle_01.png">
+      <Filter>Exercises\PascalTriangle</Filter>
+    </Image>
+    <Image Include="Exercises\PascalTriangle\PascalTriangle_02.png">
+      <Filter>Exercises\PascalTriangle</Filter>
+    </Image>
     <Image Include="Tutorial\Operators\OperatorsPrecedence.png">
-      <Filter>Resource Files</Filter>
+      <Filter>Tutorial\Operators</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_01.png">
+      <Filter>Tutorial\UnionsBitFieldsEnums</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_02.png">
+      <Filter>Tutorial\UnionsBitFieldsEnums</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_03.png">
+      <Filter>Tutorial\UnionsBitFieldsEnums</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Bitfields_04.png">
+      <Filter>Tutorial\UnionsBitFieldsEnums</Filter>
+    </Image>
+    <Image Include="Tutorial\UnionsBitFieldsEnums\Union_01.png">
+      <Filter>Tutorial\UnionsBitFieldsEnums</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
@@ -631,14 +709,14 @@
     <ClInclude Include="Tutorial\Structs\Time.h">
       <Filter>Tutorial\Structs</Filter>
     </ClInclude>
-    <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Exercises\HashTabelle\HashTable.h">
-      <Filter>Header Files</Filter>
+      <Filter>Exercises\HashTable</Filter>
     </ClInclude>
     <ClInclude Include="Exercises\HashTabelle\HashTableEx.h">
-      <Filter>Header Files</Filter>
+      <Filter>Exercises\HashTable</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h">
+      <Filter>Exercises\ObjectFileViewer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
