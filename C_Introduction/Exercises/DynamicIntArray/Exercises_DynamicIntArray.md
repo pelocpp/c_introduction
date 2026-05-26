@@ -67,20 +67,19 @@ Eine Kopie einer `DynamicIntArray`-Strukturvariablen muss einen neuen, separaten
 Zu diesem Zweck finden Sie in *Tabelle* 1 eine Funktion `createDynamicIntArrayFromDynamicIntArray` vor,
 die den Vorgang von *Abbildung* 4 implementiert.
 
-
 Realisieren Sie folgende C-Funktionen, die mit der Struktur `DynamicIntArray` zusammenarbeiten:
 
 | Funktion  | Schnittstelle und Beschreibung |
 |:--------- |--------------------------------|
 | `initDynamicIntArray` | `int initDynamicIntArray(DynamicIntArray* array, size_t length);`<br /> Initialisiert eine `DynamicIntArray`-Strukturvariable mit einem Datenpuffer der Länge `length`. |
 | `releaseDynamicIntArray` | `void releaseDynamicIntArray(DynamicIntArray* array);`<br /> Gibt den dynamisch allokierten Speicher wieder frei. |
-| `createDynamicIntArrayFromArray` | `void createDynamicIntArrayFromArray(DynamicIntArray* array, const int* values, int length);`<br /> Übernimmt die Daten eines C-Arrays (Parameter `values` und `length`) in eine `DynamicIntArray`-Strukturvariable. |
+| `createDynamicIntArrayFromArray` | `void createDynamicIntArrayFromArray(DynamicIntArray* array, const int* values, size_t length);`<br /> Übernimmt die Daten eines C-Arrays (Parameter `values` und `length`) in eine `DynamicIntArray`-Strukturvariable. |
 | `createDynamicIntArrayFromDynamicIntArray` | `void createDynamicIntArrayFromDynamicIntArray(DynamicIntArray* array, const DynamicIntArray* other);`<br /> Legt eine Kopie einer vorhandenen `DynamicIntArray`-Strukturvariablen (`other`) an. |
 | `fillDynamicIntArray` | `void fillDynamicIntArray(DynamicIntArray* array, int value);`<br /> Belegt alle Elemente des Datenpuffers einer `DynamicIntArray`-Strukturvariablen `array` mit dem Wert `value`. |
 | `getLength` | `size_t getLength(const DynamicIntArray* array);`<br /> Liefert die Länge einer `DynamicIntArray`-Strukturvariablen `array` zurück. |
-| `get` | `int get(const DynamicIntArray* array, int index);`<br /> Liefert das Element an der Stelle *i* zurück. Bei ungültigem Index wird -1 zurückgegeben. |
-| `set` | `void set(DynamicIntArray* array, int index, int value);`<br /> Setzt das Element an der Stelle *i* auf einen neuen Wert `value`. |
-| `resizeDynamicIntArray` | `int resizeDynamicIntArray(DynamicIntArray* array, int newLength);`<br /> Ändert die Länge des internen Datenpuffers auf den neuen Wert `newLength`. Die vorhandenen Daten im Puffer sollen dabei &ndash; soweit möglich &ndash; erhalten bleiben, sprich: Ist die neue Länge kürzer im Vergleich zur aktuellen Länge, spielen die Daten im oberen Teil des alten Puffers keine Rolle mehr. Ist die neue Länge jedoch größer, ist der aktuelle Puffer komplett umzukopieren und die zusätzlichen Elemente im oberen Bereich sind mit `0` vorzubelegen. |
+| `get` | `int get(const DynamicIntArray* array, size_t index);`<br /> Liefert das Element an der Stelle *i* zurück. Bei ungültigem Index wird -1 zurückgegeben. |
+| `set` | `void set(DynamicIntArray* array, size_t index, int value);`<br /> Setzt das Element an der Stelle *i* auf einen neuen Wert `value`. |
+| `resizeDynamicIntArray` | `int resizeDynamicIntArray(DynamicIntArray* array, size_t newLength);`<br /> Ändert die Länge des internen Datenpuffers auf den neuen Wert `newLength`. Die vorhandenen Daten im Puffer sollen dabei &ndash; soweit möglich &ndash; erhalten bleiben, sprich: Ist die neue Länge kürzer im Vergleich zur aktuellen Länge, spielen die Daten im oberen Teil des alten Puffers keine Rolle mehr. Ist die neue Länge jedoch größer, ist der aktuelle Puffer komplett umzukopieren und die zusätzlichen Elemente im oberen Bereich sind mit `0` vorzubelegen. |
 | `shrinkToFitDynamicIntArray` | `int shrinkToFitDynamicIntArray(DynamicIntArray* array);`<br /> Sollte auf Grund eines oder mehrerer `resizeDynamicIntArray`-Aufrufe der Datenpuffer größer als erforderlich sein, wird ein neuer Datenpuffer mit exakt passender Länge angelegt. Natürlich sind die vorhandenen Elemente des alten Puffers umzukopieren. |
 | `minimum` | `int minimum(const DynamicIntArray* array);`<br /> Liefert das minimale Element im Datenpuffer zurück. |
 | `maximum` | `int maximum(const DynamicIntArray* array);`<br /> Liefert das maximale Element im Datenpuffer zurück.  |

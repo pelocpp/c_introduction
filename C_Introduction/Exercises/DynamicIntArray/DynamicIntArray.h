@@ -32,13 +32,13 @@ typedef struct dynamicIntArray DynamicIntArray;
 
 int    initDynamicIntArray                      (      DynamicIntArray* array, size_t length);
 void   releaseDynamicIntArray                   (      DynamicIntArray* array);
-void   createDynamicIntArrayFromArray           (      DynamicIntArray* array, const int* values, int length);
+void   createDynamicIntArrayFromArray           (      DynamicIntArray* array, const int* values, size_t length);
 void   createDynamicIntArrayFromDynamicIntArray (      DynamicIntArray* array, const DynamicIntArray* other);
 void   fillDynamicIntArray                      (      DynamicIntArray* array, int value);
 size_t getLength                                (const DynamicIntArray* array);
-int    get                                      (const DynamicIntArray* array, int index);
-void   set                                      (      DynamicIntArray* array, int index, int value);
-int    resizeDynamicIntArray                    (      DynamicIntArray* array, int newLength);
+int    get                                      (const DynamicIntArray* array, size_t index);
+void   set                                      (      DynamicIntArray* array, size_t index, int value);
+int    resizeDynamicIntArray                    (      DynamicIntArray* array, size_t newLength);
 int    shrinkToFitDynamicIntArray               (      DynamicIntArray* array);
 int    minimum                                  (const DynamicIntArray* array);
 int    maximum                                  (const DynamicIntArray* array);

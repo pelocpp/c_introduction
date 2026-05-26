@@ -5,7 +5,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-#include "DynamicintArray.h"
+#include "DynamicIntArray.h"
 
 // =====================================================================================
 
@@ -33,14 +33,14 @@ static void releaseDynamicIntArray(DynamicIntArray* da)
     }
 }
 
-static void createDynamicIntArrayFromArray(DynamicIntArray* array, const int* values, int length)
+static void createDynamicIntArrayFromArray(DynamicIntArray* array, const int* values, size_t length)
 {
     array->m_data = (int*) malloc(sizeof(int) * length);
     if (array->m_data == (int*)0) {
         return;
     }
 
-    for (int i = 0; i < length; i++) {
+    for (size_t i = 0; i < length; i++) {
         array->m_data[i] = values[i];
     }
 
@@ -55,7 +55,7 @@ static void createDynamicIntArrayFromDynamicIntArray(DynamicIntArray* array, con
         return;
     }
 
-    for (int i = 0; i < other->m_length; i++) {
+    for (size_t i = 0; i < other->m_length; i++) {
         array->m_data[i] = other->m_data[i];
     }
 
@@ -64,7 +64,7 @@ static void createDynamicIntArrayFromDynamicIntArray(DynamicIntArray* array, con
 
 static void fillDynamicIntArray(DynamicIntArray* array, int value)
 {
-    for (int i = 0; i < array->m_length; i++) {
+    for (size_t i = 0; i < array->m_length; i++) {
         array->m_data[i] = value;
     }
 }
@@ -74,28 +74,28 @@ static size_t getLength(const DynamicIntArray* array)
     return array->m_length;
 }
 
-static int get(const DynamicIntArray* array, int index)
+static int get(const DynamicIntArray* array, size_t index)
 {
-    if (index >= 0 && index < array->m_length) {
+    if (index < array->m_length) {
         return array->m_data[index];
     }
     else {
-        printf("Wrong Index: %d [Length = %zu]\n", index, array->m_length);
+        printf("Wrong Index: %zu [Length = %zu]\n", index, array->m_length);
         return INT_MIN;
     }
 }
 
-static void set(DynamicIntArray* array, int index, int value)
+static void set(DynamicIntArray* array, size_t index, int value)
 {
-    if (index >= 0 && index < array->m_length) {
+    if (index < array->m_length) {
         array->m_data[index] = value;
     }
     else {
-        printf("Wrong Index: %d [Length = %zu]\n", index, array->m_length);
+        printf("Wrong Index: %zu [Length = %zu]\n", index, array->m_length);
     }
 }
 
-static int resizeDynamicIntArray(DynamicIntArray* array, int newLength)
+static int resizeDynamicIntArray(DynamicIntArray* array, size_t newLength)
 {
     if (newLength <= array->m_length)
     {
@@ -165,7 +165,7 @@ static int minimum(const DynamicIntArray* array)
 
     int min = array->m_data[0];
 
-    for (int i = 1; i < array->m_length; i++) {
+    for (size_t i = 1; i < array->m_length; i++) {
         if (min > array->m_data[i]) {
             min = array->m_data[i];
         }
@@ -182,7 +182,7 @@ static int maximum(const DynamicIntArray* array)
 
     int max = array->m_data[0];
 
-    for (int i = 1; i < array->m_length; i++) {
+    for (size_t i = 1; i < array->m_length; i++) {
         if (max < array->m_data[i]) {
             max = array->m_data[i];
         }
@@ -194,9 +194,9 @@ static int maximum(const DynamicIntArray* array)
 static int indexOf(const DynamicIntArray* array, int value)
 {
     // perform a linear search
-    for (int i = 0; i < array->m_length; i++) {
+    for (size_t i = 0; i < array->m_length; i++) {
         if (array->m_data[i] == value) {
-            return i;
+            return (int) i;
         }
     }
 
@@ -209,7 +209,7 @@ static int equalsDynamicIntArray(const DynamicIntArray* array, const DynamicIntA
         return 0;
     }
 
-    for (int i = 0; i < array->m_length; i++) {
+    for (size_t i = 0; i < array->m_length; i++) {
         if (array->m_data[i] != other->m_data[i]) {
             return 0;
         }
@@ -220,7 +220,7 @@ static int equalsDynamicIntArray(const DynamicIntArray* array, const DynamicIntA
 
 static int containsDynamicIntArray(const DynamicIntArray* array, int value)
 {
-    for (int i = 0; i < array->m_length; i++) {
+    for (size_t i = 0; i < array->m_length; i++) {
         if (array->m_data[i] == value) {
             return 1;
         }
@@ -232,7 +232,7 @@ static int containsDynamicIntArray(const DynamicIntArray* array, int value)
 static void printDynamicIntArray(const DynamicIntArray* array)
 {
     printf("{");
-    for (int i = 0; i < array->m_length; i++)
+    for (size_t i = 0; i < array->m_length; i++)
     {
         printf("%d", array->m_data[i]);
         if (i < array->m_length - 1) {
@@ -377,13 +377,13 @@ void exercise_dynamic_int_array()
 {
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-    exercise_DynamicIntArray_01();
-    exercise_DynamicIntArray_02();
+    //exercise_DynamicIntArray_01();
+    //exercise_DynamicIntArray_02();
     exercise_DynamicIntArray_03();
-    exercise_DynamicIntArray_04();
-    exercise_DynamicIntArray_05();
-    exercise_DynamicIntArray_06();
-    exercise_DynamicIntArray_07();
+    //exercise_DynamicIntArray_04();
+    //exercise_DynamicIntArray_05();
+    //exercise_DynamicIntArray_06();
+    //exercise_DynamicIntArray_07();
 }
 
 // =====================================================================================
