@@ -17,9 +17,8 @@ typedef struct element         Element;
 
 // general hash table functions
 void   initHashTable           (Element* table[], size_t length);
-void   insertElement           (Element* table[], size_t length, Element element);
 int    insertKeyValue          (Element* table[], size_t length, size_t key, const char* value);
-int    search                  (Element* table[], size_t length, size_t key, Element** result, size_t* pos);
+int    searchValue             (Element* table[], size_t length, size_t key, Element* result);
 void   printHashTable          (Element* table[], size_t length);
 void   releaseHashTable        (Element* table[], size_t length);
 

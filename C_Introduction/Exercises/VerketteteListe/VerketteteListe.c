@@ -1,5 +1,5 @@
 // =====================================================================================
-// LinkedList.c
+// VerketteteListe.c
 // =====================================================================================
 
 #define _CRTDBG_MAP_ALLOC
@@ -7,9 +7,9 @@
 // ===========================================================================================
 // Includes
 
-#include <stdio.h>
+#include <crtdbg.h>  // _CrtSetDbgFlag
+#include <stdio.h>   // printf
 #include <stdlib.h>  // malloc, free
-#include <crtdbg.h>
 
 // =====================================================================================
 // Types
@@ -258,6 +258,9 @@ static void freeList(struct LinkedList* list) {
         next = next->m_next;
         free(prev);
     }
+
+    list->m_root = NULL;
+    list->m_count = 0;
 }
 
 static void freeListEx(struct LinkedList* list)
@@ -265,6 +268,9 @@ static void freeListEx(struct LinkedList* list)
     struct ListItem* item = list->m_root;
 
     freeListRecursive(item);
+
+    list->m_root = NULL;
+    list->m_count = 0;
 }
 
 static void freeListRecursive(struct ListItem* item) {

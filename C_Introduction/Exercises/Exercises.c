@@ -93,7 +93,7 @@ void exercises()
     //exercise_keywordstatistik();
     //exercise_lotto();
     //exercise_contacts();
-    exercise_hash_table();
+    //exercise_hash_table();
     //exercise_object_file_viewer();
 }
 
