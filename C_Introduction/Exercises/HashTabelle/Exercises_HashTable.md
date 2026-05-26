@@ -72,7 +72,7 @@ Eine typische Hash-Funktion verwendet den Modulo-Operator:
 Es sollen N Elemente mit beliebigen ganzzahligen, positiven Schlüsseln (vom Typ *int*) 
 in einer Hash-Tabelle gespeichert werden.
 Die Schlüssel seien beliebig verteilt über den Bereich 0 .. K.
-Zur Speicherung der Elemente soll eine Tabelle mit M > N Werten verwendet werden.
+Zur Speicherung der Elemente sollte eine Tabelle mit M > N Werten verwendet werden.
 
 Aus dem Schlüssel wird eine Position in der Tabelle berechnet.
 Die Position eines Elements in der Tabelle mit dem Schlüssel *k* berechnen wir mit der folgenden Hash-Funktion:
@@ -89,7 +89,7 @@ vorstehende Hash-Funktion berechnet werden.
 Wir wollen die Werte 9, 40, und 77 in der Tabelle eintragen.
 An Hand der zuvor erwähnten Hash-Funktion resultieren die Positionen
 
-9 &#x2794; 2<br />
+9 &nbsp;&nbsp;&#x2794; 2<br />
 40 &#x2794; 5<br />
 77 &#x2794; 0
 
@@ -118,7 +118,7 @@ Wir ändern unser Beispiel nun wie folgt ab:
 43 &#x2794; 1<br />
 92 &#x2794; 1 = Konflikt<br />
 
-Wir haben die Schlüssel absichtlich so gewählt, dass es bei Anwendung der Hash-Funktion
+Wir haben die Schlüssel absichtlich so gewählt, dass es bei Anwendung der Hashfunktion
 zu Konflikten kommt:
 
 <img src="c_hash_02.svg" width="450">
@@ -126,7 +126,7 @@ zu Konflikten kommt:
 *Abbildung* 2. Beispiel einer Hash-Tabelle, die Konflikte aufweist.
 
 Die zuletzt dargestellten Situationen werden als *Konflikt* oder *Kollision*
-bezeichnet. Es gibt verschiedenen Strategien, um Kollisionen aufzulösen.
+bezeichnet. Es gibt verschiedene Strategien, um Kollisionen aufzulösen.
 
 ---
 

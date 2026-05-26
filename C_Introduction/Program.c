@@ -57,7 +57,7 @@ int main()
     //mainCrt();
     //mainAdvancedTopics();
 
-    //exercises();
+    exercises();
 
     printf("Done.\n");
     return 0;
