@@ -14,7 +14,7 @@ void mainGenericProgramming();
 
 #define Fn_apply(type, fn, ...) {                    \
     void* stopper = (int[]){ 0 };                    \
-    type** list = (type*[]){ __VA_ARGS__, stopper};  \
+    type** list = (type*[]){ __VA_ARGS__, stopper }; \
                                                      \
     for (int i = 0; list[i] != stopper; ++i) {       \
         printf("calling free for %p\n", list[i]);    \

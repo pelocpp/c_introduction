@@ -8,10 +8,10 @@
 
 Wir betrachten die Funktionen der C-Standardbibliothek an Hand folgender Beispiele:
 
-  * Funktionenen zum Arbeiten mit Zeichenketten (`strlen`, `strcpy`, `strcpy_s`, `strcat_s`, `strcmp`)
-  * Funktionenen zur Analyse und Modifikation einzelner Zeichen (`isalpha`, `isdigit`, `tolower`, `toupper`)
+  * Funktionen zum Arbeiten mit Zeichenketten (`strlen`, `strcpy`, `strcpy_s`, `strcat_s`, `strcmp`)
+  * Funktionen zur Analyse und Modifikation einzelner Zeichen (`isalpha`, `isdigit`, `tolower`, `toupper`)
   * Umwandlungsfunktionen (`atoi`)
-  * Funktionenen zum Arbeiten mit Dateien (`fopen`, `fgets`, `fclose`)
+  * Funktionen zum Arbeiten mit Dateien (`fopen`, `fgets`, `fclose`)
 
 ---
 
