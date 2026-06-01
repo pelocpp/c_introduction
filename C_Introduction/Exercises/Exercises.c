@@ -94,7 +94,7 @@ void exercises()
     //exercise_keywordstatistik();
     //exercise_lotto();
     //exercise_contacts();
-    exercise_students_database();
+    //exercise_students_database();
     //exercise_hash_table();
     //exercise_object_file_viewer();
 }

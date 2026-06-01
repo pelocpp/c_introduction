@@ -1,4 +1,4 @@
-# Kontakteverwaltung
+# Eine Studentendatenbank
 
 [Zurück](./../Exercises.md)
 
@@ -23,7 +23,7 @@ Weitere Themenschwerpunkte sind:
 ## Beschreibung
 
 Nehmen wir an, wir möchten eine Datenbank für Studenten erstellen.
-Der Einfachheit halber erhält jeder Student eine eindeutige ID, einen Namen sowie ein Abschlussjahr.
+Der Einfachheit wird jedem Student eine eindeutige ID, einen Namen sowie ein Abschlussjahr zugeordnet.
 
 ```cpp
 struct student
@@ -34,7 +34,7 @@ struct student
 };
 ```
 
-Wir deklarieren eine Datenbank - ein einfaches Array genügt für unsere Zwecke - für die Studenten.
+Wir deklarieren eine Datenbank &ndash; ein einfaches Array genügt für unsere Zwecke &ndash; für die Studenten.
 
 ```cpp
 #define MAX_DATABASE_SIZE 30
@@ -43,7 +43,7 @@ Student g_studentsDatabase[MAX_DATABASE_SIZE];
 size_t  g_index = 0;
 ```
 
-Wir befüllen dieses Array mit dem Inhalt einer Textdatei:
+Wir füllen dieses Array mit dem Inhalt einer Textdatei:
 
 ```
 121, Hans , 1987
@@ -63,15 +63,15 @@ Oder wir benötigen eine Liste der Studentennamen, sortiert nach dem Namen selbs
 
 In diesem Beispiel werden wir das Studenten-Array mithilfe der Funktion `qsort` sortieren, die in der Bibliothek `stdlib.h` verfügbar ist.
 Doch ein bloßer Aufruf von `qsort` mit dem Array als Argument genügt nicht,
-da `qsort` keinerlei Kenntnis darüber besitzt, wie zwei Studenten zu sortieren sind.
+da `qsort` keinerlei Kenntnis darüber besitzt, wie zwei Studenten zu vergleichen sind.
 
-Stattdessen erwartet `qsort` einen Funktionszeiger als Parameter;
-dieser dient dazu, zwei Studenten-Objekte miteinander zu vergleichen und so ihre relative Position zueinander zu bestimmen.
+Stattdessen erwartet `qsort` einen Funktionszeiger als Parameter.
+Dieser dient dazu, zwei Studenten-Objekte miteinander zu vergleichen.
 
 Diese Art von Vergleichsfunktion besitzt für `qsort` den folgenden Prototyp:
 
 ```cpp
-int (*compar)(const void *, const void *);
+int (*compare) (const void *, const void *);
 ```
 
 Die Funktion empfängt zwei Zeiger auf Objekte, die miteinander verglichen werden sollen.
@@ -82,17 +82,17 @@ Die Anforderungen an die Vergleichsfunktion lauten wie folgt:
   * Soll das erste Objekt im sortierten Array vor dem zweiten Objekt platziert werden, gibt die Funktion eine negative ganze Zahl zurück.
   * Soll das erste Objekt im sortierten Array nach dem zweiten Objekt platziert werden, gibt die Funktion eine positive ganze Zahl zurück.
 
-In diesem Beispiel werden wir zwei Vergleichsfunktion definieren, die an `qsort` übergeben werden,
-damit das Studenten-Array unseren Wünschen entsprechend sortiert werden kann.
+In diesem Beispiel werden wir zwei Vergleichsfunktionen `sortByPassingYear` und `sortByName` definieren,
+die an `qsort` übergeben werden, damit das Studenten-Array unseren Wünschen entsprechend sortiert werden kann.
 
 #### Sortieren nach Abschlussjahr
 
 Das Sortieren nach dem Abschlussjahr ist einfach. Die Objekte, auf die die `void`-Zeiger verweisen,
-werden in Student-Objekte umgewandelt.
+werden in `struct student`-Objekte umgewandelt.
 Wenn anschließend das zweite Abschlussjahr vom ersten Abschlussjahr subtrahiert wird, ist die Anforderung an die Vergleichsfunktion erfüllt.
 
 ```cpp
-int sortByPassingYear(const void* a, const void* b);
+int sortByPassingYear (const void* a, const void* b);
 ```
 
 #### Sortieren nach Namen
@@ -101,20 +101,26 @@ Der Name des Schülers mit der geringeren Zeichenanzahl wird als vorrangig betra
 Falls die Namen gleich lang sind, ist ein zeichenweiser Vergleich durchzuführen, um zu bestimmen, welcher Name an erster Stelle steht:
 
 ```cpp
-int sortByName(const void* a, const void* b);
+int sortByName (const void* a, const void* b);
 ```
+
+#### Funktionen `qsort`
 
 Nachdem die Vergleichsfunktionen definiert sind, kann das Array von Studentenobjekten nach dem Namen sortiert werden:
 
 ```cpp
-qsort(std_db, MAX_STD_SIZE, sizeof(std_db[0]), sortByName);
+qsort (g_students, MAX_STD_SIZE, sizeof(struct student), sortByName);
 ```
 
 oder nach dem Abschlussjahr:
 
 ```cpp
-qsort(std_db, MAX_STD_SIZE, sizeof(std_db[0]), sortByPassingYear);
+qsort(g_students, MAX_STD_SIZE, sizeof(struct student), sortByPassingYear);
 ```
+
+*Hinweis*:<br />
+Der zweite Parameter beschreibt die Länge des zu sortierenden Arrays. Je nachdem wir Sie Ihre Realisierung gestalten,
+kann das eine Zählervariable `g_index` oder eine fest vorgegebene Längenangabe `MAX_STD_SIZE` sein.
 
 ---
 

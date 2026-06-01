@@ -135,30 +135,15 @@ Funktionen / Unterprogramme, Zufallszahlen, Strukturierung eines Programms.
 [**Kontakteverwaltung**](./Contacts/Exercises_Contacts.md)<br />
 Felder von Strukturen, Zeichenketten, `printf`-Menü, bei Bedarf dynamische Daten.
 
-
-
-
-
-
 [**Eine Studentendatenbank**](./StudentsDatabase/Exercises_StudentsDatabase.md)<br />
-Felder von Strukturen, Funktionszeiger, `void*` Parameter, Funktion `qsort`,
-Zeichenkettenoperationen (`strtok`, `strtoull`, `strtoul`, `strlen`, `strcpy_s`), 
-Datei-Operationen (`fopen`, `fgets`, `fclose`)
+Felder von Strukturen, Funktionszeiger, `void*` Parameter, Funktion `qsort`,<br />
+Zeichenkettenoperationen (`strtok`, `strtoull`, `strtoul`, `strlen`, `strcpy_s`), Datei-Operationen (`fopen`, `fgets`, `fclose`)
 
-
-
-
-
-
-
-[**Hashtabellen**](./HashTabelle/Exercises_HashTable.md)<br />
+[**Hashtabellen**](./HashTabelle/Exercises_HashTable.md)<br /
 Feld von Strukturen, Header-Files, dynamische Daten, verkettete Liste.
 
 [**Object File Viewer**](./ObjectFileViewer/Exercises_ObjectFileViewer.md)<br />
 Komplexübung, Systemprogrammierung, dynamische Speicherverwaltung, Einlesen einer Binärdatei.
-
-
-
 
 ---
 

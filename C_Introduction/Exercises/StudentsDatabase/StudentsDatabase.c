@@ -1,23 +1,14 @@
 // =====================================================================================
 // StudentsDatabase.c
 // =====================================================================================
-//
-//#define FILE_NAME     "..\\Students.txt"
-//
+
 #define _CRTDBG_MAP_ALLOC
 #include <crtdbg.h>
-//
-//#include <stdio.h>    // printf, FILE, fopen_s, fgets, fclose
-//#include <stdint.h>   // uint16_t, uint32_t
-//#include <stdlib.h>   // malloc, free
-//#include <string.h>   // strtok, strtoull, strtoul, strlen, strcpy_s
-
+#include <stdlib.h>
 
 #include "StudentsDatabase.h"
 
 #include <stdio.h>    // printf, FILE, fopen_s, fgets, fclose
-//#include <stdint.h>   // uint16_t, uint32_t
-#include <stdlib.h>   // malloc, free
 #include <string.h>   // strtok, strtoull, strtoul, strlen, strcpy_s
 
 // =================================================================================
@@ -171,7 +162,6 @@ static void releaseDatabase()
         }
     }
 }
-
 
 void run_students_database()
 {
