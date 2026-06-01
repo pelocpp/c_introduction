@@ -172,6 +172,9 @@
     <Filter Include="Exercises\ZeichenkettenverarbeitungDynamisch">
       <UniqueIdentifier>{6fcaacf5-e0d2-4502-8ee6-df4f9a52c95f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Exercises\StudentenDatenbank">
+      <UniqueIdentifier>{4f5843f9-ca7f-4c3c-a339-5c182a30e622}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="Markdown\Agenda.md">
@@ -421,6 +424,9 @@
     <None Include="Markdown\harbison_steelec_a_reference_manual_5th_ed.pdf">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="Exercises\StudentsDatabase\Exercises_StudentsDatabase.md">
+      <Filter>Exercises\StudentenDatenbank</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Program.c">
@@ -606,6 +612,12 @@
     <ClCompile Include="Exercises\ZeichenkettenverarbeitungDynamisch\ZeichenkettenverarbeitungDynamisch.c">
       <Filter>Exercises\ZeichenkettenverarbeitungDynamisch</Filter>
     </ClCompile>
+    <ClCompile Include="Exercises\StudentsDatabase\Main_StudentsDatabase.c">
+      <Filter>Exercises\StudentenDatenbank</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\StudentsDatabase\StudentsDatabase.c">
+      <Filter>Exercises\StudentenDatenbank</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Markdown\Ken_Thompson_and_Dennis_Ritchie.jpg">
@@ -718,5 +730,13 @@
     <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h">
       <Filter>Exercises\ObjectFileViewer</Filter>
     </ClInclude>
+    <ClInclude Include="Exercises\StudentsDatabase\StudentsDatabase.h">
+      <Filter>Exercises\StudentenDatenbank</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Exercises\StudentsDatabase\Students.txt">
+      <Filter>Exercises\StudentenDatenbank</Filter>
+    </Text>
   </ItemGroup>
 </Project>

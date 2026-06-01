@@ -206,7 +206,7 @@ static int div(int a, int b)
     return a + b;
 }
 
-staticvoid test_pointer_07_function_pointer_02()
+static void test_pointer_07_function_pointer_02()
 {
     // 'calculator' is an array of function pointers 
     // See 'Jump Table'

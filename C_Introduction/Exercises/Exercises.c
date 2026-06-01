@@ -57,6 +57,7 @@ extern void exercise_keywordstatistik();
 // miscellaneous
 extern void exercise_lotto();
 extern void exercise_contacts();
+extern void exercise_students_database();
 extern void exercise_hash_table();
 extern void exercise_object_file_viewer();
 
@@ -93,6 +94,7 @@ void exercises()
     //exercise_keywordstatistik();
     //exercise_lotto();
     //exercise_contacts();
+    exercise_students_database();
     //exercise_hash_table();
     //exercise_object_file_viewer();
 }

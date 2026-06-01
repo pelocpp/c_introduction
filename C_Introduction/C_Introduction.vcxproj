@@ -51,6 +51,7 @@
     <None Include="Exercises\ObjectFileViewer\TEST_ObjectFileViewer.bin" />
     <None Include="Exercises\ObjectFileViewer\TEST_Point.bin" />
     <None Include="Exercises\PascalTriangle\Exercises_PascalTriangle.md" />
+    <None Include="Exercises\StudentsDatabase\Exercises_StudentsDatabase.md" />
     <None Include="Exercises\Tausche\Exercises_Tausche.md" />
     <None Include="Exercises\TeuflischeFolge\Exercises_TeuflischeFolge.md" />
     <None Include="Exercises\Unterprogramme\Exercises_Unterprogramme.md" />
@@ -130,6 +131,8 @@
     <ClCompile Include="Exercises\Maximum\Maximum.c" />
     <ClCompile Include="Exercises\ObjectFileViewer\ObjectFileViewer.c" />
     <ClCompile Include="Exercises\PascalTriangle\PascalTriangle.c" />
+    <ClCompile Include="Exercises\StudentsDatabase\Main_StudentsDatabase.c" />
+    <ClCompile Include="Exercises\StudentsDatabase\StudentsDatabase.c" />
     <ClCompile Include="Exercises\Tausche\Tausche.c" />
     <ClCompile Include="Exercises\TeuflischeFolge\TeuflischeFolge.c" />
     <ClCompile Include="Exercises\Unterprogramme\Unterprogramme.c" />
@@ -202,9 +205,13 @@
     <ClInclude Include="Exercises\HashTabelle\HashTableEx.h" />
     <ClInclude Include="Exercises\KeywordStatistik\KeywordStatistic.h" />
     <ClInclude Include="Exercises\ObjectFileViewer\ObjectFileViewer.h" />
+    <ClInclude Include="Exercises\StudentsDatabase\StudentsDatabase.h" />
     <ClInclude Include="Exercises\Vector\Vector.h" />
     <ClInclude Include="Exercises\Wallet\Wallet.h" />
     <ClInclude Include="Tutorial\Structs\Time.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Exercises\StudentsDatabase\Students.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
