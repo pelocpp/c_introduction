@@ -132,7 +132,7 @@ Felder von Strukturen, Anwendung der Funktionen `fopen`, `fclose`, `fgets`, `isl
 [**Ziehung der Lottozahlen**](./Lotto/Exercises_Lotto.md)<br />
 Funktionen / Unterprogramme, Zufallszahlen, Strukturierung eines Programms.
 
-[**Kontakteverwaltung**](./Contacts/Exercises_Contacts.md)<br />
+[**Eine Kontakteverwaltung**](./Contacts/Exercises_Contacts.md)<br />
 Felder von Strukturen, Zeichenketten, `printf`-Menü, bei Bedarf dynamische Daten.
 
 [**Eine Studentendatenbank**](./StudentsDatabase/Exercises_StudentsDatabase.md)<br />
