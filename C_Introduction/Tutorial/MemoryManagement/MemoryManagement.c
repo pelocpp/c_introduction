@@ -3,6 +3,7 @@
 // ===========================================================================
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int programGlobal = 123;               // globale Variable, im gesamten Programm verfügbar
 
@@ -11,24 +12,22 @@ static int fileGlobal = 456;           // globale Variable, aber nur in dieser D
 static void memoryManagement_01()
 {
     printf("global:            %d\n", programGlobal);
-    printf("file static:       %d\n\n", fileGlobal);
+    printf("file static:       %d\n", fileGlobal);
 
     programGlobal++;
     fileGlobal++;
 }
 
-void memoryManagement_02()
+static void memoryManagement_02()
 {
-    static int fileGlobal = 111;       // globale Variable, aber nur im Scope dieser Funktion verfügbar
+    static int functionGlobal = 111;       // globale Variable, aber nur im Scope dieser Funktion verfügbar
 
-    fileGlobal++;
+    functionGlobal++;
 
-    printf("function global:   %d\n\n", fileGlobal);
-
-    return;
+    printf("function global:   %d\n", functionGlobal);
 }
 
-void memoryManagement_03()
+static void memoryManagement_03()
 {
     auto int local1 = 0;               // lokale Variable, nur im Scope dieser Funktion verfügbar
     int local2 = 0;                    // lokale Variable, nur im Scope dieser Funktion verfügbar
@@ -40,6 +39,24 @@ void memoryManagement_03()
     printf("local:             %d\n", local2);
 }
 
+static void memoryManagement_04()
+{
+    // eine int Variable auf der Halde / auf dem Heap anlegen
+
+    int* ip = (int*)malloc(sizeof(int));
+    if (ip != NULL) {
+
+        *ip = 123;
+
+        int n = *ip;
+
+        printf("dynamic:           %d\n", n);
+    }
+
+    free(ip);
+}
+
+
 void mainMemoryManagement()
 {
     memoryManagement_01();
@@ -48,15 +65,10 @@ void mainMemoryManagement()
     memoryManagement_02();
     memoryManagement_02();
 
-    memoryManagement_01();
-    memoryManagement_01();
+    memoryManagement_03();
+    memoryManagement_03();
 
-    memoryManagement_02();
-    memoryManagement_02();
-
-    memoryManagement_03();
-    memoryManagement_03();
-    memoryManagement_03();
+    memoryManagement_04();
 }
 
 // ===========================================================================

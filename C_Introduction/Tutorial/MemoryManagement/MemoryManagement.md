@@ -92,6 +92,34 @@ Man kann die Lebensdauer von Variablen in einem C&ndash;Programm in drei Gruppen
   Zum Reservieren dynamischen Speichers gibt es die beiden CRT-Bibliotheksfunktionen `malloc()` und `free()`.
 
 
+### Drei Varianten von globalen Variablen
+
+Bzgl. der globalen Variablen lassen sich drei Varianten unterscheiden:
+
+  * Global im gesamten Programm<br />
+	Wird eine globale Variable auf der obersten Ebene (außerhalb von Funktionen) definiert,
+	ist diese im gesamten Programm verfügbar:<br />
+	*Definition*:<br />
+    `int g_counter = 0;`<br />
+    *Verwendung*:<br />
+    `extern int g_counter;`
+  * Global im Bereich einer Datei<br />
+    Wird eine globale Variable auf der obersten Ebene (außerhalb von Funktionen) mit dem Schlüsselwort `static` definiert,
+	ist diese nur in der aktuellen Datei verfügbar. Dies gilt für alle Funktionen, die sich in derselben Datei befinden:<br />
+	*Definition*:<br />
+    `static int g_counter = 0;`
+  * Global im Rumpf einer Funktion<br />
+	Man kann eine globale Variable auch im Rumpf einer Funktion definieren. Um sie hier von gewöhnlichen lokalen Variablen zu unterscheiden,
+	kommt auch hier das Schlüsselwort `static` zum Einsatz:
+	```cpp
+	static void test()
+    {
+        static int functionGlobal = 111;       // globale Variable, aber nur im Scope dieser Funktion verfügbar
+        functionGlobal++;
+		...
+    }
+	```
+
 ---
 
 [Zurück](../../Markdown/Agenda.md)
