@@ -94,14 +94,14 @@ Man kann die Lebensdauer von Variablen in einem C&ndash;Programm in drei Gruppen
 
 ### Drei Varianten von globalen Variablen
 
-Bzgl. der globalen Variablen lassen sich drei Varianten unterscheiden:
+Bzgl. globaler Variablen lassen sich drei Varianten unterscheiden:
 
   * Global im gesamten Programm<br />
 	Wird eine globale Variable auf der obersten Ebene (außerhalb von Funktionen) definiert,
 	ist diese im gesamten Programm verfügbar:<br />
 	*Definition*:<br />
     `int g_counter = 0;`<br />
-    *Verwendung*:<br />
+    *Verwendung* (ggf. in einer anderen Datei):<br />
     `extern int g_counter;`
   * Global im Bereich einer Datei<br />
     Wird eine globale Variable auf der obersten Ebene (außerhalb von Funktionen) mit dem Schlüsselwort `static` definiert,

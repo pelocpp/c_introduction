@@ -47,7 +47,7 @@ int main()
     //mainSubroutines();
     //mainNestedScope();
     //mainPointer();
-    mainMemoryManagement();
+    //mainMemoryManagement();
     //mainDynamic();
     //mainStrings();
     //mainMultidimensionalArrays();
